@@ -1336,7 +1336,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "1"
           },
           {
             "name": "search_name",
@@ -1361,6 +1362,162 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_Api.ConversationAppServices.Dto.ConversationList_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "",
+                          "prev_page_pointer": "",
+                          "show_pagination": false,
+                          "previous_page": null,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": null,
+                          "show_next_page": false,
+                          "current_page": 1,
+                          "button_text": "Önceki",
+                          "show_mark_seen_button": false
+                        },
+                        "debug_cache_bypass": "",
+                        "debug_cache_state": ""
+                      },
+                      "items": [
+                        {
+                          "type": "conversation",
+                          "last_message_received_type": "",
+                          "last_message_sent_type": "",
+                          "is_unread": false,
+                          "conversation_id": 359698339,
+                          "receiver_user": {
+                            "user_id": 8529563,
+                            "is_online": false,
+                            "is_favorite": false,
+                            "online_status": null,
+                            "name": "Mimargezgin",
+                            "age": 42,
+                            "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "last_activity_datetime_tr": "14.11.2022 14:32:03",
+                            "last_activity_datetime_tr_for_desktop": "Pazartesi"
+                          },
+                          "unread_message_count": 0,
+                          "message_text_short": "Merhaba Betul hanim..eger sanal mesajcı değilsen, veya erkek değilsen, veya site",
+                          "formatted_label_timestamp_for_desktop": "Pazar",
+                          "formatted_label_timestamp_for_desktop_react": "11 Eylül 2022",
+                          "conversation_time_short": "15:03",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjM1OTY5ODMzOSwib3RoZXJfdXNlcl9pZCI6ODUyOTU2MywiYXV0aF9jb2RlIjoiOGM2ODU1MDczMjg4MWY0MDYxOTQ4MWJkYWEyMDkzYWEiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODUyOTU2MywidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiOGM2ODU1MDczMjg4MWY0MDYxOTQ4MWJkYWEyMDkzYWEiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_favorite_pointer": null,
+                          "add_wink_pointer": null,
+                          "delete_message_auth_code": "6c582b66d6c41f402ea9038fae725ae1",
+                          "show_profile_auth_code": "8c68550732881f40619481bdaa2093aa",
+                          "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png"
+                        },
+                        {
+                          "type": "conversation",
+                          "last_message_received_type": "",
+                          "last_message_sent_type": "",
+                          "is_unread": false,
+                          "conversation_id": 385305927,
+                          "receiver_user": {
+                            "user_id": 8890700,
+                            "is_online": false,
+                            "is_favorite": false,
+                            "online_status": null,
+                            "name": "Fatih",
+                            "age": 38,
+                            "profile_picture_url": "https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg",
+                            "profile_picture_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg",
+                            "last_activity_datetime_tr": "29.03.2023 20:55:19",
+                            "last_activity_datetime_tr_for_desktop": "Çarşamba"
+                          },
+                          "unread_message_count": 0,
+                          "message_text_short": "Merhaba tanışabilirmiyiz.",
+                          "formatted_label_timestamp_for_desktop": "Cumartesi",
+                          "formatted_label_timestamp_for_desktop_react": "08 Ekim 2022",
+                          "conversation_time_short": "07:32",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjM4NTMwNTkyNywib3RoZXJfdXNlcl9pZCI6ODg5MDcwMCwiYXV0aF9jb2RlIjoiZWFjNDQzMmU5ZGUxYjBlMTI4Y2ZjMWRkZmE0YWM3ZGEiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODg5MDcwMCwidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiZWFjNDQzMmU5ZGUxYjBlMTI4Y2ZjMWRkZmE0YWM3ZGEiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_favorite_pointer": null,
+                          "add_wink_pointer": null,
+                          "delete_message_auth_code": "b0eea1e318faf8f0786d6f3724cdbda1",
+                          "show_profile_auth_code": "eac4432e9de1b0e128cfc1ddfa4ac7da",
+                          "profile_picture_url": "https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg",
+                          "profile_picture_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg"
+                        },
+                        {
+                          "type": "conversation",
+                          "last_message_received_type": "",
+                          "last_message_sent_type": "",
+                          "is_unread": false,
+                          "conversation_id": 379679214,
+                          "receiver_user": {
+                            "user_id": 9380103,
+                            "is_online": false,
+                            "is_favorite": false,
+                            "online_status": null,
+                            "name": "Peaklevel06",
+                            "age": 35,
+                            "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "last_activity_datetime_tr": "07.11.2022 20:00:35",
+                            "last_activity_datetime_tr_for_desktop": "Pazartesi"
+                          },
+                          "unread_message_count": 0,
+                          "message_text_short": "Kuşadası'nda yaşıyorum seninle tanışmak çok istiyorum bana bu şansı verir misin",
+                          "formatted_label_timestamp_for_desktop": "Salı",
+                          "formatted_label_timestamp_for_desktop_react": "20 Eylül 2022",
+                          "conversation_time_short": "00:11",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjM3OTY3OTIxNCwib3RoZXJfdXNlcl9pZCI6OTM4MDEwMywiYXV0aF9jb2RlIjoiMThlMjU4OWFhNTVmMTljMjg3ZDk2NWQxOGYzODEwMGMiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTM4MDEwMywidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiMThlMjU4OWFhNTVmMTljMjg3ZDk2NWQxOGYzODEwMGMiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_favorite_pointer": null,
+                          "add_wink_pointer": null,
+                          "delete_message_auth_code": "af2670963d4df5ade10c77c3d79c2670",
+                          "show_profile_auth_code": "18e2589aa55f19c287d965d18f38100c",
+                          "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png"
+                        },
+                        {
+                          "type": "conversation",
+                          "last_message_received_type": "",
+                          "last_message_sent_type": "",
+                          "is_unread": false,
+                          "conversation_id": 412213775,
+                          "receiver_user": {
+                            "user_id": 9892536,
+                            "is_online": true,
+                            "is_favorite": false,
+                            "online_status": null,
+                            "name": "Melih",
+                            "age": 31,
+                            "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "last_activity_datetime_tr": "03.04.2023 12:10:03",
+                            "last_activity_datetime_tr_for_desktop": "Pazartesi"
+                          },
+                          "unread_message_count": 0,
+                          "message_text_short": "Merhaba ",
+                          "formatted_label_timestamp_for_desktop": "Pazartesi",
+                          "formatted_label_timestamp_for_desktop_react": "03 Nisan 2023",
+                          "conversation_time_short": "12:12",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjQxMjIxMzc3NSwib3RoZXJfdXNlcl9pZCI6OTg5MjUzNiwiYXV0aF9jb2RlIjoiM2Q4ZDI3YzllNDMxOTBjOTZlMmUxODI0OTMyZDliYTgiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTg5MjUzNiwidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiM2Q4ZDI3YzllNDMxOTBjOTZlMmUxODI0OTMyZDliYTgiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_favorite_pointer": null,
+                          "add_wink_pointer": null,
+                          "delete_message_auth_code": "1c7637705fea38dfb8fb336fdeeb3e31",
+                          "show_profile_auth_code": "3d8d27c9e43190c96e2e1824932d9ba8",
+                          "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png"
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -1376,7 +1533,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "conversations-archived-get",
+        "description": "Bu servis silinmiş mesajları gösterir."
       }
     },
     "/api/user/v10/me/conversations": {
