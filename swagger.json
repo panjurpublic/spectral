@@ -7209,6 +7209,13 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Api.ConnectSocialNetworkFacebookAppService.Dto.ConnectSocialNetworkFacebookInput"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "access_token": "string"
+                  }
+                }
               }
             }
           }
@@ -7220,6 +7227,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectSocialNetworkFacebookAppService.Dto.ConnectSocialNetworkFacebookDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "user_id": 473665
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -7235,7 +7254,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Post-Connect-FaceBook",
+        "description": "connects facebook"
       }
     },
     "/api/user/v10/me/connects/instagram": {
