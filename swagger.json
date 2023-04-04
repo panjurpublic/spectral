@@ -49,7 +49,8 @@
           }
         ],
         "operationId": "user-agreements-get",
-        "description": "kullanıcı sözleşmesini gösterir"
+        "description": "kullanıcı sözleşmesini gösterir",
+        "parameters": []
       }
     },
     "/api/user/v10/agreements/privacy": {
@@ -3567,7 +3568,8 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Api.NewsFeedLikeAppService.Dto.NewsFeedLikeInput"
-              }
+              },
+              "examples": {}
             }
           }
         },
@@ -3578,6 +3580,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.NewsFeedLikeAppService.Dto.NewsFeedLikeDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "news_feed_like_count": 1
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -3593,22 +3607,15 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "news_feed-newsFeedId-likes",
+        "description": "Posts likes via newsfeed"
       },
       "get": {
         "tags": [
           "NewsFeeds"
         ],
         "parameters": [
-          {
-            "name": "newsfeed_id",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
           {
             "name": "newsFeedId",
             "in": "path",
@@ -3678,8 +3685,8 @@
             "oauth2": []
           }
         ],
-        "operationId": "ews_feed-likes",
-        "description": "Shows likes via newsfeed"
+        "operationId": "news_feed-newsFeedId}-likes",
+        "description": "Gets likes via newsfeed"
       },
       "delete": {
         "tags": [
