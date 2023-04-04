@@ -2430,6 +2430,121 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_PanjurUserApi.DataAccess.CountryRepository.Dto.GetAllDistrictCityListByCountryDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "country_id": 840,
+                        "full_city_list": [
+                          {
+                            "city_id": -1,
+                            "city_text": "Seçiniz"
+                          },
+                          {
+                            "city_id": 1003647,
+                            "city_text": "Alabama"
+                          },
+                          {
+                            "city_id": 1003646,
+                            "city_text": "Alaska"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "city_text": "Arizona"
+                          },
+                          {
+                            "city_id": 1003649,
+                            "city_text": "Arkansas"
+                          },
+                          {
+                            "city_id": 1003648,
+                            "city_text": "California"
+                          },
+                          {
+                            "city_id": 1003653,
+                            "city_text": "Colorado"
+                          },
+                          {
+                            "city_id": 1003652,
+                            "city_text": "Connecticut"
+                          },
+                          {
+                            "city_id": 1003651,
+                            "city_text": "Delaware"
+                          },
+                          {
+                            "city_id": 1003650,
+                            "city_text": "Florida"
+                          },
+                          {
+                            "city_id": 1003654,
+                            "city_text": "Georgia"
+                          }
+                        ],
+                        "full_district_list": [
+                          {
+                            "city_id": -1,
+                            "district_id": -1,
+                            "district_text": "Seçiniz"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829534,
+                            "district_text": "Agua Linda"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829336,
+                            "district_text": "Aguila"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829472,
+                            "district_text": "Ajo"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829135,
+                            "district_text": "Allentown"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829136,
+                            "district_text": "Alpine"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829535,
+                            "district_text": "Amado"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829337,
+                            "district_text": "Anthem"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829509,
+                            "district_text": "Apache Junction"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829473,
+                            "district_text": "Arivaca"
+                          },
+                          {
+                            "city_id": 1003645,
+                            "district_id": 1829510,
+                            "district_text": "Arizona City"
+                          }
+                        ]
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2445,7 +2560,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Get-Countries",
+        "description": "Gets countries"
       }
     },
     "/api/user/v10/locations/auto_complete": {
@@ -6103,74 +6220,7 @@
         ]
       }
     },
-    "/api/user/v10/search/matches": {
-      "get": {
-        "tags": [
-          "Search"
-        ],
-        "parameters": [
-          {
-            "name": "selected_search_array_json",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "order_by_string",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "sha1_full_query",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "page",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "query_source",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.DataModel_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.ListingUser_"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "security": [
-          {
-            "oauth2": []
-          }
-        ]
-      }
-    },
+    "/api/user/v10/search/matches": {},
     "/api/user/v10/search/filters": {
       "get": {
         "tags": [
