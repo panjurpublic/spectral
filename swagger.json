@@ -3631,25 +3631,35 @@
                   "Example 1": {
                     "value": {
                       "data": {
-                        "news_feed_like_count": 0,
-                        "like_users_string": "string",
-                        "status": "string"
+                        "news_feed_like_count": 2,
+                        "like_users_string": "",
+                        "status": "success"
                       },
                       "items": [
                         {
-                          "user_id": 0,
-                          "news_feed_id": 0,
-                          "like_datetime": "string",
-                          "user_name": "string",
-                          "profile_picture_url": "string",
-                          "profile_picture_url_retina": "string",
-                          "get_profile_pointer": "string",
-                          "slug": "string"
+                          "user_id": 473665,
+                          "news_feed_id": 13588593,
+                          "like_datetime": "30.08.2018",
+                          "user_name": "İsmail",
+                          "profile_picture_url": "https://dev.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://dev.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDczNjY1LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6Ijk5NmNiZjIxMGFkMWQ0Mjk0MjcyOTc1NWY3YTdlMGQ2Iiwic2hvd19wcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "slug": "/"
+                        },
+                        {
+                          "user_id": 1321249,
+                          "news_feed_id": 13588593,
+                          "like_datetime": "30.08.2019",
+                          "user_name": "Xmen",
+                          "profile_picture_url": "https://dev.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://dev.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTMyMTI0OSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxMDEzZGQwZDJjNDhmOTFjYTgxOGU4ZjU1ZmUxZDI4NCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                          "slug": "/"
                         }
                       ],
-                      "result_code": 0,
-                      "error_detail_message": "string",
-                      "stack_trace": "string"
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
                     }
                   }
                 }
