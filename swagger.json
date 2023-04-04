@@ -1307,6 +1307,66 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_Api.ConversationAppServices.Dto.ConversationList_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "",
+                          "prev_page_pointer": "",
+                          "show_pagination": false,
+                          "previous_page": null,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": null,
+                          "show_next_page": false,
+                          "current_page": 1,
+                          "button_text": "Önceki",
+                          "show_mark_seen_button": false
+                        },
+                        "debug_cache_bypass": "",
+                        "debug_cache_state": ""
+                      },
+                      "items": [
+                        {
+                          "type": "conversation",
+                          "last_message_received_type": "",
+                          "last_message_sent_type": "",
+                          "is_unread": false,
+                          "conversation_id": 358516557,
+                          "receiver_user": {
+                            "user_id": 8843893,
+                            "is_online": false,
+                            "is_favorite": false,
+                            "online_status": null,
+                            "name": "Ahmet48",
+                            "age": 46,
+                            "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                            "last_activity_datetime_tr": "23.10.2022 21:35:03",
+                            "last_activity_datetime_tr_for_desktop": "Pazar"
+                          },
+                          "unread_message_count": 1,
+                          "message_text_short": "a",
+                          "formatted_label_timestamp_for_desktop": "Pazartesi",
+                          "formatted_label_timestamp_for_desktop_react": "25 Nisan 2022",
+                          "conversation_time_short": "15:28",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjM1ODUxNjU1Nywib3RoZXJfdXNlcl9pZCI6ODg0Mzg5MywiYXV0aF9jb2RlIjoiMjFkODhiMzZhZWUzZTE5Y2I5NWM5YWE5ZTgxMzY2ZjMiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODg0Mzg5MywidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiMjFkODhiMzZhZWUzZTE5Y2I5NWM5YWE5ZTgxMzY2ZjMiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_favorite_pointer": null,
+                          "add_wink_pointer": null,
+                          "delete_message_auth_code": "38a75378dc308ec331bede2e223b3333",
+                          "show_profile_auth_code": "21d88b36aee3e19cb95c9aa9e81366f3",
+                          "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
+                          "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png"
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -1324,62 +1384,6 @@
           }
         ],
         "operationId": "conversations-sent-get",
-        "x-extension-1": {
-          "data": {
-            "pagination": {
-              "next_page_pointer": "",
-              "prev_page_pointer": "",
-              "show_pagination": false,
-              "previous_page": null,
-              "previous_page_start": null,
-              "show_previous_page": false,
-              "next_page": null,
-              "show_next_page": false,
-              "current_page": 1,
-              "button_text": "Önceki",
-              "show_mark_seen_button": false
-            },
-            "debug_cache_bypass": "",
-            "debug_cache_state": ""
-          },
-          "items": [
-            {
-              "type": "conversation",
-              "last_message_received_type": "",
-              "last_message_sent_type": "",
-              "is_unread": false,
-              "conversation_id": 358516557,
-              "receiver_user": {
-                "user_id": 8843893,
-                "is_online": false,
-                "is_favorite": false,
-                "online_status": null,
-                "name": "Ahmet48",
-                "age": 46,
-                "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
-                "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
-                "last_activity_datetime_tr": "23.10.2022 21:35:03",
-                "last_activity_datetime_tr_for_desktop": "Pazar"
-              },
-              "unread_message_count": 1,
-              "message_text_short": "a",
-              "formatted_label_timestamp_for_desktop": "Pazartesi",
-              "formatted_label_timestamp_for_desktop_react": "25 Nisan 2022",
-              "conversation_time_short": "15:28",
-              "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjM1ODUxNjU1Nywib3RoZXJfdXNlcl9pZCI6ODg0Mzg5MywiYXV0aF9jb2RlIjoiMjFkODhiMzZhZWUzZTE5Y2I5NWM5YWE5ZTgxMzY2ZjMiLCJjb3VudF9jbG9zZV91c2VycyI6MH0--",
-              "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODg0Mzg5MywidXNlcl9pZCI6OTA2NDM3OCwiYXV0aF9jb2RlIjoiMjFkODhiMzZhZWUzZTE5Y2I5NWM5YWE5ZTgxMzY2ZjMiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
-              "add_favorite_pointer": null,
-              "add_wink_pointer": null,
-              "delete_message_auth_code": "38a75378dc308ec331bede2e223b3333",
-              "show_profile_auth_code": "21d88b36aee3e19cb95c9aa9e81366f3",
-              "profile_picture_url": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
-              "profile_picture_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png"
-            }
-          ],
-          "result_code": 1,
-          "error_detail_message": null,
-          "stack_trace": null
-        },
         "description": "Bu servis gönderilmiş mesajları gösterir."
       }
     },
@@ -1649,7 +1653,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "",
+        "description": ""
       }
     },
     "/api/user/v10/me/conversations/new": {
