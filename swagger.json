@@ -3626,6 +3626,32 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesDataOutput_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "news_feed_like_count": 0,
+                        "like_users_string": "string",
+                        "status": "string"
+                      },
+                      "items": [
+                        {
+                          "user_id": 0,
+                          "news_feed_id": 0,
+                          "like_datetime": "string",
+                          "user_name": "string",
+                          "profile_picture_url": "string",
+                          "profile_picture_url_retina": "string",
+                          "get_profile_pointer": "string",
+                          "slug": "string"
+                        }
+                      ],
+                      "result_code": 0,
+                      "error_detail_message": "string",
+                      "stack_trace": "string"
+                    }
+                  }
                 }
               }
             }
@@ -3641,7 +3667,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "ews_feed-likes",
+        "description": "Shows likes via newsfeed"
       },
       "delete": {
         "tags": [
