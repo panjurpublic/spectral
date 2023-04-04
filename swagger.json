@@ -1134,9 +1134,65 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetMessagesAppService.Dto.MessageDataModel_Api.GetMessagesAppService.Dto.MessageItemModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pointers": {
+                          "send_message_pointer": "eyJ1c2VyX2lkIjowLCJyZWNlaXZlcl91c2VyX2lkIjo5MzE4ODM3LCJzZW5kZXJfdXNlcl9pZCI6NDczNjY1LCJsYXN0X2NvbnZlcnNhdGlvbl9tZXNzYWdlX2lkIjowLCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsImNvbnZlcnNhdGlvbl9pZCI6Mzc1NzI2OTc4fQ----",
+                          "add_favorite_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiODQ3ZjM0MDAxYzViNjI5ODgzM2RlNzA3NzU2YmQ1ZWMiLCJmYXZvcmVkX3VzZXJfaWQiOjkzMTg4MzcsIm90aGVyX3VzZXJfaWQiOjkzMTg4MzcsInBvc2l0aW9uIjowLCJ1c2VyX2lkIjo0NzM2NjUsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "add_wink_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiODQ3ZjM0MDAxYzViNjI5ODgzM2RlNzA3NzU2YmQ1ZWMiLCJmYXZvcmVkX3VzZXJfaWQiOjkzMTg4MzcsIm90aGVyX3VzZXJfaWQiOjkzMTg4MzcsInBvc2l0aW9uIjowLCJ1c2VyX2lkIjo0NzM2NjUsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsInNob3dfcHJvZmlsZV9yZWYiOiJjaGF0X3BhZ2UiLCJwb3NpdGlvbiI6MCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                          "user_is_typing_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwidXNlcl9pZCI6NDczNjY1LCJvdGhlcl91c2VyX2lkIjo5MzE4ODM3LCJvdGhlcl91c2VyX25hbWUiOiLEsHNtYWlsIn0--",
+                          "delete_message_pointer": null,
+                          "delete_message_from_archive_pointer": null
+                        },
+                        "user_data": {
+                          "occupation_text": "Diğer Meslek",
+                          "age": 40,
+                          "city_text": "İzmir",
+                          "district_text": "Konak",
+                          "about_yourself": "",
+                          "zodiac_text": "Boğa",
+                          "profile_link": "/",
+                          "profile_slug": "/",
+                          "last_activity_datetime_text": "8 ay önce",
+                          "profile_picture_url": "https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg",
+                          "profile_picture_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg",
+                          "is_websocket_online": false,
+                          "is_online": false,
+                          "online_status": "offline"
+                        },
+                        "result_type": null,
+                        "is_blocked_by_user": false,
+                        "is_blocked_by_user_text": "",
+                        "start_sender_user_id": 473665,
+                        "start_receiver_user_id": 9318837,
+                        "show_profile_auth_code": "847f34001c5b6298833de707756bd5ec",
+                        "is_muted": false,
+                        "header_name": "Papatya",
+                        "favored_by": false,
+                        "is_favorite": true,
+                        "run_read_update": 0,
+                        "number_of_distinct_senders": 1,
+                        "number_of_messages": 12,
+                        "last_conversation_message_id": 0,
+                        "subject": null,
+                        "show_archive_button": false
+                      },
+                      "items": [],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
+          },
+          "201": {
+            "description": "Created"
           },
           "401": {
             "description": "Unauthorized"
@@ -1149,7 +1205,19 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-conversations-get",
+        "description": "kullanıcıların konuşmalarını listeler",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        }
       }
     },
     "/api/user/v10/me/conversations/{receiverUserId}/photos/{conversationMessageId}": {
@@ -2607,22 +2675,60 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": "{\n  \"result_code\": 1,\n  \"error_detail_message\": null,\n  \"stack_trace\": null\n}"
+                  }
+                }
+              },
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
                 }
               }
-            }
+            },
+            "headers": {}
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "401": {
             "description": "Unauthorized"
           },
           "403": {
             "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
           }
         },
         "security": [
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "track-codes-post",
+        "description": "üye şifre değiştirmek istediğinde e mailine gelen link"
       }
     },
     "/api/user/v10/logs/pixel_for_first_picture_uploaded_shown": {
