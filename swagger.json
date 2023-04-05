@@ -850,6 +850,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -865,7 +874,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "blocks-delete",
+        "description": "kullanıcı blok kaldırma"
       }
     },
     "/api/user/v10/me/mutes": {
