@@ -3529,6 +3529,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -3544,7 +3553,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Delete-me-news_feed-{newsFeedId}",
+        "description": "Delete newsfeeds"
       }
     },
     "/api/user/v10/news_feed/{newsFeedId}/likes": {
