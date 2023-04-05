@@ -6835,6 +6835,20 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangePhoneNumberAppService.Dto.ChangePhoneNumberDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "field_name": "phone_number",
+                        "new_value": "905365945646",
+                        "result_text": null
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6850,7 +6864,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Put-me-change_phone_number",
+        "description": "updates phone number"
       }
     },
     "/api/user/v10/phone/send_confirmation": {
