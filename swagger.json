@@ -14228,6 +14228,93 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "",
+                          "prev_page_pointer": "",
+                          "show_pagination": false,
+                          "previous_page": null,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": null,
+                          "show_next_page": false,
+                          "current_page": 1,
+                          "button_text": "Önceki",
+                          "show_mark_seen_button": false
+                        },
+                        "debug_cache_bypass": "",
+                        "debug_cache_state": ""
+                      },
+                      "items": [
+                        {
+                          "user_id": 8565867,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyNTg4NTM3MmE5Y2M3MzU4YzE1NDIzNzBlNjFlNTQyNSIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6MX0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyNTg4NTM3MmE5Y2M3MzU4YzE1NDIzNzBlNjFlNTQyNSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93aW5jb21pbmd3aW5rc19wYWdlIiwicG9zaXRpb24iOjEsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI2ZWU3MGI4OTc4YTRhZmFjY2ExYjUwNDljNzI3ODM3MCJ9"
+                          },
+                          "formatted_date": {
+                            "short": "04 Ocak 2022 13:58:32",
+                            "mid": "04 Ocak 2022",
+                            "long": "4.01.2022 10:58:32",
+                            "time": "13:58:32"
+                          },
+                          "badges": {
+                            "facebook": true,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 1,
+                          "unix_profilepicture_lastupdate_datetime": "07:56",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Ankara",
+                            "district_text": "Çankaya",
+                            "age": 25,
+                            "name": "Zehraa123",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Oğlak",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "11 ay önce",
+                            "desktop": "11 ay önce",
+                            "timestamp_tr": "29.04.2022 13:10:13"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 0,
+                            "last_visit_label": "bir yıl önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -14243,7 +14330,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "winks-by-them-get",
+        "description": "kullanıcıya göz kırpan kullanıcıları listeleme"
       }
     },
     "/api/user/v10/me/winks/{winkId}": {
