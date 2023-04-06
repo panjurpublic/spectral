@@ -2648,6 +2648,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2663,7 +2672,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "PUT-logs/pixel_for_first_picture_uploaded_shown",
+        "description": "OrmFirstPictureUploadedPixels tablosuna güncel kullanıcı bilgilerini girer"
       }
     },
     "/api/user/v10/logs/pixel_for_two_distinct_login_shown": {
