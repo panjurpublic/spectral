@@ -9666,12 +9666,10 @@
                 "examples": {
                   "Example 1": {
                     "value": {
-                      "data": {
-                        "record_search_id": 0
-                      },
-                      "result_code": 0,
-                      "error_detail_message": "string",
-                      "stack_trace": "string"
+                      "items": [],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
                     }
                   }
                 }
@@ -9689,7 +9687,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "search-records-post",
+        "description": "Search by records."
       },
       "get": {
         "tags": [
