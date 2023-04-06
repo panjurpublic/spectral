@@ -6756,7 +6756,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "[{%22field_name%22:%22height%22,%22text%22:%22Boy%22,%22min_value%22:%22190%22,%22max_value%22:210,%22type%22:%22range%22}]"
           }
         ],
         "responses": {
@@ -6766,6 +6767,2665 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.FiltersAppService.Dto.FilterDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "detailed_search": [
+                          {
+                            "category_name": "general_information",
+                            "variables": [
+                              {
+                                "variable_name": "age",
+                                "type": "range",
+                                "preselected_min_value": 18,
+                                "preselected_max_value": 80,
+                                "answers": [
+                                  {
+                                    "min_text": "18",
+                                    "min_value": 18,
+                                    "max_text": "80",
+                                    "max_value": 80
+                                  }
+                                ],
+                                "variable_name_text": "Yaş",
+                                "preselected_snippet": "18 - 80"
+                              },
+                              {
+                                "variable_name": "country_id",
+                                "type": "country_id",
+                                "variable_name_text": "Ülke",
+                                "preselected_snippet": "Türkiye",
+                                "answers": [
+                                  {
+                                    "value": 792,
+                                    "ispreselected": 1,
+                                    "text": "Türkiye"
+                                  },
+                                  {
+                                    "value": 276,
+                                    "ispreselected": 0,
+                                    "text": "Almanya"
+                                  },
+                                  {
+                                    "value": 840,
+                                    "ispreselected": 0,
+                                    "text": "Amerika Birleşik Devletleri"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Afganistan"
+                                  },
+                                  {
+                                    "value": 248,
+                                    "ispreselected": 0,
+                                    "text": "Åland Adaları"
+                                  },
+                                  {
+                                    "value": 16,
+                                    "ispreselected": 0,
+                                    "text": "Amerikan Samoası"
+                                  },
+                                  {
+                                    "value": 20,
+                                    "ispreselected": 0,
+                                    "text": "Andorra"
+                                  },
+                                  {
+                                    "value": 24,
+                                    "ispreselected": 0,
+                                    "text": "Angola"
+                                  },
+                                  {
+                                    "value": 660,
+                                    "ispreselected": 0,
+                                    "text": "Anguilla"
+                                  },
+                                  {
+                                    "value": 28,
+                                    "ispreselected": 0,
+                                    "text": "Antigua ve Barbuda"
+                                  },
+                                  {
+                                    "value": 32,
+                                    "ispreselected": 0,
+                                    "text": "Arjantin"
+                                  },
+                                  {
+                                    "value": 8,
+                                    "ispreselected": 0,
+                                    "text": "Arnavutluk"
+                                  },
+                                  {
+                                    "value": 533,
+                                    "ispreselected": 0,
+                                    "text": "Aruba"
+                                  },
+                                  {
+                                    "value": 36,
+                                    "ispreselected": 0,
+                                    "text": "Avustralya"
+                                  },
+                                  {
+                                    "value": 40,
+                                    "ispreselected": 0,
+                                    "text": "Avusturya"
+                                  },
+                                  {
+                                    "value": 31,
+                                    "ispreselected": 0,
+                                    "text": "Azerbaycan"
+                                  },
+                                  {
+                                    "value": 44,
+                                    "ispreselected": 0,
+                                    "text": "Bahamalar"
+                                  },
+                                  {
+                                    "value": 48,
+                                    "ispreselected": 0,
+                                    "text": "Bahreyn"
+                                  },
+                                  {
+                                    "value": 50,
+                                    "ispreselected": 0,
+                                    "text": "Bangladeş"
+                                  },
+                                  {
+                                    "value": 52,
+                                    "ispreselected": 0,
+                                    "text": "Barbados"
+                                  },
+                                  {
+                                    "value": 112,
+                                    "ispreselected": 0,
+                                    "text": "Belarus"
+                                  },
+                                  {
+                                    "value": 56,
+                                    "ispreselected": 0,
+                                    "text": "Belçika"
+                                  },
+                                  {
+                                    "value": 84,
+                                    "ispreselected": 0,
+                                    "text": "Belize"
+                                  },
+                                  {
+                                    "value": 204,
+                                    "ispreselected": 0,
+                                    "text": "Benin"
+                                  },
+                                  {
+                                    "value": 60,
+                                    "ispreselected": 0,
+                                    "text": "Bermuda"
+                                  },
+                                  {
+                                    "value": 784,
+                                    "ispreselected": 0,
+                                    "text": "Birleşik Arap Emirlikleri"
+                                  },
+                                  {
+                                    "value": 826,
+                                    "ispreselected": 0,
+                                    "text": "Birleşik Krallık"
+                                  },
+                                  {
+                                    "value": 68,
+                                    "ispreselected": 0,
+                                    "text": "Bolivya"
+                                  },
+                                  {
+                                    "value": 70,
+                                    "ispreselected": 0,
+                                    "text": "Bosna-Hersek"
+                                  },
+                                  {
+                                    "value": 72,
+                                    "ispreselected": 0,
+                                    "text": "Botsvana"
+                                  },
+                                  {
+                                    "value": 76,
+                                    "ispreselected": 0,
+                                    "text": "Brezilya"
+                                  },
+                                  {
+                                    "value": 92,
+                                    "ispreselected": 0,
+                                    "text": "Britanya Virjin Adaları"
+                                  },
+                                  {
+                                    "value": 96,
+                                    "ispreselected": 0,
+                                    "text": "Brunei"
+                                  },
+                                  {
+                                    "value": 100,
+                                    "ispreselected": 0,
+                                    "text": "Bulgaristan"
+                                  },
+                                  {
+                                    "value": 854,
+                                    "ispreselected": 0,
+                                    "text": "Burkina Faso"
+                                  },
+                                  {
+                                    "value": 108,
+                                    "ispreselected": 0,
+                                    "text": "Burundi"
+                                  },
+                                  {
+                                    "value": 64,
+                                    "ispreselected": 0,
+                                    "text": "Butan"
+                                  },
+                                  {
+                                    "value": 148,
+                                    "ispreselected": 0,
+                                    "text": "Çad"
+                                  },
+                                  {
+                                    "value": 136,
+                                    "ispreselected": 0,
+                                    "text": "Cayman Adaları"
+                                  },
+                                  {
+                                    "value": 203,
+                                    "ispreselected": 0,
+                                    "text": "Çekya"
+                                  },
+                                  {
+                                    "value": 12,
+                                    "ispreselected": 0,
+                                    "text": "Cezayir"
+                                  },
+                                  {
+                                    "value": 262,
+                                    "ispreselected": 0,
+                                    "text": "Cibuti"
+                                  },
+                                  {
+                                    "value": 156,
+                                    "ispreselected": 0,
+                                    "text": "Çin"
+                                  },
+                                  {
+                                    "value": 184,
+                                    "ispreselected": 0,
+                                    "text": "Cook Adaları"
+                                  },
+                                  {
+                                    "value": 208,
+                                    "ispreselected": 0,
+                                    "text": "Danimarka"
+                                  },
+                                  {
+                                    "value": 626,
+                                    "ispreselected": 0,
+                                    "text": "Timor-Leste"
+                                  },
+                                  {
+                                    "value": 214,
+                                    "ispreselected": 0,
+                                    "text": "Dominik Cumhuriyeti"
+                                  },
+                                  {
+                                    "value": 212,
+                                    "ispreselected": 0,
+                                    "text": "Dominika"
+                                  },
+                                  {
+                                    "value": 218,
+                                    "ispreselected": 0,
+                                    "text": "Ekvador"
+                                  },
+                                  {
+                                    "value": 226,
+                                    "ispreselected": 0,
+                                    "text": "Ekvator Ginesi"
+                                  },
+                                  {
+                                    "value": 222,
+                                    "ispreselected": 0,
+                                    "text": "El Salvador"
+                                  },
+                                  {
+                                    "value": 360,
+                                    "ispreselected": 0,
+                                    "text": "Endonezya"
+                                  },
+                                  {
+                                    "value": 232,
+                                    "ispreselected": 0,
+                                    "text": "Eritre"
+                                  },
+                                  {
+                                    "value": 51,
+                                    "ispreselected": 0,
+                                    "text": "Ermenistan"
+                                  },
+                                  {
+                                    "value": 233,
+                                    "ispreselected": 0,
+                                    "text": "Estonya"
+                                  },
+                                  {
+                                    "value": 231,
+                                    "ispreselected": 0,
+                                    "text": "Etiyopya"
+                                  },
+                                  {
+                                    "value": 234,
+                                    "ispreselected": 0,
+                                    "text": "Faroe Adaları"
+                                  },
+                                  {
+                                    "value": 504,
+                                    "ispreselected": 0,
+                                    "text": "Fas"
+                                  },
+                                  {
+                                    "value": 242,
+                                    "ispreselected": 0,
+                                    "text": "Fiji"
+                                  },
+                                  {
+                                    "value": 384,
+                                    "ispreselected": 0,
+                                    "text": "Fildişi Sahili"
+                                  },
+                                  {
+                                    "value": 608,
+                                    "ispreselected": 0,
+                                    "text": "Filipinler"
+                                  },
+                                  {
+                                    "value": 246,
+                                    "ispreselected": 0,
+                                    "text": "Finlandiya"
+                                  },
+                                  {
+                                    "value": 250,
+                                    "ispreselected": 0,
+                                    "text": "Fransa"
+                                  },
+                                  {
+                                    "value": 260,
+                                    "ispreselected": 0,
+                                    "text": "Fransız Güney Toprakları"
+                                  },
+                                  {
+                                    "value": 254,
+                                    "ispreselected": 0,
+                                    "text": "Fransız Guyanası"
+                                  },
+                                  {
+                                    "value": 258,
+                                    "ispreselected": 0,
+                                    "text": "Fransız Polinezyası"
+                                  },
+                                  {
+                                    "value": 266,
+                                    "ispreselected": 0,
+                                    "text": "Gabon"
+                                  },
+                                  {
+                                    "value": 270,
+                                    "ispreselected": 0,
+                                    "text": "Gambiya"
+                                  },
+                                  {
+                                    "value": 288,
+                                    "ispreselected": 0,
+                                    "text": "Gana"
+                                  },
+                                  {
+                                    "value": 275,
+                                    "ispreselected": 0,
+                                    "text": "Filistin Bölgeleri"
+                                  },
+                                  {
+                                    "value": 324,
+                                    "ispreselected": 0,
+                                    "text": "Gine"
+                                  },
+                                  {
+                                    "value": 624,
+                                    "ispreselected": 0,
+                                    "text": "Gine-Bissau"
+                                  },
+                                  {
+                                    "value": 308,
+                                    "ispreselected": 0,
+                                    "text": "Grenada"
+                                  },
+                                  {
+                                    "value": 304,
+                                    "ispreselected": 0,
+                                    "text": "Grönland"
+                                  },
+                                  {
+                                    "value": 312,
+                                    "ispreselected": 0,
+                                    "text": "Guadeloupe"
+                                  },
+                                  {
+                                    "value": 316,
+                                    "ispreselected": 0,
+                                    "text": "Guam"
+                                  },
+                                  {
+                                    "value": 320,
+                                    "ispreselected": 0,
+                                    "text": "Guatemala"
+                                  },
+                                  {
+                                    "value": 831,
+                                    "ispreselected": 0,
+                                    "text": "Guernsey"
+                                  },
+                                  {
+                                    "value": 710,
+                                    "ispreselected": 0,
+                                    "text": "Güney Afrika"
+                                  },
+                                  {
+                                    "value": 410,
+                                    "ispreselected": 0,
+                                    "text": "Güney Kore"
+                                  },
+                                  {
+                                    "value": 728,
+                                    "ispreselected": 0,
+                                    "text": "Güney Sudan"
+                                  },
+                                  {
+                                    "value": 268,
+                                    "ispreselected": 0,
+                                    "text": "Gürcistan"
+                                  },
+                                  {
+                                    "value": 328,
+                                    "ispreselected": 0,
+                                    "text": "Guyana"
+                                  },
+                                  {
+                                    "value": 332,
+                                    "ispreselected": 0,
+                                    "text": "Haiti"
+                                  },
+                                  {
+                                    "value": 356,
+                                    "ispreselected": 0,
+                                    "text": "Hindistan"
+                                  },
+                                  {
+                                    "value": 191,
+                                    "ispreselected": 0,
+                                    "text": "Hırvatistan"
+                                  },
+                                  {
+                                    "value": 528,
+                                    "ispreselected": 0,
+                                    "text": "Hollanda"
+                                  },
+                                  {
+                                    "value": 340,
+                                    "ispreselected": 0,
+                                    "text": "Honduras"
+                                  },
+                                  {
+                                    "value": 344,
+                                    "ispreselected": 0,
+                                    "text": "Çin Hong Kong ÖİB"
+                                  },
+                                  {
+                                    "value": 368,
+                                    "ispreselected": 0,
+                                    "text": "Irak"
+                                  },
+                                  {
+                                    "value": 364,
+                                    "ispreselected": 0,
+                                    "text": "İran"
+                                  },
+                                  {
+                                    "value": 372,
+                                    "ispreselected": 0,
+                                    "text": "İrlanda"
+                                  },
+                                  {
+                                    "value": 724,
+                                    "ispreselected": 0,
+                                    "text": "İspanya"
+                                  },
+                                  {
+                                    "value": 376,
+                                    "ispreselected": 0,
+                                    "text": "İsrail"
+                                  },
+                                  {
+                                    "value": 752,
+                                    "ispreselected": 0,
+                                    "text": "İsveç"
+                                  },
+                                  {
+                                    "value": 756,
+                                    "ispreselected": 0,
+                                    "text": "İsviçre"
+                                  },
+                                  {
+                                    "value": 380,
+                                    "ispreselected": 0,
+                                    "text": "İtalya"
+                                  },
+                                  {
+                                    "value": 352,
+                                    "ispreselected": 0,
+                                    "text": "İzlanda"
+                                  },
+                                  {
+                                    "value": 388,
+                                    "ispreselected": 0,
+                                    "text": "Jamaika"
+                                  },
+                                  {
+                                    "value": 392,
+                                    "ispreselected": 0,
+                                    "text": "Japonya"
+                                  },
+                                  {
+                                    "value": 832,
+                                    "ispreselected": 0,
+                                    "text": "Jersey"
+                                  },
+                                  {
+                                    "value": 116,
+                                    "ispreselected": 0,
+                                    "text": "Kamboçya"
+                                  },
+                                  {
+                                    "value": 120,
+                                    "ispreselected": 0,
+                                    "text": "Kamerun"
+                                  },
+                                  {
+                                    "value": 124,
+                                    "ispreselected": 0,
+                                    "text": "Kanada"
+                                  },
+                                  {
+                                    "value": 499,
+                                    "ispreselected": 0,
+                                    "text": "Karadağ"
+                                  },
+                                  {
+                                    "value": 535,
+                                    "ispreselected": 0,
+                                    "text": "Karayip Hollandası"
+                                  },
+                                  {
+                                    "value": 634,
+                                    "ispreselected": 0,
+                                    "text": "Katar"
+                                  },
+                                  {
+                                    "value": 398,
+                                    "ispreselected": 0,
+                                    "text": "Kazakistan"
+                                  },
+                                  {
+                                    "value": 404,
+                                    "ispreselected": 0,
+                                    "text": "Kenya"
+                                  },
+                                  {
+                                    "value": 296,
+                                    "ispreselected": 0,
+                                    "text": "Kiribati"
+                                  },
+                                  {
+                                    "value": 417,
+                                    "ispreselected": 0,
+                                    "text": "Kırgızistan"
+                                  },
+                                  {
+                                    "value": 196,
+                                    "ispreselected": 0,
+                                    "text": "Kıbrıs"
+                                  },
+                                  {
+                                    "value": 170,
+                                    "ispreselected": 0,
+                                    "text": "Kolombiya"
+                                  },
+                                  {
+                                    "value": 174,
+                                    "ispreselected": 0,
+                                    "text": "Komorlar"
+                                  },
+                                  {
+                                    "value": 178,
+                                    "ispreselected": 0,
+                                    "text": "Kongo - Brazavil"
+                                  },
+                                  {
+                                    "value": 180,
+                                    "ispreselected": 0,
+                                    "text": "Kongo - Kinşasa"
+                                  },
+                                  {
+                                    "value": 188,
+                                    "ispreselected": 0,
+                                    "text": "Kosta Rika"
+                                  },
+                                  {
+                                    "value": 192,
+                                    "ispreselected": 0,
+                                    "text": "Küba"
+                                  },
+                                  {
+                                    "value": 414,
+                                    "ispreselected": 0,
+                                    "text": "Kuveyt"
+                                  },
+                                  {
+                                    "value": 408,
+                                    "ispreselected": 0,
+                                    "text": "Kuzey Kore"
+                                  },
+                                  {
+                                    "value": 580,
+                                    "ispreselected": 0,
+                                    "text": "Kuzey Mariana Adaları"
+                                  },
+                                  {
+                                    "value": 418,
+                                    "ispreselected": 0,
+                                    "text": "Laos"
+                                  },
+                                  {
+                                    "value": 426,
+                                    "ispreselected": 0,
+                                    "text": "Lesotho"
+                                  },
+                                  {
+                                    "value": 428,
+                                    "ispreselected": 0,
+                                    "text": "Letonya"
+                                  },
+                                  {
+                                    "value": 430,
+                                    "ispreselected": 0,
+                                    "text": "Liberya"
+                                  },
+                                  {
+                                    "value": 434,
+                                    "ispreselected": 0,
+                                    "text": "Libya"
+                                  },
+                                  {
+                                    "value": 438,
+                                    "ispreselected": 0,
+                                    "text": "Liechtenstein"
+                                  },
+                                  {
+                                    "value": 440,
+                                    "ispreselected": 0,
+                                    "text": "Litvanya"
+                                  },
+                                  {
+                                    "value": 422,
+                                    "ispreselected": 0,
+                                    "text": "Lübnan"
+                                  },
+                                  {
+                                    "value": 442,
+                                    "ispreselected": 0,
+                                    "text": "Lüksemburg"
+                                  },
+                                  {
+                                    "value": 348,
+                                    "ispreselected": 0,
+                                    "text": "Macaristan"
+                                  },
+                                  {
+                                    "value": 450,
+                                    "ispreselected": 0,
+                                    "text": "Madagaskar"
+                                  },
+                                  {
+                                    "value": 446,
+                                    "ispreselected": 0,
+                                    "text": "Çin Makao ÖİB"
+                                  },
+                                  {
+                                    "value": 807,
+                                    "ispreselected": 0,
+                                    "text": "Makedonya"
+                                  },
+                                  {
+                                    "value": 454,
+                                    "ispreselected": 0,
+                                    "text": "Malavi"
+                                  },
+                                  {
+                                    "value": 462,
+                                    "ispreselected": 0,
+                                    "text": "Maldivler"
+                                  },
+                                  {
+                                    "value": 458,
+                                    "ispreselected": 0,
+                                    "text": "Malezya"
+                                  },
+                                  {
+                                    "value": 466,
+                                    "ispreselected": 0,
+                                    "text": "Mali"
+                                  },
+                                  {
+                                    "value": 470,
+                                    "ispreselected": 0,
+                                    "text": "Malta"
+                                  },
+                                  {
+                                    "value": 833,
+                                    "ispreselected": 0,
+                                    "text": "Man Adası"
+                                  },
+                                  {
+                                    "value": 584,
+                                    "ispreselected": 0,
+                                    "text": "Marshall Adaları"
+                                  },
+                                  {
+                                    "value": 474,
+                                    "ispreselected": 0,
+                                    "text": "Martinik"
+                                  },
+                                  {
+                                    "value": 480,
+                                    "ispreselected": 0,
+                                    "text": "Mauritius"
+                                  },
+                                  {
+                                    "value": 175,
+                                    "ispreselected": 0,
+                                    "text": "Mayotte"
+                                  },
+                                  {
+                                    "value": 484,
+                                    "ispreselected": 0,
+                                    "text": "Meksika"
+                                  },
+                                  {
+                                    "value": 583,
+                                    "ispreselected": 0,
+                                    "text": "Mikronezya"
+                                  },
+                                  {
+                                    "value": 818,
+                                    "ispreselected": 0,
+                                    "text": "Mısır"
+                                  },
+                                  {
+                                    "value": 496,
+                                    "ispreselected": 0,
+                                    "text": "Moğolistan"
+                                  },
+                                  {
+                                    "value": 498,
+                                    "ispreselected": 0,
+                                    "text": "Moldova"
+                                  },
+                                  {
+                                    "value": 492,
+                                    "ispreselected": 0,
+                                    "text": "Monako"
+                                  },
+                                  {
+                                    "value": 500,
+                                    "ispreselected": 0,
+                                    "text": "Montserrat"
+                                  },
+                                  {
+                                    "value": 478,
+                                    "ispreselected": 0,
+                                    "text": "Moritanya"
+                                  },
+                                  {
+                                    "value": 508,
+                                    "ispreselected": 0,
+                                    "text": "Mozambik"
+                                  },
+                                  {
+                                    "value": 104,
+                                    "ispreselected": 0,
+                                    "text": "Myanmar (Burma)"
+                                  },
+                                  {
+                                    "value": 516,
+                                    "ispreselected": 0,
+                                    "text": "Namibya"
+                                  },
+                                  {
+                                    "value": 520,
+                                    "ispreselected": 0,
+                                    "text": "Nauru"
+                                  },
+                                  {
+                                    "value": 524,
+                                    "ispreselected": 0,
+                                    "text": "Nepal"
+                                  },
+                                  {
+                                    "value": 562,
+                                    "ispreselected": 0,
+                                    "text": "Nijer"
+                                  },
+                                  {
+                                    "value": 566,
+                                    "ispreselected": 0,
+                                    "text": "Nijerya"
+                                  },
+                                  {
+                                    "value": 558,
+                                    "ispreselected": 0,
+                                    "text": "Nikaragua"
+                                  },
+                                  {
+                                    "value": 578,
+                                    "ispreselected": 0,
+                                    "text": "Norveç"
+                                  },
+                                  {
+                                    "value": 140,
+                                    "ispreselected": 0,
+                                    "text": "Orta Afrika Cumhuriyeti"
+                                  },
+                                  {
+                                    "value": 860,
+                                    "ispreselected": 0,
+                                    "text": "Özbekistan"
+                                  },
+                                  {
+                                    "value": 586,
+                                    "ispreselected": 0,
+                                    "text": "Pakistan"
+                                  },
+                                  {
+                                    "value": 585,
+                                    "ispreselected": 0,
+                                    "text": "Palau"
+                                  },
+                                  {
+                                    "value": 591,
+                                    "ispreselected": 0,
+                                    "text": "Panama"
+                                  },
+                                  {
+                                    "value": 598,
+                                    "ispreselected": 0,
+                                    "text": "Papua Yeni Gine"
+                                  },
+                                  {
+                                    "value": 600,
+                                    "ispreselected": 0,
+                                    "text": "Paraguay"
+                                  },
+                                  {
+                                    "value": 604,
+                                    "ispreselected": 0,
+                                    "text": "Peru"
+                                  },
+                                  {
+                                    "value": 616,
+                                    "ispreselected": 0,
+                                    "text": "Polonya"
+                                  },
+                                  {
+                                    "value": 620,
+                                    "ispreselected": 0,
+                                    "text": "Portekiz"
+                                  },
+                                  {
+                                    "value": 630,
+                                    "ispreselected": 0,
+                                    "text": "Porto Riko"
+                                  },
+                                  {
+                                    "value": 638,
+                                    "ispreselected": 0,
+                                    "text": "Réunion"
+                                  },
+                                  {
+                                    "value": 642,
+                                    "ispreselected": 0,
+                                    "text": "Romanya"
+                                  },
+                                  {
+                                    "value": 646,
+                                    "ispreselected": 0,
+                                    "text": "Ruanda"
+                                  },
+                                  {
+                                    "value": 643,
+                                    "ispreselected": 0,
+                                    "text": "Rusya"
+                                  },
+                                  {
+                                    "value": 654,
+                                    "ispreselected": 0,
+                                    "text": "Saint Helena"
+                                  },
+                                  {
+                                    "value": 659,
+                                    "ispreselected": 0,
+                                    "text": "Saint Kitts ve Nevis"
+                                  },
+                                  {
+                                    "value": 662,
+                                    "ispreselected": 0,
+                                    "text": "Saint Lucia"
+                                  },
+                                  {
+                                    "value": 670,
+                                    "ispreselected": 0,
+                                    "text": "Saint Vincent ve Grenadinler"
+                                  },
+                                  {
+                                    "value": 882,
+                                    "ispreselected": 0,
+                                    "text": "Samoa"
+                                  },
+                                  {
+                                    "value": 674,
+                                    "ispreselected": 0,
+                                    "text": "San Marino"
+                                  },
+                                  {
+                                    "value": 678,
+                                    "ispreselected": 0,
+                                    "text": "São Tomé ve Príncipe"
+                                  },
+                                  {
+                                    "value": 686,
+                                    "ispreselected": 0,
+                                    "text": "Senegal"
+                                  },
+                                  {
+                                    "value": 690,
+                                    "ispreselected": 0,
+                                    "text": "Seyşeller"
+                                  },
+                                  {
+                                    "value": 694,
+                                    "ispreselected": 0,
+                                    "text": "Sierra Leone"
+                                  },
+                                  {
+                                    "value": 152,
+                                    "ispreselected": 0,
+                                    "text": "Şili"
+                                  },
+                                  {
+                                    "value": 702,
+                                    "ispreselected": 0,
+                                    "text": "Singapur"
+                                  },
+                                  {
+                                    "value": 688,
+                                    "ispreselected": 0,
+                                    "text": "Sırbistan"
+                                  },
+                                  {
+                                    "value": 703,
+                                    "ispreselected": 0,
+                                    "text": "Slovakya"
+                                  },
+                                  {
+                                    "value": 705,
+                                    "ispreselected": 0,
+                                    "text": "Slovenya"
+                                  },
+                                  {
+                                    "value": 90,
+                                    "ispreselected": 0,
+                                    "text": "Solomon Adaları"
+                                  },
+                                  {
+                                    "value": 706,
+                                    "ispreselected": 0,
+                                    "text": "Somali"
+                                  },
+                                  {
+                                    "value": 144,
+                                    "ispreselected": 0,
+                                    "text": "Sri Lanka"
+                                  },
+                                  {
+                                    "value": 729,
+                                    "ispreselected": 0,
+                                    "text": "Sudan"
+                                  },
+                                  {
+                                    "value": 740,
+                                    "ispreselected": 0,
+                                    "text": "Surinam"
+                                  },
+                                  {
+                                    "value": 760,
+                                    "ispreselected": 0,
+                                    "text": "Suriye"
+                                  },
+                                  {
+                                    "value": 682,
+                                    "ispreselected": 0,
+                                    "text": "Suudi Arabistan"
+                                  },
+                                  {
+                                    "value": 744,
+                                    "ispreselected": 0,
+                                    "text": "Svalbard ve Jan Mayen"
+                                  },
+                                  {
+                                    "value": 748,
+                                    "ispreselected": 0,
+                                    "text": "Svaziland"
+                                  },
+                                  {
+                                    "value": 762,
+                                    "ispreselected": 0,
+                                    "text": "Tacikistan"
+                                  },
+                                  {
+                                    "value": 834,
+                                    "ispreselected": 0,
+                                    "text": "Tanzanya"
+                                  },
+                                  {
+                                    "value": 764,
+                                    "ispreselected": 0,
+                                    "text": "Tayland"
+                                  },
+                                  {
+                                    "value": 158,
+                                    "ispreselected": 0,
+                                    "text": "Tayvan"
+                                  },
+                                  {
+                                    "value": 768,
+                                    "ispreselected": 0,
+                                    "text": "Togo"
+                                  },
+                                  {
+                                    "value": 776,
+                                    "ispreselected": 0,
+                                    "text": "Tonga"
+                                  },
+                                  {
+                                    "value": 780,
+                                    "ispreselected": 0,
+                                    "text": "Trinidad ve Tobago"
+                                  },
+                                  {
+                                    "value": 788,
+                                    "ispreselected": 0,
+                                    "text": "Tunus"
+                                  },
+                                  {
+                                    "value": 795,
+                                    "ispreselected": 0,
+                                    "text": "Türkmenistan"
+                                  },
+                                  {
+                                    "value": 796,
+                                    "ispreselected": 0,
+                                    "text": "Turks ve Caicos Adaları"
+                                  },
+                                  {
+                                    "value": 798,
+                                    "ispreselected": 0,
+                                    "text": "Tuvalu"
+                                  },
+                                  {
+                                    "value": 800,
+                                    "ispreselected": 0,
+                                    "text": "Uganda"
+                                  },
+                                  {
+                                    "value": 804,
+                                    "ispreselected": 0,
+                                    "text": "Ukrayna"
+                                  },
+                                  {
+                                    "value": 512,
+                                    "ispreselected": 0,
+                                    "text": "Umman"
+                                  },
+                                  {
+                                    "value": 400,
+                                    "ispreselected": 0,
+                                    "text": "Ürdün"
+                                  },
+                                  {
+                                    "value": 858,
+                                    "ispreselected": 0,
+                                    "text": "Uruguay"
+                                  },
+                                  {
+                                    "value": 548,
+                                    "ispreselected": 0,
+                                    "text": "Vanuatu"
+                                  },
+                                  {
+                                    "value": 862,
+                                    "ispreselected": 0,
+                                    "text": "Venezuela"
+                                  },
+                                  {
+                                    "value": 704,
+                                    "ispreselected": 0,
+                                    "text": "Vietnam"
+                                  },
+                                  {
+                                    "value": 850,
+                                    "ispreselected": 0,
+                                    "text": "ABD Virjin Adaları"
+                                  },
+                                  {
+                                    "value": 876,
+                                    "ispreselected": 0,
+                                    "text": "Wallis ve Futuna"
+                                  },
+                                  {
+                                    "value": 887,
+                                    "ispreselected": 0,
+                                    "text": "Yemen"
+                                  },
+                                  {
+                                    "value": 540,
+                                    "ispreselected": 0,
+                                    "text": "Yeni Kaledonya"
+                                  },
+                                  {
+                                    "value": 554,
+                                    "ispreselected": 0,
+                                    "text": "Yeni Zelanda"
+                                  },
+                                  {
+                                    "value": 132,
+                                    "ispreselected": 0,
+                                    "text": "Cape Verde"
+                                  },
+                                  {
+                                    "value": 300,
+                                    "ispreselected": 0,
+                                    "text": "Yunanistan"
+                                  },
+                                  {
+                                    "value": 894,
+                                    "ispreselected": 0,
+                                    "text": "Zambiya"
+                                  },
+                                  {
+                                    "value": 716,
+                                    "ispreselected": 0,
+                                    "text": "Zimbabve"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "city_id",
+                                "type": "city_id",
+                                "variable_name_text": "Şehir",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Adana"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Adıyaman"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Afyonkarahisar"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Ağrı"
+                                  },
+                                  {
+                                    "value": 68,
+                                    "ispreselected": 0,
+                                    "text": "Aksaray"
+                                  },
+                                  {
+                                    "value": 5,
+                                    "ispreselected": 0,
+                                    "text": "Amasya"
+                                  },
+                                  {
+                                    "value": 6,
+                                    "ispreselected": 0,
+                                    "text": "Ankara"
+                                  },
+                                  {
+                                    "value": 7,
+                                    "ispreselected": 0,
+                                    "text": "Antalya"
+                                  },
+                                  {
+                                    "value": 75,
+                                    "ispreselected": 0,
+                                    "text": "Ardahan"
+                                  },
+                                  {
+                                    "value": 8,
+                                    "ispreselected": 0,
+                                    "text": "Artvin"
+                                  },
+                                  {
+                                    "value": 9,
+                                    "ispreselected": 0,
+                                    "text": "Aydın"
+                                  },
+                                  {
+                                    "value": 10,
+                                    "ispreselected": 0,
+                                    "text": "Balıkesir"
+                                  },
+                                  {
+                                    "value": 74,
+                                    "ispreselected": 0,
+                                    "text": "Bartın"
+                                  },
+                                  {
+                                    "value": 72,
+                                    "ispreselected": 0,
+                                    "text": "Batman"
+                                  },
+                                  {
+                                    "value": 69,
+                                    "ispreselected": 0,
+                                    "text": "Bayburt"
+                                  },
+                                  {
+                                    "value": 11,
+                                    "ispreselected": 0,
+                                    "text": "Bilecik"
+                                  },
+                                  {
+                                    "value": 12,
+                                    "ispreselected": 0,
+                                    "text": "Bingöl"
+                                  },
+                                  {
+                                    "value": 13,
+                                    "ispreselected": 0,
+                                    "text": "Bitlis"
+                                  },
+                                  {
+                                    "value": 14,
+                                    "ispreselected": 0,
+                                    "text": "Bolu"
+                                  },
+                                  {
+                                    "value": 15,
+                                    "ispreselected": 0,
+                                    "text": "Burdur"
+                                  },
+                                  {
+                                    "value": 16,
+                                    "ispreselected": 0,
+                                    "text": "Bursa"
+                                  },
+                                  {
+                                    "value": 17,
+                                    "ispreselected": 0,
+                                    "text": "Çanakkale"
+                                  },
+                                  {
+                                    "value": 18,
+                                    "ispreselected": 0,
+                                    "text": "Çankırı"
+                                  },
+                                  {
+                                    "value": 19,
+                                    "ispreselected": 0,
+                                    "text": "Çorum"
+                                  },
+                                  {
+                                    "value": 20,
+                                    "ispreselected": 0,
+                                    "text": "Denizli"
+                                  },
+                                  {
+                                    "value": 21,
+                                    "ispreselected": 0,
+                                    "text": "Diyarbakır"
+                                  },
+                                  {
+                                    "value": 81,
+                                    "ispreselected": 0,
+                                    "text": "Düzce"
+                                  },
+                                  {
+                                    "value": 22,
+                                    "ispreselected": 0,
+                                    "text": "Edirne"
+                                  },
+                                  {
+                                    "value": 23,
+                                    "ispreselected": 0,
+                                    "text": "Elazığ"
+                                  },
+                                  {
+                                    "value": 24,
+                                    "ispreselected": 0,
+                                    "text": "Erzincan"
+                                  },
+                                  {
+                                    "value": 25,
+                                    "ispreselected": 0,
+                                    "text": "Erzurum"
+                                  },
+                                  {
+                                    "value": 26,
+                                    "ispreselected": 0,
+                                    "text": "Eskişehir"
+                                  },
+                                  {
+                                    "value": 27,
+                                    "ispreselected": 0,
+                                    "text": "Gaziantep"
+                                  },
+                                  {
+                                    "value": 28,
+                                    "ispreselected": 0,
+                                    "text": "Giresun"
+                                  },
+                                  {
+                                    "value": 29,
+                                    "ispreselected": 0,
+                                    "text": "Gümüşhane"
+                                  },
+                                  {
+                                    "value": 30,
+                                    "ispreselected": 0,
+                                    "text": "Hakkari"
+                                  },
+                                  {
+                                    "value": 31,
+                                    "ispreselected": 0,
+                                    "text": "Hatay"
+                                  },
+                                  {
+                                    "value": 76,
+                                    "ispreselected": 0,
+                                    "text": "Iğdır"
+                                  },
+                                  {
+                                    "value": 32,
+                                    "ispreselected": 0,
+                                    "text": "Isparta"
+                                  },
+                                  {
+                                    "value": 34,
+                                    "ispreselected": 0,
+                                    "text": "İstanbul"
+                                  },
+                                  {
+                                    "value": 35,
+                                    "ispreselected": 0,
+                                    "text": "İzmir"
+                                  },
+                                  {
+                                    "value": 46,
+                                    "ispreselected": 0,
+                                    "text": "Kahramanmaraş"
+                                  },
+                                  {
+                                    "value": 78,
+                                    "ispreselected": 0,
+                                    "text": "Karabük"
+                                  },
+                                  {
+                                    "value": 70,
+                                    "ispreselected": 0,
+                                    "text": "Karaman"
+                                  },
+                                  {
+                                    "value": 36,
+                                    "ispreselected": 0,
+                                    "text": "Kars"
+                                  },
+                                  {
+                                    "value": 37,
+                                    "ispreselected": 0,
+                                    "text": "Kastamonu"
+                                  },
+                                  {
+                                    "value": 38,
+                                    "ispreselected": 0,
+                                    "text": "Kayseri"
+                                  },
+                                  {
+                                    "value": 79,
+                                    "ispreselected": 0,
+                                    "text": "Kilis"
+                                  },
+                                  {
+                                    "value": 71,
+                                    "ispreselected": 0,
+                                    "text": "Kırıkkale"
+                                  },
+                                  {
+                                    "value": 39,
+                                    "ispreselected": 0,
+                                    "text": "Kırklareli"
+                                  },
+                                  {
+                                    "value": 40,
+                                    "ispreselected": 0,
+                                    "text": "Kırşehir"
+                                  },
+                                  {
+                                    "value": 41,
+                                    "ispreselected": 0,
+                                    "text": "Kocaeli"
+                                  },
+                                  {
+                                    "value": 42,
+                                    "ispreselected": 0,
+                                    "text": "Konya"
+                                  },
+                                  {
+                                    "value": 43,
+                                    "ispreselected": 0,
+                                    "text": "Kütahya"
+                                  },
+                                  {
+                                    "value": 44,
+                                    "ispreselected": 0,
+                                    "text": "Malatya"
+                                  },
+                                  {
+                                    "value": 45,
+                                    "ispreselected": 0,
+                                    "text": "Manisa"
+                                  },
+                                  {
+                                    "value": 47,
+                                    "ispreselected": 0,
+                                    "text": "Mardin"
+                                  },
+                                  {
+                                    "value": 33,
+                                    "ispreselected": 0,
+                                    "text": "Mersin"
+                                  },
+                                  {
+                                    "value": 48,
+                                    "ispreselected": 0,
+                                    "text": "Muğla"
+                                  },
+                                  {
+                                    "value": 49,
+                                    "ispreselected": 0,
+                                    "text": "Muş"
+                                  },
+                                  {
+                                    "value": 50,
+                                    "ispreselected": 0,
+                                    "text": "Nevşehir"
+                                  },
+                                  {
+                                    "value": 51,
+                                    "ispreselected": 0,
+                                    "text": "Niğde"
+                                  },
+                                  {
+                                    "value": 52,
+                                    "ispreselected": 0,
+                                    "text": "Ordu"
+                                  },
+                                  {
+                                    "value": 80,
+                                    "ispreselected": 0,
+                                    "text": "Osmaniye"
+                                  },
+                                  {
+                                    "value": 53,
+                                    "ispreselected": 0,
+                                    "text": "Rize"
+                                  },
+                                  {
+                                    "value": 54,
+                                    "ispreselected": 0,
+                                    "text": "Sakarya"
+                                  },
+                                  {
+                                    "value": 55,
+                                    "ispreselected": 0,
+                                    "text": "Samsun"
+                                  },
+                                  {
+                                    "value": 63,
+                                    "ispreselected": 0,
+                                    "text": "Şanlıurfa"
+                                  },
+                                  {
+                                    "value": 56,
+                                    "ispreselected": 0,
+                                    "text": "Siirt"
+                                  },
+                                  {
+                                    "value": 57,
+                                    "ispreselected": 0,
+                                    "text": "Sinop"
+                                  },
+                                  {
+                                    "value": 58,
+                                    "ispreselected": 0,
+                                    "text": "Sivas"
+                                  },
+                                  {
+                                    "value": 73,
+                                    "ispreselected": 0,
+                                    "text": "Şırnak"
+                                  },
+                                  {
+                                    "value": 59,
+                                    "ispreselected": 0,
+                                    "text": "Tekirdağ"
+                                  },
+                                  {
+                                    "value": 60,
+                                    "ispreselected": 0,
+                                    "text": "Tokat"
+                                  },
+                                  {
+                                    "value": 61,
+                                    "ispreselected": 0,
+                                    "text": "Trabzon"
+                                  },
+                                  {
+                                    "value": 62,
+                                    "ispreselected": 0,
+                                    "text": "Tunceli"
+                                  },
+                                  {
+                                    "value": 64,
+                                    "ispreselected": 0,
+                                    "text": "Uşak"
+                                  },
+                                  {
+                                    "value": 65,
+                                    "ispreselected": 0,
+                                    "text": "Van"
+                                  },
+                                  {
+                                    "value": 77,
+                                    "ispreselected": 0,
+                                    "text": "Yalova"
+                                  },
+                                  {
+                                    "value": 66,
+                                    "ispreselected": 0,
+                                    "text": "Yozgat"
+                                  },
+                                  {
+                                    "value": 67,
+                                    "ispreselected": 0,
+                                    "text": "Zonguldak"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "district_id",
+                                "type": "district_id",
+                                "variable_name_text": "İlçe",
+                                "preselected_snippet": "Şehir seçilmeli",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Şehir seçilmeli"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "distance",
+                                "type": "radio",
+                                "variable_name_text": "Mesafe",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 15,
+                                    "ispreselected": 0,
+                                    "text": "15km"
+                                  },
+                                  {
+                                    "value": 50,
+                                    "ispreselected": 0,
+                                    "text": "50km"
+                                  },
+                                  {
+                                    "value": 100,
+                                    "ispreselected": 0,
+                                    "text": "100km"
+                                  },
+                                  {
+                                    "value": 150,
+                                    "ispreselected": 0,
+                                    "text": "150km"
+                                  },
+                                  {
+                                    "value": 2000,
+                                    "ispreselected": 0,
+                                    "text": "200km ve üzeri"
+                                  }
+                                ]
+                              }
+                            ],
+                            "category_name_text": "Genel Bilgiler"
+                          },
+                          {
+                            "category_name": "appearance_information",
+                            "variables": [
+                              {
+                                "variable_name": "height",
+                                "type": "range",
+                                "preselected_min_value": 190,
+                                "preselected_max_value": 210,
+                                "answers": [
+                                  {
+                                    "min_text": "140",
+                                    "min_value": 140,
+                                    "max_text": "210",
+                                    "max_value": 210
+                                  }
+                                ],
+                                "variable_name_text": "Boy",
+                                "preselected_snippet": "190 - 210"
+                              },
+                              {
+                                "variable_name": "weight",
+                                "type": "range",
+                                "preselected_min_value": 40,
+                                "preselected_max_value": 130,
+                                "answers": [
+                                  {
+                                    "min_text": "40",
+                                    "min_value": 40,
+                                    "max_text": "130",
+                                    "max_value": 130
+                                  }
+                                ],
+                                "variable_name_text": "Kilo",
+                                "preselected_snippet": "40 - 130"
+                              },
+                              {
+                                "variable_name": "eyecolor",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Göz Rengi",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Ela"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Kahverengi"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Mavi"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Yeşil"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Siyah"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "haircolor",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Saç Rengi",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Gri-Beyaz"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Kahverengi"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Kızıl"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Sarı"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Siyah"
+                                  }
+                                ]
+                              }
+                            ],
+                            "category_name_text": "Fiziksel Özellikler"
+                          },
+                          {
+                            "category_name": "education_and_other_information",
+                            "variables": [
+                              {
+                                "variable_name": "occupation_id",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Meslek",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Akademisyen"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Akaryakıt"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Alt düzey yönetici"
+                                  },
+                                  {
+                                    "value": 5,
+                                    "ispreselected": 0,
+                                    "text": "Bankacı"
+                                  },
+                                  {
+                                    "value": 6,
+                                    "ispreselected": 0,
+                                    "text": "Basın-Yayın Mensubu"
+                                  },
+                                  {
+                                    "value": 7,
+                                    "ispreselected": 0,
+                                    "text": "Beyaz Yaka Çalışan"
+                                  },
+                                  {
+                                    "value": 8,
+                                    "ispreselected": 0,
+                                    "text": "Bilişim Teknolojileri"
+                                  },
+                                  {
+                                    "value": 9,
+                                    "ispreselected": 0,
+                                    "text": "Çalışmıyor"
+                                  },
+                                  {
+                                    "value": 10,
+                                    "ispreselected": 0,
+                                    "text": "Çocuk Eğitimi"
+                                  },
+                                  {
+                                    "value": 11,
+                                    "ispreselected": 0,
+                                    "text": "Denetim/Teftiş"
+                                  },
+                                  {
+                                    "value": 12,
+                                    "ispreselected": 0,
+                                    "text": "Denizci"
+                                  },
+                                  {
+                                    "value": 14,
+                                    "ispreselected": 0,
+                                    "text": "Diş Hekimi"
+                                  },
+                                  {
+                                    "value": 15,
+                                    "ispreselected": 0,
+                                    "text": "Doktor"
+                                  },
+                                  {
+                                    "value": 16,
+                                    "ispreselected": 0,
+                                    "text": "Eğitimci"
+                                  },
+                                  {
+                                    "value": 17,
+                                    "ispreselected": 0,
+                                    "text": "Eğlence Sektörü"
+                                  },
+                                  {
+                                    "value": 18,
+                                    "ispreselected": 0,
+                                    "text": "Emekli"
+                                  },
+                                  {
+                                    "value": 19,
+                                    "ispreselected": 0,
+                                    "text": "Esnaf"
+                                  },
+                                  {
+                                    "value": 20,
+                                    "ispreselected": 0,
+                                    "text": "Finans"
+                                  },
+                                  {
+                                    "value": 21,
+                                    "ispreselected": 0,
+                                    "text": "Gayrimenkul"
+                                  },
+                                  {
+                                    "value": 22,
+                                    "ispreselected": 0,
+                                    "text": "Hava Ulaşım"
+                                  },
+                                  {
+                                    "value": 23,
+                                    "ispreselected": 0,
+                                    "text": "Hukuk"
+                                  },
+                                  {
+                                    "value": 24,
+                                    "ispreselected": 0,
+                                    "text": "İdareci"
+                                  },
+                                  {
+                                    "value": 25,
+                                    "ispreselected": 0,
+                                    "text": "İlaç Sektörü"
+                                  },
+                                  {
+                                    "value": 26,
+                                    "ispreselected": 0,
+                                    "text": "İmalat"
+                                  },
+                                  {
+                                    "value": 27,
+                                    "ispreselected": 0,
+                                    "text": "İnşaat Sektörü"
+                                  },
+                                  {
+                                    "value": 28,
+                                    "ispreselected": 0,
+                                    "text": "İşçi"
+                                  },
+                                  {
+                                    "value": 29,
+                                    "ispreselected": 0,
+                                    "text": "İşletmeci"
+                                  },
+                                  {
+                                    "value": 30,
+                                    "ispreselected": 0,
+                                    "text": "Kamu Çalışanı"
+                                  },
+                                  {
+                                    "value": 31,
+                                    "ispreselected": 0,
+                                    "text": "Kuaför/Berber"
+                                  },
+                                  {
+                                    "value": 32,
+                                    "ispreselected": 0,
+                                    "text": "Kültür-Sanat"
+                                  },
+                                  {
+                                    "value": 33,
+                                    "ispreselected": 0,
+                                    "text": "Lojistik ve Tedarik"
+                                  },
+                                  {
+                                    "value": 34,
+                                    "ispreselected": 0,
+                                    "text": "Mağaza Personeli"
+                                  },
+                                  {
+                                    "value": 35,
+                                    "ispreselected": 0,
+                                    "text": "Maliye ve Muhasebe"
+                                  },
+                                  {
+                                    "value": 36,
+                                    "ispreselected": 0,
+                                    "text": "Memur"
+                                  },
+                                  {
+                                    "value": 37,
+                                    "ispreselected": 0,
+                                    "text": "Mimar"
+                                  },
+                                  {
+                                    "value": 38,
+                                    "ispreselected": 0,
+                                    "text": "Mimari Dekorasyon"
+                                  },
+                                  {
+                                    "value": 39,
+                                    "ispreselected": 0,
+                                    "text": "Mobilya Dekorasyon"
+                                  },
+                                  {
+                                    "value": 40,
+                                    "ispreselected": 0,
+                                    "text": "Moda Tasarım"
+                                  },
+                                  {
+                                    "value": 41,
+                                    "ispreselected": 0,
+                                    "text": "Müdür"
+                                  },
+                                  {
+                                    "value": 42,
+                                    "ispreselected": 0,
+                                    "text": "Mühendis"
+                                  },
+                                  {
+                                    "value": 43,
+                                    "ispreselected": 0,
+                                    "text": "Müşteri Hizmetleri"
+                                  },
+                                  {
+                                    "value": 44,
+                                    "ispreselected": 0,
+                                    "text": "Mütercim Tercüman"
+                                  },
+                                  {
+                                    "value": 45,
+                                    "ispreselected": 0,
+                                    "text": "Müzik Endüstrisi"
+                                  },
+                                  {
+                                    "value": 46,
+                                    "ispreselected": 0,
+                                    "text": "Ofis Yönetimi"
+                                  },
+                                  {
+                                    "value": 47,
+                                    "ispreselected": 0,
+                                    "text": "Operatör"
+                                  },
+                                  {
+                                    "value": 48,
+                                    "ispreselected": 0,
+                                    "text": "Ordu Mensubu"
+                                  },
+                                  {
+                                    "value": 49,
+                                    "ispreselected": 0,
+                                    "text": "Orta Düzey Yönetici"
+                                  },
+                                  {
+                                    "value": 50,
+                                    "ispreselected": 0,
+                                    "text": "Otomotiv"
+                                  },
+                                  {
+                                    "value": 51,
+                                    "ispreselected": 0,
+                                    "text": "Öğrenci"
+                                  },
+                                  {
+                                    "value": 52,
+                                    "ispreselected": 0,
+                                    "text": "Öğretmen"
+                                  },
+                                  {
+                                    "value": 53,
+                                    "ispreselected": 0,
+                                    "text": "Özel Güvenlik"
+                                  },
+                                  {
+                                    "value": 54,
+                                    "ispreselected": 0,
+                                    "text": "Özel Sektör"
+                                  },
+                                  {
+                                    "value": 55,
+                                    "ispreselected": 0,
+                                    "text": "Paket/Yük Teslimi"
+                                  },
+                                  {
+                                    "value": 56,
+                                    "ispreselected": 0,
+                                    "text": "Polis"
+                                  },
+                                  {
+                                    "value": 57,
+                                    "ispreselected": 0,
+                                    "text": "Psikolog/Terapist"
+                                  },
+                                  {
+                                    "value": 58,
+                                    "ispreselected": 0,
+                                    "text": "Reklam/Tasarım"
+                                  },
+                                  {
+                                    "value": 59,
+                                    "ispreselected": 0,
+                                    "text": "Sağlık Personeli"
+                                  },
+                                  {
+                                    "value": 60,
+                                    "ispreselected": 0,
+                                    "text": "Sağlıklı Yaşam ve Güzellik"
+                                  },
+                                  {
+                                    "value": 61,
+                                    "ispreselected": 0,
+                                    "text": "Satış ve Pazarlama"
+                                  },
+                                  {
+                                    "value": 62,
+                                    "ispreselected": 0,
+                                    "text": "Serbest Meslek"
+                                  },
+                                  {
+                                    "value": 63,
+                                    "ispreselected": 0,
+                                    "text": "Servis Elemanı/Garson"
+                                  },
+                                  {
+                                    "value": 64,
+                                    "ispreselected": 0,
+                                    "text": "Seyahat ve Turizm"
+                                  },
+                                  {
+                                    "value": 65,
+                                    "ispreselected": 0,
+                                    "text": "Sigortacılık"
+                                  },
+                                  {
+                                    "value": 66,
+                                    "ispreselected": 0,
+                                    "text": "Sinema/Tiyatro"
+                                  },
+                                  {
+                                    "value": 67,
+                                    "ispreselected": 0,
+                                    "text": "Sporcu/Spor Eğitmeni"
+                                  },
+                                  {
+                                    "value": 68,
+                                    "ispreselected": 0,
+                                    "text": "Şirket Sahibi"
+                                  },
+                                  {
+                                    "value": 69,
+                                    "ispreselected": 0,
+                                    "text": "Şoför"
+                                  },
+                                  {
+                                    "value": 70,
+                                    "ispreselected": 0,
+                                    "text": "Tarım ve Hayvancılık"
+                                  },
+                                  {
+                                    "value": 71,
+                                    "ispreselected": 0,
+                                    "text": "Tekniker/Teknisyen"
+                                  },
+                                  {
+                                    "value": 72,
+                                    "ispreselected": 0,
+                                    "text": "Tekstil"
+                                  },
+                                  {
+                                    "value": 73,
+                                    "ispreselected": 0,
+                                    "text": "Temizlik/Ofis Görevlisi"
+                                  },
+                                  {
+                                    "value": 74,
+                                    "ispreselected": 0,
+                                    "text": "Tıbbi Cihazlar"
+                                  },
+                                  {
+                                    "value": 75,
+                                    "ispreselected": 0,
+                                    "text": "Ticaret"
+                                  },
+                                  {
+                                    "value": 76,
+                                    "ispreselected": 0,
+                                    "text": "Usta/Ustabaşı"
+                                  },
+                                  {
+                                    "value": 77,
+                                    "ispreselected": 0,
+                                    "text": "Üst Düzey Yönetici"
+                                  },
+                                  {
+                                    "value": 78,
+                                    "ispreselected": 0,
+                                    "text": "Veteriner"
+                                  },
+                                  {
+                                    "value": 79,
+                                    "ispreselected": 0,
+                                    "text": "Yazılım Geliştirme"
+                                  },
+                                  {
+                                    "value": 80,
+                                    "ispreselected": 0,
+                                    "text": "Yiyecek ve İçecek Sektörü"
+                                  },
+                                  {
+                                    "value": 9999,
+                                    "ispreselected": 0,
+                                    "text": "Diğer Meslek"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "educationlevel",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Eğitim Seviyesi",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "İlkokul"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Ortaokul"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Lise"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Önlisans (2 yıllık üniversite)"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Lisans (4 yıllık üniversite)"
+                                  },
+                                  {
+                                    "value": 5,
+                                    "ispreselected": 0,
+                                    "text": "Yüksek Lisans"
+                                  },
+                                  {
+                                    "value": 6,
+                                    "ispreselected": 0,
+                                    "text": "Doktora"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "income",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Gelir Seviyesi",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "5.000 TL nin altında"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "5.000 ile 10.000 TL"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "10.000 ile 30.000 TL"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "30.000 ile 50.000 TL"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "50.000 TL nin üstünde"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "maritalstatus",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Medeni Durum",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Hiç evlenmemiş"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Boşanmış"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Ayrı yaşıyor"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Eşini kaybetmiş"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "havechildren",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Çocuğu Var Mı?",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Hayır"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Evet"
+                                  }
+                                ]
+                              }
+                            ],
+                            "category_name_text": "Eğitim ve Diğer"
+                          },
+                          {
+                            "category_name": "life_information",
+                            "variables": [
+                              {
+                                "variable_name": "sign",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Burç",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Koç"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Boğa"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "İkizler"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Yengeç"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Aslan"
+                                  },
+                                  {
+                                    "value": 5,
+                                    "ispreselected": 0,
+                                    "text": "Başak"
+                                  },
+                                  {
+                                    "value": 6,
+                                    "ispreselected": 0,
+                                    "text": "Terazi"
+                                  },
+                                  {
+                                    "value": 7,
+                                    "ispreselected": 0,
+                                    "text": "Akrep"
+                                  },
+                                  {
+                                    "value": 8,
+                                    "ispreselected": 0,
+                                    "text": "Yay"
+                                  },
+                                  {
+                                    "value": 9,
+                                    "ispreselected": 0,
+                                    "text": "Oğlak"
+                                  },
+                                  {
+                                    "value": 10,
+                                    "ispreselected": 0,
+                                    "text": "Kova"
+                                  },
+                                  {
+                                    "value": 11,
+                                    "ispreselected": 0,
+                                    "text": "Balık"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "alcohol",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Alkol Kullanımı",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Asla"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Sosyal olarak"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Sık sık"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "smoker",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Sigara Kullanımı",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Asla"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Bazen"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Sık sık"
+                                  }
+                                ]
+                              },
+                              {
+                                "variable_name": "handicapped",
+                                "type": "multicheckbox",
+                                "variable_name_text": "Engel",
+                                "preselected_snippet": "Farketmez",
+                                "answers": [
+                                  {
+                                    "value": -1,
+                                    "ispreselected": 1,
+                                    "text": "Farketmez"
+                                  },
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": "Yok"
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": "Görme"
+                                  },
+                                  {
+                                    "value": 2,
+                                    "ispreselected": 0,
+                                    "text": "Duyma"
+                                  },
+                                  {
+                                    "value": 3,
+                                    "ispreselected": 0,
+                                    "text": "Bedensel"
+                                  },
+                                  {
+                                    "value": 4,
+                                    "ispreselected": 0,
+                                    "text": "Diğer"
+                                  }
+                                ]
+                              }
+                            ],
+                            "category_name_text": "Yaşam"
+                          }
+                        ],
+                        "name_search": [
+                          {
+                            "category_name": "name_search",
+                            "variables": [
+                              {
+                                "variable_name": "name",
+                                "type": "text",
+                                "default_value": "",
+                                "preselected_value": "",
+                                "variable_name_text": "Aradığınız isim",
+                                "preselected_snippet": ""
+                              }
+                            ],
+                            "category_name_text": "İsim Araması"
+                          }
+                        ],
+                        "word_search": [
+                          {
+                            "category_name": "word_search",
+                            "variables": [
+                              {
+                                "variable_name": "text",
+                                "type": "text",
+                                "default_value": "",
+                                "preselected_value": "",
+                                "variable_name_text": "Aradığınız kelime",
+                                "preselected_snippet": ""
+                              }
+                            ],
+                            "category_name_text": "Kelime Araması"
+                          }
+                        ],
+                        "main_checkboxes": [
+                          {
+                            "category_name": "main_checkboxes",
+                            "variables": [
+                              {
+                                "variable_name": "show_matches",
+                                "type": "singlecheckbox",
+                                "preselected_value": 1,
+                                "answers": [
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 0,
+                                    "text": ""
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 1,
+                                    "text": ""
+                                  }
+                                ],
+                                "variable_name_text": "Sadece Uygun Üyeler",
+                                "preselected_snippet": ""
+                              },
+                              {
+                                "variable_name": "show_online_users",
+                                "type": "singlecheckbox",
+                                "preselected_value": 0,
+                                "answers": [
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 1,
+                                    "text": ""
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": ""
+                                  }
+                                ],
+                                "variable_name_text": "Çevrimiçi Üyeler",
+                                "preselected_snippet": ""
+                              },
+                              {
+                                "variable_name": "show_users_with_pictures",
+                                "type": "singlecheckbox",
+                                "preselected_value": 0,
+                                "answers": [
+                                  {
+                                    "value": 0,
+                                    "ispreselected": 1,
+                                    "text": ""
+                                  },
+                                  {
+                                    "value": 1,
+                                    "ispreselected": 0,
+                                    "text": ""
+                                  }
+                                ],
+                                "variable_name_text": "Fotoğraflı Üyeler",
+                                "preselected_snippet": ""
+                              }
+                            ],
+                            "category_name_text": "Durum Bilgisi"
+                          }
+                        ],
+                        "order_by_choices": [
+                          {
+                            "category_name": "order_by_choices",
+                            "variables": [
+                              {
+                                "name": "notmatter",
+                                "ispreselected": 1,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Farketmez"
+                              },
+                              {
+                                "name": "age",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Yaş"
+                              },
+                              {
+                                "name": "new_user",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Yeni Üye"
+                              },
+                              {
+                                "name": "activity_date",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Aktif Olma Tarihi"
+                              }
+                            ],
+                            "category_name_text": "Sıralama"
+                          }
+                        ],
+                        "order_by_string": [
+                          {
+                            "category_name": "order_by_string",
+                            "variables": [
+                              {
+                                "name": "notmatter",
+                                "ispreselected": 1,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Farketmez"
+                              },
+                              {
+                                "name": "age",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Yaş"
+                              },
+                              {
+                                "name": "new_user",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Yeni Üye"
+                              },
+                              {
+                                "name": "activity_date",
+                                "ispreselected": 0,
+                                "preselected_snippet": "",
+                                "variable_name_text": "Aktif Olma Tarihi"
+                              }
+                            ],
+                            "category_name_text": "Sıralama"
+                          }
+                        ],
+                        "last_search_json": "[{\"field_name\":\"height\",\"text\":\"Boy\",\"min_value\":\"190\",\"max_value\":210,\"type\":\"range\"}]"
+                      },
+                      "debug": {
+                        "response_time_ms": 20.434141159057617,
+                        "response_length": 29089
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -6781,7 +9441,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "search-filters-get",
+        "description": "Get results of searched members."
       }
     },
     "/api/user/v10/search/filters/reset": {
@@ -6975,6 +9637,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.SearchRecordInsertAppService.Dto.RecordsPost_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "record_search_id": 0
+                      },
+                      "result_code": 0,
+                      "error_detail_message": "string",
+                      "stack_trace": "string"
+                    }
+                  }
                 }
               }
             }
@@ -7018,7 +9692,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "search-records-get",
+        "description": "search records"
       }
     },
     "/api/user/v10/session": {
