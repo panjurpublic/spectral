@@ -6663,9 +6663,19 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Api.ChangePasswordAppService.Dto.ChangePasswordInput"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "new_value": "253545",
+                    "old_password": "203040",
+                    "password_confirm": "253545"
+                  }
+                }
               }
             }
-          }
+          },
+          "description": ""
         },
         "responses": {
           "200": {
@@ -6674,6 +6684,20 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangePasswordAppService.Dto.ChangePasswordDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "field_name": "password",
+                        "new_value": "newpasswordset",
+                        "result_text": "Şifreniz güncellendi."
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6689,7 +6713,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "PUT-me/password",
+        "description": "Kullanıcı parolasını güncellemek için kullanır"
       }
     },
     "/api/user/v10/me/email/passwords/reset": {
