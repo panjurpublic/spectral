@@ -1988,6 +1988,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2003,7 +2012,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Post-email_approval",
+        "description": "Mail adresini konfirme etmek için adrese konfirmasyon mail'i atar"
       }
     },
     "/api/user/v10/email/subscription": {
@@ -6207,7 +6218,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": ""
       }
     },
     "/api/user/v10/search/filters/reset": {
