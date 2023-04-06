@@ -4908,6 +4908,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CancelRecurringSubscriptionStatus.Dto.CancelRecurringSubscriptionStatusDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "new_value": "0"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -4923,7 +4935,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "delete-recurring-subscription",
+        "description": "deletes recurring subscription"
       }
     },
     "/api/user/v10/payments/3dsecure_forward/{randomGuidForRedirectTo3dSecure}": {
