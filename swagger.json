@@ -6173,7 +6173,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "1"
           },
           {
             "name": "query_source",
@@ -6205,7 +6206,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Get-Search-Home_page",
+        "description": "Gets home page"
       }
     },
     "/api/user/v10/search/word": {
@@ -6276,7 +6279,18 @@
         ]
       }
     },
-    "/api/user/v10/search/matches": {},
+    "/api/user/v10/search/matches": {
+      "get": {
+        "summary": "",
+        "operationId": "get-api-user-v10-search-matches",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "gets matched members"
+      }
+    },
     "/api/user/v10/search/filters": {
       "get": {
         "tags": [
@@ -6651,7 +6665,8 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Api.SettingsChangeName.Dto.SettingsChangeNameInput"
-              }
+              },
+              "examples": {}
             }
           }
         },
@@ -6662,6 +6677,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.SettingsChangeName.Dto.SettingsChangeNameDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "new_value": "Sena"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6677,7 +6704,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-name",
+        "description": "Updates User Name"
       }
     },
     "/api/user/v10/me/email": {
