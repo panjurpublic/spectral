@@ -2115,7 +2115,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "5c905672ff6d59e27e573e5d06a02af7"
           },
           {
             "name": "receiverUserId",
@@ -2188,6 +2189,28 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.UploadImageFromMessageCoreAppService.Dto.ConversationPictureUploadDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "picture_in_message_id": 16823851,
+                        "conversation_message_id": 699561612,
+                        "conversation_id": 412660810,
+                        "sender_user_auth_code": "8a76b1a5c669f12cb0a40be8dd6ae864",
+                        "receiver_user_auth_code": "5c905672ff6d59e27e573e5d06a02af7",
+                        "src": "",
+                        "aws_file_url": "https://pembepanjurs3.s3.eu-central-1.amazonaws.com/db/web/pictures_in_message/699561/photo_4ebc0aef0d1b0237de94f4e4d5780bfc_e6f3686a822f2e46ce2a1de74a5dc38c.jpg",
+                        "image_width_orig": 750,
+                        "image_height_orig": 500,
+                        "visible_width": 150,
+                        "visible_height": 100
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2203,7 +2226,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-conversations-{receiverUserId}-photos-post",
+        "description": "Photos in conversation by receiver UserID."
       }
     },
     "/api/user/v10/me/conversations/{receiverUserId}/is_typing": {
