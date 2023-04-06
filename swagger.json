@@ -14245,6 +14245,624 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "eyJIZWFkZXJzIjpbeyJLZXkiOiJDb250ZW50LVR5cGUiLCJWYWx1ZSI6WyJhcHBsaWNhdGlvbi9qc29uOyBjaGFyc2V0PXV0Zi04Il19XX0--",
+                          "prev_page_pointer": "",
+                          "show_pagination": true,
+                          "previous_page": null,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": 2,
+                          "show_next_page": true,
+                          "current_page": 1,
+                          "button_text": "Sayfa 1",
+                          "show_mark_seen_button": false
+                        },
+                        "debug_cache_bypass": "",
+                        "debug_cache_state": ""
+                      },
+                      "items": [
+                        {
+                          "user_id": 9318837,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6MX0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwZGUxYjg4ZDBmMjgzYWVmODA2NDdjZGI5ZGE4NmY5NCJ9"
+                          },
+                          "formatted_date": {
+                            "short": "07 Mart 2023 11:50:40",
+                            "mid": "07 Mart 2023",
+                            "long": "7.03.2023 08:50:40",
+                            "time": "11:50:40"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 1,
+                          "unix_profilepicture_lastupdate_datetime": "13:08",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "İzmir",
+                            "district_text": "Konak",
+                            "age": 40,
+                            "name": "Papatya",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Başak",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "8 ay önce",
+                            "desktop": "8 ay önce",
+                            "timestamp_tr": "09.08.2022 20:50:17"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 203,
+                            "last_visit_label": "bir ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 856524,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsInNoYTFfZnVsbF9xdWVyeSI6IiIsInBvc2l0aW9uIjoyfQ----",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6InNob3dfdmlzaXRlZF9wcm9maWxlc19wYWdlIiwicG9zaXRpb24iOjIsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6ImQ3OWEzMzRiZTIzOGEyYWJhZDM2MWJkYzczM2ViOWVmIn0--"
+                          },
+                          "formatted_date": {
+                            "short": "07 Mart 2023 09:36:19",
+                            "mid": "07 Mart 2023",
+                            "long": "7.03.2023 06:36:19",
+                            "time": "09:36:19"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 2,
+                          "unix_profilepicture_lastupdate_datetime": "10:30",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Konya",
+                            "district_text": "Hadim",
+                            "age": 34,
+                            "name": "Lucid",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "İkizler",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 41,
+                            "last_visit_label": "bir ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9317295,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwY2Q5MjkyZTlmNGEzYjYwYTZiOWJhM2VlZGMyMzgzNSIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6Mywic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6M30--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwY2Q5MjkyZTlmNGEzYjYwYTZiOWJhM2VlZGMyMzgzNSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjozLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhZGYwNDI0MjU2NWI3M2NiNTE5OWIwZmIyMGNhZTUyYSJ9"
+                          },
+                          "formatted_date": {
+                            "short": "22 Şubat 2023 17:53:08",
+                            "mid": "22 Şubat 2023",
+                            "long": "22.02.2023 14:53:08",
+                            "time": "17:53:08"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 3,
+                          "unix_profilepicture_lastupdate_datetime": "09:31",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Ankara",
+                            "district_text": "Akyurt",
+                            "age": 37,
+                            "name": "Duygu06",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Aslan",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "8 ay önce",
+                            "desktop": "8 ay önce",
+                            "timestamp_tr": "07.08.2022 19:10:15"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 39,
+                            "last_visit_label": "bir ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9272452,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI3MjQ1MiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJjZDlkYzk3OTBhMzZhM2YyM2VhM2MzMzIwNjc5NGQyYyIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6NCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI3MjQ1MiwidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6NH0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI3MjQ1MiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJjZDlkYzk3OTBhMzZhM2YyM2VhM2MzMzIwNjc5NGQyYyIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo0LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI3MjQ1MiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxMzZmNThiZDRlN2I3NTUyNDRmMjFlN2NlYmUzYjI1YSJ9"
+                          },
+                          "formatted_date": {
+                            "short": "02 Şubat 2023 15:44:35",
+                            "mid": "02 Şubat 2023",
+                            "long": "2.02.2023 12:44:35",
+                            "time": "15:44:35"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 4,
+                          "unix_profilepicture_lastupdate_datetime": "06:33",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Sivas",
+                            "district_text": "Şarkışla",
+                            "age": 32,
+                            "name": "Zeliha",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Oğlak",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/9272/tn_large_9272452_27257719c6826763509aae333bcf5587.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9272/tn_large_9272452_27257719c6826763509aae333bcf5587.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 20,
+                            "last_visit_label": "2 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9321608,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkNTFlZDUwY2RjZjRiZDlmZDY2NjM0NjVhMTEwMGNkMiIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6NSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6NX0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkNTFlZDUwY2RjZjRiZDlmZDY2NjM0NjVhMTEwMGNkMiIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo1LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJiNjNlZjBkYWRhYWQ5N2E1M2M0OGQ0NTk2YjFkOTQzNCJ9"
+                          },
+                          "formatted_date": {
+                            "short": "07 Aralık 2022 16:34:30",
+                            "mid": "07 Aralık 2022",
+                            "long": "7.12.2022 13:34:30",
+                            "time": "16:34:30"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 5,
+                          "unix_profilepicture_lastupdate_datetime": "13:09",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Ankara",
+                            "district_text": "Keçiören",
+                            "age": 42,
+                            "name": "Tanem",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Yengeç",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "8 ay önce",
+                            "desktop": "8 ay önce",
+                            "timestamp_tr": "07.08.2022 17:05:14"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 22,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9076975,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3Njk3NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkM2UzOTZhYTg4Y2MzZTdmYmFhYmUzOGNhNzliMjJkNCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6Niwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3Njk3NSwidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6Nn0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3Njk3NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkM2UzOTZhYTg4Y2MzZTdmYmFhYmUzOGNhNzliMjJkNCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo2LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3Njk3NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxZmYyODU1NzM1MzI3MzNiZjE0OTVmYjQ1ZDkyMDQ2MiJ9"
+                          },
+                          "formatted_date": {
+                            "short": "04 Aralık 2022 12:21:14",
+                            "mid": "04 Aralık 2022",
+                            "long": "4.12.2022 09:21:14",
+                            "time": "12:21:14"
+                          },
+                          "badges": {
+                            "facebook": true,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 6,
+                          "unix_profilepicture_lastupdate_datetime": "21:27",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Samsun",
+                            "district_text": "Atakum",
+                            "age": 51,
+                            "name": "Gülay",
+                            "occupation_text": "Özel Sektör",
+                            "zodiac_text": "İkizler",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/9076/tn_large_9076975_d06b306cd4e9c3d3bdcd5410fcb6b623.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9076/tn_large_9076975_d06b306cd4e9c3d3bdcd5410fcb6b623.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 17,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 4000597,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDAwMDU5NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NTQ0YjM4ODM3NjJjMDY5YjYxMzQzMTkyYjViYzUzZCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6Nywic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDAwMDU5NywidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6N30--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDAwMDU5NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NTQ0YjM4ODM3NjJjMDY5YjYxMzQzMTkyYjViYzUzZCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo3LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDAwMDU5NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwMTE5YjhiMjIwZWZiOWYxNjAzNDU5YTcxNTk3ZDA2NSJ9"
+                          },
+                          "formatted_date": {
+                            "short": "04 Aralık 2022 12:16:41",
+                            "mid": "04 Aralık 2022",
+                            "long": "4.12.2022 09:16:41",
+                            "time": "12:16:41"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": true
+                          },
+                          "position": 7,
+                          "unix_profilepicture_lastupdate_datetime": "06:37",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Antalya",
+                            "district_text": "Akseki",
+                            "age": 34,
+                            "name": "Lonely",
+                            "occupation_text": "Özel Sektör",
+                            "zodiac_text": "Oğlak",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/4000/tn_large_4000597_4ee1333f4ede668685eb4715665a6845.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/4000/tn_large_4000597_4ee1333f4ede668685eb4715665a6845.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 1,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9072186,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3MjE4NiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1N2U5ZDM1NjYwNzBjMTQ3ZjAyNDA4ZTgwYTMxZWJmYSIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6OCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3MjE4NiwidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6OH0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3MjE4NiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1N2U5ZDM1NjYwNzBjMTQ3ZjAyNDA4ZTgwYTMxZWJmYSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo4LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA3MjE4NiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI0Nzg3ZjRjMWNlMzc1MDRkMGE5NDI5MGZhOTM4MzRjZCJ9"
+                          },
+                          "formatted_date": {
+                            "short": "01 Aralık 2022 17:01:27",
+                            "mid": "01 Aralık 2022",
+                            "long": "1.12.2022 14:01:27",
+                            "time": "17:01:27"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 8,
+                          "unix_profilepicture_lastupdate_datetime": "13:02",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Samsun",
+                            "district_text": "Atakum",
+                            "age": 50,
+                            "name": "Gülay",
+                            "occupation_text": "Özel Sektör",
+                            "zodiac_text": "İkizler",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/9072/tn_large_9072186_27208e901a483e0b27d25aea0023f27c.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9072/tn_large_9072186_27208e901a483e0b27d25aea0023f27c.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "Hayat kisa zaman degerli sevmek sevilmek icin neyi bekliyoruz...😊",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "11 ay önce",
+                            "desktop": "11 ay önce",
+                            "timestamp_tr": "27.04.2022 14:25:13"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 1,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 8184983,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODE4NDk4MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyY2QxMDUwOGIzNGE2ZTFjYTQ3YzM1OWIxNjFjMTQ5NCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6OSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODE4NDk4MywidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6OX0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODE4NDk4MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyY2QxMDUwOGIzNGE2ZTFjYTQ3YzM1OWIxNjFjMTQ5NCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjo5LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODE4NDk4MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwYmY1MWZmMWM1YThjZDJiOTAwYzQzZTNmYjJjYzZjMSJ9"
+                          },
+                          "formatted_date": {
+                            "short": "01 Aralık 2022 16:29:30",
+                            "mid": "01 Aralık 2022",
+                            "long": "1.12.2022 13:29:30",
+                            "time": "16:29:30"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 9,
+                          "unix_profilepicture_lastupdate_datetime": "20:10",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Tokat",
+                            "district_text": "Merkez",
+                            "age": 34,
+                            "name": "Mavideniz",
+                            "occupation_text": "Çalışmıyor",
+                            "zodiac_text": "Balık",
+                            "thumbnail_url": "https://static.pembepanjur.com/user_pictures/tn_large/8184/tn_large_8184983_2cb757894afbb04772683fd150983b40.1388534400.jpg",
+                            "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/8184/tn_large_8184983_2cb757894afbb04772683fd150983b40.1388534400.jpg",
+                            "hasprofilepicture": 1,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "8 ay önce",
+                            "desktop": "8 ay önce",
+                            "timestamp_tr": "10.08.2022 01:45:13"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 1,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 9027043,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxNjY0ZTQwZWVhMGUyZmIxZjcxMzY4N2U3M2UxYTQ3MCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MTAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJzaGExX2Z1bGxfcXVlcnkiOiIiLCJwb3NpdGlvbiI6MTB9",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxNjY0ZTQwZWVhMGUyZmIxZjcxMzY4N2U3M2UxYTQ3MCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjoxMCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1NTYxNDZjZTk2ZWY5ZjFjMjBjY2RmYmE1NzI2YmI0MiJ9"
+                          },
+                          "formatted_date": {
+                            "short": "01 Aralık 2022 15:24:05",
+                            "mid": "01 Aralık 2022",
+                            "long": "1.12.2022 12:24:05",
+                            "time": "15:24:05"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 10,
+                          "unix_profilepicture_lastupdate_datetime": "14:44",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Samsun",
+                            "district_text": "Atakum",
+                            "age": 56,
+                            "name": "Eda",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Başak",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "Klasık ev hanımıyım  baskasına yapılmasını istemediğim seyı  bana yapılmasını  ıstemem",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 1,
+                            "last_visit_label": "4 ay önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -14260,7 +14878,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "visits-get",
+        "description": "kullanıcının ziyaret ettiği profilleri listeleme"
       }
     },
     "/api/user/v10/me/winks": {
