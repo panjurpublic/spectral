@@ -6730,6 +6730,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangeEmailAppService.Dto.ChangeEmailDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "email": "nancy@gmail.com"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6745,7 +6757,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-email",
+        "description": "updates user email"
       }
     },
     "/api/user/v10/me/password/forgotten": {
