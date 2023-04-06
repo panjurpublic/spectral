@@ -7025,6 +7025,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangeProfilePrivacy.Dto.ChangeProfilePrivacyDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "new_value": "1"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -7040,7 +7052,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-profile-privacy",
+        "description": "updates profile privacy"
       }
     },
     "/api/user/v10/me/play_sound": {
