@@ -13516,6 +13516,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.AddWinkAppService.Dto.WinkPostDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "previously_winked": true
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -13531,7 +13543,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "winks-post",
+        "description": "göz kırpma servisi"
       },
       "get": {
         "tags": [
