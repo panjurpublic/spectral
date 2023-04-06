@@ -6651,6 +6651,56 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSettingsCore.Dto.GetSettingsCoreDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "user_id": 473665,
+                        "name": "İsmail",
+                        "email": "fikret@pembepanjur.com",
+                        "email_is_approved": false,
+                        "phone_number": "905365945646",
+                        "profile_visibility_text": "Sadece uygun üyeler",
+                        "profile_visibility_value": 1,
+                        "can_reset_matches": false,
+                        "profile_type_text": "Gold",
+                        "isapproved_profile_text": "Profiliniz onay sürecinde.",
+                        "profile_sound_type": 7,
+                        "profile_sound_status": 1,
+                        "profile_sound_type_text": "Spell",
+                        "show_premium_link_type": "go_premium_extend",
+                        "show_last_payment_datetime_tr": true,
+                        "last_payment_datetime_tr": "14 Aralık 2022",
+                        "show_premium_expiration_datetime_tr": true,
+                        "premium_expiration_datetime_tr": "23 Mayıs 2023",
+                        "show_recurring_subscription_date": true,
+                        "recurring_subscription_date": "Tekrar Ödeme Yok",
+                        "isitunes_recurring_subscription": false,
+                        "can_change_recurring_subscription": false,
+                        "social_network_model": {
+                          "facebook_confirmation": false,
+                          "show_facebook_badge_on_profile": false,
+                          "instagram_extended_accesstoken_exists": true,
+                          "instagram_extended_accesstoken": "IGQVJVRVZAEUFQ5cVh5anZAqRGVza2x2dFFFM2wxMWVDZAzJBaVZAKQVRiV0VTdEczU240QXcxbXd4UkFtMnFNX3ZAQdTJsR2VSdmxtY3Bjb0thVU1rU0N2N2hEdVBwV1Q5U0pHNkJXT1FR",
+                          "phone_confirmation": true,
+                          "show_phone_badge_on_profile": true,
+                          "facebook_extended_accesstoken": "EAACeZCaPVXDgBAA0HcWRci1jGFgkLIwRdklzdq1Ckm30ox5qchtmiPPVhinLGI9O0nYEHgDzDr0NQ78EIdZBRfYPkZAGzyGfq623zGFpJUWoIHwQi3k02UZCcdsUsY3hzYFWXJW0HPcBjmo6490m3fBbBm9OzpLCU2vZBiWdYUwZDZD",
+                          "social_network_facebook_user_id": null,
+                          "instagram_user_id": null,
+                          "show_instagram_badge_on_profile": false,
+                          "phone_number": null,
+                          "instagram_confirmation": false,
+                          "facebook_extended_accesstoken_exists": true
+                        },
+                        "reset_matches_text": "Üyelik engellenmiş. Şu anda yenileme yapılamaz.",
+                        "show_premium_link": true
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6666,7 +6716,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Get-Sttings",
+        "description": "Gests settings"
       }
     },
     "/api/user/v10/me/name": {
