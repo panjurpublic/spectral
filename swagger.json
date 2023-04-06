@@ -2909,6 +2909,152 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "",
+                          "prev_page_pointer": "",
+                          "show_pagination": false,
+                          "previous_page": null,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": null,
+                          "show_next_page": false,
+                          "current_page": 1,
+                          "button_text": "Önceki",
+                          "show_mark_seen_button": false
+                        },
+                        "debug_cache_bypass": "",
+                        "debug_cache_state": ""
+                      },
+                      "items": [
+                        {
+                          "user_id": 856524,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsInNoYTFfZnVsbF9xdWVyeSI6IiIsInBvc2l0aW9uIjoxfQ----",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6InNob3dmYXZvcmVkYnlfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6ImQ3OWEzMzRiZTIzOGEyYWJhZDM2MWJkYzczM2ViOWVmIn0--"
+                          },
+                          "formatted_date": {
+                            "short": "05 Haziran 2015 12:33:55",
+                            "mid": "05 Haziran 2015",
+                            "long": "5.06.2015 09:33:55",
+                            "time": "12:33:55"
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 1,
+                          "unix_profilepicture_lastupdate_datetime": "10:30",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Konya",
+                            "district_text": "Hadim",
+                            "age": 34,
+                            "name": "Lucid",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "İkizler",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 0,
+                            "last_visit_label": "7 yıl önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        },
+                        {
+                          "user_id": 135849,
+                          "pointers": {
+                            "get_message_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjI5NDE2NGIzMGExNTk0MmI5ZTA5MmQxMTc1ZDM4NDUyIiwic2hvd19wcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "delete_match_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsInNoYTFfZnVsbF9xdWVyeSI6IiIsInBvc2l0aW9uIjoyfQ----",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjI5NDE2NGIzMGExNTk0MmI5ZTA5MmQxMTc1ZDM4NDUyIiwic2hvd19wcm9maWxlX3JlZiI6InNob3dmYXZvcmVkYnlfcGFnZSIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                            "remakematch_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6Ijc5ODk5N2Q2YmFiODZiYmQzMjJjMWJjY2EzZGQzMTAwIn0--"
+                          },
+                          "formatted_date": {
+                            "short": "21 Haziran 2013 17:13:00",
+                            "mid": "21 Haziran 2013",
+                            "long": "21.06.2013 13:13:00",
+                            "time": "17:13:00"
+                          },
+                          "badges": {
+                            "facebook": true,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 2,
+                          "unix_profilepicture_lastupdate_datetime": "15:09",
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Istanbul",
+                            "district_text": "Bakırköy",
+                            "age": 41,
+                            "name": "Merve",
+                            "occupation_text": "Ofis Yönetimi",
+                            "zodiac_text": "Akrep",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "Sakin ve huzurlu...",
+                            "online_status": "offline"
+                          },
+                          "date_label": {
+                            "mobile": "8 ay önce",
+                            "desktop": "8 ay önce",
+                            "timestamp_tr": "08.08.2022 13:55:13"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": false,
+                            "is_notseen": false,
+                            "number_of_visits": 0,
+                            "last_visit_label": "9 yıl önce",
+                            "is_blocked_by_user": false,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2924,7 +3070,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "favorites-by-them-get",
+        "description": "kullanıcıyı favorilerine ekleyen kullanıcıları listeleme"
       }
     },
     "/api/user/v10/me/favorites/{otherUserId}": {
