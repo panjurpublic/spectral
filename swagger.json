@@ -5278,6 +5278,19 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetShowPopupAppService.Dto.GetShowPopupDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "popup_name": "introduce_yourself_questions",
+                        "show_email_approval_popup": false
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -5293,7 +5306,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "show-popup-get",
+        "description": "popup listesi"
       }
     },
     "/api/user/v10/popups/app_promote": {
