@@ -28,8 +28,8 @@
                         "url": "https://www.pembepanjur.com/app_theme/pembepanjur/agreements/user_agreement_tr.php"
                       },
                       "result_code": 1,
-                      "error_detail_message": "",
-                      "stack_trace": ""
+                      "error_detail_message": "aa",
+                      "stack_trace": "aa"
                     }
                   }
                 }
