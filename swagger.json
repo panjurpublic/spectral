@@ -2200,7 +2200,8 @@
               "type": "string"
             },
             "in": "query",
-            "name": "add_favorite_pointer"
+            "name": "add_favorite_pointer",
+            "description": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNzk4MDA3ZGIxNzU0YWMxMGNkZmNjY2U1YmUzYjI5OWYiLCJ1c2VyX2lkIjo3OTIwMzQ4LCJvdGhlcl91c2VyX2lkIjo5ODcxMjQyLCJzaG93cHJvZmlsZV9yZWYiOiJzaG93bWF0Y2hlc19wYWdlIiwicG9zaXRpb24iOjIsInNoYTFfZnVsbF9xdWVyeSI6IjY1ODg2NjA4MGNhYWU0Nzc2OTM3YmJhNTU5MWUwMDIxNDA4Y2NhOTEifQ----"
           }
         ]
       }
