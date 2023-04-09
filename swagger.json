@@ -2113,7 +2113,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "1"
           }
         ],
         "responses": {
@@ -2123,6 +2124,93 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "string",
+                          "prev_page_pointer": "string",
+                          "show_pagination": true,
+                          "previous_page": 0,
+                          "previous_page_start": 0,
+                          "show_previous_page": true,
+                          "next_page": 0,
+                          "show_next_page": true,
+                          "current_page": 0,
+                          "button_text": "string",
+                          "show_mark_seen_button": true
+                        },
+                        "debug_cache_bypass": "string",
+                        "debug_cache_state": "string"
+                      },
+                      "items": [
+                        {
+                          "user_id": 0,
+                          "pointers": {
+                            "get_message_pointer": "string",
+                            "delete_match_pointer": "string",
+                            "get_profile_pointer": "string",
+                            "remakematch_pointer": "string"
+                          },
+                          "formatted_date": {
+                            "short": "string",
+                            "mid": "string",
+                            "long": "string",
+                            "time": "string"
+                          },
+                          "badges": {
+                            "facebook": true,
+                            "twitter": true,
+                            "instagram": true,
+                            "phone": true
+                          },
+                          "position": 0,
+                          "unix_profilepicture_lastupdate_datetime": "string",
+                          "profile": {
+                            "gender": 0,
+                            "city_text": "string",
+                            "district_text": "string",
+                            "age": 0,
+                            "name": "string",
+                            "occupation_text": "string",
+                            "zodiac_text": "string",
+                            "thumbnail_url": "string",
+                            "thumbnail_url_retina": "string",
+                            "hasprofilepicture": 0,
+                            "slug": "string",
+                            "get_profile_auth_code": "string",
+                            "aboutyourself": "string",
+                            "online_status": "string"
+                          },
+                          "date_label": {
+                            "mobile": "string",
+                            "desktop": "string",
+                            "timestamp_tr": "string"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": 0,
+                            "is_favored": true,
+                            "is_winked": true,
+                            "is_online": true,
+                            "is_notseen": true,
+                            "number_of_visits": 0,
+                            "last_visit_label": "string",
+                            "is_blocked_by_user": true,
+                            "is_spotlight": 0
+                          },
+                          "payment_status": 0,
+                          "payment_page_url": "string",
+                          "closer_user": 0,
+                          "conversation_id": 0
+                        }
+                      ],
+                      "result_code": 0,
+                      "error_detail_message": "string",
+                      "stack_trace": "string"
+                    }
+                  }
                 }
               }
             }
@@ -2138,7 +2226,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "Post-me/favorites",
+        "description": ""
       },
       "post": {
         "tags": [
