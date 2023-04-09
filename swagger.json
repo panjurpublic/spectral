@@ -5115,6 +5115,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -5130,7 +5139,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-profile_photo",
+        "description": "update profile photo"
       }
     },
     "/api/user/v10/me/photos/{pictureId}": {
