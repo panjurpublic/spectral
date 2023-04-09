@@ -6204,7 +6204,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "[{\"field_name\":\"age\",\"text\":\"Yaş\",\"min_value\":18,\"max_value\":80,\"type\":\"range\"},{\"field_name\":\"country_id\",\"text\":\"Türkiye\",\"value\":90,\"type\":\"static\"},{\"field_name\":\"city_id\",\"text\":\"Seçiniz\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"district_id\",\"text\":\"Seçiniz\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"distance\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"height\",\"text\":\"Boy\",\"min_value\":140,\"max_value\":210,\"type\":\"range\"},{\"field_name\":\"weight\",\"text\":\"Kilo\",\"min_value\":40,\"max_value\":130,\"type\":\"range\"},{\"field_name\":\"eyecolor\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"haircolor\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"occupation_id\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"educationlevel\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"income\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"maritalstatus\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"havechildren\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"sign\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"alcohol\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"smoker\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"handicapped\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"show_matches\",\"text\":\"Sadece Uygun Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"show_online_users\",\"text\":\"Çevrimiçi Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"show_users_with_pictures\",\"text\":\"Fotoğraflı Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"text\",\"text\":\"\",\"value\":\"\",\"type\":\"static\"},{\"field_name\":\"name\",\"value\":\"Emre\"}]"
           },
           {
             "name": "order_by_string",
@@ -6226,7 +6227,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "1"
           },
           {
             "name": "query_source",
@@ -6243,6 +6245,91 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.DataModel_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.ListingUser_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "string",
+                          "prev_page_pointer": "string",
+                          "show_pagination": true,
+                          "previous_page": 0,
+                          "previous_page_start": 0,
+                          "show_previous_page": true,
+                          "next_page": 0,
+                          "show_next_page": true,
+                          "current_page": 0,
+                          "button_text": "string",
+                          "show_mark_seen_button": true
+                        }
+                      },
+                      "items": [
+                        {
+                          "user_id": 0,
+                          "pointers": {
+                            "get_message_pointer": "string",
+                            "delete_match_pointer": "string",
+                            "get_profile_pointer": "string",
+                            "remakematch_pointer": "string"
+                          },
+                          "formatted_date": {
+                            "short_format": "string",
+                            "mid": "string",
+                            "long_format": "string",
+                            "time": "string"
+                          },
+                          "badges": {
+                            "facebook": true,
+                            "twitter": true,
+                            "instagram": true,
+                            "phone": true
+                          },
+                          "position": 0,
+                          "unix_profilepicture_lastupdate_datetime": "string",
+                          "payment_status": 0,
+                          "payment_page_url": "string",
+                          "closer_user": 0,
+                          "conversation_id": 0,
+                          "profile": {
+                            "gender": 0,
+                            "city_text": "string",
+                            "district_text": "string",
+                            "age": 0,
+                            "name": "string",
+                            "occupation_text": "string",
+                            "zodiac_text": "string",
+                            "thumbnail_url": "string",
+                            "thumbnail_url_retina": "string",
+                            "hasprofilepicture": 0,
+                            "slug": "string",
+                            "get_profile_auth_code": "string",
+                            "aboutyourself": "string",
+                            "online_status": "string"
+                          },
+                          "date_label": {
+                            "mobile": "string",
+                            "desktop": "string",
+                            "timestamp_tr": "string"
+                          },
+                          "interaction": {
+                            "unread_message_this_user": true,
+                            "is_favored": true,
+                            "is_winked": true,
+                            "is_online": true,
+                            "is_notseen": true,
+                            "number_of_visits": 0,
+                            "last_visit_label": "string",
+                            "is_blocked_by_user": true,
+                            "is_spotlight": 0
+                          }
+                        }
+                      ],
+                      "result_code": 0,
+                      "error_detail_message": "string",
+                      "stack_trace": "string"
+                    }
+                  }
                 }
               }
             }
