@@ -1224,6 +1224,19 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.DeletePictureInMessageCoreAppService.Dto.ConversationPictureDeleteModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "conversation_id": 412249535,
+                        "success_message": "picture_in_message_deleted_by_me"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -1239,7 +1252,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "delete-me/conversations/{receiverUserId}/photos/{conversationMessageId}",
+        "description": "delete photos that send in conversation"
       }
     },
     "/api/user/v10/me/conversations/sent": {
