@@ -1671,6 +1671,15 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -1686,7 +1695,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-me/conversations/{receiverUserId}/is_typing"
       }
     },
     "/api/user/v10/me/counts": {
@@ -3268,6 +3278,13 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/Api.RemakeMatchCore.Dto.RemakeMatchWithPointerInput"
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "remakematch_pointer": "string"
+                  }
+                }
               }
             }
           }
@@ -3294,7 +3311,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "put-me/matches/{matched_user_id}",
+        "description": "update matches"
       }
     },
     "/api/user/v10/me/matches/notinterested": {
