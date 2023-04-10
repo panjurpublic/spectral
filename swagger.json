@@ -9737,7 +9737,9 @@
                 "examples": {
                   "Example 1": {
                     "value": {
-                      "items": [],
+                      "data": {
+                        "record_search_id": 486497
+                      },
                       "result_code": 1,
                       "error_detail_message": null,
                       "stack_trace": null
@@ -9760,7 +9762,7 @@
           }
         ],
         "operationId": "search-records-post",
-        "description": "Search by records."
+        "description": "Created records."
       },
       "get": {
         "tags": [
