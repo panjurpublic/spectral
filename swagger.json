@@ -2284,6 +2284,37 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetMenuCountCoreAppService.Dto.MenuCountDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "count_unread_messages": 339,
+                        "count_all_messages": 371,
+                        "count_all_deleted_messages": 5,
+                        "count_sent_messages": 3,
+                        "count_unseen_winks": 94,
+                        "count_all_winks": 94,
+                        "count_sent_winks": 2,
+                        "count_all_favoredby": 50,
+                        "count_notseen_favoredby": 50,
+                        "count_all_favorites": 0,
+                        "count_all_profile_visitors": 579,
+                        "count_new_profile_visitors": 579,
+                        "count_all_visited_profiles": 25,
+                        "count_all_matches": 18880,
+                        "count_all_unseen_matches": 18880,
+                        "count_unseen_notifications": 632,
+                        "close_user_count": 0,
+                        "show_go_premium_bar_on_left_menu": false,
+                        "show_add_picture_bar_on_left_menu": true,
+                        "show_complete_personality_test_bar_on_left_menu": true
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -2299,7 +2330,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-counts-get",
+        "description": "Counts messages , winks , favorites etc."
       }
     },
     "/api/user/v10/me/counts/badge": {
