@@ -3864,6 +3864,23 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.StatusUpdateCoreAppService.Dto.NewsFeedPostDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "news_feed_id": 39547356,
+                        "status_update_text": "Merhaba!\n",
+                        "news_feed_datetime_unix_timestamp": 1681131334,
+                        "news_feed_pretty_date": "1 saniye önce"
+                      },
+                      "debug": {
+                        "response_time_ms": 64.44096565246582,
+                        "response_length": 241
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -3879,7 +3896,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-news-feed-post",
+        "description": "New post."
       }
     },
     "/api/user/v10/news_feed/{newsFeedId}": {
