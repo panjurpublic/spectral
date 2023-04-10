@@ -4911,6 +4911,171 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPaymentDetailInfoApiV5.Dto.GetPaymentDetailInfoApiV5DataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "payment_detail_info": {
+                          "creditcard": [
+                            {
+                              "price_without_vat": "186.36",
+                              "vat": "33.54",
+                              "total_amount": 219.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 219.9,
+                              "package_name": "1 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 3,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "",
+                              "title_teaser_text": ""
+                            },
+                            {
+                              "price_without_vat": "279.58",
+                              "vat": "50.32",
+                              "total_amount": 329.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 110,
+                              "package_name": "3 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 2,
+                              "selected_package": 1,
+                              "best_seller": 1,
+                              "discount_text": "%49 indirim",
+                              "title_teaser_text": "POPÜLER"
+                            },
+                            {
+                              "price_without_vat": "406.69",
+                              "vat": "73.21",
+                              "total_amount": 479.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 80,
+                              "package_name": "6 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 1,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "%63 indirim",
+                              "title_teaser_text": ""
+                            },
+                            {
+                              "price_without_vat": "491.44",
+                              "vat": "88.46",
+                              "total_amount": 579.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 48.3,
+                              "package_name": "12 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 8,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "%78 indirim",
+                              "title_teaser_text": ""
+                            }
+                          ],
+                          "mobile": [
+                            {
+                              "price_without_vat": "211.78",
+                              "vat": "38.12",
+                              "total_amount": 249.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 249.9,
+                              "package_name": "1 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 3,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "",
+                              "title_teaser_text": ""
+                            }
+                          ],
+                          "wire": [
+                            {
+                              "price_without_vat": "186.36",
+                              "vat": "33.54",
+                              "total_amount": 219.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 219.9,
+                              "package_name": "1 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 3,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "",
+                              "title_teaser_text": ""
+                            },
+                            {
+                              "price_without_vat": "279.58",
+                              "vat": "50.32",
+                              "total_amount": 329.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 110,
+                              "package_name": "3 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 2,
+                              "selected_package": 1,
+                              "best_seller": 1,
+                              "discount_text": "%49 indirim",
+                              "title_teaser_text": "POPÜLER"
+                            },
+                            {
+                              "price_without_vat": "406.69",
+                              "vat": "73.21",
+                              "total_amount": 479.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 80,
+                              "package_name": "6 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 1,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "%63 indirim",
+                              "title_teaser_text": ""
+                            },
+                            {
+                              "price_without_vat": "491.44",
+                              "vat": "88.46",
+                              "total_amount": 579.9,
+                              "google_play_sku": "",
+                              "teaser_amount": 48.3,
+                              "package_name": "12 Ay Gold Üyelik",
+                              "currency": "TL",
+                              "subscription_type": 8,
+                              "selected_package": 0,
+                              "best_seller": 0,
+                              "discount_text": "%78 indirim",
+                              "title_teaser_text": ""
+                            }
+                          ],
+                          "google_play": []
+                        },
+                        "payment_detail_info_count": 9,
+                        "payment_methods": {
+                          "creditcard": 4,
+                          "mobile": 1,
+                          "wire": 2
+                        },
+                        "payment_teaser_user": {
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODQ3OTIsInVzZXJfaWQiOjQ3MzY2NSwiYXV0aF9jb2RlIjoiZTgyM2Q1Zjc2YzY2N2M5MWU5ZmFmODViMzg1NmUyNGUiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9",
+                          "profile_picture_url": "https://static.pembepanjur.com/user_pictures/tn_large/84/tn_large_84792_ca87c9b13f24035223635f1ac0636776.1388534400.jpg",
+                          "isonline": 0,
+                          "city": "Diyarbakır",
+                          "age": 32,
+                          "name": "ZEHRA",
+                          "has_profile_picture": 1,
+                          "gender": 1,
+                          "gender_text": "female",
+                          "user_id": 84792
+                        },
+                        "result_text": "Uyelik Paketleri"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -4926,7 +5091,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "payments-subscriptions-get",
+        "description": "Subscriptions payments."
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/ios": {
