@@ -9773,6 +9773,41 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.SearchRecordListCore.Dto.SearchRecordModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "items": [
+                        {
+                          "search_record_id": 378121,
+                          "search_record_name": "bursa",
+                          "search_criteria_string": "[{\"field_name\":\"age\",\"min_value\":\"18\",\"max_value\":\"80\",\"type\":\"range\"},{\"field_name\":\"distance\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"height\",\"min_value\":\"140\",\"max_value\":\"210\",\"type\":\"range\"},{\"field_name\":\"weight\",\"min_value\":\"40\",\"max_value\":\"130\",\"type\":\"range\"},{\"field_name\":\"show_matches\",\"value\":\"1\",\"text\":\"Sadece uygun üyeler\",\"type\":\"static\"},{\"field_name\":\"show_users_with_pictures\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"show_online_users\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"name\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"text\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"search_alcohol\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"country_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"district_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"educationlevel\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"eyecolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"haircolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"havechildren\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"income\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"occupation_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"maritalstatus\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"search_smoker\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"sign\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"city_id\",\"value\":\"16\",\"type\":\"static\"}]",
+                          "search_record_unix_time": 1611239869
+                        },
+                        {
+                          "search_record_id": 378120,
+                          "search_record_name": "new filter",
+                          "search_criteria_string": "[{\"field_name\":\"age\",\"min_value\":\"18\",\"max_value\":\"80\",\"type\":\"range\"},{\"field_name\":\"distance\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"height\",\"min_value\":\"140\",\"max_value\":\"210\",\"type\":\"range\"},{\"field_name\":\"weight\",\"min_value\":\"40\",\"max_value\":\"130\",\"type\":\"range\"},{\"field_name\":\"show_matches\",\"value\":\"1\",\"text\":\"Sadece uygun üyeler\",\"type\":\"static\"},{\"field_name\":\"show_users_with_pictures\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"show_online_users\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"name\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"text\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"search_alcohol\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"country_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"educationlevel\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"eyecolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"haircolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"havechildren\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"income\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"occupation_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"maritalstatus\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"search_smoker\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"sign\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"city_id\",\"value\":\"35\",\"type\":\"static\"},{\"field_name\":\"district_id\",\"value\":\"496\",\"type\":\"static\"}]",
+                          "search_record_unix_time": 1611239820
+                        },
+                        {
+                          "search_record_id": 377953,
+                          "search_record_name": "asd",
+                          "search_criteria_string": "[{\"field_name\":\"distance\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"height\",\"min_value\":\"140\",\"max_value\":\"210\",\"type\":\"range\"},{\"field_name\":\"weight\",\"min_value\":\"40\",\"max_value\":\"130\",\"type\":\"range\"},{\"field_name\":\"show_matches\",\"value\":\"1\",\"text\":\"Sadece uygun üyeler\",\"type\":\"static\"},{\"field_name\":\"show_users_with_pictures\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"show_online_users\",\"value\":\"0\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"name\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"text\",\"value\":\"\",\"text\":\"\",\"type\":\"static\"},{\"field_name\":\"search_alcohol\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"country_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"city_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"district_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"educationlevel\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"eyecolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"haircolor\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"havechildren\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"income\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"occupation_id\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"maritalstatus\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"search_smoker\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"sign\",\"value\":\"-1\",\"text\":\"Farketmez\",\"type\":\"static\"},{\"field_name\":\"age\",\"text\":\"Yaş\",\"min_value\":18,\"max_value\":\"19\",\"type\":\"range\"}]",
+                          "search_record_unix_time": 1611133812
+                        },
+                        {
+                          "search_record_id": 329679,
+                          "search_record_name": "5/1/2020 21:49",
+                          "search_criteria_string": "[{\"field_name\":\"age\",\"text\":\"Yaş\",\"min_value\":50,\"max_value\":80,\"type\":\"range\"},{\"field_name\":\"country_id\",\"text\":\"Türkiye\",\"value\":90,\"type\":\"static\"},{\"field_name\":\"city_id\",\"text\":\"Seçiniz\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"district_id\",\"text\":\"Seçiniz\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"distance\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"height\",\"text\":\"Boy\",\"min_value\":140,\"max_value\":210,\"type\":\"range\"},{\"field_name\":\"weight\",\"text\":\"Kilo\",\"min_value\":40,\"max_value\":130,\"type\":\"range\"},{\"field_name\":\"eyecolor\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"haircolor\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"occupation_id\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"educationlevel\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"income\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"maritalstatus\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"havechildren\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"sign\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"alcohol\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"smoker\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"handicapped\",\"text\":\"Farketmez\",\"value\":-1,\"type\":\"static\"},{\"field_name\":\"show_matches\",\"text\":\"Sadece Uygun Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"show_online_users\",\"text\":\"Çevrimiçi Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"show_users_with_pictures\",\"text\":\"Fotoğraflı Üyeler\",\"value\":0,\"type\":\"static\"},{\"field_name\":\"name\",\"text\":\"\",\"value\":\"\",\"type\":\"static\"},{\"field_name\":\"text\",\"text\":\"\",\"value\":\"\",\"type\":\"static\"}]",
+                          "search_record_unix_time": 1578250188
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -9790,7 +9825,7 @@
           }
         ],
         "operationId": "search-records-get",
-        "description": "search records"
+        "description": "Search by records."
       }
     },
     "/api/user/v10/session": {
