@@ -3943,7 +3943,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwic2Vzc2lvbl9pZCI6IjZ0djBrbGthdnJhYXJjOWpmZTNwYjN0Y2tpIiwiYXV0aF9jb2RlIjoiOTVjNjZjNjE1M2M1YmM2MDVhNWE3MjY1NGU4ZDg3MTgiLCJ1c2VyX2lkIjo5MDY0Mzc4LCJvdGhlcl91c2VyX2lkIjo5MDY0Mzc4LCJzaG93cHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--"
           },
           {
             "name": "viewedUserId",
@@ -3962,6 +3963,22 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedDataOutput_Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "status": "success",
+                        "news_result_count": 0
+                      },
+                      "items": [],
+                      "debug": {
+                        "response_time_ms": 10.21885871887207,
+                        "response_length": 147
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -3977,7 +3994,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "users-{viewedUserId}-news_feed-get",
+        "description": "News Feed viewed UserId."
       }
     },
     "/api/user/v10/news_feed": {
