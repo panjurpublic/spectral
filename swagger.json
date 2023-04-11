@@ -4424,7 +4424,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "0"
           }
         ],
         "responses": {
@@ -4434,6 +4435,627 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetUserNotificationListCoreAppService.Dto.NotificationDataOutput_Api.GetUserNotificationListCoreAppService.Dto.NotificationItemsOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "total_notification_count": 20,
+                        "new_notification_count": 0,
+                        "created_unixtimestamp": 1681210076,
+                        "suggested_expiration_unixtimestamp": 1681210136,
+                        "next_page_pointer": "",
+                        "prev_page_pointer": ""
+                      },
+                      "items": [
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1838773386,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "11 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-11 11:10:04",
+                            "insert_datetime_unix_timestamp": 1681200604,
+                            "notification_pretty_date": "2 saat önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9919357,
+                            "name": "Hayatişte",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Oğlak",
+                            "district_text": "Gölbaşı",
+                            "about_yourself": "",
+                            "city_text": "Adıyaman",
+                            "age": 39,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9919/tn_large_9919357_95fa88632087cbc86ab79d0dca887573.1681053359.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiYjY3OWJjNTdhZDUzMTMxNTJlNTc3N2FkNDk2ZGYxYmIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTkzNTcsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTkzNTcsImF1dGhfY29kZSI6ImI2NzliYzU3YWQ1MzEzMTUyZTU3NzdhZDQ5NmRmMWJiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9919357&auth_code=b679bc57ad5313152e5777ad496df1bb&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiYjY3OWJjNTdhZDUzMTMxNTJlNTc3N2FkNDk2ZGYxYmIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTkzNTcsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1838011213,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 8 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-08 17:10:03",
+                            "insert_datetime_unix_timestamp": 1680963003,
+                            "notification_pretty_date": "2 gün önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9916634,
+                            "name": "Nurhan",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Aslan",
+                            "district_text": "Islahiye",
+                            "about_yourself": "",
+                            "city_text": "Gaziantep",
+                            "age": 42,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZWM2ZjI3ZmU3NDRiNjY3MTlhYTdlNTJkNWNkOGY3MzQiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTY2MzQsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTY2MzQsImF1dGhfY29kZSI6ImVjNmYyN2ZlNzQ0YjY2NzE5YWE3ZTUyZDVjZDhmNzM0IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9916634&auth_code=ec6f27fe744b66719aa7e52d5cd8f734&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZWM2ZjI3ZmU3NDRiNjY3MTlhYTdlNTJkNWNkOGY3MzQiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTY2MzQsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1837755819,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 7 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-07 17:10:04",
+                            "insert_datetime_unix_timestamp": 1680876604,
+                            "notification_pretty_date": "3 gün önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9913319,
+                            "name": "Saygi",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "İkizler",
+                            "district_text": "Bornova",
+                            "about_yourself": "",
+                            "city_text": "İzmir",
+                            "age": 43,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9913/tn_large_9913319_679fd3f077091f9f0a5f3abc58e7d4f2.1680850014.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTY0NzZkZmY4ZjY2NzZlNjlkZDBiNzdjMmU5YWM4ZGIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTMzMTksInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTMzMTksImF1dGhfY29kZSI6Ijk2NDc2ZGZmOGY2Njc2ZTY5ZGQwYjc3YzJlOWFjOGRiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9913319&auth_code=96476dff8f6676e69dd0b77c2e9ac8db&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTY0NzZkZmY4ZjY2NzZlNjlkZDBiNzdjMmU5YWM4ZGIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTMzMTksInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1837505797,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 6 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-06 17:10:03",
+                            "insert_datetime_unix_timestamp": 1680790203,
+                            "notification_pretty_date": "4 gün önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9911182,
+                            "name": "Nermin",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Aslan",
+                            "district_text": "Buca",
+                            "about_yourself": "",
+                            "city_text": "İzmir",
+                            "age": 35,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOGQ3YTQ3ZTk4NDRmMzUwZDhiY2ZlNzQyZGYxOTM2NjMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTExODIsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTExODIsImF1dGhfY29kZSI6IjhkN2E0N2U5ODQ0ZjM1MGQ4YmNmZTc0MmRmMTkzNjYzIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9911182&auth_code=8d7a47e9844f350d8bcfe742df193663&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOGQ3YTQ3ZTk4NDRmMzUwZDhiY2ZlNzQyZGYxOTM2NjMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTExODIsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1837233128,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 5 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-05 16:10:04",
+                            "insert_datetime_unix_timestamp": 1680700204,
+                            "notification_pretty_date": "5 gün önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9905654,
+                            "name": "Seçil",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Balık",
+                            "district_text": "Gebze",
+                            "about_yourself": "",
+                            "city_text": "Kocaeli",
+                            "age": 36,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTE1NjdjNDJmMTY1Yjc4ZWU4YTIxZmYzYmJmYTIxNzIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MDU2NTQsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MDU2NTQsImF1dGhfY29kZSI6IjkxNTY3YzQyZjE2NWI3OGVlOGEyMWZmM2JiZmEyMTcyIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9905654&auth_code=91567c42f165b78ee8a21ff3bbfa2172&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTE1NjdjNDJmMTY1Yjc4ZWU4YTIxZmYzYmJmYTIxNzIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MDU2NTQsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1836966091,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 4 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-04 16:10:04",
+                            "insert_datetime_unix_timestamp": 1680613804,
+                            "notification_pretty_date": "6 gün önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9905885,
+                            "name": "Elif",
+                            "is_online": false,
+                            "online_status": "recently_online",
+                            "zodiac_text": "Başak",
+                            "district_text": "Sincan",
+                            "about_yourself": "çalişmiyorum sürekli sormayın",
+                            "city_text": "Ankara",
+                            "age": 34,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9905/tn_large_9905885_9466dc9ad2f38e8663a1d31ce1569d84.1680611496.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNTFiNTk2YTVkOWJiYmI2YTgxZTEzZGM1ZDU5NDdhMmYiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MDU4ODUsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MDU4ODUsImF1dGhfY29kZSI6IjUxYjU5NmE1ZDliYmJiNmE4MWUxM2RjNWQ1OTQ3YTJmIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9905885&auth_code=51b596a5d9bbbb6a81e13dc5d5947a2f&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNTFiNTk2YTVkOWJiYmI2YTgxZTEzZGM1ZDU5NDdhMmYiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MDU4ODUsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1836409146,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": " 2 Nisan 2023",
+                            "notification_datetime_tr_long": "2023-04-02 15:10:04",
+                            "insert_datetime_unix_timestamp": 1680437404,
+                            "notification_pretty_date": "1 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9894848,
+                            "name": "Melek",
+                            "is_online": false,
+                            "online_status": "recently_online",
+                            "zodiac_text": "Akrep",
+                            "district_text": "Bornova",
+                            "about_yourself": "",
+                            "city_text": "İzmir",
+                            "age": 41,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiM2FhYmNhOGE3ODg3YmE1NDI5YzgxMGI4NmNmNGY3YmIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4OTQ4NDgsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4OTQ4NDgsImF1dGhfY29kZSI6IjNhYWJjYThhNzg4N2JhNTQyOWM4MTBiODZjZjRmN2JiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9894848&auth_code=3aabca8a7887ba5429c810b86cf4f7bb&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiM2FhYmNhOGE3ODg3YmE1NDI5YzgxMGI4NmNmNGY3YmIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4OTQ4NDgsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1834863103,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "27 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-27 16:10:04",
+                            "insert_datetime_unix_timestamp": 1679922604,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9882748,
+                            "name": "Nazlı",
+                            "is_online": false,
+                            "online_status": "recently_online",
+                            "zodiac_text": "Balık",
+                            "district_text": "Keçiören",
+                            "about_yourself": "",
+                            "city_text": "Ankara",
+                            "age": 39,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9882/tn_large_9882748_f1700b171d42e6513474175024f26aa3.1679839096.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMTk5NzU5OTA2OTI4MTI1ZWYxYzJhOGY4MGY2Y2UyMjkiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODI3NDgsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4ODI3NDgsImF1dGhfY29kZSI6IjE5OTc1OTkwNjkyODEyNWVmMWMyYThmODBmNmNlMjI5IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9882748&auth_code=199759906928125ef1c2a8f80f6ce229&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMTk5NzU5OTA2OTI4MTI1ZWYxYzJhOGY4MGY2Y2UyMjkiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODI3NDgsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1834591498,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "26 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-26 16:10:04",
+                            "insert_datetime_unix_timestamp": 1679836204,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9881399,
+                            "name": "Elif",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Aslan",
+                            "district_text": "Çınarcık",
+                            "about_yourself": "",
+                            "city_text": "Yalova",
+                            "age": 29,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9881/tn_large_9881399_f6f1d8cff639091d614aba6f540a0462.1679785110.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZmQ0N2E1MDkyOTkwYzM0ZDcyM2MyOWVkYWJhM2RmOTgiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODEzOTksInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4ODEzOTksImF1dGhfY29kZSI6ImZkNDdhNTA5Mjk5MGMzNGQ3MjNjMjllZGFiYTNkZjk4IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9881399&auth_code=fd47a5092990c34d723c29edaba3df98&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZmQ0N2E1MDkyOTkwYzM0ZDcyM2MyOWVkYWJhM2RmOTgiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODEzOTksInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1834322070,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "25 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-25 16:10:05",
+                            "insert_datetime_unix_timestamp": 1679749805,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9880032,
+                            "name": "Gülay82",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Akrep",
+                            "district_text": "Bennwil",
+                            "about_yourself": "",
+                            "city_text": "Basel-Landschaft",
+                            "age": 40,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNzJiMWMyYTNhYWY1MWViNDExMzA1ZDUzZTE2NzM5MWMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODAwMzIsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4ODAwMzIsImF1dGhfY29kZSI6IjcyYjFjMmEzYWFmNTFlYjQxMTMwNWQ1M2UxNjczOTFjIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9880032&auth_code=72b1c2a3aaf51eb411305d53e167391c&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNzJiMWMyYTNhYWY1MWViNDExMzA1ZDUzZTE2NzM5MWMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4ODAwMzIsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1834082789,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "24 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-24 16:10:03",
+                            "insert_datetime_unix_timestamp": 1679663403,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9877343,
+                            "name": "Esra",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Koç",
+                            "district_text": "Avcılar",
+                            "about_yourself": "",
+                            "city_text": "İstanbul",
+                            "age": 44,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMjQxOThhODIzNGU3NDM0ZmYwM2VhYWY4MWMyODNkMTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzczNDMsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NzczNDMsImF1dGhfY29kZSI6IjI0MTk4YTgyMzRlNzQzNGZmMDNlYWFmODFjMjgzZDEyIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9877343&auth_code=24198a8234e7434ff03eaaf81c283d12&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMjQxOThhODIzNGU3NDM0ZmYwM2VhYWY4MWMyODNkMTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzczNDMsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1833841202,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "23 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-23 16:10:04",
+                            "insert_datetime_unix_timestamp": 1679577004,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9875428,
+                            "name": "Neslihan",
+                            "is_online": false,
+                            "online_status": "recently_online",
+                            "zodiac_text": "Kova",
+                            "district_text": "Torbalı",
+                            "about_yourself": "Sevgilim evlecegim birsin arıyorum",
+                            "city_text": "İzmir",
+                            "age": 48,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9875/tn_large_9875428_75ce0c9d80f80147471d207714e7bfd0.1679572709.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMTc1NzE0Mjc5YzZhZTVhODgxZDhlNDM4YmMwM2Q3ZDkiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzU0MjgsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NzU0MjgsImF1dGhfY29kZSI6IjE3NTcxNDI3OWM2YWU1YTg4MWQ4ZTQzOGJjMDNkN2Q5IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9875428&auth_code=175714279c6ae5a881d8e438bc03d7d9&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMTc1NzE0Mjc5YzZhZTVhODgxZDhlNDM4YmMwM2Q3ZDkiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzU0MjgsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1833605582,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "22 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-22 17:10:03",
+                            "insert_datetime_unix_timestamp": 1679494203,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9873448,
+                            "name": "Ömür",
+                            "is_online": false,
+                            "online_status": "recently_online",
+                            "zodiac_text": "Koç",
+                            "district_text": "Çorlu",
+                            "about_yourself": "",
+                            "city_text": "Tekirdağ",
+                            "age": 44,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9873/tn_large_9873448_d151b4f343719a850cee0ba92856209a.1679492971.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNjQwZGZhY2RlYjFkM2Y2NmU1MGFkY2IxODFjZTQyOTciLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzM0NDgsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NzM0NDgsImF1dGhfY29kZSI6IjY0MGRmYWNkZWIxZDNmNjZlNTBhZGNiMTgxY2U0Mjk3IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9873448&auth_code=640dfacdeb1d3f66e50adcb181ce4297&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNjQwZGZhY2RlYjFkM2Y2NmU1MGFkY2IxODFjZTQyOTciLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NzM0NDgsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1833349732,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "21 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-21 17:10:04",
+                            "insert_datetime_unix_timestamp": 1679407804,
+                            "notification_pretty_date": "2 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9866855,
+                            "name": "Yasmin",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Oğlak",
+                            "district_text": "Cumaovası(Menderes)",
+                            "about_yourself": "",
+                            "city_text": "İzmir",
+                            "age": 41,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMDQwYjgzYTBhMDc2MWExM2FjZTVmN2E3MDI0ZjhiNDIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjY4NTUsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NjY4NTUsImF1dGhfY29kZSI6IjA0MGI4M2EwYTA3NjFhMTNhY2U1ZjdhNzAyNGY4YjQyIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9866855&auth_code=040b83a0a0761a13ace5f7a7024f8b42&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiMDQwYjgzYTBhMDc2MWExM2FjZTVmN2E3MDI0ZjhiNDIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjY4NTUsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_visit",
+                          "notification_type": "ntf_new_visit",
+                          "type": "notification",
+                          "notifications_id": 1833074281,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "20 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-20 14:55:29",
+                            "insert_datetime_unix_timestamp": 1679313329,
+                            "notification_pretty_date": "3 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9862092,
+                            "name": "Ceren",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Yengeç",
+                            "district_text": "Çorlu",
+                            "about_yourself": "",
+                            "city_text": "Tekirdağ",
+                            "age": 36,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiYjIxZDFmZWUxM2U3M2IzZjc5YzM5MjI1MDViODIxNzgiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjIwOTIsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NjIwOTIsImF1dGhfY29kZSI6ImIyMWQxZmVlMTNlNzNiM2Y3OWMzOTIyNTA1YjgyMTc4IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Profilinizi ziyaret etti.",
+                          "notification_link": "/showprofile.php?m=9862092&auth_code=b21d1fee13e73b3f79c3922505b82178&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiYjIxZDFmZWUxM2U3M2IzZjc5YzM5MjI1MDViODIxNzgiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjIwOTIsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1832769715,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "19 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-19 15:10:03",
+                            "insert_datetime_unix_timestamp": 1679227803,
+                            "notification_pretty_date": "3 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9864977,
+                            "name": "Ayla",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Akrep",
+                            "district_text": "Yenişehir",
+                            "about_yourself": "",
+                            "city_text": "Mersin",
+                            "age": 38,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNTk2MThjMzdiNmE2ZmE4MWE2NDM3YmMxYWI3ZjZmOGMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjQ5NzcsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NjQ5NzcsImF1dGhfY29kZSI6IjU5NjE4YzM3YjZhNmZhODFhNjQzN2JjMWFiN2Y2ZjhjIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9864977&auth_code=59618c37b6a6fa81a6437bc1ab7f6f8c&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiNTk2MThjMzdiNmE2ZmE4MWE2NDM3YmMxYWI3ZjZmOGMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NjQ5NzcsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1832474168,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "18 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-18 15:10:03",
+                            "insert_datetime_unix_timestamp": 1679141403,
+                            "notification_pretty_date": "3 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9855727,
+                            "name": "Hürrem",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Boğa",
+                            "district_text": "Büyükçekmece",
+                            "about_yourself": "",
+                            "city_text": "İstanbul",
+                            "age": 44,
+                            "profile_picture": "https://static.pembepanjur.com/user_pictures/tn_large/9855/tn_large_9855727_98e7dec322d87fdeca2bf99cef306cd7.1678915611.jpg"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiN2I3MDdlMDZhNDk3NzgwOGJkYjUzY2MyYTZhNmUyZDEiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NTU3MjcsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NTU3MjcsImF1dGhfY29kZSI6IjdiNzA3ZTA2YTQ5Nzc4MDhiZGI1M2NjMmE2YTZlMmQxIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9855727&auth_code=7b707e06a4977808bdb53cc2a6a6e2d1&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiN2I3MDdlMDZhNDk3NzgwOGJkYjUzY2MyYTZhNmUyZDEiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NTU3MjcsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1832189785,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "17 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-17 15:10:04",
+                            "insert_datetime_unix_timestamp": 1679055004,
+                            "notification_pretty_date": "3 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9859621,
+                            "name": "Dilara",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Başak",
+                            "district_text": "Şahinbey",
+                            "about_yourself": "",
+                            "city_text": "Gaziantep",
+                            "age": 45,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZGRjMmZmYTQ3ZGI1Y2M5YWJhZDNiMjE0ZTkwYzNlNTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NTk2MjEsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NTk2MjEsImF1dGhfY29kZSI6ImRkYzJmZmE0N2RiNWNjOWFiYWQzYjIxNGU5MGMzZTUyIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9859621&auth_code=ddc2ffa47db5cc9abad3b214e90c3e52&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZGRjMmZmYTQ3ZGI1Y2M5YWJhZDNiMjE0ZTkwYzNlNTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NTk2MjEsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1831168747,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "13 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-13 17:10:04",
+                            "insert_datetime_unix_timestamp": 1678716604,
+                            "notification_pretty_date": "4 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9848837,
+                            "name": "Gerçek  sevgi",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Koç",
+                            "district_text": "Çiftlikköy",
+                            "about_yourself": "",
+                            "city_text": "Yalova",
+                            "age": 48,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTU1ZmJmYTFkZDY1NDg1ZDU4Y2RiMmJiYmY2OTQwMWIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NDg4MzcsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NDg4MzcsImF1dGhfY29kZSI6Ijk1NWZiZmExZGQ2NTQ4NWQ1OGNkYjJiYmJmNjk0MDFiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9848837&auth_code=955fbfa1dd65485d58cdb2bbbf69401b&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTU1ZmJmYTFkZDY1NDg1ZDU4Y2RiMmJiYmY2OTQwMWIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NDg4MzcsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        },
+                        {
+                          "action_type": "ntf_new_match",
+                          "notification_type": "ntf_new_match",
+                          "type": "notification",
+                          "notifications_id": 1830886344,
+                          "user_id": 473665,
+                          "is_shown": true,
+                          "timestamp": {
+                            "notification_datetime_tr_short": "12 Mart 2023",
+                            "notification_datetime_tr_long": "2023-03-12 17:10:03",
+                            "insert_datetime_unix_timestamp": 1678630203,
+                            "notification_pretty_date": "4 hafta önce"
+                          },
+                          "sender_info": {
+                            "user_id": 9842984,
+                            "name": "Mediha",
+                            "is_online": false,
+                            "online_status": "offline",
+                            "zodiac_text": "Balık",
+                            "district_text": "Merkez",
+                            "about_yourself": "",
+                            "city_text": "Burdur",
+                            "age": 50,
+                            "profile_picture": "https://www.pembepanjur.com/i/siluet/female_anonymous.png"
+                          },
+                          "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiN2RjNWUxZTljNzE5ZjQ4MmI2MTBkNmJkNjExMDUxMTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NDI5ODQsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----",
+                          "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk4NDI5ODQsImF1dGhfY29kZSI6IjdkYzVlMWU5YzcxOWY0ODJiNjEwZDZiZDYxMTA1MTEyIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                          "notification_message_text": "Yeni uygun üyeniz.",
+                          "notification_link": "/showprofile.php?m=9842984&auth_code=7dc5e1e9c719f482b610d6bd61105112&showprofile_ref=notification_menu&get_profile_pointer=eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiN2RjNWUxZTljNzE5ZjQ4MmI2MTBkNmJkNjExMDUxMTIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk4NDI5ODQsInNob3dwcm9maWxlX3JlZiI6Im5vdGlmaWNhdGlvbl9tZW51IiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9"
+                        }
+                      ],
+                      "debug": {
+                        "response_time_ms": 25.733232498168945,
+                        "response_length": 31766
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -4449,7 +5071,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-notifications",
+        "description": "Notifications."
       }
     },
     "/api/user/v10/logs/notification_permission": {
