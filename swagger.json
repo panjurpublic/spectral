@@ -989,7 +989,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "413504327"
           },
           {
             "name": "delete_from_archive",
@@ -997,7 +998,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "0"
           },
           {
             "name": "mark_as_read",
@@ -1024,6 +1026,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "items": [],
+                      "debug": {
+                        "response_time_ms": 26.14903450012207,
+                        "response_length": 96
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1039,7 +1053,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-conversations-{otherUserId}",
+        "description": "Deleted conversations."
       },
       "get": {
         "tags": [
