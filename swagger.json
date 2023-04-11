@@ -6399,6 +6399,91 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.DataModel_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.ListingUser_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "pagination": {
+                          "next_page_pointer": "",
+                          "prev_page_pointer": "",
+                          "show_pagination": false,
+                          "previous_page": -1,
+                          "previous_page_start": null,
+                          "show_previous_page": false,
+                          "next_page": -1,
+                          "show_next_page": false,
+                          "current_page": 1,
+                          "button_text": "",
+                          "show_mark_seen_button": false
+                        }
+                      },
+                      "items": [
+                        {
+                          "user_id": 9328841,
+                          "pointers": {
+                            "get_message_pointer": "eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjkzMjg4NDEsImF1dGhfY29kZSI6IjllMmVhOTI1ZTE2OTQ0ZGE1YWQ2NjJhNjBlZWNkMjM3IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9",
+                            "delete_match_pointer": "eyJzZXNzaW9uX2lkIjoiIiwiYXBpX2tleSI6IjU0NzZwcDEyM2FwaTE0N2tleSIsIm90aGVyX3VzZXJfaWQiOjkzMjg4NDEsInVzZXJfaWQiOjYxMDc2NTYsInNoYTFfZnVsbF9xdWVyeSI6ImM5MGEwYzI2Mzc3ZGNlYmZhYjNmOWM4NzMzN2QzNjhmNDE4MjU2ZjUiLCJwb3NpdGlvbiI6MX0--",
+                            "get_profile_pointer": "eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOWUyZWE5MjVlMTY5NDRkYTVhZDY2MmE2MGVlY2QyMzciLCJ1c2VyX2lkIjo2MTA3NjU2LCJvdGhlcl91c2VyX2lkIjo5MzI4ODQxLCJzaG93cHJvZmlsZV9yZWYiOiJzaG93bWF0Y2hlc19wYWdlIiwicG9zaXRpb24iOjEsInNoYTFfZnVsbF9xdWVyeSI6ImM5MGEwYzI2Mzc3ZGNlYmZhYjNmOWM4NzMzN2QzNjhmNDE4MjU2ZjUifQ----",
+                            "remakematch_pointer": "eyJzZXNzaW9uX2lkIjoiIiwiYXBpX2tleSI6IjU0NzZwcDEyM2FwaTE0N2tleSIsImF1dGhfY29kZSI6IjQyYmYyNjc2NDgyMzY1MzFiNjU0OGU3NTcwNzUzMzMyIiwib3RoZXJfdXNlcl9pZCI6OTMyODg0MSwidXNlcl9pZCI6NjEwNzY1Nn0--"
+                          },
+                          "formatted_date": {
+                            "short_format": null,
+                            "mid": "",
+                            "long_format": null,
+                            "time": ""
+                          },
+                          "badges": {
+                            "facebook": false,
+                            "twitter": false,
+                            "instagram": false,
+                            "phone": false
+                          },
+                          "position": 1,
+                          "unix_profilepicture_lastupdate_datetime": "1680160164",
+                          "payment_status": 1,
+                          "payment_page_url": "",
+                          "closer_user": null,
+                          "conversation_id": null,
+                          "profile": {
+                            "gender": 1,
+                            "city_text": "Adana",
+                            "district_text": "Aladağ(Karsantı)",
+                            "age": 18,
+                            "name": "Lorem",
+                            "occupation_text": "Diğer Meslek",
+                            "zodiac_text": "Oğlak",
+                            "thumbnail_url": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "thumbnail_url_retina": "https://dev.pembepanjur.com/i/siluet/female_anonymous.png",
+                            "hasprofilepicture": 0,
+                            "slug": "/",
+                            "get_profile_auth_code": null,
+                            "aboutyourself": "",
+                            "online_status": "online"
+                          },
+                          "date_label": {
+                            "mobile": "Çevrimiçi",
+                            "desktop": "Çevrimiçi",
+                            "timestamp_tr": ""
+                          },
+                          "interaction": {
+                            "unread_message_this_user": false,
+                            "is_favored": false,
+                            "is_winked": false,
+                            "is_online": true,
+                            "is_notseen": false,
+                            "number_of_visits": 0,
+                            "last_visit_label": "1 saniye önce",
+                            "is_blocked_by_user": null,
+                            "is_spotlight": null
+                          }
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
