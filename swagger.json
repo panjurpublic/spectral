@@ -4222,7 +4222,8 @@
             "required": true,
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "eyJzZXNzaW9uX2lkIjoiamI3cmRnMzlwNjV1ZWg0ZWhyOTUxNGYyYXMiLCJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwibmV3c19mZWVkX2lkIjozOTU1OTE5MCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1OWE3MmIxYjcyNjllMjRhNDVjY2E0OGJkOTc1MWIzZSJ9"
           },
           {
             "name": "newsFeedId",
@@ -4241,6 +4242,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.NewsFeedUnlike.Dto.NewsFeedUnlikeDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "news_feed_like_count": 9
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -4256,7 +4269,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "news_feed-{newsFeedId}-likes",
+        "description": "Getting like back."
       }
     },
     "/api/user/v10/news_feed/{newsFeedId}/complaint": {
