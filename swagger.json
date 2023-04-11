@@ -6778,6 +6778,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ComplaintUserAppService.Dto.ComplaintUserDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": null,
+                      "result_code": 0,
+                      "error_detail_message": "Lütfen şikayetiniz hakkında daha detaylı bilgi veriniz.",
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -6793,7 +6803,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-complaints",
+        "description": "Complaints."
       }
     },
     "/api/user/v10/complaint_options": {
