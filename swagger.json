@@ -4160,7 +4160,8 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
+            },
+            "description": "39559190"
           },
           {
             "name": "newsFeedId",
@@ -4179,6 +4180,18 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesDataOutput_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "news_feed_like_count": 6
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -4194,7 +4207,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "news_feed-{newsFeedId}-likes",
+        "description": "News Feed likes."
       },
       "delete": {
         "tags": [
