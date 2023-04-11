@@ -6648,6 +6648,20 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetImageCore.Dto.GetImageCoreDataOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "active_picture_count": 0
+                      },
+                      "debug": {
+                        "response_time_ms": 123.25906753540039,
+                        "response_length": 120
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -6663,7 +6677,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-photos-{pictureId}",
+        "description": "Deleted photos."
       }
     },
     "/api/user/v10/users/{otherUserId}/photos": {
@@ -6782,6 +6798,61 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.UploadImageCoreAppService.Dto.PictureUploadDataOutput_PanjurUserApi.DataAccess.ImageRepository.Dto.GetImagesCoreItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "get_images_response": {
+                        "result_code": 1,
+                        "data": {
+                          "counter": 1,
+                          "approved_picture_count": 0,
+                          "cache_used": true
+                        },
+                        "items": [
+                          {
+                            "picture_id": 19361001,
+                            "image_no": 19361001,
+                            "isapproved": 9,
+                            "isactive": 1,
+                            "isapproved_boolean": false,
+                            "isapproved_css_class": "waiting_approval",
+                            "isapproved_css_class_tr": "Onay bekliyor",
+                            "is_mainpicture_eligible": 9,
+                            "is_mainpicture_eligible_text": "Profil fotoğrafı için onaylanacak.",
+                            "is_mainpicture_eligible_short": 9,
+                            "is_mainpicture_eligible_text_short": "Onaylanacak",
+                            "show_make_main_picture_button": false,
+                            "make_main_picture_pointer": "",
+                            "profile_image": 0,
+                            "profile_picture_id": 0,
+                            "caption": "",
+                            "image_width_orig": 720,
+                            "image_height_orig": 1080,
+                            "width": 720,
+                            "height": 1080,
+                            "moderated_by": 0,
+                            "last_update_datetime_unixtimestamp": "1681211033",
+                            "last_update_datetime_unixtimestamp_converted": "2023-04-11 11:03:53",
+                            "upload_datetime_tr": "2023-04-11 14:03:53",
+                            "regular": "https://static.pembepanjur.com/profilepictures/pictures/9064/picture_9064378_19361001_14a7d8d39ef60edbd7ea3c7a1c4a280e.jpg",
+                            "thumbnail": "https://static.pembepanjur.com/profilepictures/thumbnails/9064/tn_9064378_19361001_14a7d8d39ef60edbd7ea3c7a1c4a280e.jpg",
+                            "tn_x_large": "https://static.pembepanjur.com/profilepictures/tn_x_large/9064/tn_x_large_9064378_19361001_14a7d8d39ef60edbd7ea3c7a1c4a280e.jpg",
+                            "flex_x_large": "https://static.pembepanjur.com/profilepictures/flex_x_large/9064/flex_x_large_9064378_19361001_14a7d8d39ef60edbd7ea3c7a1c4a280e.jpg"
+                          }
+                        ]
+                      },
+                      "error": "Fotoğraf yüklenirken hata oluştu.",
+                      "error_detail_message": "Fotoğraf yüklenirken hata oluştu.",
+                      "error_info": "Fotoğraf yüklenirken hata oluştu.",
+                      "result_code": 0,
+                      "error_code": 0,
+                      "debug": {
+                        "response_time_ms": 40.00711441040039,
+                        "response_length": 1707
+                      }
+                    }
+                  }
                 }
               }
             }
