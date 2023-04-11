@@ -12010,6 +12010,20 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectInstagramCoreV2AppService.Dto.ConnectInstagramCoreV2DataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "instagram_user_id": "17841401121085716"
+                      },
+                      "debug": {
+                        "response_time_ms": 1618.1659698486328,
+                        "response_length": 136
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -12025,7 +12039,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-connects-instagram",
+        "description": "Instagram connection."
       }
     },
     "/api/user/v10/me/connects/phone": {
