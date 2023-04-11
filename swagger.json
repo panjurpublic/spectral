@@ -4657,6 +4657,231 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetNotificationSettingCoreAppService.Dto.GetNotificationSettingCoreItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "items": [
+                        {
+                          "title": "UYGUN ÜYELER",
+                          "field_name": "ntf_new_match",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "MESAJLAR",
+                          "field_name": "ntf_new_message",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": false
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": true
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "GÖZ KIRPMALAR",
+                          "field_name": "ntf_new_wink",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": false
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": true
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "FAVORİLER",
+                          "field_name": "ntf_new_favorite",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": false
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "title": "PROFİL ZİYARETLERİ",
+                          "field_name": "ntf_new_visit",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "ÇEVRİMİÇİ ÜYELER",
+                          "field_name": "ntf_new_online_user",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "YENİ FOTOĞRAFLAR",
+                          "field_name": "ntf_new_picture",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Mesajın Okundu",
+                          "field_name": "ntf_read_message",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Uygun Üyelerden ve İletişimdeki Üyelerden",
+                              "value": "matches_and_contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "İletişimdeki Üyelerden",
+                              "value": "contacts",
+                              "selected": false
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        },
+                        {
+                          "title": "SİSTEM",
+                          "field_name": "ntf_user_number_one",
+                          "options": [
+                            {
+                              "title": "Kapalı",
+                              "value": "nobody",
+                              "selected": true
+                            },
+                            {
+                              "title": "Herkesten",
+                              "value": "everyone",
+                              "selected": false
+                            }
+                          ]
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -4672,7 +4897,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "me-settings-notifications",
+        "description": "Notification settings."
       },
       "put": {
         "tags": [
