@@ -7297,6 +7297,785 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetCharacterAnalysisQuestionsAppService.Dto.CharacterAnalysisItemOutput_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "items": [
+                        {
+                          "field_name": "e01",
+                          "field_type": "radio-full",
+                          "question_text": "Kalabalık ortamlarda konuşmak enerjimi artırır.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "i01",
+                          "field_type": "radio-full",
+                          "question_text": "Yalnız çalışmayı tercih ederim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "s01",
+                          "field_type": "radio-full",
+                          "question_text": "Etrafıma ve ayrıntılara dikkat ederim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "n01",
+                          "field_type": "radio-full",
+                          "question_text": "Bir işi yaparken o işe yoğunlaşırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "t01",
+                          "field_type": "radio-full",
+                          "question_text": "Sivri konuşurum, açık sözlüyümdür.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "f01",
+                          "field_type": "radio-full",
+                          "question_text": "Karşımdakinin düşüncelerini anlamaya çalışırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "j01",
+                          "field_type": "radio-full",
+                          "question_text": "Kararsız kalmayı sevmem.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "p01",
+                          "field_type": "radio-full",
+                          "question_text": "Her şeye sinirlenmeyen, sakin biriyim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "e02",
+                          "field_type": "radio-full",
+                          "question_text": "Dikkat çekmeyi severim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "i02",
+                          "field_type": "radio-full",
+                          "question_text": "Uzun süre yalnız kalmaktan hoşlanırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "s02",
+                          "field_type": "radio-full",
+                          "question_text": "Becerilerimi geliştirmeye çalışırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "n02",
+                          "field_type": "radio-full",
+                          "question_text": "Okuduklarımın satır aralarından anlam çıkarabilirim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "t02",
+                          "field_type": "radio-full",
+                          "question_text": "Duygularımı çevremdekilere pek hissettirmem.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "f02",
+                          "field_type": "radio-full",
+                          "question_text": "İlişkiler ve duygulardan bahsetmeyi severim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "j02",
+                          "field_type": "radio-full",
+                          "question_text": "Etraf dağınık olduğunda işime konsantre olamam.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "p02",
+                          "field_type": "radio-full",
+                          "question_text": "Bir işi tamamen bitirmeden de yeni bir işe başlayabilirim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "e03",
+                          "field_type": "radio-full",
+                          "question_text": "Yeni tanıştığım insanların yanında gerilmem.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "i03",
+                          "field_type": "radio-full",
+                          "question_text": "Konuşmaya başlamadan söyleyeceklerimi iyice düşünürüm.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "s03",
+                          "field_type": "radio-full",
+                          "question_text": "Durumları mantığımla yorumlarım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "n03",
+                          "field_type": "radio-full",
+                          "question_text": "Konuşurken genellikle mecazlar ve benzetmelerden yararlanırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "t03",
+                          "field_type": "radio-full",
+                          "question_text": "Başkalarının düşünceleri benim için önemlidir.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "f03",
+                          "field_type": "radio-full",
+                          "question_text": "Bir karar verirken, sonucundan başkalarının nasıl etkileneceğini de düşünürüm.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "j03",
+                          "field_type": "radio-full",
+                          "question_text": "Herşeyin yeri olmasını ve aradığımda aynı yerde bulabilmeyi isterim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "p03",
+                          "field_type": "radio-full",
+                          "question_text": "Bir işin teslim edilme tarihi yaklaştıkça o işe odaklanırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "e04",
+                          "field_type": "radio-full",
+                          "question_text": "Her zaman konuşacak bir şeyler bulabilirim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "i04",
+                          "field_type": "radio-full",
+                          "question_text": "Arkadaş edinme konusunda titizimdir.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "s04",
+                          "field_type": "radio-full",
+                          "question_text": "Sonucunu görebildiğim işlerle uğraşmayı tercih ederim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "n04",
+                          "field_type": "radio-full",
+                          "question_text": "Genelde birkaç konuyu birarada düşünürüm.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "t04",
+                          "field_type": "radio-full",
+                          "question_text": "Etrafımdaki kişilerin ihtiyaçlarına kayıtsız kalmakla suçlanırım.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "f04",
+                          "field_type": "radio-full",
+                          "question_text": "Beğenilip onaylanmaya önem veririm.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "j04",
+                          "field_type": "radio-full",
+                          "question_text": "Randevulara zamanında gidilmesini önemserim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        },
+                        {
+                          "field_name": "p04",
+                          "field_type": "radio-full",
+                          "question_text": "İşlerimi bitirmeden da rahatlayıp eğlenebilirim.",
+                          "answer_value": 0,
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "Evet",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "Hayır",
+                              "slug_text": null,
+                              "is_answer_visible_in_search": 1,
+                              "emoji": null,
+                              "image_keyword": null
+                            }
+                          ]
+                        }
+                      ],
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -7312,7 +8091,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "questions-character_analysis",
+        "description": "Character analysis questions."
       }
     },
     "/api/user/v10/questions/registration/first": {
