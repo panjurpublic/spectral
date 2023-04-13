@@ -8223,7 +8223,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "birthday_day"
           }
         ],
         "responses": {
@@ -8233,6 +8234,482 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSingleRegistrationQuestionCoreAppService.Dto.SingleQuestionDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "result_code": 1,
+                      "data": {
+                        "question": {
+                          "field_name": "birthday_day",
+                          "field_text": "",
+                          "field_type": "birthday",
+                          "show_back_button": true,
+                          "pre_selected_answer": [
+                            9
+                          ],
+                          "is_sub_question": 0,
+                          "question_text": "Doğum tarihiniz",
+                          "icon_url": "",
+                          "icon_url_v2": "",
+                          "question_detail": "(İlk kayıttan sonra değiştirilemez)",
+                          "question_step": 1,
+                          "sub_question": [
+                            {
+                              "field_name": "birthday_month",
+                              "field_type": "birthday",
+                              "is_sub_question": 1,
+                              "question_text": "Ay",
+                              "icon_url": "",
+                              "icon_url_v2": "",
+                              "question_detail": "",
+                              "question_step": 0,
+                              "answers": [
+                                {
+                                  "value": 1,
+                                  "text_value": "Ocak"
+                                },
+                                {
+                                  "value": 2,
+                                  "text_value": "Şubat"
+                                },
+                                {
+                                  "value": 3,
+                                  "text_value": "Mart"
+                                },
+                                {
+                                  "value": 4,
+                                  "text_value": "Nisan"
+                                },
+                                {
+                                  "value": 5,
+                                  "text_value": "Mayıs"
+                                },
+                                {
+                                  "value": 6,
+                                  "text_value": "Haziran"
+                                },
+                                {
+                                  "value": 7,
+                                  "text_value": "Temmuz"
+                                },
+                                {
+                                  "value": 8,
+                                  "text_value": "Ağustos"
+                                },
+                                {
+                                  "value": 9,
+                                  "text_value": "Eylül"
+                                },
+                                {
+                                  "value": 10,
+                                  "text_value": "Ekim"
+                                },
+                                {
+                                  "value": 11,
+                                  "text_value": "Kasım"
+                                },
+                                {
+                                  "value": 12,
+                                  "text_value": "Aralık"
+                                }
+                              ],
+                              "pre_selected_answer": [
+                                8
+                              ]
+                            },
+                            {
+                              "field_name": "birthday_year",
+                              "field_type": "birthday",
+                              "is_sub_question": 1,
+                              "question_text": "Yıl",
+                              "icon_url": "",
+                              "icon_url_v2": "",
+                              "question_detail": "",
+                              "question_step": 0,
+                              "answers": [
+                                {
+                                  "value": 2005,
+                                  "text_value": "2005"
+                                },
+                                {
+                                  "value": 2004,
+                                  "text_value": "2004"
+                                },
+                                {
+                                  "value": 2003,
+                                  "text_value": "2003"
+                                },
+                                {
+                                  "value": 2002,
+                                  "text_value": "2002"
+                                },
+                                {
+                                  "value": 2001,
+                                  "text_value": "2001"
+                                },
+                                {
+                                  "value": 2000,
+                                  "text_value": "2000"
+                                },
+                                {
+                                  "value": 1999,
+                                  "text_value": "1999"
+                                },
+                                {
+                                  "value": 1998,
+                                  "text_value": "1998"
+                                },
+                                {
+                                  "value": 1997,
+                                  "text_value": "1997"
+                                },
+                                {
+                                  "value": 1996,
+                                  "text_value": "1996"
+                                },
+                                {
+                                  "value": 1995,
+                                  "text_value": "1995"
+                                },
+                                {
+                                  "value": 1994,
+                                  "text_value": "1994"
+                                },
+                                {
+                                  "value": 1993,
+                                  "text_value": "1993"
+                                },
+                                {
+                                  "value": 1992,
+                                  "text_value": "1992"
+                                },
+                                {
+                                  "value": 1991,
+                                  "text_value": "1991"
+                                },
+                                {
+                                  "value": 1990,
+                                  "text_value": "1990"
+                                },
+                                {
+                                  "value": 1989,
+                                  "text_value": "1989"
+                                },
+                                {
+                                  "value": 1988,
+                                  "text_value": "1988"
+                                },
+                                {
+                                  "value": 1987,
+                                  "text_value": "1987"
+                                },
+                                {
+                                  "value": 1986,
+                                  "text_value": "1986"
+                                },
+                                {
+                                  "value": 1985,
+                                  "text_value": "1985"
+                                },
+                                {
+                                  "value": 1984,
+                                  "text_value": "1984"
+                                },
+                                {
+                                  "value": 1983,
+                                  "text_value": "1983"
+                                },
+                                {
+                                  "value": 1982,
+                                  "text_value": "1982"
+                                },
+                                {
+                                  "value": 1981,
+                                  "text_value": "1981"
+                                },
+                                {
+                                  "value": 1980,
+                                  "text_value": "1980"
+                                },
+                                {
+                                  "value": 1979,
+                                  "text_value": "1979"
+                                },
+                                {
+                                  "value": 1978,
+                                  "text_value": "1978"
+                                },
+                                {
+                                  "value": 1977,
+                                  "text_value": "1977"
+                                },
+                                {
+                                  "value": 1976,
+                                  "text_value": "1976"
+                                },
+                                {
+                                  "value": 1975,
+                                  "text_value": "1975"
+                                },
+                                {
+                                  "value": 1974,
+                                  "text_value": "1974"
+                                },
+                                {
+                                  "value": 1973,
+                                  "text_value": "1973"
+                                },
+                                {
+                                  "value": 1972,
+                                  "text_value": "1972"
+                                },
+                                {
+                                  "value": 1971,
+                                  "text_value": "1971"
+                                },
+                                {
+                                  "value": 1970,
+                                  "text_value": "1970"
+                                },
+                                {
+                                  "value": 1969,
+                                  "text_value": "1969"
+                                },
+                                {
+                                  "value": 1968,
+                                  "text_value": "1968"
+                                },
+                                {
+                                  "value": 1967,
+                                  "text_value": "1967"
+                                },
+                                {
+                                  "value": 1966,
+                                  "text_value": "1966"
+                                },
+                                {
+                                  "value": 1965,
+                                  "text_value": "1965"
+                                },
+                                {
+                                  "value": 1964,
+                                  "text_value": "1964"
+                                },
+                                {
+                                  "value": 1963,
+                                  "text_value": "1963"
+                                },
+                                {
+                                  "value": 1962,
+                                  "text_value": "1962"
+                                },
+                                {
+                                  "value": 1961,
+                                  "text_value": "1961"
+                                },
+                                {
+                                  "value": 1960,
+                                  "text_value": "1960"
+                                },
+                                {
+                                  "value": 1959,
+                                  "text_value": "1959"
+                                },
+                                {
+                                  "value": 1958,
+                                  "text_value": "1958"
+                                },
+                                {
+                                  "value": 1957,
+                                  "text_value": "1957"
+                                },
+                                {
+                                  "value": 1956,
+                                  "text_value": "1956"
+                                },
+                                {
+                                  "value": 1955,
+                                  "text_value": "1955"
+                                },
+                                {
+                                  "value": 1954,
+                                  "text_value": "1954"
+                                },
+                                {
+                                  "value": 1953,
+                                  "text_value": "1953"
+                                },
+                                {
+                                  "value": 1952,
+                                  "text_value": "1952"
+                                },
+                                {
+                                  "value": 1951,
+                                  "text_value": "1951"
+                                },
+                                {
+                                  "value": 1950,
+                                  "text_value": "1950"
+                                },
+                                {
+                                  "value": 1949,
+                                  "text_value": "1949"
+                                },
+                                {
+                                  "value": 1948,
+                                  "text_value": "1948"
+                                },
+                                {
+                                  "value": 1947,
+                                  "text_value": "1947"
+                                },
+                                {
+                                  "value": 1946,
+                                  "text_value": "1946"
+                                }
+                              ],
+                              "pre_selected_answer": [
+                                1990
+                              ]
+                            }
+                          ],
+                          "answers": [
+                            {
+                              "value": 1,
+                              "text_value": "1"
+                            },
+                            {
+                              "value": 2,
+                              "text_value": "2"
+                            },
+                            {
+                              "value": 3,
+                              "text_value": "3"
+                            },
+                            {
+                              "value": 4,
+                              "text_value": "4"
+                            },
+                            {
+                              "value": 5,
+                              "text_value": "5"
+                            },
+                            {
+                              "value": 6,
+                              "text_value": "6"
+                            },
+                            {
+                              "value": 7,
+                              "text_value": "7"
+                            },
+                            {
+                              "value": 8,
+                              "text_value": "8"
+                            },
+                            {
+                              "value": 9,
+                              "text_value": "9"
+                            },
+                            {
+                              "value": 10,
+                              "text_value": "10"
+                            },
+                            {
+                              "value": 11,
+                              "text_value": "11"
+                            },
+                            {
+                              "value": 12,
+                              "text_value": "12"
+                            },
+                            {
+                              "value": 13,
+                              "text_value": "13"
+                            },
+                            {
+                              "value": 14,
+                              "text_value": "14"
+                            },
+                            {
+                              "value": 15,
+                              "text_value": "15"
+                            },
+                            {
+                              "value": 16,
+                              "text_value": "16"
+                            },
+                            {
+                              "value": 17,
+                              "text_value": "17"
+                            },
+                            {
+                              "value": 18,
+                              "text_value": "18"
+                            },
+                            {
+                              "value": 19,
+                              "text_value": "19"
+                            },
+                            {
+                              "value": 20,
+                              "text_value": "20"
+                            },
+                            {
+                              "value": 21,
+                              "text_value": "21"
+                            },
+                            {
+                              "value": 22,
+                              "text_value": "22"
+                            },
+                            {
+                              "value": 23,
+                              "text_value": "23"
+                            },
+                            {
+                              "value": 24,
+                              "text_value": "24"
+                            },
+                            {
+                              "value": 25,
+                              "text_value": "25"
+                            },
+                            {
+                              "value": 26,
+                              "text_value": "26"
+                            },
+                            {
+                              "value": 27,
+                              "text_value": "27"
+                            },
+                            {
+                              "value": 28,
+                              "text_value": "28"
+                            },
+                            {
+                              "value": 29,
+                              "text_value": "29"
+                            },
+                            {
+                              "value": 30,
+                              "text_value": "30"
+                            },
+                            {
+                              "value": 31,
+                              "text_value": "31"
+                            }
+                          ]
+                        },
+                        "full_question_count": 95,
+                        "language": "turkish"
+                      },
+                      "debug": {
+                        "response_time_ms": 16.314029693603516,
+                        "response_length": 4332
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -8248,7 +8725,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Gets only one field information.",
+        "operationId": "questions-registration-single"
       }
     },
     "/api/user/v10/me/complaints": {
