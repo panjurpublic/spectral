@@ -434,10 +434,10 @@
                           "next_page_pointer": "",
                           "prev_page_pointer": "",
                           "show_pagination": false,
-                          "previous_page": null,
-                          "previous_page_start": null,
+                          "previous_page": -1,
+                          "previous_page_start": -1,
                           "show_previous_page": false,
-                          "next_page": null,
+                          "next_page": -1,
                           "show_next_page": false,
                           "current_page": 1,
                           "button_text": "Önceki",
@@ -481,7 +481,7 @@
                             "thumbnail_url_retina": "https://www.pembepanjur.com/i/siluet/female_anonymous.png",
                             "hasprofilepicture": 0,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "",
                             "online_status": "offline"
                           },
@@ -540,7 +540,7 @@
                             "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/9410/tn_large_9410994_5d41e99bdf7dfc58cd6d79d13ecdecb3.1388534400.jpg",
                             "hasprofilepicture": 1,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "",
                             "online_status": "offline"
                           },
@@ -599,7 +599,7 @@
                             "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/7892/tn_large_7892032_fbcdd4843f3d80f2525e6a0a07c238b0.1388534400.jpg",
                             "hasprofilepicture": 1,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "",
                             "online_status": "recently_online"
                           },
@@ -658,7 +658,7 @@
                             "thumbnail_url_retina": "https://www.pembepanjur.com/i/siluet/male_anonymous.png",
                             "hasprofilepicture": 0,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "",
                             "online_status": "offline"
                           },
@@ -717,7 +717,7 @@
                             "thumbnail_url_retina": "https://www.pembepanjur.com/i/siluet/female_anonymous.png",
                             "hasprofilepicture": 0,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "",
                             "online_status": "offline"
                           },
@@ -776,7 +776,7 @@
                             "thumbnail_url_retina": "https://static.pembepanjur.com/user_pictures/tn_large/8431/tn_large_8431011_f1cce1494c4896fb5d9a5dfc15d7e713.1388534400.jpg",
                             "hasprofilepicture": 1,
                             "slug": "/",
-                            "get_profile_auth_code": null,
+                            "get_profile_auth_code": "",
                             "aboutyourself": "Hava durumu gibi değişken😂😂😂😂",
                             "online_status": "offline"
                           },
