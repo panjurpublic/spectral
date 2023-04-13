@@ -3509,6 +3509,23 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CheckLoginActionAppService.Dto.CheckLoginActionDataModel_"
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "data": {
+                        "user_id": 6107656,
+                        "access_token": "e2445e0522e8377c961b54703cceef9ebc17fb64d7a8f951dac404938c2e3854",
+                        "refresh_token": "7eea4745f2c42d26dd23bc9f5a4163f1a6631baa44121c3d9ddca75460f23565",
+                        "self_auth_code": "a67cc74d5e465622535f66f975b9879a",
+                        "pusher_channel": "aba2139d98c28e270e7bc35e08fd713f_mobile_6107656",
+                        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODEzNzkwODUsImlzcyI6IlBhbmp1ckFkbWluIiwibmJmIjoxNjgxMzc5MDg1LCJleHAiOjE2ODE0NjU0ODUsImp3dF9pZCI6MTcxNzYxNjUsInVzZXJJZCI6NjEwNzY1Nn0.zMldR8iN3zk24zfD3kd4tZ8kX4DewWvwuaD36ZRJoD0"
+                      },
+                      "result_code": 1,
+                      "error_detail_message": null,
+                      "stack_trace": null
+                    }
+                  }
                 }
               }
             }
@@ -3524,7 +3541,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "login-access_token",
+        "description": "Login access token."
       }
     },
     "/api/user/v10/login/notification_access_token": {
