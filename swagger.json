@@ -2837,7 +2837,9 @@
               }
             }
           }
-        }
+        },
+        "description": "Endpoint açıklama.",
+        "operationId": ""
       }
     },
     "/api/user/v10/login/access_token": {
