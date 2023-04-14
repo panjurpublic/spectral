@@ -8415,7 +8415,17 @@
           }
         ],
         "operationId": "Post-Connect-FaceBook",
-        "description": "connects facebook"
+        "description": "connects facebook",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "access_token",
+            "description": "EAACeZCaPVXDgBAKW78ckfgleLJGrZAoZBo7pA0qVzzSvk85CoRomfZCQnWOF6xnrLDILOjkgtvF2UOh8MQyPWkABc3JDd0lGCnS6Eiu2SU2x3YB9HYH93Cx9dQa5Sop34hZAiTpZAPWhfSwYnaZALgQkWNjcSbnog9A53GM13CTD4nBiHFGmaA2gNoXFuZBkpeQJng7ZAsuMdtS1i9o6OmUrY&fields=name&locale=en_US&method=get&pretty=0&sdk=joey&suppress_http_code=1"
+          }
+        ]
       }
     },
     "/api/user/v10/me/connects/instagram": {
