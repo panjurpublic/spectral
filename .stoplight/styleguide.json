@@ -13,6 +13,23 @@
   ],
   "aliases": {},
   "rules": {},
+  "inheritedOverrides": {
+    "operation-operationId-unique": {
+      "severity": "off"
+    },
+    "operation-operationId": {
+      "severity": "off"
+    },
+    "operation-tag-defined": {
+      "severity": "off"
+    },
+    "operation-description": {
+      "severity": "off"
+    },
+    "parameter-description": {
+      "severity": "off"
+    }
+  },
   "extendedStyleguides": [
     {
       "id": "cHJqOjEyMzU4Ng",
