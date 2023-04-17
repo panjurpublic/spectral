@@ -4604,7 +4604,9 @@
               }
             }
           }
-        }
+        },
+        "description": "Endpoint açıklama.",
+        "operationId": ""
       }
     },
     "/api/user/v10/login/access_token": {
@@ -19184,25 +19186,19 @@
         }
       },
       "Api.CheckLoginActionAppService.Dto.LoginInput": {
-        "required": [
-          "android_advertising_id",
-          "android_id",
-          "device_token",
-          "email",
-          "ios_device_check_token",
-          "ios_idfa",
-          "is_limit_ad_tracking_enabled",
-          "itunes_unique_vendor_identifier",
-          "password",
-          "source"
-        ],
         "type": "object",
+        "additionalProperties": false,
+        "x-stoplight": {
+          "id": "65y5fdxhs7run"
+        },
         "properties": {
           "email": {
-            "type": "string"
+            "type": "string",
+            "description": "E-posta adresi"
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "description": "Şifre"
           },
           "itunes_unique_vendor_identifier": {
             "type": "string"
@@ -19229,10 +19225,19 @@
             "type": "string"
           }
         },
-        "additionalProperties": false,
-        "x-stoplight": {
-          "id": "65y5fdxhs7run"
-        }
+        "required": [
+          "email",
+          "password",
+          "itunes_unique_vendor_identifier",
+          "android_id",
+          "device_token",
+          "source",
+          "ios_idfa",
+          "android_advertising_id",
+          "is_limit_ad_tracking_enabled",
+          "ios_device_check_token"
+        ],
+        "description": ""
       },
       "Api.CheckLoginActionAppService.Dto.LoginNotificationAccessTokenInput": {
         "required": [
