@@ -1240,17 +1240,7 @@
           }
         ],
         "operationId": "me-conversations-get",
-        "description": "kullanıcıların konuşmalarını listeler",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {}
-              }
-            }
-          }
-        }
+        "description": "kullanıcıların konuşmalarını listeler"
       }
     },
     "/api/user/v10/me/conversations/{receiverUserId}/photos/{conversationMessageId}": {
@@ -5387,7 +5377,7 @@
             "oauth2": []
           }
         ],
-        "operationId": "news_feed-likes",
+        "operationId": "news_feed-likes-delete",
         "description": "Getting like back."
       }
     },
