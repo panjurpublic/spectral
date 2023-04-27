@@ -1001,6 +1001,53 @@
       }
     },
     "/api/user/v10/me/conversations/{otherUserId}": {
+      "post": {
+        "tags": [
+          "Conversations"
+        ],
+        "parameters": [
+          {
+            "name": "otherUserId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.ConversationAppServices.Dto.PostConversationWithPointerInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConversationAppServices.Dto.PostConversationOutput_"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
+      },
       "delete": {
         "tags": [
           "Conversations"
@@ -16664,7 +16711,7 @@
         },
         "additionalProperties": false,
         "x-stoplight": {
-          "id": "dxnnlhb25x3r2"
+          "id": "dxnnlhb25x3r3"
         }
       },
       "Api.ConversationAppServices.Dto.PostConversationWithPointerInput": {
@@ -16683,7 +16730,7 @@
         },
         "additionalProperties": false,
         "x-stoplight": {
-          "id": "dxnnlhb25x3r2"
+          "id": "dxnnlhb25x3r4"
         }
       },
       "Api.ConversationAppServices.Dto.ReceiverUser": {
