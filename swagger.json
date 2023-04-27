@@ -26263,6 +26263,33 @@
           "id": "tyokg9cwfhzla"
         }
       },
+      "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConversationAppServices.Dto.PostConversationOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/Api.ConversationAppServices.Dto.PostConversationOutput"
+          },
+          "result_code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "error_detail_message": {
+            "type": "string"
+          },
+          "stack_trace": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "x-stoplight": {
+          "id": "gob48t0r2ari5"
+        }
+      },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CoreGetUserPhoneConfirmationDetails.Dto.CoreGetUserPhoneConfirmationDetailsDataOutput_": {
         "required": [
           "error_detail_message",
