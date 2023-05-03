@@ -38,7 +38,7 @@
                         "url": "https://www.pembepanjur.com/app_theme/pembepanjur/agreements/user_agreement_tr.php"
                       },
                       "result_code": 1,
-                      "error_detail_message": "",
+                      "error_detail_message": "test",
                       "stack_trace": ""
                     }
                   }
