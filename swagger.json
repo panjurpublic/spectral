@@ -18707,7 +18707,9 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "operationId": "",
+        "description": "Mobil Ekran Görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/393b1cb3d6f730058631be8eb972d6e4c65b1a6a/public/fit_1280\" width=200 />"
       }
     }
   },
