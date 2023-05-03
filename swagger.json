@@ -4605,7 +4605,7 @@
             }
           }
         },
-        "description": "Mobile site ekran görüntü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/6a4ca6122d73d72356d01bafa10a0d6ee610bab7/j72i3wj8/fit_1280\" with=200/>",
+        "description": "Mobile site ekran görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/6a4ca6122d73d72356d01bafa10a0d6ee610bab7/j72i3wj8/fit_1280\" with=200/>",
         "operationId": ""
       }
     },
