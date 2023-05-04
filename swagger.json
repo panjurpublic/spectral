@@ -38,7 +38,7 @@
                         "url": "https://www.pembepanjur.com/app_theme/pembepanjur/agreements/user_agreement_tr.php"
                       },
                       "result_code": 1,
-                      "error_detail_message": "test",
+                      "error_detail_message": "",
                       "stack_trace": ""
                     }
                   }
@@ -1001,6 +1001,53 @@
       }
     },
     "/api/user/v10/me/conversations/{otherUserId}": {
+      "post": {
+        "tags": [
+          "Conversations"
+        ],
+        "parameters": [
+          {
+            "name": "otherUserId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.ConversationAppServices.Dto.PostConversationWithPointerInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConversationAppServices.Dto.PostConversationOutput_"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "security": [
+          {
+            "oauth2": []
+          }
+        ]
+      },
       "delete": {
         "tags": [
           "Conversations"
@@ -16276,6 +16323,18 @@
         }
       },
       "Api.CheckLoginActionAppService.Dto.LoginInput": {
+        "required": [
+          "android_advertising_id",
+          "android_id",
+          "device_token",
+          "email",
+          "ios_device_check_token",
+          "ios_idfa",
+          "is_limit_ad_tracking_enabled",
+          "itunes_unique_vendor_identifier",
+          "password",
+          "source"
+        ],
         "type": "object",
         "additionalProperties": false,
         "x-stoplight": {
@@ -16283,12 +16342,10 @@
         },
         "properties": {
           "email": {
-            "type": "string",
-            "description": "E-posta adresi"
+            "type": "string"
           },
           "password": {
-            "type": "string",
-            "description": "Şifre"
+            "type": "string"
           },
           "itunes_unique_vendor_identifier": {
             "type": "string"
@@ -16314,20 +16371,7 @@
           "ios_device_check_token": {
             "type": "string"
           }
-        },
-        "required": [
-          "email",
-          "password",
-          "itunes_unique_vendor_identifier",
-          "android_id",
-          "device_token",
-          "source",
-          "ios_idfa",
-          "android_advertising_id",
-          "is_limit_ad_tracking_enabled",
-          "ios_device_check_token"
-        ],
-        "description": ""
+        }
       },
       "Api.CheckLoginActionAppService.Dto.LoginNotificationAccessTokenInput": {
         "required": [
@@ -16361,6 +16405,11 @@
         }
       },
       "Api.CheckMobilePaymentCoreAppService.Dto.CheckMobilePaymentDataOutput": {
+        "required": [
+          "continue_five_seconds_check",
+          "error_detail_message",
+          "proceed_to_payment_success_page"
+        ],
         "type": "object",
         "properties": {
           "proceed_to_payment_success_page": {
@@ -16370,8 +16419,7 @@
             "type": "boolean"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -16505,19 +16553,37 @@
         }
       },
       "Api.ConversationAppServices.Dto.ConversationList": {
+        "required": [
+          "add_favorite_pointer",
+          "add_wink_pointer",
+          "conversation_id",
+          "conversation_time_short",
+          "delete_message_auth_code",
+          "formatted_label_timestamp_for_desktop",
+          "formatted_label_timestamp_for_desktop_react",
+          "get_message_pointer",
+          "get_profile_pointer",
+          "is_unread",
+          "last_message_received_type",
+          "last_message_sent_type",
+          "message_text_short",
+          "profile_picture_url",
+          "profile_picture_url_retina",
+          "receiver_user",
+          "show_profile_auth_code",
+          "type",
+          "unread_message_count"
+        ],
         "type": "object",
         "properties": {
           "type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "last_message_received_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "last_message_sent_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_unread": {
             "type": "boolean"
@@ -16534,57 +16600,137 @@
             "format": "int32"
           },
           "message_text_short": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "formatted_label_timestamp_for_desktop": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "formatted_label_timestamp_for_desktop_react": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "conversation_time_short": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "get_message_pointer": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "get_profile_pointer": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "add_favorite_pointer": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "add_wink_pointer": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "delete_message_auth_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_profile_auth_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_picture_url": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_picture_url_retina": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
         "x-stoplight": {
           "id": "dxnnlhb25x3r2"
+        }
+      },
+      "Api.ConversationAppServices.Dto.PostConversationOutput": {
+        "required": [
+          "auth_code",
+          "auth_code_showmessage",
+          "conversation_id",
+          "conversation_message_id",
+          "message_text",
+          "other_user_id",
+          "pending_message_id",
+          "sender_auth_code",
+          "sender_name",
+          "sender_picture",
+          "sender_user_id",
+          "show_message_sent_in_first_week_pixels",
+          "t_auth",
+          "t_user_id"
+        ],
+        "type": "object",
+        "properties": {
+          "auth_code": {
+            "type": "string"
+          },
+          "auth_code_showmessage": {
+            "type": "string"
+          },
+          "conversation_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "conversation_message_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message_text": {
+            "type": "string"
+          },
+          "other_user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pending_message_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sender_auth_code": {
+            "type": "string"
+          },
+          "sender_name": {
+            "type": "string"
+          },
+          "sender_picture": {
+            "type": "string"
+          },
+          "sender_user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "show_message_sent_in_first_week_pixels": {
+            "type": "boolean"
+          },
+          "t_user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "t_auth": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "x-stoplight": {
+          "id": "dxnnlhb25x3r3"
+        }
+      },
+      "Api.ConversationAppServices.Dto.PostConversationWithPointerInput": {
+        "required": [
+          "message_text",
+          "send_message_pointer"
+        ],
+        "type": "object",
+        "properties": {
+          "message_text": {
+            "type": "string"
+          },
+          "send_message_pointer": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "x-stoplight": {
+          "id": "dxnnlhb25x3r4"
         }
       },
       "Api.ConversationAppServices.Dto.ReceiverUser": {
@@ -16656,6 +16802,13 @@
         }
       },
       "Api.CoreCheckLeftBottomNotificationView.Dto.CoreCheckLeftBottomNotificationViewDataModel": {
+        "required": [
+          "add_favored_check",
+          "limit",
+          "notifications_count",
+          "number_of_left_bottom_notifications_seen",
+          "start"
+        ],
         "type": "object",
         "properties": {
           "start": {
@@ -16685,6 +16838,17 @@
         }
       },
       "Api.CoreCheckLeftBottomNotificationView.Dto.CoreCheckLeftBottomNotificationViewItemModel": {
+        "required": [
+          "action_type",
+          "age",
+          "conversation_id",
+          "get_profile_auth_code",
+          "image",
+          "notifications_id",
+          "sender_name",
+          "sender_user_id",
+          "show_message_auth_code"
+        ],
         "type": "object",
         "properties": {
           "notifications_id": {
@@ -16692,29 +16856,23 @@
             "format": "int32"
           },
           "action_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "sender_user_id": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "show_message_auth_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "get_profile_auth_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "image": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "sender_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "age": {
             "type": "integer",
@@ -16722,8 +16880,7 @@
           },
           "conversation_id": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           }
         },
         "additionalProperties": false,
@@ -16732,6 +16889,9 @@
         }
       },
       "Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2DataModel": {
+        "required": [
+          "total_city_count"
+        ],
         "type": "object",
         "properties": {
           "total_city_count": {
@@ -16745,6 +16905,10 @@
         }
       },
       "Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2ItemModel": {
+        "required": [
+          "city_id",
+          "city_text"
+        ],
         "type": "object",
         "properties": {
           "city_id": {
@@ -16752,8 +16916,7 @@
             "format": "int32"
           },
           "city_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -16762,6 +16925,9 @@
         }
       },
       "Api.CoreGetDistrictListV2AppService.Dto.CoreGetDistrictListV2DataModel": {
+        "required": [
+          "total_city_count"
+        ],
         "type": "object",
         "properties": {
           "total_city_count": {
@@ -16775,6 +16941,11 @@
         }
       },
       "Api.CoreGetDistrictListV2AppService.Dto.CoreGetDistrictListV2ItemModel": {
+        "required": [
+          "city_id",
+          "district_id",
+          "district_text"
+        ],
         "type": "object",
         "properties": {
           "city_id": {
@@ -16786,8 +16957,7 @@
             "format": "int32"
           },
           "district_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -16796,14 +16966,17 @@
         }
       },
       "Api.CoreGetUserPhoneConfirmationDetails.Dto.CoreGetUserPhoneConfirmationDetailsDataOutput": {
+        "required": [
+          "found_user_phone_number",
+          "user_phone_number"
+        ],
         "type": "object",
         "properties": {
           "found_user_phone_number": {
             "type": "boolean"
           },
           "user_phone_number": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17297,53 +17470,55 @@
         }
       },
       "Api.FiltersAppService.Dto.FilterDataModel": {
+        "required": [
+          "detailed_search",
+          "last_search_json",
+          "main_checkboxes",
+          "name_search",
+          "order_by_choices",
+          "order_by_string",
+          "word_search"
+        ],
         "type": "object",
         "properties": {
           "detailed_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "name_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "word_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "main_checkboxes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "order_by_choices": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "order_by_string": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "last_search_json": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17352,53 +17527,55 @@
         }
       },
       "Api.FiltersReset.Dto.FiltersResetDataModel": {
+        "required": [
+          "detailed_search",
+          "last_search_json",
+          "main_checkboxes",
+          "name_search",
+          "order_by_choices",
+          "order_by_string",
+          "word_search"
+        ],
         "type": "object",
         "properties": {
           "detailed_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "name_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "word_search": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "main_checkboxes": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "order_by_choices": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "order_by_string": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.SearchVariable.Search"
-            },
-            "nullable": true
+            }
           },
           "last_search_json": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17435,23 +17612,25 @@
         }
       },
       "Api.GetAboutDetailQuestionsAppService.Dto.GetAboutDetailQuestionsItemModel": {
+        "required": [
+          "answer_value",
+          "field_name",
+          "field_type",
+          "question_text"
+        ],
         "type": "object",
         "properties": {
           "field_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "field_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "question_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "answer_value": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17487,6 +17666,12 @@
         }
       },
       "Api.GetAppReleasesAppService.Dto.GetAppReleasesDataModel": {
+        "required": [
+          "is_there_an_update",
+          "is_update_needed",
+          "message",
+          "store_link_or_package_name"
+        ],
         "type": "object",
         "properties": {
           "is_there_an_update": {
@@ -17496,12 +17681,10 @@
             "type": "boolean"
           },
           "message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "store_link_or_package_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17510,19 +17693,21 @@
         }
       },
       "Api.GetAppReleasesAppService.Dto.GetAppReleasesItemModel": {
+        "required": [
+          "change_log",
+          "release_date",
+          "version_number"
+        ],
         "type": "object",
         "properties": {
           "version_number": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "release_date": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "change_log": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17548,6 +17733,9 @@
         }
       },
       "Api.GetBadgeCountAppService.Dto.GetBadgeCountDataOutput": {
+        "required": [
+          "badge_count"
+        ],
         "type": "object",
         "properties": {
           "badge_count": {
@@ -17561,19 +17749,23 @@
         }
       },
       "Api.GetCharacterAnalysisQuestionsAppService.Dto.CharacterAnalysisItemOutput": {
+        "required": [
+          "answer_value",
+          "answers",
+          "field_name",
+          "field_type",
+          "question_text"
+        ],
         "type": "object",
         "properties": {
           "field_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "field_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "question_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "answer_value": {
             "type": "integer",
@@ -17583,8 +17775,7 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.Question.Answer"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -17618,28 +17809,30 @@
         }
       },
       "Api.GetComplaintOptionsAppService.Dto.GetComplaintOptionsDataModel": {
+        "required": [
+          "message",
+          "news_feed",
+          "profile"
+        ],
         "type": "object",
         "properties": {
           "message": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Api.GetComplaintOptionsAppService.Dto.ComplaintOptionModel"
-            },
-            "nullable": true
+            }
           },
           "news_feed": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Api.GetComplaintOptionsAppService.Dto.ComplaintOptionModel"
-            },
-            "nullable": true
+            }
           },
           "profile": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Api.GetComplaintOptionsAppService.Dto.ComplaintOptionModel"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -17648,19 +17841,22 @@
         }
       },
       "Api.GetCountryCodesWithFlagsAppService.Dto.GetCountryCodesWithFlagsListOutput": {
+        "required": [
+          "alpha2_code",
+          "flag",
+          "is_this_pre_selected",
+          "phone_code"
+        ],
         "type": "object",
         "properties": {
           "phone_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "alpha2_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "flag": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_this_pre_selected": {
             "type": "boolean"
@@ -17672,11 +17868,13 @@
         }
       },
       "Api.GetCustomClientJson.Dto.GetCustomClientJsonDataModel": {
+        "required": [
+          "json"
+        ],
         "type": "object",
         "properties": {
           "json": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17685,23 +17883,25 @@
         }
       },
       "Api.GetEmailApprovalPopupAppService.Dto.GetEmailApprovalPopupDataOutput": {
+        "required": [
+          "description",
+          "e_mail",
+          "privacy_description",
+          "title"
+        ],
         "type": "object",
         "properties": {
           "title": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "privacy_description": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "e_mail": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -17710,14 +17910,16 @@
         }
       },
       "Api.GetFeedDetailsCore.Dto.GetFeedDetailsCoreDataOutput": {
+        "required": [
+          "feed_details"
+        ],
         "type": "object",
         "properties": {
           "feed_details": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.NewsFeedRepository.Dto.GetNewsFeedFullDetailsArrayModel"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -17726,6 +17928,10 @@
         }
       },
       "Api.GetFirstRegistrationQuestionCore.Dto.GetFirstRegistrationQuestionCoreDataModel": {
+        "required": [
+          "next_question",
+          "percent_complete"
+        ],
         "type": "object",
         "properties": {
           "percent_complete": {
@@ -17742,6 +17948,24 @@
         }
       },
       "Api.GetImageCore.Dto.GetImageCoreDataOutput": {
+        "required": [
+          "caption",
+          "height",
+          "image_core_query_count",
+          "image_height_orig",
+          "image_no",
+          "image_width_orig",
+          "isapproved",
+          "isapproved_css_class",
+          "picture_id",
+          "profile_image",
+          "profile_picture_id",
+          "regular",
+          "retina",
+          "show_make_main_picture_button",
+          "thumbnail",
+          "width"
+        ],
         "type": "object",
         "properties": {
           "picture_id": {
@@ -17757,8 +17981,7 @@
             "format": "int32"
           },
           "isapproved_css_class": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_make_main_picture_button": {
             "type": "boolean"
@@ -17772,8 +17995,7 @@
             "format": "int32"
           },
           "caption": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "image_width_orig": {
             "type": "integer",
@@ -17792,16 +18014,13 @@
             "format": "int32"
           },
           "regular": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "thumbnail": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "retina": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "image_core_query_count": {
             "type": "integer",
@@ -17814,6 +18033,11 @@
         }
       },
       "Api.GetImagesCore.Dto.GetImagesCoreDataOutput": {
+        "required": [
+          "approved_picture_count",
+          "cache_used",
+          "counter"
+        ],
         "type": "object",
         "properties": {
           "counter": {
@@ -17834,6 +18058,28 @@
         }
       },
       "Api.GetMenuCountCoreAppService.Dto.MenuCountDataOutput": {
+        "required": [
+          "close_user_count",
+          "count_all_deleted_messages",
+          "count_all_favoredby",
+          "count_all_favorites",
+          "count_all_matches",
+          "count_all_messages",
+          "count_all_profile_visitors",
+          "count_all_unseen_matches",
+          "count_all_visited_profiles",
+          "count_all_winks",
+          "count_new_profile_visitors",
+          "count_notseen_favoredby",
+          "count_sent_messages",
+          "count_sent_winks",
+          "count_unread_messages",
+          "count_unseen_notifications",
+          "count_unseen_winks",
+          "show_add_picture_bar_on_left_menu",
+          "show_complete_personality_test_bar_on_left_menu",
+          "show_go_premium_bar_on_left_menu"
+        ],
         "type": "object",
         "properties": {
           "count_unread_messages": {
@@ -18440,6 +18686,7 @@
       "Api.GetNotificationSettingCoreAppService.Dto.GetNotificationSettingCoreItemOutput": {
         "required": [
           "field_name",
+          "options",
           "title"
         ],
         "type": "object",
@@ -18487,6 +18734,16 @@
         }
       },
       "Api.GetOtherProfileAppService.Dto.UserRecommend": {
+        "required": [
+          "age",
+          "district",
+          "isonline",
+          "last_activity_datetime",
+          "name",
+          "profile_picture_url_retina",
+          "slug",
+          "user_id"
+        ],
         "type": "object",
         "properties": {
           "user_id": {
@@ -18494,16 +18751,13 @@
             "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_picture_url_retina": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "district": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "age": {
             "type": "integer",
@@ -18514,12 +18768,10 @@
             "format": "int32"
           },
           "last_activity_datetime": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "slug": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -18528,6 +18780,9 @@
         }
       },
       "Api.GetOtherProfileAppService.Dto.UserRecommendsData": {
+        "required": [
+          "user_count"
+        ],
         "type": "object",
         "properties": {
           "user_count": {
@@ -18566,6 +18821,12 @@
         }
       },
       "Api.GetPaymentDetailGooglePlayAppService.Dto.PaymentSubscriptionsDataOutput": {
+        "required": [
+          "payment_detail_info",
+          "payment_detail_info_count",
+          "payment_methods",
+          "payment_teaser_user"
+        ],
         "type": "object",
         "properties": {
           "payment_detail_info": {
@@ -18588,6 +18849,13 @@
         }
       },
       "Api.GetPaymentDetailInfoApiV5.Dto.GetPaymentDetailInfoApiV5DataOutput": {
+        "required": [
+          "payment_detail_info",
+          "payment_detail_info_count",
+          "payment_methods",
+          "payment_teaser_user",
+          "result_text"
+        ],
         "type": "object",
         "properties": {
           "payment_detail_info": {
@@ -18604,8 +18872,7 @@
             "$ref": "#/components/schemas/PanjurUserApi.DataAccess.UserApiUserRepository.Dto.PaymentTeaserUserModel"
           },
           "result_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -18635,15 +18902,17 @@
         }
       },
       "Api.GetPaymentDetailInfoItunesV5AppService.Dto.PaymentSubscriptionsIosItemModel": {
+        "required": [
+          "id",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "id": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -18729,6 +18998,12 @@
         }
       },
       "Api.GetPersonalityReportAppService.Dto.GetListingReportValuesModel": {
+        "required": [
+          "data_percentage_values",
+          "data_scale_values",
+          "data_text_values",
+          "data_values"
+        ],
         "type": "object",
         "properties": {
           "data_values": {
@@ -19028,6 +19303,26 @@
         }
       },
       "Api.GetPostLoginAppService.Dto.GetPostLoginDataModel": {
+        "required": [
+          "conversion_pixels_obj",
+          "google_analytics_object",
+          "messages_sent_count",
+          "payment_count",
+          "payment_page_visit_count",
+          "payment_pixel",
+          "photo_upload_count",
+          "profiles_visited_count",
+          "reason_text_for_no_matches",
+          "remarketing_pixels_obj",
+          "show_popup",
+          "show_regcomplete_pixels",
+          "user_age",
+          "user_age_group",
+          "user_city_text",
+          "user_gender_text",
+          "user_subscription_status",
+          "winks_sent_count"
+        ],
         "type": "object",
         "properties": {
           "user_age": {
@@ -19035,20 +19330,16 @@
             "format": "int32"
           },
           "user_gender_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "user_age_group": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "user_city_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "user_subscription_status": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "messages_sent_count": {
             "type": "integer",
@@ -19087,12 +19378,10 @@
             "type": "boolean"
           },
           "reason_text_for_no_matches": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_popup": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "google_analytics_object": {
             "$ref": "#/components/schemas/PanjurUserApi.DataAccess.LoginRepository.Dto.GoogleAnalyticsObject"
@@ -19104,6 +19393,10 @@
         }
       },
       "Api.GetPreviousRegistrationQuestionCoreAppService.Dto.PreviousQuestionData": {
+        "required": [
+          "percent_complete",
+          "previous_question"
+        ],
         "type": "object",
         "properties": {
           "percent_complete": {
@@ -19120,11 +19413,13 @@
         }
       },
       "Api.GetPrivacyAgreementAppService.Dto.GetPrivacyAgreementDataModel": {
+        "required": [
+          "url"
+        ],
         "type": "object",
         "properties": {
           "url": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -19176,6 +19471,18 @@
         }
       },
       "Api.GetProfileAppService.Dto.GetProfileDataOutput": {
+        "required": [
+          "compare",
+          "confirmation_badges",
+          "general_information",
+          "header",
+          "hobbies",
+          "instagram_photos",
+          "interaction",
+          "pictures",
+          "pointers",
+          "previous_and_next_profile"
+        ],
         "type": "object",
         "properties": {
           "header": {
@@ -19188,15 +19495,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.UserApiUserRepository.Dto.UserPictureModel"
-            },
-            "nullable": true
+            }
           },
           "instagram_photos": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.UserApiUserRepository.Dto.GetInstagramMediaModel"
-            },
-            "nullable": true
+            }
           },
           "confirmation_badges": {
             "$ref": "#/components/schemas/Api.GetProfileAppService.Dto.GetProfileConfirmationBadgesModel"
@@ -19214,15 +19519,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Api.GetProfileAppService.Dto.GetProfileFieldModel"
-            },
-            "nullable": true
+            }
           },
           "hobbies": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.UserApiUserRepository.Dto.GetProfileHobbyModel"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -19412,6 +19715,12 @@
         }
       },
       "Api.GetRegistrationQuestions.Dto.GetRegistrationQuestionsDataModel": {
+        "required": [
+          "created_unix_timestamp",
+          "full_question_count",
+          "language",
+          "suggested_expiration_unix_timestamp"
+        ],
         "type": "object",
         "properties": {
           "full_question_count": {
@@ -19419,8 +19728,7 @@
             "format": "int32"
           },
           "language": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "created_unix_timestamp": {
             "type": "integer",
@@ -19595,11 +19903,13 @@
         }
       },
       "Api.GetSearchArrayJsonAppService.Dto.LastSearchJsonDataModel": {
+        "required": [
+          "selected_search_array_json"
+        ],
         "type": "object",
         "properties": {
           "selected_search_array_json": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -19608,6 +19918,9 @@
         }
       },
       "Api.GetSessionAppService.Dto.GetSessionDataModel": {
+        "required": [
+          "session"
+        ],
         "type": "object",
         "properties": {
           "session": {
@@ -19895,6 +20208,33 @@
         }
       },
       "Api.GetSettingsCore.Dto.GetSettingsCoreDataModel": {
+        "required": [
+          "can_change_recurring_subscription",
+          "can_reset_matches",
+          "email",
+          "email_is_approved",
+          "isapproved_profile_text",
+          "isitunes_recurring_subscription",
+          "last_payment_datetime_tr",
+          "name",
+          "phone_number",
+          "premium_expiration_datetime_tr",
+          "profile_sound_status",
+          "profile_sound_type",
+          "profile_sound_type_text",
+          "profile_type_text",
+          "profile_visibility_text",
+          "profile_visibility_value",
+          "recurring_subscription_date",
+          "reset_matches_text",
+          "show_last_payment_datetime_tr",
+          "show_premium_expiration_datetime_tr",
+          "show_premium_link",
+          "show_premium_link_type",
+          "show_recurring_subscription_date",
+          "social_network_model",
+          "user_id"
+        ],
         "type": "object",
         "properties": {
           "user_id": {
@@ -19902,23 +20242,19 @@
             "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "email": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "email_is_approved": {
             "type": "boolean"
           },
           "phone_number": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_visibility_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_visibility_value": {
             "type": "integer",
@@ -19928,51 +20264,42 @@
             "type": "boolean"
           },
           "profile_type_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "isapproved_profile_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_sound_type": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "profile_sound_status": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "profile_sound_type_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_premium_link_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_last_payment_datetime_tr": {
             "type": "boolean"
           },
           "last_payment_datetime_tr": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_premium_expiration_datetime_tr": {
             "type": "boolean"
           },
           "premium_expiration_datetime_tr": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_recurring_subscription_date": {
             "type": "boolean"
           },
           "recurring_subscription_date": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "isitunes_recurring_subscription": {
             "type": "boolean"
@@ -19984,8 +20311,7 @@
             "$ref": "#/components/schemas/PanjurUserApi.DataAccess.LoginRepository.Dto.SocialNetworkModel"
           },
           "reset_matches_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "show_premium_link": {
             "type": "boolean"
@@ -20016,6 +20342,11 @@
         }
       },
       "Api.GetSingleRegistrationQuestionCoreAppService.Dto.SingleQuestionDataModel": {
+        "required": [
+          "full_question_count",
+          "language",
+          "question"
+        ],
         "type": "object",
         "properties": {
           "question": {
@@ -20026,8 +20357,7 @@
             "format": "int32"
           },
           "language": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -20036,6 +20366,16 @@
         }
       },
       "Api.GetStateOrCityListForAutoCompleteCore.Dto.GetStateOrCityListForAutoCompleteItemModel": {
+        "required": [
+          "city_id",
+          "city_text",
+          "country_id",
+          "country_text",
+          "district_id",
+          "district_text",
+          "location_text",
+          "location_type"
+        ],
         "type": "object",
         "properties": {
           "country_id": {
@@ -20043,32 +20383,27 @@
             "format": "int32"
           },
           "country_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "city_id": {
             "type": "integer",
             "format": "int32"
           },
           "city_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "district_id": {
             "type": "integer",
             "format": "int32"
           },
           "district_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "location_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "location_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -20077,11 +20412,14 @@
         }
       },
       "Api.GetSubscriptionAppService.Dto.GetSubscriptionDataOutput": {
+        "required": [
+          "is_subscribed",
+          "question_text"
+        ],
         "type": "object",
         "properties": {
           "question_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_subscribed": {
             "type": "boolean"
@@ -20093,11 +20431,13 @@
         }
       },
       "Api.GetUserAgreementAppService.Dto.GetUserAgreementDataModel": {
+        "required": [
+          "url"
+        ],
         "type": "object",
         "properties": {
           "url": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -20196,11 +20536,14 @@
         }
       },
       "Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedDataOutput": {
+        "required": [
+          "news_result_count",
+          "status"
+        ],
         "type": "object",
         "properties": {
           "status": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "news_result_count": {
             "type": "integer",
@@ -20213,6 +20556,29 @@
         }
       },
       "Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedItemOutput": {
+        "required": [
+          "auth_codes",
+          "datetime_news_feed",
+          "image_links_detailed_array",
+          "interaction",
+          "is_boost",
+          "last_activity_datetime",
+          "like_users",
+          "like_users_string",
+          "multiple_fields",
+          "new_value",
+          "news_feed_id",
+          "news_feed_like_count",
+          "news_type",
+          "news_type_text",
+          "pointers",
+          "post_user_gender",
+          "slug",
+          "type",
+          "updated_field_name",
+          "user_id",
+          "user_info"
+        ],
         "type": "object",
         "properties": {
           "user_id": {
@@ -20220,8 +20586,7 @@
             "format": "int32"
           },
           "type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "news_feed_id": {
             "type": "integer",
@@ -20232,8 +20597,7 @@
             "format": "int32"
           },
           "news_type_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "news_feed_like_count": {
             "type": "integer",
@@ -20247,12 +20611,10 @@
             "type": "boolean"
           },
           "new_value": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "updated_field_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "post_user_gender": {
             "type": "integer",
@@ -20277,19 +20639,16 @@
             "$ref": "#/components/schemas/Api.GetUserNewsFeedCoreAppService.Dto.AuthCodesModel"
           },
           "slug": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "image_links_detailed_array": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.NewsFeedRepository.Dto.ReducedPictureModel"
-            },
-            "nullable": true
+            }
           },
           "like_users_string": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "like_users": {
             "$ref": "#/components/schemas/PanjurUserApi.DataAccess.NewsFeedRepository.Dto.LikeUsersModel"
@@ -20488,6 +20847,8 @@
           "notification_message_text",
           "notification_type",
           "notifications_id",
+          "sender_info",
+          "timestamp",
           "type",
           "user_id"
         ],
@@ -20613,6 +20974,29 @@
         }
       },
       "Api.GetUuidAppService.Dto.GetUuidDataOutput": {
+        "required": [
+          "api_request_log_id",
+          "cookies",
+          "host_name",
+          "http_headers",
+          "http_method",
+          "ip_address",
+          "ip_address_int",
+          "php_input",
+          "php_session_id",
+          "post_content",
+          "pp_ab",
+          "request_datetime",
+          "request_datetime_tr",
+          "request_uri",
+          "response",
+          "response_code",
+          "response_result_code",
+          "response_time_ms",
+          "user_agent",
+          "user_id",
+          "uuid_value"
+        ],
         "type": "object",
         "properties": {
           "api_request_log_id": {
@@ -20620,60 +21004,47 @@
             "format": "int32"
           },
           "cookies": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "host_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "http_headers": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "http_method": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "ip_address": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "ip_address_int": {
             "type": "integer",
             "format": "int32"
           },
           "php_input": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "php_session_id": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "post_content": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "pp_ab": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "request_datetime": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "request_datetime_tr": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "request_uri": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "response": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "response_code": {
             "type": "integer",
@@ -20688,12 +21059,10 @@
             "format": "int32"
           },
           "user_agent": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "uuid_value": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "user_id": {
             "type": "integer",
@@ -20706,11 +21075,18 @@
         }
       },
       "Api.LegacyGetAppReleases.Dto.LegacyGetAppReleasesListOutput": {
+        "required": [
+          "change_log",
+          "distribution_completed",
+          "is_mandatory",
+          "release_date",
+          "store_link",
+          "version_number"
+        ],
         "type": "object",
         "properties": {
           "version_number": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_mandatory": {
             "type": "boolean"
@@ -20719,16 +21095,13 @@
             "type": "boolean"
           },
           "release_date": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "store_link": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "change_log": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -20993,6 +21366,7 @@
       },
       "Api.PendingPaymentPixel.Dto.PendingPaymentPixelDataOutput": {
         "required": [
+          "payment_pixel",
           "payment_transaction_id"
         ],
         "type": "object",
@@ -21066,6 +21440,10 @@
         }
       },
       "Api.PlaySoundAppService.Dto.PlaySoundDataModel": {
+        "required": [
+          "play_sound",
+          "reason"
+        ],
         "type": "object",
         "properties": {
           "play_sound": {
@@ -21073,8 +21451,7 @@
             "format": "int32"
           },
           "reason": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -21211,6 +21588,18 @@
         }
       },
       "Api.RecommendUsersAppService.Dto.RecommendedUsersItemModel": {
+        "required": [
+          "age",
+          "city_text",
+          "district_text",
+          "gender",
+          "get_profile_pointer",
+          "is_online",
+          "name",
+          "profile_picture_url",
+          "profile_picture_url_retina",
+          "user_id"
+        ],
         "type": "object",
         "properties": {
           "user_id": {
@@ -21222,8 +21611,7 @@
             "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "gender": {
             "type": "integer",
@@ -21234,24 +21622,19 @@
             "format": "int32"
           },
           "city_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "district_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "get_profile_pointer": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_picture_url": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "profile_picture_url_retina": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -21461,6 +21844,10 @@
         }
       },
       "Api.RegistrationUpdateCore.Dto.RegistrationUpdateCoreDataModel": {
+        "required": [
+          "move_to_picture_upload",
+          "percent_complete"
+        ],
         "type": "object",
         "additionalProperties": false,
         "x-stoplight": {
@@ -21477,11 +21864,7 @@
           "next_question": {
             "$ref": "#/components/schemas/PanjurUserApi.Domain.Models.Filters.Question.QuestionDetail"
           }
-        },
-        "required": [
-          "move_to_picture_upload",
-          "percent_complete"
-        ]
+        }
       },
       "Api.RegistrationUpdateCore.Dto.RegistrationUpdateCoreInput": {
         "type": "object",
@@ -21562,6 +21945,12 @@
         }
       },
       "Api.SearchRecordListCore.Dto.SearchRecordModel": {
+        "required": [
+          "search_criteria_string",
+          "search_record_id",
+          "search_record_name",
+          "search_record_unix_time"
+        ],
         "type": "object",
         "properties": {
           "search_record_id": {
@@ -21569,12 +21958,10 @@
             "format": "int32"
           },
           "search_record_name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "search_criteria_string": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "search_record_unix_time": {
             "type": "integer",
@@ -22326,6 +22713,9 @@
         }
       },
       "PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.DataModel": {
+        "required": [
+          "pagination"
+        ],
         "type": "object",
         "properties": {
           "pagination": {
@@ -22438,11 +22828,17 @@
       },
       "PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.ListingUser": {
         "required": [
+          "badges",
           "closer_user",
           "conversation_id",
+          "date_label",
+          "formatted_date",
+          "interaction",
           "payment_page_url",
           "payment_status",
+          "pointers",
           "position",
+          "profile",
           "unix_profilepicture_lastupdate_datetime",
           "user_id"
         ],
@@ -22663,7 +23059,9 @@
       },
       "PanjurUserApi.DataAccess.CountryRepository.Dto.GetAllDistrictCityListByCountryDataModel": {
         "required": [
-          "country_id"
+          "country_id",
+          "full_city_list",
+          "full_district_list"
         ],
         "type": "object",
         "properties": {
@@ -22675,15 +23073,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.CountryRepository.Dto.CityModel"
-            },
-            "nullable": true
+            }
           },
           "full_district_list": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.CountryRepository.Dto.DistrictModel"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -22692,6 +23088,11 @@
         }
       },
       "PanjurUserApi.DataAccess.FilterRepository.Dto.CountryModel": {
+        "required": [
+          "country_code",
+          "country_id",
+          "country_text"
+        ],
         "type": "object",
         "properties": {
           "country_id": {
@@ -22699,12 +23100,10 @@
             "format": "int32"
           },
           "country_text": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "country_code": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -22982,6 +23381,7 @@
           "get_profile_pointer",
           "image_count",
           "image_links",
+          "image_links_detailed_array",
           "image_links_regular_size",
           "is_active",
           "is_boost",
@@ -22993,6 +23393,7 @@
           "last_activity_datetime_mid",
           "last_activity_datetime_tr",
           "last_activity_datetime_unix_timestamp",
+          "like_users",
           "like_users_string",
           "m_auth_code",
           "msg_auth_code",
@@ -23026,6 +23427,7 @@
           "updated_field_id",
           "updated_field_name",
           "user_id",
+          "user_info",
           "user_info_json",
           "w_auth_code"
         ],
@@ -23135,8 +23537,7 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/PanjurUserApi.DataAccess.NewsFeedRepository.Dto.ReducedPictureModel"
-            },
-            "nullable": true
+            }
           },
           "image_count": {
             "type": "integer",
@@ -23292,21 +23693,33 @@
         }
       },
       "PanjurUserApi.DataAccess.NewsFeedRepository.Dto.ReducedPictureModel": {
+        "required": [
+          "caption",
+          "collage_image",
+          "flex_x_large_src",
+          "height",
+          "horizontal",
+          "picture_id",
+          "regular_src",
+          "size_type",
+          "square",
+          "thumbnail_src",
+          "tn_x_large_src",
+          "vertical",
+          "width"
+        ],
         "type": "object",
         "properties": {
           "picture_id": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "width": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "height": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "vertical": {
             "type": "boolean"
@@ -23318,32 +23731,25 @@
             "type": "boolean"
           },
           "size_type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "caption": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "thumbnail_src": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "regular_src": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "tn_x_large_src": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "flex_x_large_src": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "collage_image": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -23566,6 +23972,18 @@
         }
       },
       "PanjurUserApi.DataAccess.PaymentRepository.Dto.GetUserFeatureDetailsInnerDataOutput": {
+        "required": [
+          "boosted_posts_list",
+          "guaranteed_messages_list",
+          "is_guaranteed_message",
+          "is_post_boost",
+          "is_search_boost",
+          "is_spotlight",
+          "search_boost_expired_datetime",
+          "search_boost_expired_unix_timestamp",
+          "spotlight_expired_datetime",
+          "spotlight_expired_unix_timestamp"
+        ],
         "type": "object",
         "properties": {
           "is_spotlight": {
@@ -23573,24 +23991,20 @@
             "format": "int32"
           },
           "spotlight_expired_datetime": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "spotlight_expired_unix_timestamp": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_search_boost": {
             "type": "integer",
             "format": "int32"
           },
           "search_boost_expired_datetime": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "search_boost_expired_unix_timestamp": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "is_post_boost": {
             "type": "integer",
@@ -23600,8 +24014,7 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Panjur.Common.Domain.Entities.PanjurAdminEntities.OrmFeaturePostBoost"
-            },
-            "nullable": true
+            }
           },
           "is_guaranteed_message": {
             "type": "integer",
@@ -23611,8 +24024,7 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Panjur.Common.Domain.Entities.PanjurAdminEntities.OrmFeatureGuaranteedReplyMessage"
-            },
-            "nullable": true
+            }
           }
         },
         "additionalProperties": false,
@@ -24049,7 +24461,8 @@
       "PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel": {
         "required": [
           "debug_cache_bypass",
-          "debug_cache_state"
+          "debug_cache_state",
+          "pagination"
         ],
         "type": "object",
         "properties": {
@@ -24167,11 +24580,17 @@
       },
       "PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput": {
         "required": [
+          "badges",
           "closer_user",
           "conversation_id",
+          "date_label",
+          "formatted_date",
+          "interaction",
           "payment_page_url",
           "payment_status",
+          "pointers",
           "position",
+          "profile",
           "unix_profilepicture_lastupdate_datetime",
           "user_id"
         ],
@@ -24813,6 +25232,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.CoreCheckLeftBottomNotificationView.Dto.CoreCheckLeftBottomNotificationViewDataModel_Api.CoreCheckLeftBottomNotificationView.Dto.CoreCheckLeftBottomNotificationViewItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24830,12 +25254,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24844,6 +25266,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2DataModel_Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2ItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24861,12 +25288,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24875,6 +25300,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.CoreGetDistrictListV2AppService.Dto.CoreGetDistrictListV2DataModel_Api.CoreGetDistrictListV2AppService.Dto.CoreGetDistrictListV2ItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24892,12 +25322,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24906,6 +25334,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.FacebookAlbumsCoreAppService.Dto.FacebookAlbumCoreDataOutput_Api.FacebookAlbumsCoreAppService.Dto.FacebookAlbumCoreItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24923,12 +25356,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24937,6 +25368,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.FacebookPhotosInAlbumAppService.Dto.FacebookAlbumsPhotosDataModel_Api.FacebookPhotosInAlbumAppService.Dto.FacebookAlbumsPhotoItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24954,12 +25390,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24968,6 +25402,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetAppReleasesAppService.Dto.GetAppReleasesDataModel_Api.GetAppReleasesAppService.Dto.GetAppReleasesItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -24985,12 +25424,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -24999,6 +25436,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetImagesCore.Dto.GetImagesCoreDataOutput_PanjurUserApi.DataAccess.ImageRepository.Dto.GetImagesCoreItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25016,12 +25458,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25030,6 +25470,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetMessagesAppService.Dto.MessageDataModel_Api.GetMessagesAppService.Dto.MessageItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25047,12 +25492,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25061,6 +25504,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetNewsFeedCoreAppService.Dto.NewsFeedDataOutput_PanjurUserApi.DataAccess.NewsFeedRepository.Dto.GetNewsFeedFullDetailsArrayModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25078,12 +25526,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25092,6 +25538,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesDataOutput_Api.GetNewsfeedLikeUsersCoreAppService.Dto.NewsFeedLikesItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25109,12 +25560,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25123,6 +25572,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetOtherProfileAppService.Dto.UserRecommendsData_Api.GetOtherProfileAppService.Dto.UserRecommend_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25140,12 +25594,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25154,6 +25606,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetRegistrationQuestions.Dto.GetRegistrationQuestionsDataModel_Api.GetRegistrationQuestions.Dto.GetRegistrationQuestionsItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25171,12 +25628,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25185,6 +25640,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedDataOutput_Api.GetUserNewsFeedCoreAppService.Dto.GetUserNewsFeedItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25202,12 +25662,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25216,6 +25674,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.GetUserNotificationListCoreAppService.Dto.NotificationDataOutput_Api.GetUserNotificationListCoreAppService.Dto.NotificationItemsOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25233,12 +25696,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25247,6 +25708,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.MeInstagramGetPhotosCoreAppService.Dto.InstagramPhotosDataOutput_PanjurUserApi.Application.RestService.InstagramCurlRequestRestService.Dto.InstagramPhotoItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25264,12 +25730,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25278,6 +25742,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.UploadImageCoreAppService.Dto.PictureUploadDataOutput_PanjurUserApi.DataAccess.ImageRepository.Dto.GetImagesCoreItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25295,12 +25764,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25309,6 +25776,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.UploadPictureFromUrlCoreAppService.Dto.PictureUploadUrlDataOutput_PanjurUserApi.DataAccess.ImageRepository.Dto.GetImagesCoreItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25326,12 +25798,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25340,6 +25810,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.DataModel_PanjurUserApi.Application.RestService.GetSearchResultInnerRestService.Dto.ListingUser_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25357,12 +25832,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25372,6 +25845,11 @@
         "title": ""
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_Api.ConversationAppServices.Dto.ConversationList_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25389,12 +25867,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25403,6 +25879,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataListResult_2_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.PaginationDataModel_PanjurUserApi.DataAccess.UpdateUserForListingServicesV10Repository.Dto.UserListOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25420,12 +25901,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25434,6 +25913,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.AddFavoriteCoreAppService.Dto.AddFavoriteCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25444,12 +25928,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25458,6 +25940,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.AddWinkAppService.Dto.WinkPostDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25468,12 +25955,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25482,6 +25967,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CancelRecurringSubscriptionStatus.Dto.CancelRecurringSubscriptionStatusDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25492,12 +25982,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25506,6 +25994,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangeEmailAppService.Dto.ChangeEmailDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25516,12 +26009,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25530,6 +26021,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangeForgottenPasswordCoreAppService.Dto.PasswordForgottenPutDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25540,12 +26036,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25554,6 +26048,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangePasswordAppService.Dto.ChangePasswordDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25564,12 +26063,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25578,6 +26075,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangePhoneNumberAppService.Dto.ChangePhoneNumberDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25588,12 +26090,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25602,6 +26102,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ChangeProfilePrivacy.Dto.ChangeProfilePrivacyDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25612,12 +26117,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25626,6 +26129,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CheckLoginActionAppService.Dto.CheckLoginActionDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25636,12 +26144,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25650,6 +26156,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CheckMobilePaymentCoreAppService.Dto.CheckMobilePaymentDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25660,12 +26171,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25674,6 +26183,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ComplaintUserAppService.Dto.ComplaintUserDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25684,12 +26198,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25698,6 +26210,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectInstagramCoreV2AppService.Dto.ConnectInstagramCoreV2DataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25708,12 +26225,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25722,6 +26237,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectSocialNetworkFacebookAppService.Dto.ConnectSocialNetworkFacebookDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25732,12 +26252,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25745,7 +26263,39 @@
           "id": "tyokg9cwfhzla"
         }
       },
+      "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConversationAppServices.Dto.PostConversationOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/Api.ConversationAppServices.Dto.PostConversationOutput"
+          },
+          "result_code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "error_detail_message": {
+            "type": "string"
+          },
+          "stack_trace": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "x-stoplight": {
+          "id": "gob48t0r2ari5"
+        }
+      },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CoreGetUserPhoneConfirmationDetails.Dto.CoreGetUserPhoneConfirmationDetailsDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25756,12 +26306,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25770,6 +26318,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CreateNewUserAppService.Dto.PostRegisterDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25780,12 +26333,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25794,6 +26345,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CreditCardProcessorCoreAppService.Dto.CreditCardProcessorCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25804,12 +26360,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25818,6 +26372,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.DeletePictureCoreAppService.Dto.PictureDeleteDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25828,12 +26387,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25842,6 +26399,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.DeletePictureInMessageCoreAppService.Dto.ConversationPictureDeleteModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25852,12 +26414,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25866,6 +26426,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.FiltersAppService.Dto.FilterDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25876,12 +26441,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25890,6 +26453,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.FiltersReset.Dto.FiltersResetDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25900,12 +26468,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25914,6 +26480,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.FrontendNotificationsAppService.Dto.ReportFrontendNotificationDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25924,12 +26495,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25938,6 +26507,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetAppPromotePopupAppService.Dto.GetAppPromotePopupDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25948,12 +26522,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25962,6 +26534,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetBadgeCountAppService.Dto.GetBadgeCountDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25972,12 +26549,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -25986,6 +26561,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetComplaintOptionsAppService.Dto.GetComplaintOptionsDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -25996,12 +26576,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26010,6 +26588,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetCustomClientJson.Dto.GetCustomClientJsonDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26020,12 +26603,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26034,6 +26615,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetEmailApprovalPopupAppService.Dto.GetEmailApprovalPopupDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26044,12 +26630,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26058,6 +26642,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetFeedDetailsCore.Dto.GetFeedDetailsCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26068,12 +26657,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26082,6 +26669,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetFirstRegistrationQuestionCore.Dto.GetFirstRegistrationQuestionCoreDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26092,12 +26684,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26106,6 +26696,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetImageCore.Dto.GetImageCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26116,12 +26711,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26130,6 +26723,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetMenuCountCoreAppService.Dto.MenuCountDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26140,12 +26738,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26154,6 +26750,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPaymentDetailGooglePlayAppService.Dto.PaymentSubscriptionsDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26164,12 +26765,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26178,6 +26777,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPaymentDetailInfoApiV5.Dto.GetPaymentDetailInfoApiV5DataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26188,12 +26792,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26202,6 +26804,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPersonalityReportAppService.Dto.GetListingReportValuesModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26212,12 +26819,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26226,6 +26831,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPostLoginAppService.Dto.GetPostLoginDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26236,12 +26846,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26250,6 +26858,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPreviousRegistrationQuestionCoreAppService.Dto.PreviousQuestionData_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26260,12 +26873,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26274,6 +26885,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetPrivacyAgreementAppService.Dto.GetPrivacyAgreementDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26284,12 +26900,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26298,6 +26912,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetProfileAppService.Dto.GetProfileDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26308,12 +26927,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26322,6 +26939,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSearchArrayJsonAppService.Dto.LastSearchJsonDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26332,12 +26954,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26346,6 +26966,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSessionAppService.Dto.GetSessionDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26356,12 +26981,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26370,6 +26993,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSettingsCore.Dto.GetSettingsCoreDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26380,12 +27008,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26394,6 +27020,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetShowPopupAppService.Dto.GetShowPopupDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26404,12 +27035,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26418,6 +27047,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSingleRegistrationQuestionCoreAppService.Dto.SingleQuestionDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26428,12 +27062,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26442,6 +27074,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetSubscriptionAppService.Dto.GetSubscriptionDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26452,12 +27089,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26466,6 +27101,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetUserAgreementAppService.Dto.GetUserAgreementDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26476,12 +27116,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26490,6 +27128,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.GetUuidAppService.Dto.GetUuidDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26500,12 +27143,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26514,6 +27155,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.NewsFeedComplaintAppService.Dto.NewsFeedComplaintDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26524,12 +27170,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26538,6 +27182,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.NewsFeedLikeAppService.Dto.NewsFeedLikeDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26548,12 +27197,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26562,6 +27209,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.NewsFeedUnlike.Dto.NewsFeedUnlikeDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26572,12 +27224,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26586,6 +27236,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.PendingPaymentPixel.Dto.PendingPaymentPixelDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26596,12 +27251,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26610,6 +27263,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.PlaySoundAppService.Dto.PlaySoundDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26620,12 +27278,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26634,6 +27290,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.PopupRateUsAnsweredCore.Dto.PopupRateUsAnsweredCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26644,12 +27305,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26658,6 +27317,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.PostAccessToken.Dto.PostAccessTokenDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26668,12 +27332,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26682,6 +27344,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.RegisterAndroidPaymentCoreAppService.Dto.RegisterAndroidPaymentCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26692,12 +27359,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26706,6 +27371,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.RegisterItunesPaymentAppleCoreV5.Dto.RegisterItunesPaymentAppleCoreV5DataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26716,12 +27386,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26730,6 +27398,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.RegistrationUpdateCore.Dto.RegistrationUpdateCoreDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26740,12 +27413,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26754,6 +27425,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.SearchRecordInsertAppService.Dto.RecordsPost_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26764,12 +27440,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26778,6 +27452,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.SendPasswordResetEmailCoreAppService.Dto.SendPasswordResetEmailCoreDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26788,12 +27467,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26802,6 +27479,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.SettingsChangeName.Dto.SettingsChangeNameDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26812,12 +27494,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26826,6 +27506,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.StartMobilePaymentProcessCore.Dto.StartMobilePaymentProcessCoreDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26836,12 +27521,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26850,6 +27533,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.StatusUpdateCoreAppService.Dto.NewsFeedPostDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26860,12 +27548,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26874,6 +27560,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.UploadImageFromMessageCoreAppService.Dto.ConversationPictureUploadDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26884,12 +27575,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26898,6 +27587,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.WireProcessorCore.Dto.WireProcessorCoreDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26908,12 +27602,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26922,6 +27614,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_PanjurUserApi.DataAccess.CountryRepository.Dto.GetAllDistrictCityListByCountryDataModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26932,12 +27629,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26946,6 +27641,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiDataResult_1_PanjurUserApi.DataAccess.PaymentRepository.Dto.GetUserFeatureDetailsInnerDataOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -26956,12 +27656,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26970,6 +27668,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetAboutDetailQuestionsAppService.Dto.GetAboutDetailQuestionsItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -26984,12 +27687,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -26998,6 +27699,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetAvailableLanguagesCoreAppService.Dto.GetAvailableLanguagesCoreAppServiceListOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27012,12 +27718,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27026,6 +27730,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetCharacterAnalysisQuestionsAppService.Dto.CharacterAnalysisItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27040,12 +27749,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27054,6 +27761,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetCountryCodesWithFlagsAppService.Dto.GetCountryCodesWithFlagsListOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27068,12 +27780,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27082,6 +27792,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetNotificationSettingCoreAppService.Dto.GetNotificationSettingCoreItemOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27096,12 +27811,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27110,6 +27823,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetPaymentDetailInfoItunesV5AppService.Dto.PaymentSubscriptionsIosItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27124,12 +27842,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27138,6 +27854,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetStateOrCityListForAutoCompleteCore.Dto.GetStateOrCityListForAutoCompleteItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27152,12 +27873,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27166,6 +27885,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.GetUserDeleteReasonsAppService.Dto.GetUserDeleteReasonsListOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27180,12 +27904,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27194,6 +27916,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.LegacyGetAppReleases.Dto.LegacyGetAppReleasesListOutput_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27208,12 +27935,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27222,6 +27947,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.RecommendUsersAppService.Dto.RecommendedUsersItemModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27236,12 +27966,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27250,6 +27978,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_Api.SearchRecordListCore.Dto.SearchRecordModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27264,12 +27997,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27278,6 +28009,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiListResult_1_PanjurUserApi.DataAccess.FilterRepository.Dto.CountryModel_": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "items": {
@@ -27292,12 +28028,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
@@ -27306,6 +28040,11 @@
         }
       },
       "PanjurUserApi.Web.Api.Models.ApiResult": {
+        "required": [
+          "error_detail_message",
+          "result_code",
+          "stack_trace"
+        ],
         "type": "object",
         "properties": {
           "result_code": {
@@ -27313,12 +28052,10 @@
             "format": "int32"
           },
           "error_detail_message": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "stack_trace": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false,
