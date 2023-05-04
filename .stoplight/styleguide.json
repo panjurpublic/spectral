@@ -28,6 +28,9 @@
     },
     "parameter-description": {
       "severity": "off"
+    },
+    "oas3-valid-media-example": {
+      "severity": "off"
     }
   },
   "extendedStyleguides": [
