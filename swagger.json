@@ -2705,7 +2705,8 @@
                 "$ref": "#/components/schemas/Api.RegisterWebpushDeviceCoreAppService.Dto.RegisterWebPushDeviceCoreInput"
               }
             }
-          }
+          },
+          "description": ""
         },
         "responses": {
           "200": {
@@ -2740,7 +2741,7 @@
           }
         ],
         "operationId": "devices-post",
-        "description": "kayıt esnasında hangi cihazla giriş yapıldığını kaydeder"
+        "description": "Mobil tarayıcı ve desktop tarayıcıda çağırılır. App'lerde çağırılmaz.\ndevice_user_id değeri Onesignal'daki player id değerinden gelir Referans: https://documentation.onesignal.com/docs/users#player-id\n\nFormatı şöyledir:\n\"The format is lowercase letters and numbers 8 characters-4 characters-4 characters-4 characters-12 characters like b3aaabc2-9a47-4647-adda-3e4583a2d19e.\"\n\nOnesignal'ı mobil ve desktop tarayıcıda webpush bildirimi göndermek için kullanıyoruz."
       }
     },
     "/api/user/v10/phone/send_app_url": {
@@ -4086,7 +4087,8 @@
           }
         ],
         "operationId": "track-codes-post",
-        "description": "üye şifre değiştirmek istediğinde e mailine gelen link"
+        "description": "E-postaların açılma oranını takip etmek için kullanılır.\n1. E-postaların içine görünmez bir pixel olarak yüklenir. O pixeli açan kullanıcıların e-postayı açtığı veritabanına bilgi olarak işlenir.\n2. E-postaların içindeki linklerin sonuna da eklenir. Linke tıklayıp gelen kullanıcılarda bu sayede loglama yapılır. Çünkü bazı mail istemcileri pixelleri göstermeyebiliyor, bu sayede tıklayıp gelenlerin de en azından e-postayı açtığını anlayabiliyoruz.\n\nE-postada örnek bir link: https://www.pembepanjur.com/myprofile.php?utm_source=email&utm_medium=ntf_new_match&utm_campaign=ntf_new_match&track_code=857274869",
+        "summary": ""
       }
     },
     "/api/user/v10/logs/pixel_for_first_picture_uploaded_shown": {
@@ -21829,19 +21831,20 @@
         }
       },
       "Api.RegisterWebpushDeviceCoreAppService.Dto.RegisterWebPushDeviceCoreInput": {
-        "required": [
-          "device_user_id"
-        ],
         "type": "object",
-        "properties": {
-          "device_user_id": {
-            "type": "string"
-          }
-        },
         "additionalProperties": false,
         "x-stoplight": {
           "id": "fihye9v74zgj0"
-        }
+        },
+        "properties": {
+          "device_user_id": {
+            "type": "string",
+            "description": "Onesignal'daki player id, örnek değer: b3aaabc2-9a47-4647-adda-3e4583a2d19e."
+          }
+        },
+        "required": [
+          "device_user_id"
+        ]
       },
       "Api.RegistrationUpdateCore.Dto.RegistrationUpdateCoreDataModel": {
         "required": [
