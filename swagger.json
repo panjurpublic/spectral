@@ -91,7 +91,7 @@
             "oauth2": []
           }
         ],
-        "description": ""
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/app_releases/{type}": {
@@ -131,7 +131,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/app_releases": {
@@ -161,7 +162,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/itunes_unique_vendor_identifier": {
@@ -7025,7 +7027,7 @@
             "oauth2": []
           }
         ],
-        "description": "Şuanda kullanılmamaktadır."
+        "description": "Şuanda  bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/ios/status": {
