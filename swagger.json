@@ -90,7 +90,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": ""
       }
     },
     "/api/user/v10/app_releases/{type}": {
@@ -199,7 +200,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Şu anda kullanıldığı. yer bulunamadı ama sadece iOS uygulamalara yönelik"
       }
     },
     "/api/user/v10/rate_us_decision": {
@@ -238,7 +240,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"bizi beğendiniz mi?\"popupı sonrasında verilen cevabın sonunda çağrılıyor."
       }
     },
     "/api/user/v10/rate_us_negative_feedback": {
@@ -277,7 +280,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"bizi beğendiniz mi ?\" popupında \"Hayır\" ve ikinci aşamada \"Evet\" cevabı verildiğinde çağrılıyor."
       }
     },
     "/api/user/v10/access_token": {
@@ -316,7 +320,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "servisin başıda login var o mu soralım ?"
       }
     },
     "/api/user/v10/logout": {
@@ -356,7 +361,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulamadan çıkış yapıldığında bu servis çağrılmış olur."
       }
     },
     "/api/user/v10/me/blocks": {
@@ -835,7 +841,7 @@
           }
         ],
         "operationId": "me-block-get",
-        "description": "üyenin engellediği kullanıcıları lister"
+        "description": "GET-Uygulama içerisinde Hesap-Engellediğiniz Üyeler sayfasına tıklandığında bu servis çağrılmış olur.Engellenen Üyelerin listesini gösterir. \nPOST-Uygulama içerisinde \"Kişiyi Engelle\" butonuna tıkladıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Sayfasında sağ üstteki üç noktadan kullanıcı engellendiğinde çağrılır.\n2-)Mesajlar ve News Feed sayfasında da aynı şekilde çağrılabilir.\n<img src\"https://photoprism.coruscant.co/api/v1/t/e7c385426c5177dfc8122da8dd17579b15bd9570/public/fit_2048\"with=200/>"
       }
     },
     "/api/user/v10/me/blocks/{blockedUserId}": {
@@ -887,7 +893,7 @@
           }
         ],
         "operationId": "blocks-delete",
-        "description": "kullanıcı blok kaldırma"
+        "description": "Uygulama içerisinde engellenen üyenin engelini kaldırdıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap/Engellediğiniz üyeler sayfasında üyenin \"engeli kaldır\" butonuna tıklandığında servis çağrılmış olur."
       }
     },
     "/api/user/v10/me/mutes": {
@@ -926,7 +932,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde bir üyeyi \"Kişiyi Sessize Al\" butonuna tıkladıktan sonra bu servis çağrılmış olur. \nMobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/mutes/{otherUserId}": {
@@ -967,7 +974,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde sessize alınan üyenin \"Sessizden Çıkart\" butonuna tıkladıktan sonra bu servis çağrılmış olur.\nMobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/conversations/inbox": {
@@ -997,7 +1005,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Gelen Mesajların\" tümü silindiğinde bu servis çağrılmış olur.\nMobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/conversations/{otherUserId}": {
@@ -1240,7 +1249,7 @@
           }
         ],
         "operationId": "me-conversations-get",
-        "description": "kullanıcıların konuşmalarını listeler"
+        "description": "GET:Uygulama içerisinde \"Chat Sayfasına\" üyenin mesajlarını gösterir.\nDELETE:Uygulama içerisinde üyenin konuşmalarını(mesajlarını)siler.\nÇağrıldığı Yerler;\n-Mesajlar"
       }
     },
     "/api/user/v10/me/conversations/{receiverUserId}/photos/{conversationMessageId}": {
@@ -1344,7 +1353,7 @@
           }
         ],
         "operationId": "delete-me/conversations/receiverUserId/photos/conversationMessageId",
-        "description": "delete photos that send in conversation"
+        "description": "Uygulama içerisinde kullanıcı mesajlaştığı kişiye fotoğrafını gönderdiğinde ve bunu sildiğinde bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Mesajlar(chat ekranı içerisinde) "
       }
     },
     "/api/user/v10/me/conversations/sent": {
@@ -1490,7 +1499,7 @@
           }
         ],
         "operationId": "conversations-sent-get",
-        "description": "Bu servis gönderilmiş mesajları gösterir."
+        "description": "GET:Mesajlar sayfasında \"Gönderilen\" mesajlarda bu servis çağrılmış olur.\nÇağrıldığı Yer:\n1-)Mesajlar-Gönderilen Sayfasında tıklandığında bu seevis çağrılmış olıur.\nDELETE:Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/conversations/archived": {
@@ -1704,7 +1713,7 @@
           }
         ],
         "operationId": "conversations-archived-get",
-        "description": "Bu servis silinmiş mesajları gösterir."
+        "description": "Uygulama içerisinde \"Arşivlenmiş Mesajları\" gösterir.\nÇağrıldığı Yerler;\nMesajlar-Arşiv Mesajları"
       }
     },
     "/api/user/v10/me/conversations": {
@@ -2110,7 +2119,7 @@
           }
         ],
         "operationId": "me-conversations",
-        "description": "get conversations",
+        "description": "Uygulama içerisinde üyeye gelen \"Gelen\" Mesajlarını gösterir.\nÇağrıldığı Yerler;\n1-)Mesajlar sayfasında \"Gelen Mesajlara\"tıklandığında bu servis çağrılmış olur.",
         "summary": ""
       }
     },
@@ -2166,7 +2175,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/conversations/restore/{otherUserId}": {
@@ -2207,7 +2217,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/conversations/{receiverUserId}/photos": {
@@ -2385,7 +2396,8 @@
             "oauth2": []
           }
         ],
-        "operationId": "put-me/conversations/receiverUserId/is_typing"
+        "operationId": "put-me/conversations/receiverUserId/is_typing",
+        "description": "Uygulama içerisinde karşılıklı mesajlaşma sayfasında mesaj alanına bir şey yazmaya başlayınca bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Karşılıklı mesajlaşma sayfasında (Chat ekranı içerisinde)"
       }
     },
     "/api/user/v10/me/counts": {
@@ -2448,7 +2460,7 @@
           }
         ],
         "operationId": "me-counts-get",
-        "description": "Counts messages , winks , favorites etc."
+        "description": "Uygulama içerisinde bütün sayfalarda bu servis çağrılmış olur.60 saniyede bir çağrılıyor.Örnek;Mesajlar-Favoriler...\nÇağrıldığı Yerler;\n1-)Uygulamadaki tüm sayfalarda"
       }
     },
     "/api/user/v10/me/counts/badge": {
@@ -2478,7 +2490,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/custom_client_json": {
@@ -2545,7 +2558,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır,servis hiç kodlanmayacaktır."
       }
     },
     "/api/user/v10/uuid": {
@@ -2585,7 +2599,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/health/readiness": {
@@ -2604,7 +2619,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/log_test": {
@@ -2643,7 +2659,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/devices": {
@@ -2693,7 +2710,7 @@
           }
         ],
         "operationId": "devices-post",
-        "description": "kayıt esnasında hangi cihazla giriş yapıldığını kaydeder"
+        "description": "Uygulama içerisinde Ana Sayfada çıkan Bildirim Popupında \"bildirimleri\" açmak-kapamak için tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Ana Sayfa"
       }
     },
     "/api/user/v10/phone/send_app_url": {
@@ -2732,7 +2749,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/email_approval": {
@@ -2773,7 +2791,7 @@
           }
         ],
         "operationId": "Post-email_approval",
-        "description": "Mail adresini konfirme etmek için adrese konfirmasyon mail'i atar"
+        "description": "Uygulama içerisinde Hesap Sayfasında yer alan \"E-posta Onayında\" sisteme kaydedilen mail adresine onay e-postası gönderildiğinde bu servis çağrılmış olur. \nÇağrıldığı Yerler;\n1-)Hesap sayfasında e-posta adresini onayla butonuna basıldığında çağrılıyor ve sonrasında sistemem kaydedilen e-mail adresine mail iletilmesi gerekmektedir. "
       }
     },
     "/api/user/v10/email/subscription": {
@@ -2867,7 +2885,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "GET:Mobil serviste bu servis kullanılmamaktadır.\nPUT:Mobil serviste bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/favorites": {
@@ -3233,7 +3252,7 @@
           }
         ],
         "operationId": "Post-me/favorites",
-        "description": ""
+        "description": "GET:Uygulama içeriside üyenin favoriler listesin(favorileriniz) gösterir,favorilere tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Favorileriniz Sayfası\nPOST:Kullanıcı karşı bir üyeyi favorilere eklemek istediğinde bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)NewsFeed'de Favori Butonu\n2-) Sohbet(chat) ekranında favori butonu\n3-)Bir üyenin profilinde \"hakkında ve Güncellemeler sayfalarındaki\" favori butonu"
       },
       "post": {
         "tags": [
@@ -3482,7 +3501,7 @@
           }
         ],
         "operationId": "favorites-by-them-get",
-        "description": "kullanıcıyı favorilerine ekleyen kullanıcıları listeleme"
+        "description": "Uygulama içerisinde \"Kullancıyı favorilerine ekleyen üyeleri gösterir,\"Sizi favori seçen sayfasına tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Favoriler-Sizi Favori seçen sayfası"
       }
     },
     "/api/user/v10/me/favorites/{otherUserId}": {
@@ -3534,7 +3553,7 @@
           }
         ],
         "operationId": "delete-me/favorites/otherUserId",
-        "description": "remove favorited member from favorites"
+        "description": "Uygulama içerisinde Kullancının favorilere eklemiş üyeleri- üyeyi favori listesisinden kaldırıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Newsfeed'de Favorilerden kaldırma butonu\n2-)Kullanıcı Profil sayfasında favorilerden kaldırma butonu\n3-)Favoriler sayfasında Düzenle/Favorilerimi Düzenle butonu ile tekli veya çoklu seçim yapıp favorilerden kaldırma\n"
       }
     },
     "/api/user/v10/list": {
@@ -3564,7 +3583,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin yeri bulunamadı."
       }
     },
     "/api/user/v10/me/boosts": {
@@ -3594,7 +3614,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin yeri bulunamadı."
       }
     },
     "/api/user/v10/countries/{post_country_id}/cities": {
@@ -3642,7 +3663,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/countries/cities/{cityId}/districts": {
@@ -3683,7 +3705,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/countries/{countryId}/district_city": {
@@ -3841,7 +3864,7 @@
           }
         ],
         "operationId": "Get-Countries",
-        "description": "Ülke listesi"
+        "description": "Uygulama içerisinde \"Profil Düzenleme\" sayfasında \"Yaşadığınız Yer\" (ülke) sorusunda cevap değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme"
       }
     },
     "/api/user/v10/locations/auto_complete": {
@@ -3880,7 +3903,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis mobilde kullanılmamaktadır"
       }
     },
     "/api/user/v10/location/get_country_codes_with_flags": {
@@ -3910,7 +3934,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/countries": {
@@ -3940,7 +3965,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/post_login": {
@@ -3979,7 +4005,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/logs/track_codes": {
@@ -4039,7 +4066,7 @@
           }
         ],
         "operationId": "track-codes-post",
-        "description": "üye şifre değiştirmek istediğinde e mailine gelen link"
+        "description": "Uygulama içerisinde sayfa \"track_code\" değerini url'de içeriyorsa çağrılabilir.\nÇağrıldığı Yerler;\n-Şu anda bulunamadı."
       }
     },
     "/api/user/v10/logs/pixel_for_first_picture_uploaded_shown": {
@@ -4169,7 +4196,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/logs/popups": {
@@ -4229,7 +4257,7 @@
           }
         ],
         "operationId": "popups-post",
-        "description": "popup kullanımı"
+        "description": "Uygulama içerisinde \"Ana Sayfa'da\" popup açıldıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Ana Sayfa"
       }
     },
     "/api/user/v10/logs/pixel_for_registration_complete_shown": {
@@ -4259,7 +4287,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin kullanıldığı yer bulunamadı."
       }
     },
     "/api/user/v10/login": {
@@ -4288,7 +4317,7 @@
             }
           }
         },
-        "description": "Mobile site ekran görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/6a4ca6122d73d72356d01bafa10a0d6ee610bab7/j72i3wj8/fit_1280\" with=200/>",
+        "description": "Kullanıcının uygulamaya girmek için açıldığı ilk sayfadır.\nÇağrıldığı Yerler;\n1-)Uygulama giriş ekranı\nMobile site ekran görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/6a4ca6122d73d72356d01bafa10a0d6ee610bab7/j72i3wj8/fit_1280\" with=200/>",
         "operationId": ""
       }
     },
@@ -4347,7 +4376,7 @@
           }
         ],
         "operationId": "login-access_token",
-        "description": "Login access token."
+        "description": "Uygulamada daha önceden login yapılmışsa ve yeterli zaman geçtikten sonra session sonlandıysa otomatik login yaparken çağrılıyor."
       }
     },
     "/api/user/v10/login/notification_access_token": {
@@ -4386,7 +4415,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin kullanıldığoı yer bulunamadı."
       }
     },
     "/api/user/v10/login/facebook": {
@@ -4425,7 +4455,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis kullanılmıyor."
       }
     },
     "/api/user/v10/login/apple": {
@@ -4464,7 +4495,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Ekseriyetle register servisi çağrılıyor olabilir"
       }
     },
     "/api/user/v10/me/{itemType}/seen": {
@@ -4504,7 +4536,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde Listeleme sayfalarında \"yenileri gördüm\" butonuna tıklanıldığında çağrılıyor.\nÇağrıldığı Yerler;\n1-)Uygun Üyeler \n2-)Profil Ziyaretleri\n3-)Favoriler\n4-)Göz Kıprmalar"
       }
     },
     "/api/user/v10/me/matches/{matchedUserId}": {
@@ -4611,7 +4644,7 @@
           }
         ],
         "operationId": "put-me-matches/",
-        "description": "update matches"
+        "description": "Uygulama içerisinde \"Uygun Üyeler\" sayfasında sağ üstten düzeneleme butonuna tıklayıp ardından üye seçimi yaptıktan sonra \"uygun üyelerden çıkar\" butonuna tıkladıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Uygun Üyeler\n"
       }
     },
     "/api/user/v10/me/matches/notinterested": {
@@ -4874,7 +4907,7 @@
           }
         ],
         "operationId": "matches-notinterested-get",
-        "description": "kullanıcının ilgilenmediği üyeleri listeler"
+        "description": "Uygulama içerisinde \"kullanıcının ilgilenmediği üyeleri\" listeler.İlgilenmediğniz Üyeler listesine tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Ayarları-İlgilenmediğimiz Üyeler"
       }
     },
     "/api/user/v10/me/matches/reset": {
@@ -4915,7 +4948,7 @@
           }
         ],
         "operationId": "post-/me/matches/reset",
-        "description": "matches reset"
+        "description": "Uygulama içerisinde \"Hesap Sayfasında\" Uygun üyelerin yenilenmesi\" sırasında çağrılmış olur.Uygun Üyeleri Yenile butonuna tıklanması gerekmektedir.\nÇağrıldığı Yerler;\n1-)Hesap-İlgilenmediğiniz Üyeler\n "
       }
     },
     "/api/user/v10/me/news_feed": {
@@ -4969,7 +5002,7 @@
           }
         ],
         "operationId": "me-news-feed-post",
-        "description": "New post."
+        "description": "Uygulama içerisinde kullanıcı NewsFeed Sayfasında \"durum\" paylaştıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)News Feed Sayfası"
       }
     },
     "/api/user/v10/news_feed/{newsFeedId}": {
@@ -5018,7 +5051,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/users/{viewedUserId}/news_feed": {
@@ -5082,7 +5116,7 @@
           }
         ],
         "operationId": "users-news_feed-get",
-        "description": "News Feed viewed UserId."
+        "description": "Uygulama içerisnde kullanıcının \"Kendi Profili önizlerken-Bir başka üyenin profilini ziyaret ederken-Profil Düzenle-Profilinde bir paylaşım sildiğinde\" bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Herhangi bir üyenin profilini ziyaret ederken\n2-)Kendi profilini önizlerken\n3-)Profili Düzenle sayfasında, ve profilinde herhangi bir paylaşımı sildiğinde"
       }
     },
     "/api/user/v10/news_feed": {
@@ -5122,7 +5156,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulamada \"Landing sayfasına girildiğinde\" ve \"Durum Paylaşımı yapıldığında\" bu servis çağrılmış olur. \nÇağrıldığı Yerler;\n1-)Landing sayfasına girildiğinde otomatik olarak veya durum paylaşımı yapıldığında çağırılıyor."
       }
     },
     "/api/user/v10/me/news_feed/{newsFeedId}": {
@@ -5174,7 +5209,7 @@
           }
         ],
         "operationId": "Delete-me-news_feed",
-        "description": "Delete newsfeeds"
+        "description": "Uygulama içerisinde kullanıcı \"News Feed sayfasında durumunu sildiğinde\" bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Ana Sayfa"
       }
     },
     "/api/user/v10/news_feed/{newsFeedId}/likes": {
@@ -5316,7 +5351,7 @@
           }
         ],
         "operationId": "news_feed-likes",
-        "description": "News Feed likes."
+        "description": "Uygulama İçerisinde \"Kullancının kendi paylaşımlarında like varsa üzerine tıklandığında bu servis çağrılmış olur.Kullancının durumunu kimler beğendiğini görebilir. \nÇağrıldığı Yerler;\nKullanıcının kendi paylaşımlarında like varsa üzerine basıldığında açılan popup sırasında çağrılıyor.(Ana sayfa)\n"
       },
       "delete": {
         "tags": [
@@ -5428,7 +5463,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/notifications/view/left_bottom": {
@@ -5477,7 +5513,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "bu servis kullanılmamaktadır"
       }
     },
     "/api/user/v10/me/notifications": {
@@ -5696,7 +5733,7 @@
           }
         ],
         "operationId": "me-notifications",
-        "description": "Notifications."
+        "description": "Uygulama içerisinde \"Bildirimler\" sayfasına ilk girildiğinde bu servis çağrılmış olur,Kullanıcının uygulamadaki açık kapalı olan bildirimleri görüntülenir.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirimler sayfasına ilk girildiğinde ve sayfa aşağıya scroll edildiğinde servis çağırılmaktadır."
       }
     },
     "/api/user/v10/logs/notification_permission": {
@@ -5735,7 +5772,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır"
       }
     },
     "/api/user/v10/frontend_notifications": {
@@ -5774,7 +5812,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisi sistemden kaldırdık."
       }
     },
     "/api/user/v10/frontend_notifications/{frontendNotificationLogId}/{Event}": {
@@ -5823,7 +5862,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Tam olarak bu servis kullanılmıyor,Haluk Beye sorulacak."
       }
     },
     "/api/user/v10/me/notifications/{Type}/{PushNotificationTrackId}/{Event}": {
@@ -5889,7 +5929,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Tam olarak bu servis kullanılmıyor,Haluk Beye sorulacak."
       }
     },
     "/api/user/v10/me/settings/notifications": {
@@ -6146,7 +6187,7 @@
           }
         ],
         "operationId": "me-settings-notifications",
-        "description": "Notification settings."
+        "description": "GET:Uygulama içerisinde Hesap-Bildirim Ayarları sayfasına tıklandığında bu servis çağrılmış olur.Kullanıcının Bildirim Ayarları görüntülenir.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları\nPUT:Uygulama içerisinde Hesap-Bilidirim Ayarları sayfasında kullanıcı değişiklik yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları"
       },
       "put": {
         "tags": [
@@ -6244,7 +6285,7 @@
           }
         ],
         "operationId": "notifications-seen-put",
-        "description": "bildirim görüntüleme"
+        "description": "Uygulama içerisinde bildirim görüntüleme sayfasıdır,kullancı \"Bildirimler\" sayfasına tıkladıktan sonra bu servis otomatik olarak çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Bildirimler sayfasına girildiğinde, bildirimler geldikten sonra otomatik çağrılıyor"
       }
     },
     "/api/user/v10/notifications/sound/disable": {
@@ -6274,7 +6315,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır"
       }
     },
     "/api/user/v10/notifications/sound/enable": {
@@ -6313,7 +6355,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır"
       }
     },
     "/api/user/v10/payments/mobile/orders/{orderObjectId}": {
@@ -6353,7 +6396,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde kullanıcı \"Mobil ödeme\" sırasında her 5 saniyede bir Evet SMS'ini yollanmasını beklerken bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Ödeme Sayfaları"
       }
     },
     "/api/user/v10/payments/credit_card/orders": {
@@ -6392,7 +6436,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde kullanıcı \"Kredi Kartı\" ile ödeme yapıldığında bu servis çağrılmış olur. Kredi kartı bilgileri girildikten sonra devam edildiğinde otomatik olarak çağrılacaktır.\nÇağrıldığı Yerler;\n1-)Ödeme sayfası-kredi kartı ile ödeme\n"
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/android": {
@@ -6422,7 +6467,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Kullanıcının IP ve lokasyonuna göre her ödeme yöntemini dönmeyebilir.servise tekrardan bakılacaktır."
       }
     },
     "/api/user/v10/payments/subscriptions": {
@@ -6619,7 +6665,7 @@
           }
         ],
         "operationId": "payments-subscriptions-get",
-        "description": "Subscriptions payments."
+        "description": "Uygulama içerisinde kullanıcının \"Abonelik Ödemeleridir\".\n-Gold üye değilse ana sayfada yada hesap sayfasından Hemen Gold üye olun linkinden\n-Gold üye ise Hesap sayfasında gold üye şimdi yenileyin ikonundan \nTıkladığında bu servis çağrılmış olur.\nÇağrıldığı yERLER;\n-Hesap Sayfası\n"
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/ios": {
@@ -6649,7 +6695,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/pixels": {
@@ -6688,7 +6735,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "GET:Uygulama içerisinde \"Ödeme sayfasında ödeme yöntemlerinden herhangi bir tanesi ile başarılı ödeme yaptıktan sonra otomatik olarak çağrılmaktadır.\"\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları\nPUT:Şuanda yeri bulunamadı."
       },
       "put": {
         "tags": [
@@ -6776,7 +6824,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Adapty kullanan Android uygulamalarda “Satın Almaları Geri Yükle” butonu tıklandığında çağrılıyor\nŞu anda Kismet Android uygulaması kullanıyor."
       }
     },
     "/api/user/v10/payments/android/orders": {
@@ -6815,7 +6864,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Kullanıcı Android uygulama üzerinde satın alma yaptığında ve başarılı olduğunda çağrılıyor.\nÇağrıldığı Yerler;\n1-)Google Play ile ödeme yapmak lazım."
       }
     },
     "/api/user/v10/payments/google_play/orders": {
@@ -6854,7 +6904,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Kullanıldığı yer bulunamadı."
       }
     },
     "/api/user/v10/payments/apple/orders": {
@@ -6893,7 +6944,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/adapty/apple/restore": {
@@ -6932,7 +6984,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/android/status": {
@@ -6971,7 +7024,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/ios/status": {
@@ -7017,7 +7071,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Şuanda kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/mobile/orders": {
@@ -7056,7 +7111,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde kullanıcının mobil ile yaptığı ödeme ekranıdır.Mobil Ödeme sayfasında \"mobil ödeme ile ödeme yapıldıktan\" sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları-Mobil ile"
       }
     },
     "/api/user/v10/payments/wire/orders": {
@@ -7095,7 +7151,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde kulanıcının \"Havele ile Ödeme\" yaptığı sayfadır,Kullanıcı Ödeme sayfasında \"Havele ile Ödeme\" yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-) Ödeme sayfası-Havele ile"
       }
     },
     "/api/user/v10/me/recurring_subscription": {
@@ -7139,7 +7196,7 @@
           }
         ],
         "operationId": "delete-recurring-subscription",
-        "description": "deletes recurring subscription"
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/payments/3dsecure_forward/{randomGuidForRedirectTo3dSecure}": {
@@ -7161,7 +7218,8 @@
           "200": {
             "description": "Success"
           }
-        }
+        },
+        "description": "Kullanıldığı yer bulunamadı."
       }
     },
     "/api/user/v10/me/report/personality": {
@@ -7191,7 +7249,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/profile_photo": {
@@ -7241,7 +7300,7 @@
           }
         ],
         "operationId": "put-profile_photo",
-        "description": "update profile photo"
+        "description": "Uygulama içerisinde kullanıcının fotoğrafını profil fotoğrafı yaptığı servistir. Profil düzenleme sayfasında, fotoğraflar bölümüne geçiyoruz. Ardından onaylanmış resimlerden birinin altındaki kalem işaretine tıklayarak profil resmi yap butonuna tıkladıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme-Fotoğraflar"
       }
     },
     "/api/user/v10/me/photos/{pictureId}": {
@@ -7338,7 +7397,7 @@
           }
         ],
         "operationId": "me-photos-delete",
-        "description": "Deleted photos."
+        "description": "GET:Bu servis mobilde kullanılmamaktadır.\nDELETE:Kullanıcının yüklediği fotoğrafı sildiği servistir.Profil Düzenleme sayfasında seçtiği fotoğrafı uygulamadan sildiğinde bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme"
       }
     },
     "/api/user/v10/users/{otherUserId}/photos": {
@@ -7400,7 +7459,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/photos": {
@@ -7525,7 +7585,7 @@
           }
         ],
         "operationId": "me-photos",
-        "description": "Posting photo."
+        "description": "Uygulama içerisinde kullanıcını fotoğraf eklediği-yüklediğinde bu servis çağrılmış. Genel olarak;\nProfil Düzenleme Menüsünden Fotoğraf ekle linkine tıklandığında açılan sayfada fotoğraf ikonuna tıklandığın açılan popup da seç butonu fotoğraf seçilip fotoğraf ekle butonuna basıldığında çağrılıyor \nÇağrıldığı Yerler;\n1-)Profil Düzenleme"
       }
     },
     "/api/user/v10/me/photos/url": {
@@ -7564,7 +7624,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Fotoğraf yükleme sırasında Facebook veya Instagram ile yüklerken servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Profil Düzenleme-Fotoğraf Yükle- Facebook ve ya Instagram"
       }
     },
     "/api/user/v10/me/show_popup": {
@@ -7609,7 +7670,7 @@
           }
         ],
         "operationId": "show-popup-get",
-        "description": "popup listesi"
+        "description": "Uygulama içerisinde kullanıcının Ana sayfasına düşen popuplardır. \nÇağrıldığı Yerler;\n1-)Ana Sayfa"
       }
     },
     "/api/user/v10/popups/app_promote": {
@@ -7639,7 +7700,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Log in olduktan sonra ‘Pembe Panjuru’ Mobil uygulamasını indirmek için açılan sayfadır.\nÇağrıldığı Yerler;\n1-)Ana Sayfa"
       }
     },
     "/api/user/v10/popups/email_approval": {
@@ -7669,7 +7731,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me": {
@@ -7709,7 +7772,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "GET:Uygulama içerisinde Kullancı Profilini görüntüler.\nPUT:uygulama içerisinde “Profil Düzenleme” sayfasındaki “Kullanıcı Adı,Yaşadığınız yer,Doğum Tarihi,Medeni Durum,Genel Bilgiler ve Kendiniz Tanıtın sorularındaki cevapları değiştirirken ya da yeni bir bilgi girilip tamamlandıktan sonra bu servis çağrılmış olur.\nDELETE:Kullanıcı üyeliğini tamamen sildiğinde bu servis çağrılmış olur."
       },
       "put": {
         "tags": [
@@ -7881,7 +7945,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin sonunda news_feed var bakılacak."
       }
     },
     "/api/user/v10/users/{otherUserId}/recommends": {
@@ -7922,7 +7987,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/about_detail": {
@@ -7952,7 +8018,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/character_analysis": {
@@ -8763,7 +8830,7 @@
           }
         ],
         "operationId": "questions-character_analysis",
-        "description": "Character analysis questions."
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/registration/first": {
@@ -8793,7 +8860,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/registration/previous": {
@@ -8833,7 +8901,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/registration": {
@@ -8879,7 +8948,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/questions/registration/single": {
@@ -9396,7 +9466,7 @@
             "oauth2": []
           }
         ],
-        "description": "Gets only one field information.",
+        "description": "Uygulama içerisinde kullanıcı \"Profil Düzenleme\" sayfasında kalem ikonuna tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme",
         "operationId": "questions-registration-single"
       }
     },
@@ -9447,7 +9517,7 @@
           }
         ],
         "operationId": "me-complaints",
-        "description": "Complaints."
+        "description": "Uygulama içerisinde Kullanıcının bir üyeyi Şikayet ederken ki servistir.\nÇağrıldığı Yerler;\n1-)Ana sayfada paylaşımlarda '...' tıklayıp açılan popup da 'Paylaşımı şikayet et' e tıklayınca\n2-)Mesajlar sayfasında '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca\n3-)Üye profilinde '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca "
       }
     },
     "/api/user/v10/complaint_options": {
@@ -9477,7 +9547,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/catch_print_screen_button": {
@@ -9516,7 +9587,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis kullanılmıyor."
       }
     },
     "/api/user/v10/me/screen_visible": {
@@ -9546,7 +9618,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Tarayıcıda mobil sitenin bulunduğu pencereye gelince\" çağrılır."
       }
     },
     "/api/user/v10/me/screen_hidden": {
@@ -9576,7 +9649,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Tarayıcıda mobil sitenin bulunduğu pencereden başka pencereye geçince\" çağrılır."
       }
     },
     "/api/user/v10/search": {
@@ -9644,7 +9718,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisi şuanda yok,sanırım bölündü."
       }
     },
     "/api/user/v10/search/name": {
@@ -9917,7 +9992,7 @@
           }
         ],
         "operationId": "Get-serch/name",
-        "description": "Gets searched name"
+        "description": "Uygulama içerisinde kullanıcı Arama Sayfasında \"İsim\" ile arama yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama Sayfası-İsim ile "
       }
     },
     "/api/user/v10/search/home_page": {
@@ -10073,7 +10148,7 @@
           }
         ],
         "operationId": "Get-Search-Home_page",
-        "description": "Gets home page"
+        "description": "Uygulama içerisinde NewsFeed sayfasında otomatik olarak bu servis çağrılır.\nÇağrıldığı Yerler;\n1-)Ana sayfa"
       }
     },
     "/api/user/v10/search/word": {
@@ -10141,7 +10216,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/search/matches": {
@@ -10245,7 +10321,7 @@
             }
           }
         },
-        "description": "gets matched members",
+        "description": "Bu serviste değişiklik var.",
         "parameters": [
           {
             "schema": {
@@ -12984,7 +13060,7 @@
           }
         ],
         "operationId": "search-filters-get",
-        "description": "Get results of searched members."
+        "description": "Uygulama içerisinde Kullanıcı \"Arama sayfası açıldığında ve filtre üzerinde seçimler yaptığında\" bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama sayfası"
       }
     },
     "/api/user/v10/search/filters/reset": {
@@ -13023,7 +13099,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/search/last_search": {
@@ -13053,7 +13130,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/search/recommended_matches_for_inbox": {
@@ -13083,7 +13161,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/search/recommended_matches_for_news_feed": {
@@ -13113,7 +13192,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/search/records/{SearchRecordId}": {
@@ -13165,7 +13245,7 @@
           }
         ],
         "operationId": "search-records",
-        "description": "Deleting the search record."
+        "description": "Uygulama içerisinde kullanıcı \"Arama Sayfasında\" kayıtlı aramalardan birini sildiğinde bu servis çağrılmış olur.\nÇağrıldığı YERLER;\n1-)Arama sayfası-Kayıtlı aramalar\n"
       }
     },
     "/api/user/v10/search/records": {
@@ -13283,7 +13363,7 @@
           }
         ],
         "operationId": "search-records-get",
-        "description": "Search by records."
+        "description": "GET:Uygulama içerisinde kullanıcı Arama sayfasında \" Kayıtlı Aramaları\"gösterir. Kayıtlı Aramalara tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama-Kayıtlı Aramalar\n"
       }
     },
     "/api/user/v10/session": {
@@ -13437,7 +13517,7 @@
           }
         ],
         "operationId": "session-get",
-        "description": "Session."
+        "description": "GET:Uygulama içerisinde tüm sayfalarda kullanılıyor\nÇağrıldığı Yerler;\n1-)Tüm sayfalar\nDELETE:Bu servis mobilde kullanılmamaktadır."
       },
       "delete": {
         "tags": [
@@ -13547,7 +13627,7 @@
           }
         ],
         "operationId": "Get-Sttings",
-        "description": "Gests settings"
+        "description": "Uygulama içerisinde kullanıcının;\n1-)Hesap ana sayfa (açıldığında) - https://naboo.pembepanjur.com/account/\n2-)Sosyal ağ bağlantıları sayfası (açıldığında) - https://naboo.pembepanjur.com/account/social/\n3-)Hesap sayfasında üyelik iptal sayfası (açıldığında) - https://naboo.pembepanjur.com/account/disable_subscription/\n4-)Hesap sayfasında mail onay durumu (açıldığında) - https://naboo.pembepanjur.com/account/mail-verification/\nBu sayfalarda çağrılır.\n"
       }
     },
     "/api/user/v10/me/name": {
@@ -13601,7 +13681,7 @@
           }
         ],
         "operationId": "put-name",
-        "description": "Updates User Name"
+        "description": "Uygulama içerisinde Hesap sayfasında \"İsim\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
       }
     },
     "/api/user/v10/me/email": {
@@ -13654,7 +13734,7 @@
           }
         ],
         "operationId": "put-email",
-        "description": "updates user email"
+        "description": "Uygulama içerisinde Hesap sayfasında \"E-POSTA\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
       }
     },
     "/api/user/v10/me/password/forgotten": {
@@ -13682,7 +13762,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/password": {
@@ -13775,7 +13856,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/change_phone_number": {
@@ -13830,7 +13912,7 @@
           }
         ],
         "operationId": "Put-me-change_phone_number",
-        "description": "updates phone number"
+        "description": "Uygulama içerisinde Hesap sayfasında \"Şifre\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
       }
     },
     "/api/user/v10/phone/send_confirmation": {
@@ -13880,7 +13962,7 @@
           }
         ],
         "operationId": "send-confirmation-post",
-        "description": "onay gönderme"
+        "description": "Uygulama içerisinde \"Sosyal Ağ Bağlantıları sayfasında Telefon Onayına Tıklayınca popup ile beraber çağrılmış olur\".\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Telefon Onayı Sayfası\n"
       }
     },
     "/api/user/v10/phone/verify": {
@@ -13930,7 +14012,7 @@
           }
         ],
         "operationId": "phone-verify-put",
-        "description": "telefon doğrulama"
+        "description": "Uygulama içerisinde telefon doğrulama servisidir.\"Hesap sayfasında, \"Sosyal Ağ Bağlantıları\" başlığı altında telefon bağlantısı kurmaya çalıştığımızda onay kodunu girerken bu servis çağrılmış olur\"."
       }
     },
     "/api/user/v10/me/profile_privacy": {
@@ -13983,7 +14065,7 @@
           }
         ],
         "operationId": "put-profile-privacy",
-        "description": "updates profile privacy"
+        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Görünürlük seçeneğinde değişiklikler yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası Görünürlük seçeneğinde"
       }
     },
     "/api/user/v10/me/play_sound": {
@@ -14013,7 +14095,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/register": {
@@ -14041,7 +14124,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Bu servis mobilde kullanılmamaktadır."
       }
     },
     "/api/user/v10/register/apple": {
@@ -14069,7 +14153,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Daha öncede o Apple hesabı ile giriş veya kayıt yapıldıysa bu servis çağrılmayabilir ve direkt login servisi çağrılabilir."
       }
     },
     "/api/user/v10/register/facebook": {
@@ -14097,7 +14182,8 @@
               }
             }
           }
-        }
+        },
+        "description": "Şu anda sadece uygulamalarda çağrılıyor olabilir."
       }
     },
     "/api/user/v10/me/social_network_badge": {
@@ -14147,7 +14233,7 @@
           }
         ],
         "operationId": "me-social_network_badge",
-        "description": "Shows social network badge."
+        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantılarını\" -Profilde Göstermek için kullanılır.\"Sosyal Ağ Bağlantıları / Profilde Göster butonu ile servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları"
       }
     },
     "/api/user/v10/social_network/facebook/albums": {
@@ -14193,7 +14279,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Profil Düzenleme\" sayfasında Facebook ile fotoğraf yüklemede bu servis kullanılır.\nFotoğraf Yükle/Facebook İle Ekle butonuna bastıktan sonra servis çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle"
       }
     },
     "/api/user/v10/social_network/facebook/albums/photos": {
@@ -14240,7 +14327,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde Profil Düzenleme sayfasında \"Facebook ile fotoğraf eklerken\" albüm seçildikten sonra servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle"
       }
     },
     "/api/user/v10/me/social_network/instagram/photos": {
@@ -14279,7 +14367,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/connects/facebook": {
@@ -14339,7 +14428,7 @@
           }
         ],
         "operationId": "Post-Connect-FaceBook",
-        "description": "connects facebook",
+        "description": "Uygulama içerisinde kullanıcının \"Facebook ile Onayıdır\" Sosyal Ağ Bağlantılarından-Facebook Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları/Facebook Onayı",
         "parameters": [
           {
             "schema": {
@@ -14400,7 +14489,7 @@
           }
         ],
         "operationId": "me-connects-instagram",
-        "description": "Instagram connection."
+        "description": "Uygulama içerisinde kullanıcının \"Instagram ile Onayıdır\" Sosyal Ağ Bağlantılarından-Instgram Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları sayfasında instagram onayı"
       }
     },
     "/api/user/v10/me/connects/phone": {
@@ -14430,7 +14519,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/connects/{SocialNetwork}": {
@@ -14489,7 +14579,7 @@
             "oauth2": []
           }
         ],
-        "description": "Disconnect with social network.",
+        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantıları Onayını\" Kaldırma servisidir.\nSosyal Ağ Bağlantılarında(Facebook-Instagram-Telefon \"Onayı Kaldır\" butonu ile bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Hesap",
         "operationId": "me-connects"
       }
     },
@@ -14530,7 +14620,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Bu servisin kullanıldığı yer bulunamadı."
       }
     },
     "/api/user/v10/user_delete_reasons": {
@@ -14560,7 +14651,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Üyelik İptaline\" tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-ÜYELİK iPTALİ"
       }
     },
     "/api/user/v10/me/hide": {
@@ -14599,7 +14691,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır.ve KISMET HEYDATE uygulamalarında olabilir."
       }
     },
     "/api/user/v10/me/like_users": {
@@ -14638,7 +14731,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/visits/by_them": {
@@ -14952,7 +15046,7 @@
           }
         ],
         "operationId": "visits-by-them-get",
-        "description": "kullanıcının profilini ziyaret eden kullanıcıları listeleme"
+        "description": "Uygulama içerisinde \"kullanıcının profilini ziyaret eden\" kullanıcıları listeleme servisidir.\"Ziyaretler/profilinizi gezen sayfasına tıklandığında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Ziyaretler/profilinizi gezen sayfası"
       }
     },
     "/api/user/v10/me/visits": {
@@ -15199,7 +15293,7 @@
           }
         ],
         "operationId": "visits-get",
-        "description": "kullanıcının ziyaret ettiği profilleri listeleme"
+        "description": "Uygulama içerisinde \"kullanıcının ziyaret ettiği profilleri\" listeleme servisidir.\nZiyaretler/profilini gezdiğiniz sayfasında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-) Ziyaretler/profilini gezdiğiniz sayfası\n\n"
       }
     },
     "/api/user/v10/me/winks": {
@@ -15556,7 +15650,7 @@
           }
         ],
         "operationId": "winks-get",
-        "description": "kullanıcının göz kırptığı kullanıcıları listeleme"
+        "description": "GET:Uygulama içerisinde\"kullanıcının göz kırptığı kullanıcıları listeleme\"servisidir.Göz Kırpmalar / Göz Kırptıklarınız sayfasına tıklandığında otomatik çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Göz Kırptıklarınız\nPOST:Uygulama içerisinde \"Kullanıcının bir başka üyeye\"göz kırptığı servistir.\nÇağrıldığı Yerler;\n1-)Newsfeed'de Göz Kırpma butonu\n2-)Kullanıcı Profil sayfasında Göz Kırpma butonu\n3-)Kullanıcı Profil sayfasında Güncellemeler kısmında Göz Kırpma butonu"
       }
     },
     "/api/user/v10/me/winks/by_them": {
@@ -15685,7 +15779,7 @@
           }
         ],
         "operationId": "winks-by-them-get",
-        "description": "kullanıcıya göz kırpan kullanıcıları listeleme"
+        "description": "Uygulama içerisinde \"kullanıcıya göz kırpan kullanıcıları listeleme\" servisidir.\"Göz Kırpmalar / Size Göz Kırpan\" sayfasına tıklandığında çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Size Göz Kırpan sayfası"
       }
     },
     "/api/user/v10/me/winks/{winkId}": {
@@ -15737,7 +15831,7 @@
           }
         ],
         "operationId": "winks-delete",
-        "description": "göz kırpmanın kaldırılması"
+        "description": "göz kırpmanın kaldırılması fakat mobilde şuan hiçbir yerde kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/all/winks/incoming": {
@@ -15767,7 +15861,8 @@
           {
             "oauth2": []
           }
-        ]
+        ],
+        "description": "Mobilde bu servis kullanılmamaktadır."
       }
     },
     "/api/user/v10/me/all/winks/sent": {
@@ -15799,7 +15894,7 @@
           }
         ],
         "operationId": "",
-        "description": "Mobil Ekran Görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/393b1cb3d6f730058631be8eb972d6e4c65b1a6a/public/fit_1280\" width=200 />"
+        "description": "Mobilde bu servis kullanılmamaktadır.\nMobil Ekran Görüntüsü:\n<img src=\"https://photoprism.coruscant.co/api/v1/t/393b1cb3d6f730058631be8eb972d6e4c65b1a6a/public/fit_1280\" width=200 />"
       }
     }
   },
