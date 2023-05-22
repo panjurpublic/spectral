@@ -6189,7 +6189,7 @@
           }
         ],
         "operationId": "me-settings-notifications",
-        "description": "GET:Uygulama içerisinde Hesap-Bildirim Ayarları sayfasına tıklandığında bu servis çağrılmış olur.Kullanıcının Bildirim Ayarları görüntülenir.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları\nPUT:Uygulama içerisinde Hesap-Bilidirim Ayarları sayfasında kullanıcı değişiklik yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları"
+        "description": "GET:Uygulama içerisinde Hesap-Bildirim Ayarları sayfasına tıklandığında bu servis çağrılmış olur.Kullanıcının Bildirim Ayarları görüntülenir.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları\nPUT:Uygulama içerisinde Hesap-Bilidirim Ayarları sayfasında kullanıcı değişiklik yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-Bildirim Ayarları\nhttps://photoprism.coruscant.co/api/v1/t/8ce282d49d76b500fcad4e0fcc7c329d4c59c1af/j72i3wj8/fit_2048"
       },
       "put": {
         "tags": [
@@ -6287,7 +6287,7 @@
           }
         ],
         "operationId": "notifications-seen-put",
-        "description": "Uygulama içerisinde bildirim görüntüleme sayfasıdır,kullancı \"Bildirimler\" sayfasına tıkladıktan sonra bu servis otomatik olarak çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Bildirimler sayfasına girildiğinde, bildirimler geldikten sonra otomatik çağrılıyor"
+        "description": "Uygulama içerisinde bildirim görüntüleme sayfasıdır,kullancı \"Bildirimler\" sayfasına tıkladıktan sonra bu servis otomatik olarak çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Bildirimler sayfasına girildiğinde, bildirimler geldikten sonra otomatik çağrılıyor.\nhttps://photoprism.coruscant.co/api/v1/t/1a35d3d681212b906d5aaf15b577b26e01eb0b31/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/notifications/sound/disable": {
@@ -6399,7 +6399,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kullanıcı \"Mobil ödeme\" sırasında her 5 saniyede bir Evet SMS'ini yollanmasını beklerken bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Ödeme Sayfaları"
+        "description": "Uygulama içerisinde kullanıcı \"Mobil ödeme\" sırasında her 5 saniyede bir Evet SMS'ini yollanmasını beklerken bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Ödeme Sayfaları\nhttps://photoprism.coruscant.co/api/v1/t/6e43159f6b5cb00e1f0c425602e1e05da9a77e0a/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/payments/credit_card/orders": {
@@ -6439,7 +6439,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kullanıcı \"Kredi Kartı\" ile ödeme yapıldığında bu servis çağrılmış olur. Kredi kartı bilgileri girildikten sonra devam edildiğinde otomatik olarak çağrılacaktır.\nÇağrıldığı Yerler;\n1-)Ödeme sayfası-kredi kartı ile ödeme\n"
+        "description": "Uygulama içerisinde kullanıcı \"Kredi Kartı\" ile ödeme yapıldığında bu servis çağrılmış olur. Kredi kartı bilgileri girildikten sonra devam edildiğinde otomatik olarak çağrılacaktır.\nÇağrıldığı Yerler;\n1-)Ödeme sayfası-kredi kartı ile ödeme\nhttps://photoprism.coruscant.co/api/v1/t/33650a2b1280593846bb3167b4d3d730e8b439f2/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/android": {
@@ -6667,7 +6667,7 @@
           }
         ],
         "operationId": "payments-subscriptions-get",
-        "description": "Uygulama içerisinde kullanıcının \"Abonelik Ödemeleridir\".\n-Gold üye değilse ana sayfada yada hesap sayfasından Hemen Gold üye olun linkinden\n-Gold üye ise Hesap sayfasında gold üye şimdi yenileyin ikonundan \nTıkladığında bu servis çağrılmış olur.\nÇağrıldığı yERLER;\n-Hesap Sayfası\n"
+        "description": "Uygulama içerisinde kullanıcının \"Abonelik Ödemeleridir\".\n-Gold üye değilse ana sayfada yada hesap sayfasından Hemen Gold üye olun linkinden\n-Gold üye ise Hesap sayfasında gold üye şimdi yenileyin ikonundan \nTıkladığında bu servis çağrılmış olur.\nÇağrıldığı YERLER;\n-Hesap Sayfası\nhttps://photoprism.coruscant.co/api/v1/t/66cac2b01abcba7fb9365abc1cd6cf57276b97c5/j72i3wj8/fit_2048\n"
       }
     },
     "/api/user/v10/payments/subscriptions/platforms/ios": {
@@ -6738,7 +6738,7 @@
             "oauth2": []
           }
         ],
-        "description": "GET:Uygulama içerisinde \"Ödeme sayfasında ödeme yöntemlerinden herhangi bir tanesi ile başarılı ödeme yaptıktan sonra otomatik olarak çağrılmaktadır.\"\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları\nPUT:Şuanda yeri bulunamadı."
+        "description": "GET:Uygulama içerisinde \"Ödeme sayfasında ödeme yöntemlerinden herhangi bir tanesi ile başarılı ödeme yaptıktan sonra otomatik olarak çağrılmaktadır.\"\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları\nPUT:Şuanda yeri bulunamadı.\nhttps://photoprism.coruscant.co/api/v1/t/b8dd3bd34fb953972e5d9a07eb74a7c0d52dcb9e/j72i3wj8/fit_2048"
       },
       "put": {
         "tags": [
@@ -7114,7 +7114,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kullanıcının mobil ile yaptığı ödeme ekranıdır.Mobil Ödeme sayfasında \"mobil ödeme ile ödeme yapıldıktan\" sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları-Mobil ile"
+        "description": "Uygulama içerisinde kullanıcının mobil ile yaptığı ödeme ekranıdır.Mobil Ödeme sayfasında \"mobil ödeme ile ödeme yapıldıktan\" sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Ödeme Sayfaları-Mobil ile\nhttps://photoprism.coruscant.co/api/v1/t/6e43159f6b5cb00e1f0c425602e1e05da9a77e0a/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/payments/wire/orders": {
@@ -7154,7 +7154,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kulanıcının \"Havele ile Ödeme\" yaptığı sayfadır,Kullanıcı Ödeme sayfasında \"Havele ile Ödeme\" yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-) Ödeme sayfası-Havele ile"
+        "description": "Uygulama içerisinde kulanıcının \"Havele ile Ödeme\" yaptığı sayfadır,Kullanıcı Ödeme sayfasında \"Havele ile Ödeme\" yaptığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-) Ödeme sayfası-Havele ile\nhttps://photoprism.coruscant.co/api/v1/t/0aa936c27446fe0f3094187968f9f98cc9206c8e/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/recurring_subscription": {
@@ -7302,7 +7302,7 @@
           }
         ],
         "operationId": "put-profile_photo",
-        "description": "Uygulama içerisinde kullanıcının fotoğrafını profil fotoğrafı yaptığı servistir. Profil düzenleme sayfasında, fotoğraflar bölümüne geçiyoruz. Ardından onaylanmış resimlerden birinin altındaki kalem işaretine tıklayarak profil resmi yap butonuna tıkladıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme-Fotoğraflar"
+        "description": "Uygulama içerisinde kullanıcının fotoğrafını profil fotoğrafı yaptığı servistir. Profil düzenleme sayfasında, fotoğraflar bölümüne geçiyoruz. Ardından onaylanmış resimlerden birinin altındaki kalem işaretine tıklayarak profil resmi yap butonuna tıkladıktan sonra bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme-Fotoğraflar\nhttps://photoprism.coruscant.co/api/v1/t/8199c0ac021145059e83061c2b2c7e3fd4a2e30a/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/photos/{pictureId}": {
@@ -7399,7 +7399,7 @@
           }
         ],
         "operationId": "me-photos-delete",
-        "description": "GET:Bu servis mobilde kullanılmamaktadır.\nDELETE:Kullanıcının yüklediği fotoğrafı sildiği servistir.Profil Düzenleme sayfasında seçtiği fotoğrafı uygulamadan sildiğinde bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme"
+        "description": "GET:Bu servis mobilde kullanılmamaktadır.\nDELETE:Kullanıcının yüklediği fotoğrafı sildiği servistir.Profil Düzenleme sayfasında seçtiği fotoğrafı uygulamadan sildiğinde bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme\nhttps://photoprism.coruscant.co/api/v1/t/849ea2c19205783ab6754ad73e8096ef595f307a/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/users/{otherUserId}/photos": {
@@ -7587,7 +7587,7 @@
           }
         ],
         "operationId": "me-photos",
-        "description": "Uygulama içerisinde kullanıcını fotoğraf eklediği-yüklediğinde bu servis çağrılmış. Genel olarak;\nProfil Düzenleme Menüsünden Fotoğraf ekle linkine tıklandığında açılan sayfada fotoğraf ikonuna tıklandığın açılan popup da seç butonu fotoğraf seçilip fotoğraf ekle butonuna basıldığında çağrılıyor \nÇağrıldığı Yerler;\n1-)Profil Düzenleme"
+        "description": "Uygulama içerisinde kullanıcını fotoğraf eklediği-yüklediğinde bu servis çağrılmış. Genel olarak;\nProfil Düzenleme Menüsünden Fotoğraf ekle linkine tıklandığında açılan sayfada fotoğraf ikonuna tıklandığın açılan popup da seç butonu fotoğraf seçilip fotoğraf ekle butonuna basıldığında çağrılıyor \nÇağrıldığı Yerler;\n1-)Profil Düzenleme\nhttps://photoprism.coruscant.co/api/v1/t/057ac12c715cc6bda55353867ba4fa0dee531c06/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/photos/url": {
@@ -7627,7 +7627,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde \"Fotoğraf yükleme sırasında Facebook veya Instagram ile yüklerken servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Profil Düzenleme-Fotoğraf Yükle- Facebook ve ya Instagram"
+        "description": "Uygulama içerisinde \"Fotoğraf yükleme sırasında Facebook veya Instagram ile yüklerken servis çağrılmış olur.\nÇağrıldığı Yerler;\n-Profil Düzenleme-Fotoğraf Yükle- Facebook ve ya Instagram\nhttps://photoprism.coruscant.co/api/v1/t/057ac12c715cc6bda55353867ba4fa0dee531c06/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/show_popup": {
@@ -7672,7 +7672,7 @@
           }
         ],
         "operationId": "show-popup-get",
-        "description": "Uygulama içerisinde kullanıcının Ana sayfasına düşen popuplardır. \nÇağrıldığı Yerler;\n1-)Ana Sayfa"
+        "description": "Uygulama içerisinde kullanıcının Ana sayfasına düşen popuplardır. \nÇağrıldığı Yerler;\n1-)Ana Sayfa\nhttps://photoprism.coruscant.co/api/v1/t/853c81d3a882567a77b4314a9af05b21a6996f39/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/popups/app_promote": {
@@ -7775,7 +7775,7 @@
             "oauth2": []
           }
         ],
-        "description": "GET:Uygulama içerisinde Kullancı Profilini görüntüler.\nPUT:uygulama içerisinde “Profil Düzenleme” sayfasındaki “Kullanıcı Adı,Yaşadığınız yer,Doğum Tarihi,Medeni Durum,Genel Bilgiler ve Kendiniz Tanıtın sorularındaki cevapları değiştirirken ya da yeni bir bilgi girilip tamamlandıktan sonra bu servis çağrılmış olur.\nDELETE:Kullanıcı üyeliğini tamamen sildiğinde bu servis çağrılmış olur."
+        "description": "GET:Uygulama içerisinde Kullancı Profilini görüntüler.\nPUT:uygulama içerisinde “Profil Düzenleme” sayfasındaki “Kullanıcı Adı,Yaşadığınız yer,Doğum Tarihi,Medeni Durum,Genel Bilgiler ve Kendiniz Tanıtın sorularındaki cevapları değiştirirken ya da yeni bir bilgi girilip tamamlandıktan sonra bu servis çağrılmış olur.\nDELETE:Kullanıcı üyeliğini tamamen sildiğinde bu servis çağrılmış olur.\nhttps://photoprism.coruscant.co/api/v1/t/c76cea130e3c85bbac0067c70ef99b39dd00dc37/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/e361ea54ac22e0d03f2bfbb8f793f74549f75709/j72i3wj8/fit_2048"
       },
       "put": {
         "tags": [
@@ -9468,7 +9468,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kullanıcı \"Profil Düzenleme\" sayfasında kalem ikonuna tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme",
+        "description": "Uygulama içerisinde kullanıcı \"Profil Düzenleme\" sayfasında kalem ikonuna tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme\nhttps://photoprism.coruscant.co/api/v1/t/82f1f3ae97c7d2d7f68428f14fee1461dc7346d9/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/559c43bc7abfbe5a6483fa682f5f7444083833b4/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/3146a5fe495f39fdba3318725001522badb0058a/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/354cf6fa8dd7c915d3f2b9d7356387d3021e06d8/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/dc88c738cdfcbe2b651fcfc9c5ea4f06d3f72144/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/a0224ce6a0989c2da5055e7f127591ceb47922fa/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/49471d145b6783672e0f18dd83485ac526d8daff/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/936ed73314f4d349b16e9673cbde8e6339674713/j72i3wj8/fit_2048",
         "operationId": "questions-registration-single"
       }
     },
@@ -9519,7 +9519,7 @@
           }
         ],
         "operationId": "me-complaints",
-        "description": "Uygulama içerisinde Kullanıcının bir üyeyi Şikayet ederken ki servistir.\nÇağrıldığı Yerler;\n1-)Ana sayfada paylaşımlarda '...' tıklayıp açılan popup da 'Paylaşımı şikayet et' e tıklayınca\n2-)Mesajlar sayfasında '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca\n3-)Üye profilinde '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca "
+        "description": "Uygulama içerisinde Kullanıcının bir üyeyi Şikayet ederken ki servistir.\nÇağrıldığı Yerler;\n1-)Ana sayfada paylaşımlarda '...' tıklayıp açılan popup da 'Paylaşımı şikayet et' e tıklayınca\n2-)Mesajlar sayfasında '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca\n3-)Üye profilinde '...' tıklayıp açılan popup da 'Kişiyi şikayet et' e tıklayınca \nhttps://photoprism.coruscant.co/api/v1/t/1abaa4406cac36543b200741d07763c7c28be218/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/557c4e3400d28f964ee63696bf703a1d76e2efcc/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/a3bc0c7b97d45545cd8dcb5348a7a5fd7e0c9773/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/complaint_options": {
@@ -9994,7 +9994,7 @@
           }
         ],
         "operationId": "Get-serch/name",
-        "description": "Uygulama içerisinde kullanıcı Arama Sayfasında \"İsim\" ile arama yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama Sayfası-İsim ile "
+        "description": "Uygulama içerisinde kullanıcı Arama Sayfasında \"İsim\" ile arama yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama Sayfası-İsim ile \nhttps://photoprism.coruscant.co/api/v1/t/73befcf7784cde410cd6db69a604f1a403c5cd24/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/search/home_page": {
@@ -10150,7 +10150,7 @@
           }
         ],
         "operationId": "Get-Search-Home_page",
-        "description": "Uygulama içerisinde NewsFeed sayfasında otomatik olarak bu servis çağrılır.\nÇağrıldığı Yerler;\n1-)Ana sayfa"
+        "description": "Uygulama içerisinde NewsFeed sayfasında otomatik olarak bu servis çağrılır.\nÇağrıldığı Yerler;\n1-)Ana sayfa\nhttps://photoprism.coruscant.co/api/v1/t/e0a4d7ff6a3c44b3f61e37b381bb131932fe5d54/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/search/word": {
@@ -10219,7 +10219,7 @@
             "oauth2": []
           }
         ],
-        "description": "Mobilde bu servis kullanılmamaktadır."
+        "description": "Uygulama içerisinde kullanıcı Arama Sayfasında \"Kelime\" ile arama yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama Sayfası-Kelime ile \nhttps://photoprism.coruscant.co/api/v1/t/73befcf7784cde410cd6db69a604f1a403c5cd24/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/search/matches": {
@@ -13062,7 +13062,7 @@
           }
         ],
         "operationId": "search-filters-get",
-        "description": "Uygulama içerisinde Kullanıcı \"Arama sayfası açıldığında ve filtre üzerinde seçimler yaptığında\" bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama sayfası"
+        "description": "Uygulama içerisinde Kullanıcı \"Arama sayfası açıldığında ve filtre üzerinde seçimler yaptığında\" bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama sayfası\nhttps://photoprism.coruscant.co/api/v1/t/833ea87265bd3e8bd4f37e732f558df95fb5a5f4/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/e74a7c38144208a16dbb778fd893523fcfc9f6fc/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/search/filters/reset": {
@@ -13247,7 +13247,7 @@
           }
         ],
         "operationId": "search-records",
-        "description": "Uygulama içerisinde kullanıcı \"Arama Sayfasında\" kayıtlı aramalardan birini sildiğinde bu servis çağrılmış olur.\nÇağrıldığı YERLER;\n1-)Arama sayfası-Kayıtlı aramalar\n"
+        "description": "Uygulama içerisinde kullanıcı \"Arama Sayfasında\" kayıtlı aramalardan birini sildiğinde bu servis çağrılmış olur.\nÇağrıldığı YERLER;\n1-)Arama sayfası-Kayıtlı aramalar\nhttps://photoprism.coruscant.co/api/v1/t/1097bad089fa19902a1b274c6cfe3be78242d96d/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/search/records": {
@@ -13365,7 +13365,7 @@
           }
         ],
         "operationId": "search-records-get",
-        "description": "GET:Uygulama içerisinde kullanıcı Arama sayfasında \" Kayıtlı Aramaları\"gösterir. Kayıtlı Aramalara tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama-Kayıtlı Aramalar\n"
+        "description": "GET:Uygulama içerisinde kullanıcı Arama sayfasında \" Kayıtlı Aramaları\"gösterir. Kayıtlı Aramalara tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Arama-Kayıtlı Aramalar\nhttps://photoprism.coruscant.co/api/v1/t/1097bad089fa19902a1b274c6cfe3be78242d96d/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/session": {
@@ -13628,7 +13628,7 @@
             "oauth2": []
           }
         ],
-        "operationId": "Get-Sttings",
+        "operationId": "Get-Settings",
         "description": "Uygulama içerisinde kullanıcının;\n1-)Hesap ana sayfa (açıldığında) - https://naboo.pembepanjur.com/account/\n2-)Sosyal ağ bağlantıları sayfası (açıldığında) - https://naboo.pembepanjur.com/account/social/\n3-)Hesap sayfasında üyelik iptal sayfası (açıldığında) - https://naboo.pembepanjur.com/account/disable_subscription/\n4-)Hesap sayfasında mail onay durumu (açıldığında) - https://naboo.pembepanjur.com/account/mail-verification/\nBu sayfalarda çağrılır.\n"
       }
     },
@@ -13683,7 +13683,7 @@
           }
         ],
         "operationId": "put-name",
-        "description": "Uygulama içerisinde Hesap sayfasında \"İsim\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
+        "description": "Uygulama içerisinde Hesap sayfasında \"İsim\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası\nhttps://photoprism.coruscant.co/api/v1/t/cab9d67627776f57ebe63cf417c5f0f5cb38daea/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/email": {
@@ -13736,7 +13736,7 @@
           }
         ],
         "operationId": "put-email",
-        "description": "Uygulama içerisinde Hesap sayfasında \"E-POSTA\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
+        "description": "Uygulama içerisinde Hesap sayfasında \"E-POSTA\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası\nhttps://photoprism.coruscant.co/api/v1/t/919ab387c43a1e85650eb9ffc97f61dcc399dfb5/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/password/forgotten": {
@@ -13830,7 +13830,7 @@
           }
         ],
         "operationId": "PUT-me/password",
-        "description": "Kullanıcı parolasını güncellemek için kullanır"
+        "description": "Kullanıcı parolasını güncellemek için kullanır\nhttps://photoprism.coruscant.co/api/v1/t/40eb3526139a0f78aeb10cb3798350bd309f9e17/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/email/passwords/reset": {
@@ -13914,7 +13914,7 @@
           }
         ],
         "operationId": "Put-me-change_phone_number",
-        "description": "Uygulama içerisinde Hesap sayfasında \"Şifre\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası"
+        "description": "Uygulama içerisinde Hesap sayfasında \"Şifre\" değişikliği yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası\nhttps://photoprism.coruscant.co/api/v1/t/40eb3526139a0f78aeb10cb3798350bd309f9e17/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/phone/send_confirmation": {
@@ -13964,7 +13964,7 @@
           }
         ],
         "operationId": "send-confirmation-post",
-        "description": "Uygulama içerisinde \"Sosyal Ağ Bağlantıları sayfasında Telefon Onayına Tıklayınca popup ile beraber çağrılmış olur\".\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Telefon Onayı Sayfası\n"
+        "description": "Uygulama içerisinde \"Sosyal Ağ Bağlantıları sayfasında Telefon Onayına Tıklayınca popup ile beraber çağrılmış olur\".\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Telefon Onayı Sayfası\nhttps://photoprism.coruscant.co/api/v1/t/97a53839fc52ff93f3ccee7d4b2f1386e372267f/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/phone/verify": {
@@ -14014,7 +14014,7 @@
           }
         ],
         "operationId": "phone-verify-put",
-        "description": "Uygulama içerisinde telefon doğrulama servisidir.\"Hesap sayfasında, \"Sosyal Ağ Bağlantıları\" başlığı altında telefon bağlantısı kurmaya çalıştığımızda onay kodunu girerken bu servis çağrılmış olur\"."
+        "description": "Uygulama içerisinde telefon doğrulama servisidir.\"Hesap sayfasında, \"Sosyal Ağ Bağlantıları\" başlığı altında telefon bağlantısı kurmaya çalıştığımızda onay kodunu girerken bu servis çağrılmış olur\".\nhttps://photoprism.coruscant.co/api/v1/t/fdd75db991ba90d46f90f280176c87f1ffa2255e/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/profile_privacy": {
@@ -14067,7 +14067,7 @@
           }
         ],
         "operationId": "put-profile-privacy",
-        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Görünürlük seçeneğinde değişiklikler yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası Görünürlük seçeneğinde"
+        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Görünürlük seçeneğinde değişiklikler yapıldığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap Sayfası Görünürlük seçeneğinde\nhttps://photoprism.coruscant.co/api/v1/t/677b4f2d8619d2758cc1883e8d073be96fabfecf/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/play_sound": {
@@ -14235,7 +14235,7 @@
           }
         ],
         "operationId": "me-social_network_badge",
-        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantılarını\" -Profilde Göstermek için kullanılır.\"Sosyal Ağ Bağlantıları / Profilde Göster butonu ile servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları"
+        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantılarını\" -Profilde Göstermek için kullanılır.\"Sosyal Ağ Bağlantıları / Profilde Göster butonu ile servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları\nhttps://photoprism.coruscant.co/api/v1/t/53a3135760cefbbb021e03dd811cd4e3ae4aa480/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/social_network/facebook/albums": {
@@ -14282,7 +14282,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde \"Profil Düzenleme\" sayfasında Facebook ile fotoğraf yüklemede bu servis kullanılır.\nFotoğraf Yükle/Facebook İle Ekle butonuna bastıktan sonra servis çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle"
+        "description": "Uygulama içerisinde \"Profil Düzenleme\" sayfasında Facebook ile fotoğraf yüklemede bu servis kullanılır.\nFotoğraf Yükle/Facebook İle Ekle butonuna bastıktan sonra servis çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle\nhttps://photoprism.coruscant.co/api/v1/t/95df115551168a664ca79af98d86d89931e45cdb/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/social_network/facebook/albums/photos": {
@@ -14330,7 +14330,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde Profil Düzenleme sayfasında \"Facebook ile fotoğraf eklerken\" albüm seçildikten sonra servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle"
+        "description": "Uygulama içerisinde Profil Düzenleme sayfasında \"Facebook ile fotoğraf eklerken\" albüm seçildikten sonra servis çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Profil Düzenleme- Fotoğraf Yükle/Facebook İle Ekle\nhttps://photoprism.coruscant.co/api/v1/t/95df115551168a664ca79af98d86d89931e45cdb/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/social_network/instagram/photos": {
@@ -14430,7 +14430,7 @@
           }
         ],
         "operationId": "Post-Connect-FaceBook",
-        "description": "Uygulama içerisinde kullanıcının \"Facebook ile Onayıdır\" Sosyal Ağ Bağlantılarından-Facebook Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları/Facebook Onayı",
+        "description": "Uygulama içerisinde kullanıcının \"Facebook ile Onayıdır\" Sosyal Ağ Bağlantılarından-Facebook Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları/Facebook Onayı\nhttps://photoprism.coruscant.co/api/v1/t/b52a791850752a87a8d8e6db66454292eac904e0/j72i3wj8/fit_2048",
         "parameters": [
           {
             "schema": {
@@ -14491,7 +14491,7 @@
           }
         ],
         "operationId": "me-connects-instagram",
-        "description": "Uygulama içerisinde kullanıcının \"Instagram ile Onayıdır\" Sosyal Ağ Bağlantılarından-Instgram Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları sayfasında instagram onayı"
+        "description": "Uygulama içerisinde kullanıcının \"Instagram ile Onayıdır\" Sosyal Ağ Bağlantılarından-Instgram Onaylandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları sayfasında instagram onayı\nhttps://photoprism.coruscant.co/api/v1/t/b52a791850752a87a8d8e6db66454292eac904e0/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/connects/phone": {
@@ -14581,7 +14581,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantıları Onayını\" Kaldırma servisidir.\nSosyal Ağ Bağlantılarında(Facebook-Instagram-Telefon \"Onayı Kaldır\" butonu ile bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Hesap",
+        "description": "Uygulama içerisinde kullanıcının \"Sosyal Ağ Bağlantıları Onayını\" Kaldırma servisidir.\nSosyal Ağ Bağlantılarında(Facebook-Instagram-Telefon \"Onayı Kaldır\" butonu ile bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Sosyal Ağ Bağlantıları-Hesap\nhttps://photoprism.coruscant.co/api/v1/t/956b3b3c73a589b24ea0d1beffbf86dab28b204c/j72i3wj8/fit_2048",
         "operationId": "me-connects"
       }
     },
@@ -14654,7 +14654,7 @@
             "oauth2": []
           }
         ],
-        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Üyelik İptaline\" tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-ÜYELİK iPTALİ"
+        "description": "Uygulama içerisinde \"Hesap Sayfasından\" Üyelik İptaline\" tıklandığında bu servis çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Hesap-ÜYELİK iPTALİ\nhttps://photoprism.coruscant.co/api/v1/t/e361ea54ac22e0d03f2bfbb8f793f74549f75709/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/hide": {
@@ -15048,7 +15048,7 @@
           }
         ],
         "operationId": "visits-by-them-get",
-        "description": "Uygulama içerisinde \"kullanıcının profilini ziyaret eden\" kullanıcıları listeleme servisidir.\"Ziyaretler/profilinizi gezen sayfasına tıklandığında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Ziyaretler/profilinizi gezen sayfası"
+        "description": "Uygulama içerisinde \"kullanıcının profilini ziyaret eden\" kullanıcıları listeleme servisidir.\"Ziyaretler/profilinizi gezen sayfasına tıklandığında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-)Ziyaretler/profilinizi gezen sayfası\nhttps://photoprism.coruscant.co/api/v1/t/59106643bff3fedba92910814920a067ddc6d519/j72i3wj8/fit_2048"
       }
     },
     "/api/user/v10/me/visits": {
@@ -15295,7 +15295,7 @@
           }
         ],
         "operationId": "visits-get",
-        "description": "Uygulama içerisinde \"kullanıcının ziyaret ettiği profilleri\" listeleme servisidir.\nZiyaretler/profilini gezdiğiniz sayfasında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-) Ziyaretler/profilini gezdiğiniz sayfası\n\n"
+        "description": "Uygulama içerisinde \"kullanıcının ziyaret ettiği profilleri\" listeleme servisidir.\nZiyaretler/profilini gezdiğiniz sayfasında otomatik çağırılmaktadır.\nÇağrıldığı Yerler;\n1-) Ziyaretler/profilini gezdiğiniz sayfası\nhttps://photoprism.coruscant.co/api/v1/t/758b5b143e59b6862c1980d42ca89e27ac661c00/j72i3wj8/fit_2048\n"
       }
     },
     "/api/user/v10/me/winks": {
@@ -15652,7 +15652,7 @@
           }
         ],
         "operationId": "winks-get",
-        "description": "GET:Uygulama içerisinde\"kullanıcının göz kırptığı kullanıcıları listeleme\"servisidir.Göz Kırpmalar / Göz Kırptıklarınız sayfasına tıklandığında otomatik çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Göz Kırptıklarınız\nPOST:Uygulama içerisinde \"Kullanıcının bir başka üyeye\"göz kırptığı servistir.\nÇağrıldığı Yerler;\n1-)Newsfeed'de Göz Kırpma butonu\n2-)Kullanıcı Profil sayfasında Göz Kırpma butonu\n3-)Kullanıcı Profil sayfasında Güncellemeler kısmında Göz Kırpma butonu"
+        "description": "GET:Uygulama içerisinde\"kullanıcının göz kırptığı kullanıcıları listeleme\"servisidir.Göz Kırpmalar / Göz Kırptıklarınız sayfasına tıklandığında otomatik çağırılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Göz Kırptıklarınız\nhttps://photoprism.coruscant.co/library/albums/aru2x691lcbwcnts/view#&gid=1&pid=1\nPOST:Uygulama içerisinde \"Kullanıcının bir başka üyeye\"göz kırptığı servistir.\nÇağrıldığı Yerler;\n1-)Newsfeed'de Göz Kırpma butonu\n2-)Kullanıcı Profil sayfasında Göz Kırpma butonu\n3-)Kullanıcı Profil sayfasında Güncellemeler kısmında Göz Kırpma butonu\nhttps://photoprism.coruscant.co/api/v1/t/e0a4d7ff6a3c44b3f61e37b381bb131932fe5d54/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/api/v1/t/3a684bd0bf50a15432233cc2d01cde64c281a5bc/j72i3wj8/fit_2048\nhttps://photoprism.coruscant.co/library/albums/aru2x691lcbwcnts/view#&gid=1&pid=8"
       }
     },
     "/api/user/v10/me/winks/by_them": {
@@ -15781,7 +15781,7 @@
           }
         ],
         "operationId": "winks-by-them-get",
-        "description": "Uygulama içerisinde \"kullanıcıya göz kırpan kullanıcıları listeleme\" servisidir.\"Göz Kırpmalar / Size Göz Kırpan\" sayfasına tıklandığında çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Size Göz Kırpan sayfası"
+        "description": "Uygulama içerisinde \"kullanıcıya göz kırpan kullanıcıları listeleme\" servisidir.\"Göz Kırpmalar / Size Göz Kırpan\" sayfasına tıklandığında çağrılmış olur.\nÇağrıldığı Yerler;\n1-)Göz Kırpmalar / Size Göz Kırpan sayfası\n<img src=\"https://photoprism.coruscant.co/api/v1/t/4cd5ecde8afa998a7da5a93ba36f61dde18b3798/public/fit_1280\" witdh=200/>\n"
       }
     },
     "/api/user/v10/me/winks/{winkId}": {
