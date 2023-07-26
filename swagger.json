@@ -3645,54 +3645,6 @@
         ]
       }
     },
-    "/api/user/v10/countries/{post_country_id}/cities": {
-      "get": {
-        "tags": [
-          "Location"
-        ],
-        "parameters": [
-          {
-            "name": "post_country_id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "post_country_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataListResult_2_Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2DataModel_Api.CoreGetCityListV2AppService.Dto.CoreGetCityListV2ItemModel_"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "security": [
-          {
-            "oauth2": []
-          }
-        ]
-      }
-    },
     "/api/user/v10/countries/cities/{cityId}/districts": {
       "get": {
         "tags": [
