@@ -9878,7 +9878,7 @@ paths:
         redirect_url'in instagram'a gönderilen url ile aynı olması önemli (slash dahil).
         Bu servis başarılı döndüğünde artık backend tarafında instagramdan fotoğraf çekme/listeleme mümkün olacak.
 
-        Dikkat - 1: Bu servis ilk çağırıldığında media olarak video da gelebiliyor. Backend tarafında video'ları pas geçecek şekilde kod yazıldığına dikkat edilmeli.
+        Dikkat - 1: Bu servis ilk çağırıldığında media olarak video da gelebiliyor. Backend tarafında video'ları pas geçecek şekilde kod yazıldığına dikkat edilmeli.  
         Dikkat - 2: Client'ın isteyeceği instagram izinlerinde profil ve media izni olmalı. Media olmazsa fotoğrafları backend çekemez.
   /api/user/v10/me/connects/phone:
     get:
