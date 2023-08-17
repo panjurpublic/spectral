@@ -1,4 +1,4 @@
-openapi: 3.0.1
+openapi: 3.1.0
 x-stoplight:
   id: yiw50o7qk4nzy
 info:
@@ -13,6 +13,563 @@ info:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 paths:
+  '/users/{user_id}/{get_profile_pointer}':
+    parameters:
+      - schema:
+          type: string
+        name: user_id
+        in: path
+        required: true
+        description: Ziyaret edilmek istenen kullanıcın üye numarası
+      - schema:
+          type: string
+        name: get_profile_pointer
+        in: path
+        required: true
+        description: 'Ziyaret edilmek istenen kullanıcın {get_profile_pointer} değeri'
+    get:
+      summary: Get user profile
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/user_model'
+              examples:
+                female_1:
+                  value:
+                    about_detail:
+                      me:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Hareketli, çalışkan, titiz ve bakımlı bi bayanım  sıcak  ciddi ve yalansız bi ilişki istiyorum evlilikle sonuçlansın'
+                      looking_for:
+                        is_locked: false
+                        is_liked: false
+                        value: Lorem ipsum dolor sit amet consectetur. Egestas volutpat euismod eget duis sed scelerisque elit ultrices.
+                      three_things_want:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Dürüst, Sıcakkanlı, Samimi'
+                      three_things_dont_want:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Sigara, Alkol, Küfür'
+                      three_things_keep_close:
+                        is_locked: false
+                        is_liked: false
+                        value: Lorem ipsum dolor sit amet consectetur. Non tortor ac aliquam eget lobortis sem.
+                      animals:
+                        is_locked: false
+                        is_liked: false
+                        value: Kedileri severim
+                      television:
+                        is_locked: false
+                        is_liked: false
+                        value: Yok
+                      music:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Hip hop, Pop, R&B'
+                      theater:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Bilim Kurgu, Fantastik'
+                      books:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Çizgi Roman, Psikoloji'
+                      sport:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Yüzmek, yürüyüş yapmak'
+                      holiday:
+                        is_locked: false
+                        is_liked: false
+                        value: Deniz kenarı
+                      abroad:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Fransa, Almanya, Hollanda'
+                      taste:
+                        is_locked: false
+                        is_liked: false
+                        value: Vejetaryenım
+                      video_games:
+                        is_locked: false
+                        is_liked: false
+                        value: Fps ve strateji oyunları
+                      cartoons:
+                        is_locked: false
+                        is_liked: false
+                        value: 'Road Runner, Bugs Bunny'
+                      astrology:
+                        is_locked: false
+                        is_liked: false
+                        value: Haritam bile var
+                    harmony:
+                      total: 98
+                      character: -1
+                      hobby: 94
+                      lifestyle: 94
+                      zodiac: 86
+                      is_perfect_match: true
+                    confirmations:
+                      is_verified: true
+                      facebook: true
+                      instagram: true
+                      phone: true
+                    hobbies:
+                      - key: hobby_listening_music
+                        value: Müzik
+                        is_mutual: false
+                      - key: hobby_marital_arts
+                        value: Dövüş sanatları
+                        is_mutual: false
+                      - key: hobby_mentoring
+                        value: Mentorluk
+                        is_mutual: true
+                      - key: hobby_mountaineering
+                        value: Dağ tırmanışı
+                        is_mutual: true
+                      - key: hobby_musical_instruments
+                        value: Enstrüman çalmak
+                        is_mutual: false
+                      - key: hobby_online_education
+                        value: Online eğitimler
+                        is_mutual: false
+                      - key: hobby_origami
+                        value: Origami
+                        is_mutual: true
+                    interaction:
+                      is_winked: false
+                      is_blocked: false
+                      is_liked: false
+                      is_favorite: false
+                      status: recently_online
+                      last_activity: 11  dakika önce aktifti
+                      adjacent_profiles:
+                        next:
+                          name: Merve
+                          user_id: 2
+                          age: 30
+                          profile_picture:
+                            caption: ''
+                            picture_id: 2
+                            url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                            thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                          pointer: string
+                        prev:
+                          name: Nur
+                          user_id: 3
+                          age: 32
+                          profile_picture:
+                            caption: ''
+                            picture_id: 3
+                            url: 'https://himmetkaan.com/panjur/merve-profile-3.jpg'
+                            thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-3.jpg'
+                          pointer: string
+                    lifestyle:
+                      - key: lifestyle_1
+                        value: Aile bağlarım kuvvetlidir
+                        is_mutual: false
+                      - key: lifestyle_2
+                        value: Her şeyi planlı programlı yaparım
+                        is_mutual: false
+                      - key: lifestyle_3
+                        value: Yardım etmeyi severim
+                        is_mutual: true
+                      - key: lifestyle_4
+                        value: Evim her zaman derli topludur
+                        is_mutual: false
+                      - key: lifestyle_5
+                        value: Seyahat etmeyi ve gezmeyi severim
+                        is_mutual: false
+                      - key: lifestyle_6
+                        value: Çocukları severim
+                        is_mutual: true
+                      - key: lifestyle_7
+                        value: Tasarruf yapmayı severim
+                        is_mutual: false
+                    personal_information:
+                      name:
+                        value: Gamze Ataseven
+                        is_liked: false
+                      age:
+                        value: '32'
+                        is_liked: false
+                      marital_status:
+                        value: Hiç Evlenmemiş
+                        is_liked: false
+                      location:
+                        value: 'Bakırköy, İstanbul'
+                        is_liked: false
+                      occupation:
+                        value: Freelance çalışan
+                        is_liked: false
+                      income:
+                        value: 10.000 TL nin üstünde
+                        is_liked: false
+                      child:
+                        value: Evet
+                        is_liked: false
+                      number_of_child:
+                        value: '1'
+                        is_liked: false
+                      lives_with_child:
+                        value: Hayır
+                        is_liked: false
+                      wants_child:
+                        value: Evet
+                        is_liked: false
+                      height:
+                        value: 175 cm
+                        is_liked: false
+                      weight:
+                        value: 58 kg
+                        is_liked: false
+                      eye_color:
+                        value: Kahverengi
+                        is_liked: false
+                      hair_color:
+                        value: Kumral
+                        is_liked: false
+                      physical_appearance:
+                        value: Normal
+                        is_liked: false
+                      dressing_style:
+                        value: Her zaman şık giyinirim
+                        is_liked: false
+                      education:
+                        value: Üniversite
+                        is_liked: false
+                      is_studying:
+                        value: Hayır
+                        is_liked: false
+                      last_school:
+                        value: Marmara Üniversitesi
+                        is_liked: false
+                      language:
+                        value: 'İngilizce, İspanyolca'
+                        is_liked: false
+                      smoking:
+                        value: Sık sık
+                        is_liked: false
+                      alcohol:
+                        value: Sosyal olarak
+                        is_liked: false
+                      living_with:
+                        value: Ailemle
+                        is_liked: false
+                      working_status:
+                        value: Yarı zamanlı
+                        is_liked: false
+                      job_position:
+                        value: Çalışan
+                        is_liked: false
+                      owns_house:
+                        value: Hayır
+                        is_liked: false
+                      disabilities:
+                        value: Yok
+                        is_liked: false
+                      zodiac:
+                        value: Koç
+                        is_liked: false
+                        key: aries
+                    personality:
+                      - key: personality_1
+                        value: Sıcakkanlı
+                        is_mutual: false
+                      - key: personality_2
+                        value: Enerjik
+                        is_mutual: true
+                      - key: personality_3
+                        value: Hırslı
+                        is_mutual: false
+                      - key: personality_4
+                        value: Samimi
+                        is_mutual: true
+                      - key: personality_5
+                        value: Mutlu
+                        is_mutual: true
+                      - key: personality_6
+                        value: Sabırlı
+                        is_mutual: false
+                      - key: personality_7
+                        value: Maceraperest
+                        is_mutual: false
+                      - key: personality_8
+                        value: Dindar
+                        is_mutual: false
+                      - key: personality_9
+                        value: Kırılgan
+                        is_mutual: false
+                      - key: personality_10
+                        value: İçine kapanık
+                        is_mutual: false
+                      - key: personality_11
+                        value: Akıllı
+                        is_mutual: false
+                    instagram_pictures:
+                      - caption: ''
+                        picture_id: 1
+                        url: 'https://himmetkaan.com/panjur/merve-profile-1.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+                      - caption: ''
+                        picture_id: 2
+                        url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                      - caption: ''
+                        picture_id: 3
+                        url: 'https://himmetkaan.com/panjur/merve-profile-3.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-3.jpg'
+                      - caption: ''
+                        picture_id: 4
+                        url: 'https://himmetkaan.com/panjur/merve-profile-4.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-4.jpg'
+                      - caption: ''
+                        picture_id: 5
+                        url: 'https://himmetkaan.com/panjur/merve-profile-5.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-5.jpg'
+                      - caption: ''
+                        picture_id: 6
+                        url: 'https://himmetkaan.com/panjur/merve-profile-6.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-6.jpg'
+                      - caption: ''
+                        picture_id: 7
+                        url: 'https://himmetkaan.com/panjur/merve-profile-1.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+                      - caption: ''
+                        picture_id: 8
+                        url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                      - caption: ''
+                        picture_id: 9
+                        url: 'https://himmetkaan.com/panjur/merve-profile-3.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-3.jpg'
+                      - caption: ''
+                        picture_id: 10
+                        url: 'https://himmetkaan.com/panjur/merve-profile-4.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-4.jpg'
+                      - caption: ''
+                        picture_id: 11
+                        url: 'https://himmetkaan.com/panjur/merve-profile-5.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-5.jpg'
+                      - caption: ''
+                        picture_id: 12
+                        url: 'https://himmetkaan.com/panjur/merve-profile-6.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-6.jpg'
+                      - caption: ''
+                        picture_id: 13
+                        url: 'https://himmetkaan.com/panjur/merve-profile-1.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+                      - caption: ''
+                        picture_id: 14
+                        url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                    pictures:
+                      - caption: ''
+                        picture_id: 1
+                        url: 'https://himmetkaan.com/panjur/merve-profile-1.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+                      - caption: ''
+                        picture_id: 2
+                        url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                      - caption: ''
+                        picture_id: 3
+                        url: 'https://himmetkaan.com/panjur/merve-profile-3.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-3.jpg'
+                      - caption: ''
+                        picture_id: 4
+                        url: 'https://himmetkaan.com/panjur/merve-profile-4.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-4.jpg'
+                      - caption: ''
+                        picture_id: 5
+                        url: 'https://himmetkaan.com/panjur/merve-profile-5.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-5.jpg'
+                      - caption: ''
+                        picture_id: 6
+                        url: 'https://himmetkaan.com/panjur/merve-profile-6.jpg'
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-6.jpg'
+                    pointers:
+                      add_favorite: dummyPOINTERtextFavorite
+                      block: dummyPOINTERtextBlock
+                      delete_match: dummyPOINTERtextDeleteMatch
+                      get_messages: dummyPOINTERtextGetMessage
+                      get_profile: dummyPOINTERtextGetProfile
+                      remake_match: dummyPOINTERtextRemakeMatch
+                      user_id: 1000
+                    spotify:
+                      - cover: 'http://example.com'
+                        value: Beatle Street Blues Boy
+                        id: 1
+                        is_mutual: false
+        '401':
+          description: Unauthorized
+      operationId: get-users-user_id
+      description: 'Gelen {user_id} ye göre ilgili kullanıcıyı döner '
+  '/users/{user_id}/{get_profile_pointer}/harmony':
+    parameters:
+      - schema:
+          type: string
+        name: user_id
+        in: path
+        required: true
+        description: Uyumluluk bakılmak istenen kullanıcının üye numarası
+      - schema:
+          type: string
+        name: get_profile_pointer
+        in: path
+        required: true
+        description: 'Uyumluluk bakılmak istenen kullanıcının {get_profile_pointer} değeri'
+    get:
+      summary: Get harmony with a user
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/harmony_detail_model'
+              examples:
+                female_1:
+                  value:
+                    summary:
+                      total: 94
+                      character: 98
+                      hobby: 94
+                      lifestyle: 92
+                      zodiac: 86
+                      is_perfect_match: true
+                    character:
+                      social_relations:
+                        me: -100
+                        them: -90
+                      data_collection:
+                        me: -30
+                        them: 50
+                      decision_making:
+                        me: -50
+                        them: 100
+                      evaluation:
+                        me: -100
+                        them: 100
+                      paragraphs:
+                        - key: ''
+                          title: Nasıl Anlaşırsınız?
+                          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+                        - key: ''
+                          title: Aranızdaki İletişim
+                          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+                        - key: ''
+                          title: Değerleriniz
+                          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+                        - key: ''
+                          title: Günlük Yaşamınız
+                          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation'
+                    zodiac:
+                      paragraphs:
+                        - key: heart_arrow
+                          title: Kova Kadını & Yay Erkeği
+                          content: Lorem ipsum dolor sit amet consectetur. Turpis facilisis pulvinar vel nunc aliquam. Eu viverra massa et suspendisse tincidunt. Egestas nunc nisl lorem sed dolor amet imperdiet. Vel purus maecenas arcu congue turpis orci ornare. Nullam eu turpis malesuad.
+                        - key: tada
+                          title: Mutluluk
+                          content: Lorem ipsum dolor sit amet consectetur. Turpis facilisis pulvinar vel nunc aliquam. Eu viverra massa et suspendisse tincidunt. Egestas nunc nisl lorem sed dolor amet imperdiet. Vel purus maecenas arcu congue turpis orci ornare. Nullam eu turpis malesuad.
+                        - key: magnet
+                          title: Çekim
+                          content: Lorem ipsum dolor sit amet consectetur. Turpis facilisis pulvinar vel nunc aliquam. Eu viverra massa et suspendisse tincidunt. Egestas nunc nisl lorem sed dolor amet imperdiet. Vel purus maecenas arcu congue turpis orci ornare. Nullam eu turpis malesuad.
+                    hobbies:
+                      shared:
+                        - key: hobby_listening_music
+                          value: Müzik
+                          is_mutual: true
+                        - key: hobby_marital_arts
+                          value: Dövüş sanatları
+                          is_mutual: true
+                        - key: hobby_mentoring
+                          value: Mentorluk
+                          is_mutual: true
+                        - key: hobby_mountaineering
+                          value: Dağ tırmanışı
+                          is_mutual: true
+                        - key: hobby_musical_instruments
+                          value: Enstrüman çalmak
+                          is_mutual: true
+                        - key: hobby_online_education
+                          value: Online eğitimler
+                          is_mutual: true
+                        - key: hobby_origami
+                          value: Origami
+                          is_mutual: true
+                      theirs:
+                        - key: hobby_painting
+                          value: Resim yapmak
+                          is_mutual: false
+                        - key: hobby_paragliding
+                          value: Yamaç paraşütü
+                          is_mutual: false
+                        - key: hobby_photography
+                          value: Fotoğrafçılık
+                          is_mutual: false
+                        - key: hobby_ping_pong
+                          value: Masa tenisi
+                          is_mutual: false
+                      mine:
+                        - key: hobby_running
+                          value: Koşu yapmak
+                          is_mutual: false
+                        - key: hobby_self_improvement
+                          value: Kişisel gelişim
+                          is_mutual: false
+                        - key: hobby_shopping
+                          value: Alışveriş
+                          is_mutual: false
+                        - key: hobby_ski
+                          value: Kayak
+                          is_mutual: false
+                        - key: hobby_software_development
+                          value: Kodlama
+                          is_mutual: false
+                    life_style:
+                      shared:
+                        - key: lifestyle_1
+                          value: Yardım etmeyi severim
+                          is_mutual: true
+                        - key: lifestyle_2
+                          value: Evim her zaman derli topludur
+                          is_mutual: true
+                      theirs:
+                        - key: lifestyle_3
+                          value: Seyahat etmeyi ve gezmeyi severim
+                          is_mutual: false
+                        - key: lifestyle_4
+                          value: Her şeyi planlı programlı yaparım
+                          is_mutual: false
+                      mine:
+                        - key: lifestyle_5
+                          value: Çocukları severim
+                          is_mutual: false
+                        - key: lifestyle_6
+                          value: Aile bağlarım kuvvetlidir
+                          is_mutual: false
+                    users:
+                      me:
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+                        name: Hakan
+                        age: 34
+                        zodiac: Yay
+                      them:
+                        thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+                        name: Gamze
+                        age: 32
+                        zodiac: Kova
+        '401':
+          description: Unauthorized
+      operationId: get-users-user_id-harmony
+      description: Gönderilen üye numarasına sahip kullanıcı ile olan uyumluluk durumunu detaylı olarak dönen servis.
   /api/user/v10/agreements/user:
     get:
       tags:
@@ -10355,6 +10912,1385 @@ paths:
         - oauth2: []
 components:
   schemas:
+    pointers_model:
+      type: object
+      x-examples:
+        Example 1:
+          addFavorite: this.rawUser.pointers.add_favorite
+          block: this.rawUser.pointers.block
+          deleteMatch: this.rawUser.pointers.delete_match
+          getMessages: this.rawUser.pointers.get_messages
+          getProfile: this.rawUser.pointers.get_profile
+          remakeMatch: this.rawUser.pointers.remake_match
+      examples:
+        - add_favorite: dummyPOINTERtextFavorite
+          block: dummyPOINTERtextBlock
+          delete_match: dummyPOINTERtextDeleteMatch
+          get_messages: dummyPOINTERtextGetMessage
+          get_profile: dummyPOINTERtextGetProfile
+          remake_match: dummyPOINTERtextRemakeMatch
+      properties:
+        add_favorite:
+          type: string
+          x-stoplight:
+            id: 31xeum3dp2gvl
+        block:
+          type: string
+        delete_match:
+          type: string
+          x-stoplight:
+            id: dupzv8yvmv482
+        get_messages:
+          type: string
+          x-stoplight:
+            id: 0nx4c9qas9oo7
+        get_profile:
+          type: string
+          x-stoplight:
+            id: 7p2lts6nn2935
+        remake_match:
+          type: string
+          x-stoplight:
+            id: z7iiqmwxlqjng
+        user_id:
+          type: integer
+          x-stoplight:
+            id: z7iiqmwxlqjng
+          minimum: 1
+      required:
+        - add_favorite
+        - block
+        - delete_match
+        - get_messages
+        - get_profile
+        - remake_match
+        - user_id
+      title: pointers_model
+      description: ''
+    user_model:
+      title: user_model
+      x-stoplight:
+        id: op69jwqp8jthw
+      type: object
+      examples: []
+      properties:
+        about_detail:
+          $ref: '#/components/schemas/about_detail_model'
+          x-stoplight:
+            id: vcabn71aqa149
+          description: Kullanıcının girdiği uzun text yazılarının toplandığı alan
+        confirmations:
+          $ref: '#/components/schemas/confirmation_model'
+          x-stoplight:
+            id: vcabn71aqa149
+          description: Kullanıcının onay durumları hakkında bilgi veren alan
+        harmony:
+          $ref: '#/components/schemas/harmony_model'
+          x-stoplight:
+            id: vcabn71aqa149
+          description: Kullanıcıyla uyumumuz hakkında özet bilgi veren alan
+        hobbies:
+          x-stoplight:
+            id: 3f33nagawhlbo
+          type: array
+          description: Kullanıcının hobilerinin döndüğü dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 47q64uepo8058
+        interaction:
+          $ref: '#/components/schemas/interaction_model'
+          x-stoplight:
+            id: 3f33nagawhlbo
+          description: Kullanıcı ile yapılmış etkileşim durumlarını veren alan
+        lifestyle:
+          x-stoplight:
+            id: 3f33nagawhlbo
+          type: array
+          description: Kullanıcının yaşam tarzı bilgilerini dönen dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 47q64uepo8058
+        personal_information:
+          $ref: '#/components/schemas/personal_information_model'
+          x-stoplight:
+            id: 3f33nagawhlbo
+          description: Kullanıcı hakkında kayıt sırasında girilmiş bilgilerin bulunduğu alan
+        personality:
+          x-stoplight:
+            id: 3f33nagawhlbo
+          type: array
+          description: Kullanıcının kişisel özelliklerini dönen dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 47q64uepo8058
+        instagram_pictures:
+          x-stoplight:
+            id: 3f33nagawhlbo
+          type: array
+          description: Kullanıcının instagram fotoğrafları
+          items:
+            $ref: '#/components/schemas/picture_model'
+            x-stoplight:
+              id: r7p4v695wpsix
+        pictures:
+          x-stoplight:
+            id: 2fe2hfu349k92
+          type: array
+          description: Kullanıcının sisteme yüklediği fotoğraflar
+          items:
+            $ref: '#/components/schemas/picture_model'
+            x-stoplight:
+              id: g9sldvm134dyv
+        pointers:
+          $ref: '#/components/schemas/pointers_model'
+          x-stoplight:
+            id: daob4j70lwuwg
+          description: Kullanıcı ile etkileşime geçmek için kullanılacak pointerların hepsi
+        spotify:
+          x-stoplight:
+            id: 3f33nagawhlbo
+          type: array
+          description: Kullanıcının spotify üzerinden gelen bilgileri
+          items:
+            $ref: '#/components/schemas/spotify_item_model'
+            x-stoplight:
+              id: 5bc6qo8oozzix
+      required:
+        - about_detail
+        - confirmations
+        - harmony
+        - hobbies
+        - interaction
+        - lifestyle
+        - personal_information
+        - personality
+        - instagram_pictures
+        - pictures
+        - pointers
+        - spotify
+    picture_model:
+      title: picture_model
+      x-stoplight:
+        id: 0cm112jxmh974
+      type: object
+      examples:
+        - caption: ''
+          picture_id: 1
+          url: 'https://himmetkaan.com/panjur/merve-profile-1.jpg'
+          thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-1.jpg'
+      properties:
+        caption:
+          type: string
+          x-stoplight:
+            id: rpvz6jfafxk9s
+          description: Resim üzeri açıklama metni (boş string olabilir)
+        picture_id:
+          type: number
+          x-stoplight:
+            id: 0we7v6jb4liqs
+          minimum: 1
+          description: Fotoğrafın unique id'si
+        url:
+          type: string
+          x-stoplight:
+            id: c5d5axi6en6ow
+          format: uri
+          description: Fotoğrafın orjinalinin URL'i
+        thumbnail:
+          type: string
+          x-stoplight:
+            id: pmyb7ocz5llla
+          format: uri
+          description: Fotoğrafın kroplanmış ve/veya küçük halinin URL'i
+      required:
+        - caption
+        - picture_id
+        - url
+        - thumbnail
+    about_detail_item_model:
+      title: about_detail_model
+      x-stoplight:
+        id: n57czrn0u3sa3
+      type: object
+      examples:
+        - is_locked: false
+          is_liked: false
+          value: Lorem ipsum
+      properties:
+        is_locked:
+          type: boolean
+          x-stoplight:
+            id: dlw2wewdcf843
+          description: 'Veriyi gösterip göstermeyeceğimi belirten değer. '
+        is_liked:
+          type: boolean
+          x-stoplight:
+            id: pk7n5antf2sfu
+          description: DAha önceden bu veriye beğeni gönderilmiş mi?
+        value:
+          type: string
+          x-stoplight:
+            id: flpmri11ja8vg
+          description: Değer
+      required:
+        - is_locked
+        - is_liked
+        - value
+    about_detail_model:
+      title: about_detail_model
+      x-stoplight:
+        id: 5k59ptjw5slcn
+      type: object
+      examples:
+        - me:
+            is_locked: false
+            is_liked: false
+            value: 'Hareketli, çalışkan, titiz ve bakımlı bi bayanım  sıcak  ciddi ve yalansız bi ilişki istiyorum evlilikle sonuçlansın'
+          looking_for:
+            is_locked: false
+            is_liked: false
+            value: Lorem ipsum dolor sit amet consectetur. Egestas volutpat euismod eget duis sed scelerisque elit ultrices.
+          three_things_want:
+            is_locked: false
+            is_liked: false
+            value: 'Dürüst, Sıcakkanlı, Samimi'
+          three_things_dont_want:
+            is_locked: false
+            is_liked: false
+            value: 'Sigara, Alkol, Küfür'
+          three_things_keep_close:
+            is_locked: false
+            is_liked: false
+            value: Lorem ipsum dolor sit amet consectetur. Non tortor ac aliquam eget lobortis sem.
+          animals:
+            is_locked: false
+            is_liked: false
+            value: Kedileri severim
+          television:
+            is_locked: false
+            is_liked: false
+            value: Yok
+          music:
+            is_locked: false
+            is_liked: false
+            value: 'Hip hop, Pop, R&B'
+          theater:
+            is_locked: false
+            is_liked: false
+            value: 'Bilim Kurgu, Fantastik'
+          books:
+            is_locked: false
+            is_liked: false
+            value: 'Çizgi Roman, Psikoloji'
+          sport:
+            is_locked: false
+            is_liked: false
+            value: 'Yüzmek, yürüyüş yapmak'
+          holiday:
+            is_locked: false
+            is_liked: false
+            value: Deniz kenarı
+          abroad:
+            is_locked: false
+            is_liked: false
+            value: 'Fransa, Almanya, Hollanda'
+          taste:
+            is_locked: false
+            is_liked: false
+            value: Vejetaryenım
+          video_games:
+            is_locked: false
+            is_liked: false
+            value: Fps ve strateji oyunları
+          cartoons:
+            is_locked: false
+            is_liked: false
+            value: 'Road Runner, Bugs Bunny'
+          astrology:
+            is_locked: false
+            is_liked: false
+            value: Haritam bile var
+      properties:
+        me:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: vif50r7fk7ub8
+          description: Kullanıcının girdiği "Hakkımda" yazısı
+        looking_for:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Aradığım kişi" yazısı
+        three_things_want:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "İstediğim 3 şey" yazısı
+        three_things_dont_want:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "İstemediğim 3 şey" yazısı
+        three_things_keep_close:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Yanımdan ayırmadığım 3 şey" yazısı
+        animals:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Hayvanları sever misiniz?" yazısı
+        television:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Televizyon alışkanlığı" yazısı
+        music:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Müzik Zevki" yazısı
+        theater:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Sinema zevki" yazısı
+        books:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Kitap tercihi" yazısı
+        sport:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Spora ilgi" yazısı
+        holiday:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Tatil tercihi" yazısı
+        abroad:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Yurtdışı deneyimi" yazısı
+        taste:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Damak tadı" yazısı
+        video_games:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Video oyunları" yazısı
+        cartoons:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Çizgi filmler" yazısı
+        astrology:
+          $ref: '#/components/schemas/about_detail_item_model'
+          x-stoplight:
+            id: 4kzing0et4c3f
+          description: Kullanıcının girdiği "Burçlara inanır mısınız?" yazısı
+      required:
+        - me
+        - looking_for
+        - three_things_want
+        - three_things_dont_want
+        - three_things_keep_close
+        - animals
+        - television
+        - music
+        - theater
+        - books
+        - sport
+        - holiday
+        - abroad
+        - taste
+        - video_games
+        - cartoons
+        - astrology
+    confirmation_model:
+      title: confirmation_model
+      x-stoplight:
+        id: j7vng59vc50bc
+      type: object
+      examples:
+        - is_verified: true
+          facebook: true
+          instagram: true
+          phone: true
+      properties:
+        is_verified:
+          type: boolean
+          x-stoplight:
+            id: flxmoombxe3ea
+          description: Kullanıcı onay sistemi tarafından onaylanarak gerçek bir insan olduğu doğrulandı mı?
+        facebook:
+          type: boolean
+          x-stoplight:
+            id: ftgpvbdnpmyb1
+          description: Facebook hesabını bağladı mı
+        instagram:
+          type: boolean
+          x-stoplight:
+            id: ztxtnf02yg9q8
+          description: Instagram hesabını bağladı mı
+        phone:
+          type: boolean
+          x-stoplight:
+            id: mh4xd8seywi2s
+          description: Telefon numarasını onaylattı mı
+      required:
+        - is_verified
+        - facebook
+        - instagram
+        - phone
+    harmony_model:
+      title: harmony_model
+      x-stoplight:
+        id: 6a706uy59nx10
+      type: object
+      examples:
+        - total: 98
+          character: -1
+          hobby: 94
+          lifestyle: 94
+          zodiac: 86
+          is_perfect_match: true
+      properties:
+        total:
+          type: integer
+          x-stoplight:
+            id: 635g366qp9o7x
+          minimum: -1
+          maximum: 100
+          description: Genel uyum durum skoru
+        character:
+          type: integer
+          x-stoplight:
+            id: 635g366qp9o7x
+          minimum: -1
+          maximum: 100
+          description: Kişilik analizine göre uyum skoru
+        hobby:
+          type: integer
+          x-stoplight:
+            id: 635g366qp9o7x
+          minimum: -1
+          maximum: 100
+          description: Hobilere göre uyum skoru
+        lifestyle:
+          type: integer
+          x-stoplight:
+            id: 635g366qp9o7x
+          minimum: -1
+          maximum: 100
+          description: Yaşam tarzına göre uyum skoru
+        zodiac:
+          type: integer
+          x-stoplight:
+            id: 635g366qp9o7x
+          minimum: -1
+          maximum: 100
+          description: Burçlara göre uyum skoru
+        is_perfect_match:
+          type: boolean
+          x-stoplight:
+            id: adj0wjuzv5va2
+          description: Toplam uyum oranı yeterince yüksek ise ideal uyum olduğunu gösteren değer
+      required:
+        - total
+        - character
+        - hobby
+        - lifestyle
+        - zodiac
+        - is_perfect_match
+    spotify_item_model:
+      title: spotify_item_model
+      x-stoplight:
+        id: b1nnh13rk1qla
+      type: object
+      examples:
+        - cover: 'http://example.com'
+          value: Beatle Street Blues Boy
+          id: 1
+          is_mutual: false
+      properties:
+        cover:
+          type: string
+          x-stoplight:
+            id: 1bhx5ql5470x6
+          format: uri
+          description: Albüm veya artist cover resmi
+        value:
+          type: string
+          x-stoplight:
+            id: 1bhx5ql5470x6
+          description: Albüm veya artist adı
+        id:
+          type: integer
+          x-stoplight:
+            id: 1bhx5ql5470x6
+          minimum: -1
+          description: Unique id
+        is_mutual:
+          type: boolean
+          x-stoplight:
+            id: q83lcqi83y0yp
+          description: Ziyaret eden de ziyaret edilen de seçmiş mi?
+      required:
+        - cover
+        - value
+        - id
+        - is_mutual
+    hobby_personality_lifestyle_item_model:
+      title: hobby_personality_lifestyle_item_model
+      x-stoplight:
+        id: h1ichw4ww1h07
+      type: object
+      examples:
+        - key: value_key
+          value: Hobby name
+          is_mutual: false
+      properties:
+        key:
+          type: string
+          x-stoplight:
+            id: 1bhx5ql5470x6
+          description: İkon için kullanılacak unique değer
+        value:
+          type: string
+          x-stoplight:
+            id: 1bhx5ql5470x6
+          description: Okunabilir değer
+        is_mutual:
+          type: boolean
+          x-stoplight:
+            id: q83lcqi83y0yp
+          description: Ziyaret eden de ziyaret edilen de seçmiş mi?
+      required:
+        - key
+        - value
+        - is_mutual
+    interaction_model:
+      title: interaction_model
+      x-stoplight:
+        id: stane8lidsjtp
+      type: object
+      examples:
+        - is_winked: false
+          is_blocked: false
+          is_liked: false
+          is_favorite: false
+          status: recently_online
+          last_activity: 11  dakika önce aktifti
+          adjacent_profiles:
+            next:
+              name: Merve
+              age: 30
+              profile_picture:
+                caption: ''
+                picture_id: 2
+                url: 'https://himmetkaan.com/panjur/merve-profile-2.jpg'
+                thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-2.jpg'
+              pointer: string
+            prev:
+              name: Nur
+              age: 32
+              profile_picture:
+                caption: ''
+                picture_id: 3
+                url: 'https://himmetkaan.com/panjur/merve-profile-3.jpg'
+                thumbnail: 'https://himmetkaan.com/panjur/merve-profile-thumbnail-3.jpg'
+              pointer: string
+      properties:
+        is_winked:
+          type: boolean
+          x-stoplight:
+            id: h8l4lhy5ch3a0
+        is_blocked:
+          type: boolean
+          x-stoplight:
+            id: h8l4lhy5ch3a0
+        is_liked:
+          type: boolean
+          x-stoplight:
+            id: phjchl6p257ag
+        is_favorite:
+          type: boolean
+          x-stoplight:
+            id: 9br87d1rnkv1k
+        status:
+          type: string
+          x-stoplight:
+            id: 9br87d1rnkv1k
+          enum:
+            - online
+            - offline
+            - recently_online
+        last_activity:
+          type: string
+          x-stoplight:
+            id: 9br87d1rnkv1k
+        adjacent_profiles:
+          type: object
+          x-stoplight:
+            id: tqszmpwy8zc1f
+          properties:
+            next:
+              type: object
+              x-stoplight:
+                id: 7i1es0gyjj0xt
+              properties:
+                name:
+                  type: string
+                  x-stoplight:
+                    id: nxd21vkx37rlt
+                user_id:
+                  type: integer
+                  x-stoplight:
+                    id: nxd21vkx37rlt
+                  minimum: -1
+                age:
+                  type: number
+                  x-stoplight:
+                    id: hkufw1gjzchj7
+                  minimum: 18
+                  maximum: 99
+                profile_picture:
+                  $ref: '#/components/schemas/picture_model'
+                  x-stoplight:
+                    id: gdmimbgmqr59m
+                pointer:
+                  type: string
+                  x-stoplight:
+                    id: yjhipqjq87s9p
+              required:
+                - name
+                - user_id
+                - age
+                - profile_picture
+                - pointer
+            prev:
+              type: object
+              x-stoplight:
+                id: 7i1es0gyjj0xt
+              properties:
+                name:
+                  type: string
+                  x-stoplight:
+                    id: nxd21vkx37rlt
+                user_id:
+                  type: integer
+                  x-stoplight:
+                    id: nxd21vkx37rlt
+                  minimum: -1
+                age:
+                  type: number
+                  x-stoplight:
+                    id: hkufw1gjzchj7
+                  minimum: 18
+                  maximum: 99
+                profile_picture:
+                  $ref: '#/components/schemas/picture_model'
+                  x-stoplight:
+                    id: gdmimbgmqr59m
+                pointer:
+                  type: string
+                  x-stoplight:
+                    id: yjhipqjq87s9p
+              required:
+                - name
+                - user_id
+                - age
+                - profile_picture
+                - pointer
+      required:
+        - is_winked
+        - is_blocked
+        - is_liked
+        - is_favorite
+        - status
+        - last_activity
+    personal_information_item_model:
+      title: personal_information_item_model
+      x-stoplight:
+        id: 96iwk6eteon28
+      type: object
+      examples:
+        - value: Value
+          is_liked: false
+      properties:
+        value:
+          type: string
+          x-stoplight:
+            id: 41c4sjhvvziqq
+        is_liked:
+          type: boolean
+          x-stoplight:
+            id: rdzzd2v217bx0
+      required:
+        - value
+        - is_liked
+    personal_information_model:
+      title: personal_information_model
+      x-stoplight:
+        id: zpkqede0uy0in
+      type: object
+      examples:
+        - name:
+            value: Gamze Ataseven
+            is_liked: false
+          age:
+            value: '32'
+            is_liked: false
+          location:
+            value: 'Bakırköy, İstanbul'
+            is_liked: false
+          occupation:
+            value: Freelance çalışan
+            is_liked: false
+          income:
+            value: 10.000 TL nin üstünde
+            is_liked: false
+          child:
+            value: Evet
+            is_liked: false
+          number_of_child:
+            value: '1'
+            is_liked: false
+          lives_with_child:
+            value: Hayır
+            is_liked: false
+          wants_child:
+            value: Evet
+            is_liked: false
+          height:
+            value: 175 cm
+            is_liked: false
+          weight:
+            value: 58 kg
+            is_liked: false
+          eye_color:
+            value: Kahverengi
+            is_liked: false
+          hair_color:
+            value: Kumral
+            is_liked: false
+          physical_appearance:
+            value: Normal
+            is_liked: false
+          dressing_style:
+            value: Her zaman şık giyinirim
+            is_liked: false
+          education:
+            value: Üniversite
+            is_liked: false
+          is_studying:
+            value: Hayır
+            is_liked: false
+          last_school:
+            value: Marmara Üniversitesi
+            is_liked: false
+          language:
+            value: 'İngilizce, İspanyolca'
+            is_liked: false
+          smoking:
+            value: Sık sık
+            is_liked: false
+          alcohol:
+            value: Sosyal olarak
+            is_liked: false
+          living_with:
+            value: Ailemle
+            is_liked: false
+          working_status:
+            value: Yarı zamanlı
+            is_liked: false
+          job_position:
+            value: Çalışan
+            is_liked: false
+          owns_house:
+            value: Hayır
+            is_liked: false
+          disabilities:
+            value: Yok
+            is_liked: false
+      properties:
+        name:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının adı
+        age:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının yaşı
+        marital_status:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının yaşı
+        location:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: 'Kullanıcının yaşadığı yer "İlçe, İl"'
+        occupation:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kulllanıcının mesleği
+        income:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının maaşı
+        child:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Çocuğu var mı?
+        number_of_child:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Çocuk sayısı
+        lives_with_child:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Çocuklarıyla beraber mi yaşıyor?
+        wants_child:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Çocuk istiyor mu?
+        height:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının boyu
+        weight:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının kilosu
+        eye_color:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının göz rengi
+        hair_color:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının saç rengi
+        physical_appearance:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının fiziksel görünümü
+        dressing_style:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının giyim tarzı
+        education:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının eğitim durumu
+        is_studying:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcı okuyor mu?
+        last_school:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının son okuduğu okul
+        language:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının bildiği diller
+        smoking:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcı sigara kullanıyor mu?
+        alcohol:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcı alkol kullanıyor mu?
+        living_with:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcı kiminle yaşıyor
+        working_status:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının çalışma durumu
+        job_position:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının iş yerindeki pozisyonu
+        owns_house:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının evi var mı?
+        disabilities:
+          $ref: '#/components/schemas/personal_information_item_model'
+          x-stoplight:
+            id: amw8ney939387
+          description: Kullanıcının engeli var mı?
+        zodiac:
+          type: object
+          x-stoplight:
+            id: lx2t9su34awa8
+          description: Burç bilgisi. Modeli biraz daha farklı
+          required:
+            - value
+            - is_liked
+            - key
+          properties:
+            value:
+              type: string
+              x-stoplight:
+                id: 92bia81hi8huq
+              description: Burç bilgisinin yazı şekli
+            is_liked:
+              type: boolean
+              x-stoplight:
+                id: 3am9kln7tk7p1
+              description: Beğelilip beğenilmediği
+            key:
+              type: string
+              x-stoplight:
+                id: tiffjpw3ay20v
+              description: Burç ikonu için unique bir değer
+      required:
+        - name
+        - age
+        - marital_status
+        - location
+        - occupation
+        - income
+        - child
+        - number_of_child
+        - lives_with_child
+        - wants_child
+        - height
+        - weight
+        - eye_color
+        - hair_color
+        - physical_appearance
+        - dressing_style
+        - education
+        - is_studying
+        - last_school
+        - language
+        - smoking
+        - alcohol
+        - living_with
+        - working_status
+        - job_position
+        - owns_house
+        - disabilities
+        - zodiac
+    harmony_detail_model:
+      title: harmony_detail_model
+      x-stoplight:
+        id: 8h1id3btuh1ng
+      type: object
+      properties:
+        summary:
+          $ref: '#/components/schemas/harmony_model'
+          x-stoplight:
+            id: 434jn41jl9oxz
+          description: Kullanıcı ile uyumluluk durumunun bir özeti
+        character:
+          $ref: '#/components/schemas/harmony_character_detail_model'
+          x-stoplight:
+            id: lzn9qfgu2qple
+          description: Karakter analizi verilerine göre uyum analizi
+        zodiac:
+          $ref: '#/components/schemas/harmony_zodiac_detail_model'
+          x-stoplight:
+            id: lzn9qfgu2qple
+          description: Burç bilgilerine göre uyum analizi
+        hobbies:
+          $ref: '#/components/schemas/harmony_hobby_and_life_style_detail_model'
+          x-stoplight:
+            id: lzn9qfgu2qple
+          description: Hobilere göre uyum analizi
+        life_style:
+          $ref: '#/components/schemas/harmony_hobby_and_life_style_detail_model'
+          x-stoplight:
+            id: lzn9qfgu2qple
+          description: Yaşam tarzına göre uyum analizi
+        users:
+          type: object
+          x-stoplight:
+            id: w3cfdzlacrxir
+          required:
+            - me
+            - them
+          description: Karşılıklı olarak kullanıcılar hakkında kısa bilgiler
+          properties:
+            me:
+              type: object
+              x-stoplight:
+                id: 82xf9wgs0oiq2
+              required:
+                - thumbnail
+                - name
+                - age
+                - zodiac
+              description: Ziyaret eden kullanıcı
+              properties:
+                thumbnail:
+                  type: string
+                  x-stoplight:
+                    id: pywrrkf6rn10k
+                  format: uri
+                name:
+                  type: string
+                  x-stoplight:
+                    id: ds8fjq0hteuul
+                age:
+                  type: number
+                  x-stoplight:
+                    id: ja3bul8122xvn
+                  minimum: 18
+                  maximum: 99
+                zodiac:
+                  type: string
+                  x-stoplight:
+                    id: z4vlfvuztah8j
+            them:
+              type: object
+              x-stoplight:
+                id: 82xf9wgs0oiq2
+              required:
+                - thumbnail
+                - name
+                - age
+                - zodiac
+              description: Karşı kullanıcı
+              properties:
+                thumbnail:
+                  type: string
+                  x-stoplight:
+                    id: pywrrkf6rn10k
+                  format: uri
+                name:
+                  type: string
+                  x-stoplight:
+                    id: ds8fjq0hteuul
+                age:
+                  type: number
+                  x-stoplight:
+                    id: ja3bul8122xvn
+                  minimum: 18
+                  maximum: 99
+                zodiac:
+                  type: string
+                  x-stoplight:
+                    id: z4vlfvuztah8j
+      required:
+        - summary
+        - character
+        - zodiac
+        - hobbies
+        - life_style
+        - users
+    harmony_character_detail_model:
+      title: harmony_character_detail_model
+      x-stoplight:
+        id: 2heatybyqs2zw
+      type: object
+      properties:
+        social_relations:
+          type: object
+          x-stoplight:
+            id: 6k7ydxsdsgsb2
+          required:
+            - me
+            - them
+          description: Sosyal ilişkiler
+          properties:
+            me:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+            them:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+        data_collection:
+          type: object
+          x-stoplight:
+            id: 6k7ydxsdsgsb2
+          required:
+            - me
+            - them
+          description: Bilgi toplama
+          properties:
+            me:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+            them:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+        decision_making:
+          type: object
+          x-stoplight:
+            id: 6k7ydxsdsgsb2
+          required:
+            - me
+            - them
+          description: Karar verme
+          properties:
+            me:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+            them:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+        evaluation:
+          type: object
+          x-stoplight:
+            id: 6k7ydxsdsgsb2
+          required:
+            - me
+            - them
+          description: Değerlendirme tarzı
+          properties:
+            me:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+            them:
+              type: integer
+              x-stoplight:
+                id: nutgqnjmmf1z6
+              minimum: -100
+              maximum: 100
+        paragraphs:
+          type: array
+          x-stoplight:
+            id: xs0cuwy7oil6v
+          description: Alt alta gösterilecek paragrafların bilgisini içeren dizi
+          items:
+            x-stoplight:
+              id: 92e5hw25bexwo
+            type: object
+            properties:
+              key:
+                type: string
+                x-stoplight:
+                  id: yyv1rbof1rk3a
+                description: İkon için kullanılacak değer
+              title:
+                type: string
+                x-stoplight:
+                  id: iglq06m5i0oyc
+                description: Başlık
+              content:
+                type: string
+                x-stoplight:
+                  id: rb9k7pap5itp4
+                description: İçerik
+            required:
+              - key
+              - title
+              - content
+      required:
+        - social_relations
+        - data_collection
+        - decision_making
+        - evaluation
+        - paragraphs
+    harmony_zodiac_detail_model:
+      title: harmony_zodiac_detail_model
+      x-stoplight:
+        id: w9dy5j7blz3fx
+      type: object
+      properties:
+        paragraphs:
+          type: array
+          x-stoplight:
+            id: 2jdz43t0uz78h
+          description: Alt alta gösterilecek paragrafların bilgisini içeren dizi
+          items:
+            x-stoplight:
+              id: h87zepoquoz8s
+            type: object
+            properties:
+              key:
+                type: string
+                x-stoplight:
+                  id: jhi8alcf7iev4
+                description: İkon için kullanılacak değer
+              title:
+                type: string
+                x-stoplight:
+                  id: houx8zull5d5e
+                description: Başlık
+              content:
+                type: string
+                x-stoplight:
+                  id: v4xorna4pk9ek
+                description: İçerik
+            required:
+              - key
+              - title
+              - content
+      required:
+        - paragraphs
+    harmony_hobby_and_life_style_detail_model:
+      title: harmony_hobby_and_life_style_detail_model
+      x-stoplight:
+        id: jt3wuzpd9whds
+      type: object
+      properties:
+        shared:
+          type: array
+          x-stoplight:
+            id: asdwsug2uxdzh
+          description: Ortak değerlerin olduğu dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 59pu1wy8f1zis
+        theirs:
+          type: array
+          x-stoplight:
+            id: asdwsug2uxdzh
+          description: Sadece karşı kullanıcının seçtiği değerlerin olduğu dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 59pu1wy8f1zis
+        mine:
+          type: array
+          x-stoplight:
+            id: asdwsug2uxdzh
+          description: Sadece ziyaret eden kullanıcının seçtiği değerlerin olduğu dizi
+          items:
+            $ref: '#/components/schemas/hobby_personality_lifestyle_item_model'
+            x-stoplight:
+              id: 59pu1wy8f1zis
+      required:
+        - shared
+        - theirs
+        - mine
+    generic_200_success_model:
+      title: generic_200_success_model
+      x-stoplight:
+        id: xtirysa5zf5g8
+      type: object
+      examples:
+        - result_code: 1
+          error_detail_message: Başarılı
+          error_code: 0
+          stack_trace: Lorem Ipsum
+      properties:
+        result_code:
+          type: integer
+          x-stoplight:
+            id: 875egsinnhufr
+          minimum: 1
+          maximum: 1
+          default: 1
+          example: 1
+        error_detail_message:
+          type: string
+          x-stoplight:
+            id: 875egsinnhufr
+        error_code:
+          type: integer
+          x-stoplight:
+            id: 875egsinnhufr
+        stack_trace:
+          type: string
+          x-stoplight:
+            id: 875egsinnhufr
+      required:
+        - result_code
+        - error_detail_message
+        - error_code
+    generic_200_fail_model:
+      title: generic_200_fail_model
+      x-stoplight:
+        id: rfoy607863h74
+      type: object
+      examples:
+        - result_code: 0
+          error_detail_message: Bir hata oluştu
+          error_code: 0
+          stack_trace: Lorem Ipsum
+      properties:
+        result_code:
+          type: integer
+          x-stoplight:
+            id: 875egsinnhufr
+          minimum: 0
+          example: 0
+          default: 0
+          maximum: 0
+        error_detail_message:
+          type: string
+          x-stoplight:
+            id: 875egsinnhufr
+        error_code:
+          type: integer
+          x-stoplight:
+            id: 875egsinnhufr
+        stack_trace:
+          type: string
+          x-stoplight:
+            id: 875egsinnhufr
+      required:
+        - result_code
+        - error_detail_message
+        - error_code
+
     Api.AddFavoriteCoreAppService.Dto.AddFavoriteCoreDataOutput:
       required:
         - previously_favored
