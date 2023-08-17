@@ -9489,7 +9489,7 @@ paths:
       security:
         - oauth2: []
       operationId: PUT-me/password
-      description: Kullanıcı parolasını güncellemek için kullanır
+      description: Kullanıcı parolasını güncellemek için kullanılır. Hesap sayfasında parola güncelleme bölümünde çağrılır.
   /api/user/v10/me/email/passwords/reset:
     post:
       tags:
