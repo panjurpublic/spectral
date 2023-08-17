@@ -29,6 +29,8 @@ paths:
         description: 'Ziyaret edilmek istenen kullanıcın {get_profile_pointer} değeri'
     get:
       summary: Get user profile
+      tags:
+        - Profile
       responses:
         '200':
           description: OK
@@ -427,6 +429,8 @@ paths:
         description: 'Uyumluluk bakılmak istenen kullanıcının {get_profile_pointer} değeri'
     get:
       summary: Get harmony with a user
+      tags:
+        - Profile
       responses:
         '200':
           description: OK
