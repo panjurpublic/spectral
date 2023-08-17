@@ -11,7 +11,7 @@ info:
   description: This describes my API.
   license:
     name: Apache 2.0
-    url: https://www.apache.org/licenses/LICENSE-2.0.html
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
 paths:
   '/users/{user_id}/{get_profile_pointer}':
     parameters:
@@ -589,7 +589,7 @@ paths:
                 Example 1:
                   value:
                     data:
-                      url: https://www.pembepanjur.com/app_theme/pembepanjur/agreements/user_agreement_tr.php
+                      url: 'https://www.pembepanjur.com/app_theme/pembepanjur/agreements/user_agreement_tr.php'
                     result_code: 1
                     error_detail_message: ''
                     stack_trace: ''
@@ -619,7 +619,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/app_releases/{type}:
+  '/api/user/v10/app_releases/{type}':
     get:
       tags:
         - App
@@ -846,9 +846,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTY0ODIwNiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyNzU3MDc3MzM1MjQwNmFmMGEzMmQzMjk0M2I1YmE5NyIsInNob3dfcHJvZmlsZV9yZWYiOiJibG9ja2VkX3VzZXJzX3BhZ2UiLCJwb3NpdGlvbiI6MSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTY0ODIwNiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxNGVjODJmNTk1MjE2YzI3ZTIwNjQ4Y2M3YTEzNDdmZCJ9
                         formatted_date:
-                          short: 03 Nisan 2023 11:15:54
+                          short: '03 Nisan 2023 11:15:54'
                           mid: 03 Nisan 2023
-                          long: 3.04.2023 08:15:54
+                          long: '3.04.2023 08:15:54'
                           time: '11:15:54'
                         badges:
                           facebook: false
@@ -865,8 +865,8 @@ paths:
                           name: Ebru
                           occupation_text: Diğer Meslek
                           zodiac_text: Boğa
-                          thumbnail_url: https://www.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://www.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -875,7 +875,7 @@ paths:
                         date_label:
                           mobile: 3 ay önce
                           desktop: 3 ay önce
-                          timestamp_tr: 25.12.2022 14:20:17
+                          timestamp_tr: '25.12.2022 14:20:17'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -897,9 +897,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTQxMDk5NCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIzYTMxNGM0NWJmNTU2M2NmMzQwZTg2YzYzNmNiMTE0MSIsInNob3dfcHJvZmlsZV9yZWYiOiJibG9ja2VkX3VzZXJzX3BhZ2UiLCJwb3NpdGlvbiI6Miwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTQxMDk5NCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI2OWE3NDA0NWQyYWI3YzgyODVjNmYwOTg5OTgzZmU0YSJ9
                         formatted_date:
-                          short: 28 Kasım 2022 15:18:22
+                          short: '28 Kasım 2022 15:18:22'
                           mid: 28 Kasım 2022
-                          long: 28.11.2022 12:18:22
+                          long: '28.11.2022 12:18:22'
                           time: '15:18:22'
                         badges:
                           facebook: false
@@ -916,8 +916,8 @@ paths:
                           name: Lale
                           occupation_text: Diğer Meslek
                           zodiac_text: İkizler
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9410/tn_large_9410994_5d41e99bdf7dfc58cd6d79d13ecdecb3.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9410/tn_large_9410994_5d41e99bdf7dfc58cd6d79d13ecdecb3.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9410/tn_large_9410994_5d41e99bdf7dfc58cd6d79d13ecdecb3.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9410/tn_large_9410994_5d41e99bdf7dfc58cd6d79d13ecdecb3.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -926,7 +926,7 @@ paths:
                         date_label:
                           mobile: 6 ay önce
                           desktop: 6 ay önce
-                          timestamp_tr: 12.09.2022 20:35:16
+                          timestamp_tr: '12.09.2022 20:35:16'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -948,9 +948,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6Nzg5MjAzMiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkOWYzNGMwZmNkZWJmODE1Mzc2MzQwMGMxYmNjN2M1MyIsInNob3dfcHJvZmlsZV9yZWYiOiJibG9ja2VkX3VzZXJzX3BhZ2UiLCJwb3NpdGlvbiI6Mywic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6Nzg5MjAzMiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhOTNhZWZjYmI4NzNlYjQ1MzUyMjJmYjhmYjhiZWY1NyJ9
                         formatted_date:
-                          short: 14 Kasım 2022 11:17:06
+                          short: '14 Kasım 2022 11:17:06'
                           mid: 14 Kasım 2022
-                          long: 14.11.2022 08:17:06
+                          long: '14.11.2022 08:17:06'
                           time: '11:17:06'
                         badges:
                           facebook: false
@@ -967,8 +967,8 @@ paths:
                           name: Mukad
                           occupation_text: Özel Sektör
                           zodiac_text: Kova
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/7892/tn_large_7892032_fbcdd4843f3d80f2525e6a0a07c238b0.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/7892/tn_large_7892032_fbcdd4843f3d80f2525e6a0a07c238b0.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/7892/tn_large_7892032_fbcdd4843f3d80f2525e6a0a07c238b0.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/7892/tn_large_7892032_fbcdd4843f3d80f2525e6a0a07c238b0.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -977,7 +977,7 @@ paths:
                         date_label:
                           mobile: 29 dakika önce
                           desktop: 29 dakika önce
-                          timestamp_tr: 03.04.2023 10:50:15
+                          timestamp_tr: '03.04.2023 10:50:15'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -999,9 +999,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODYyNDY1LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6Ijg2M2E0YjQ0YzMxZDAxNGM2NDg4NDE4NWRjNzE4NGE5Iiwic2hvd19wcm9maWxlX3JlZiI6ImJsb2NrZWRfdXNlcnNfcGFnZSIsInBvc2l0aW9uIjo0LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODYyNDY1LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjA4OTMzN2M3OWU5YjMzZjhkNzBhZmNlZTY4ZTIwMjA4In0--
                         formatted_date:
-                          short: 27 Nisan 2022 12:32:21
+                          short: '27 Nisan 2022 12:32:21'
                           mid: 27 Nisan 2022
-                          long: 27.04.2022 09:32:21
+                          long: '27.04.2022 09:32:21'
                           time: '12:32:21'
                         badges:
                           facebook: false
@@ -1018,8 +1018,8 @@ paths:
                           name: Murat
                           occupation_text: Diğer Meslek
                           zodiac_text: ''
-                          thumbnail_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          thumbnail_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                          thumbnail_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          thumbnail_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -1028,7 +1028,7 @@ paths:
                         date_label:
                           mobile: 10 yıl önce
                           desktop: 10 yıl önce
-                          timestamp_tr: 04.09.2012 16:38:28
+                          timestamp_tr: '04.09.2012 16:38:28'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -1040,7 +1040,7 @@ paths:
                           is_blocked_by_user: false
                           is_spotlight: 0
                         payment_status: 0
-                        payment_page_url: https://www.pembepanjur.com/odeme_sayfa_1.php?t=862465&amp;t_auth=51b3e27ad9e2b54e847f28dcc9459795
+                        payment_page_url: 'https://www.pembepanjur.com/odeme_sayfa_1.php?t=862465&amp;t_auth=51b3e27ad9e2b54e847f28dcc9459795'
                         closer_user: 0
                         conversation_id: 0
                       - user_id: 7173311
@@ -1050,9 +1050,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzE3MzMxMSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJmN2Y1ZDY5MWMyOGFiOTIxZmQ3OTJiNGQ5MjA2YjA1NiIsInNob3dfcHJvZmlsZV9yZWYiOiJibG9ja2VkX3VzZXJzX3BhZ2UiLCJwb3NpdGlvbiI6NSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzE3MzMxMSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJmZTE2YTIxYjAyZDI0NmMxYWQzYmNlMDdiNDM4ZmUxZSJ9
                         formatted_date:
-                          short: 04 Ocak 2022 16:23:49
+                          short: '04 Ocak 2022 16:23:49'
                           mid: 04 Ocak 2022
-                          long: 4.01.2022 13:23:49
+                          long: '4.01.2022 13:23:49'
                           time: '16:23:49'
                         badges:
                           facebook: false
@@ -1069,8 +1069,8 @@ paths:
                           name: Liyaa
                           occupation_text: Diğer Meslek
                           zodiac_text: Koç
-                          thumbnail_url: https://www.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://www.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -1079,7 +1079,7 @@ paths:
                         date_label:
                           mobile: bir yıl önce
                           desktop: bir yıl önce
-                          timestamp_tr: 07.03.2022 19:05:13
+                          timestamp_tr: '07.03.2022 19:05:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -1101,9 +1101,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODQzMTAxMSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI5OTE0MmMwZjc0ZTczYmQ2OTcwM2RiM2IxNzk1YTFlOSIsInNob3dfcHJvZmlsZV9yZWYiOiJibG9ja2VkX3VzZXJzX3BhZ2UiLCJwb3NpdGlvbiI6Niwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODQzMTAxMSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhNzg1NzA2ZWNmZmQ2YzAyZjc5MTNlZTk4YjJkYmMxMSJ9
                         formatted_date:
-                          short: 30 Aralık 2021 11:30:04
+                          short: '30 Aralık 2021 11:30:04'
                           mid: 30 Aralık 2021
-                          long: 30.12.2021 08:30:04
+                          long: '30.12.2021 08:30:04'
                           time: '11:30:04'
                         badges:
                           facebook: false
@@ -1120,17 +1120,17 @@ paths:
                           name: Bergen
                           occupation_text: Mağaza Personeli
                           zodiac_text: Yengeç
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/8431/tn_large_8431011_f1cce1494c4896fb5d9a5dfc15d7e713.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8431/tn_large_8431011_f1cce1494c4896fb5d9a5dfc15d7e713.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8431/tn_large_8431011_f1cce1494c4896fb5d9a5dfc15d7e713.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8431/tn_large_8431011_f1cce1494c4896fb5d9a5dfc15d7e713.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
-                          aboutyourself: Hava durumu gibi değişken😂😂😂😂
+                          aboutyourself: "Hava durumu gibi değişken\U0001F602\U0001F602\U0001F602\U0001F602"
                           online_status: offline
                         date_label:
                           mobile: bir yıl önce
                           desktop: bir yıl önce
-                          timestamp_tr: 03.09.2021 08:35:12
+                          timestamp_tr: '03.09.2021 08:35:12'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -1156,7 +1156,7 @@ paths:
         - oauth2: []
       operationId: me-block-get
       description: üyenin engellediği kullanıcıları lister
-  /api/user/v10/me/blocks/{blockedUserId}:
+  '/api/user/v10/me/blocks/{blockedUserId}':
     delete:
       tags:
         - Block
@@ -1210,7 +1210,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/mutes/{otherUserId}:
+  '/api/user/v10/me/mutes/{otherUserId}':
     delete:
       tags:
         - Block
@@ -1251,7 +1251,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/conversations/{otherUserId}:
+  '/api/user/v10/me/conversations/{otherUserId}':
     post:
       tags:
         - Conversations
@@ -1407,8 +1407,8 @@ paths:
                         profile_link: /
                         profile_slug: /
                         last_activity_datetime_text: 8 ay önce
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.54.jpg'
                         is_websocket_online: false
                         is_online: false
                         online_status: offline
@@ -1442,7 +1442,7 @@ paths:
         - oauth2: []
       operationId: me-conversations-get
       description: kullanıcıların konuşmalarını listeler
-  /api/user/v10/me/conversations/{receiverUserId}/photos/{conversationMessageId}:
+  '/api/user/v10/me/conversations/{receiverUserId}/photos/{conversationMessageId}':
     delete:
       tags:
         - Conversations
@@ -1581,9 +1581,9 @@ paths:
                           online_status: null
                           name: Ahmet48
                           age: 46
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 23.10.2022 21:35:03
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '23.10.2022 21:35:03'
                           last_activity_datetime_tr_for_desktop: Pazar
                         unread_message_count: 1
                         message_text_short: a
@@ -1596,8 +1596,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 38a75378dc308ec331bede2e223b3333
                         show_profile_auth_code: 21d88b36aee3e19cb95c9aa9e81366f3
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                     result_code: 1
                     error_detail_message: null
                     stack_trace: null
@@ -1667,12 +1667,12 @@ paths:
                           online_status: null
                           name: Mimargezgin
                           age: 42
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 14.11.2022 14:32:03
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '14.11.2022 14:32:03'
                           last_activity_datetime_tr_for_desktop: Pazartesi
                         unread_message_count: 0
-                        message_text_short: Merhaba Betul hanim..eger sanal mesajcı değilsen, veya erkek değilsen, veya site
+                        message_text_short: 'Merhaba Betul hanim..eger sanal mesajcı değilsen, veya erkek değilsen, veya site'
                         formatted_label_timestamp_for_desktop: Pazar
                         formatted_label_timestamp_for_desktop_react: 11 Eylül 2022
                         conversation_time_short: '15:03'
@@ -1682,8 +1682,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 6c582b66d6c41f402ea9038fae725ae1
                         show_profile_auth_code: 8c68550732881f40619481bdaa2093aa
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1696,9 +1696,9 @@ paths:
                           online_status: null
                           name: Fatih
                           age: 38
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg
-                          last_activity_datetime_tr: 29.03.2023 20:55:19
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg'
+                          last_activity_datetime_tr: '29.03.2023 20:55:19'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 0
                         message_text_short: Merhaba tanışabilirmiyiz.
@@ -1711,8 +1711,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: b0eea1e318faf8f0786d6f3724cdbda1
                         show_profile_auth_code: eac4432e9de1b0e128cfc1ddfa4ac7da
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8890/tn_large_8890700_cc1bfde6be3bc6ba5bbf7265183203d9.21.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1725,9 +1725,9 @@ paths:
                           online_status: null
                           name: Peaklevel06
                           age: 35
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 07.11.2022 20:00:35
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '07.11.2022 20:00:35'
                           last_activity_datetime_tr_for_desktop: Pazartesi
                         unread_message_count: 0
                         message_text_short: Kuşadası'nda yaşıyorum seninle tanışmak çok istiyorum bana bu şansı verir misin
@@ -1740,8 +1740,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: af2670963d4df5ade10c77c3d79c2670
                         show_profile_auth_code: 18e2589aa55f19c287d965d18f38100c
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1754,9 +1754,9 @@ paths:
                           online_status: null
                           name: Melih
                           age: 31
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 03.04.2023 12:10:03
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '03.04.2023 12:10:03'
                           last_activity_datetime_tr_for_desktop: Pazartesi
                         unread_message_count: 0
                         message_text_short: 'Merhaba '
@@ -1769,8 +1769,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 1c7637705fea38dfb8fb336fdeeb3e31
                         show_profile_auth_code: 3d8d27c9e43190c96e2e1824932d9ba8
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                     result_code: 1
                     error_detail_message: null
                     stack_trace: null
@@ -1840,9 +1840,9 @@ paths:
                           online_status: null
                           name: Kartal09
                           age: 41
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 05.04.2023 16:55:04
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '05.04.2023 16:55:04'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 6
                         message_text_short: Merhaba
@@ -1855,8 +1855,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 91bd265131e81180b3c16b683a06751d
                         show_profile_auth_code: 5873b134e69a7e9387e24e1701230447
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1869,9 +1869,9 @@ paths:
                           online_status: null
                           name: Arda
                           age: 35
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:54:03
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:54:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 2
                         message_text_short: Nasılsın
@@ -1884,8 +1884,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: f6d746d86f306824d7d2b1595e83fc4d
                         show_profile_auth_code: c424e2359a75b61d19c2e1fb11593411
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9906/tn_large_9906947_ba287e1b77941d3a1ca9fcfb90599224.43.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1898,9 +1898,9 @@ paths:
                           online_status: null
                           name: Özgür
                           age: 33
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:40:03
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:40:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 0
                         message_text_short: Profilinizi inceledim tsnışabilir miyiz
@@ -1913,8 +1913,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 793ce72ec09f93b22f330cca77632fe3
                         show_profile_auth_code: d5d69d796f3e0e9b0196a4d62e366fdd
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8100/tn_large_8100506_ece734e0e25ecc33091bd6011a1e76f9.56.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1927,9 +1927,9 @@ paths:
                           online_status: null
                           name: Ayaz
                           age: 39
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:58:03
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:58:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 1
                         message_text_short: Merhaba
@@ -1942,8 +1942,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 66b8df447b2ae57f836f52af54a51fa2
                         show_profile_auth_code: 2685ec2b076880a3b751b2f3e9b8474a
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9869/tn_large_9869856_2023a5471952f2f694937928b1e55bc4.47.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1956,9 +1956,9 @@ paths:
                           online_status: null
                           name: Tolga
                           age: 32
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:51:03
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:51:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 1
                         message_text_short: Merhaba nasılsınız
@@ -1971,8 +1971,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 38f902bc7565b61023ebf5ec80c2d4d9
                         show_profile_auth_code: aa979772f5d63d7762e4d3e07cf149b8
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9197/tn_large_9197332_61d1e342e81fcbfc8d9f9aa93e7803c4.19.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -1985,9 +1985,9 @@ paths:
                           online_status: null
                           name: volkan
                           age: 45
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg
-                          last_activity_datetime_tr: 05.04.2023 14:50:04
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg'
+                          last_activity_datetime_tr: '05.04.2023 14:50:04'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 1
                         message_text_short: 'Merhaba '
@@ -2000,8 +2000,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 6e1bc330914884f51d4a87e1c0a096d5
                         show_profile_auth_code: 682099f546e340bc9e443db296275dc6
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/2126/tn_large_2126373_baf058f19d3595fd89899fb79fd8b1ef.48.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -2014,9 +2014,9 @@ paths:
                           online_status: null
                           name: Ömer
                           age: 42
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg
-                          last_activity_datetime_tr: 05.04.2023 15:05:19
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg'
+                          last_activity_datetime_tr: '05.04.2023 15:05:19'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 3
                         message_text_short: Slm
@@ -2029,8 +2029,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 057ed9e5f179755c7d6285c2d120876d
                         show_profile_auth_code: 8d6f9377d61543107263daa16a1458c6
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9708/tn_large_9708034_e50eac31add3de86fa911648ac8da243.42.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -2043,9 +2043,9 @@ paths:
                           online_status: null
                           name: 6milyonluk evde otur
                           age: 30
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:40:20
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:40:20'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 3
                         message_text_short: Merhaba nasılsınız
@@ -2058,8 +2058,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: f9e688dca086efa569fba031227ff289
                         show_profile_auth_code: 8b490f4f42a48675905f1d9ad89fdb33
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9885/tn_large_9885142_ff55cc419ff65ee4d067573c34ac4832.47.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -2072,12 +2072,12 @@ paths:
                           online_status: null
                           name: Ayhan
                           age: 31
-                          profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg
-                          profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg
-                          last_activity_datetime_tr: 05.04.2023 16:54:03
+                          profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg'
+                          profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg'
+                          last_activity_datetime_tr: '05.04.2023 16:54:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 1
-                        message_text_short: Annem evde kaldın diyo 😫😫
+                        message_text_short: "Annem evde kaldın diyo \U0001F62B\U0001F62B"
                         formatted_label_timestamp_for_desktop: Çarşamba
                         formatted_label_timestamp_for_desktop_react: 05 Nisan 2023
                         conversation_time_short: '12:17'
@@ -2087,8 +2087,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: b2e47b9c6c67d5daf1230fb24159011a
                         show_profile_auth_code: f2e24087b15e2cb114768def53c905af
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg
-                        profile_picture_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg'
+                        profile_picture_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8744/tn_large_8744899_75f6a0c3c51719cb1edf67782f5bc75d.40.jpg'
                       - type: conversation
                         last_message_received_type: ''
                         last_message_sent_type: ''
@@ -2101,9 +2101,9 @@ paths:
                           online_status: null
                           name: Doktor.mrt
                           age: 39
-                          profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                          last_activity_datetime_tr: 05.04.2023 16:59:03
+                          profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                          last_activity_datetime_tr: '05.04.2023 16:59:03'
                           last_activity_datetime_tr_for_desktop: Çarşamba
                         unread_message_count: 1
                         message_text_short: 'Merhaba '
@@ -2116,8 +2116,8 @@ paths:
                         add_wink_pointer: null
                         delete_message_auth_code: 2b4080a642acaef5f184b34f08dc6761
                         show_profile_auth_code: 3e63aab3c6d7f362f18643ce617c0cc2
-                        profile_picture_url: https://www.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://www.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://www.pembepanjur.com/i/siluet/male_anonymous.png'
                     result_code: 1
                     error_detail_message: null
                     stack_trace: null
@@ -2162,7 +2162,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/conversations/restore/{otherUserId}:
+  '/api/user/v10/me/conversations/restore/{otherUserId}':
     put:
       tags:
         - Conversations
@@ -2186,7 +2186,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/conversations/{receiverUserId}/photos:
+  '/api/user/v10/me/conversations/{receiverUserId}/photos':
     post:
       tags:
         - Conversations
@@ -2253,7 +2253,7 @@ paths:
                       sender_user_auth_code: 8a76b1a5c669f12cb0a40be8dd6ae864
                       receiver_user_auth_code: 5c905672ff6d59e27e573e5d06a02af7
                       src: ''
-                      aws_file_url: https://pembepanjurs3.s3.eu-central-1.amazonaws.com/db/web/pictures_in_message/699561/photo_4ebc0aef0d1b0237de94f4e4d5780bfc_e6f3686a822f2e46ce2a1de74a5dc38c.jpg
+                      aws_file_url: 'https://pembepanjurs3.s3.eu-central-1.amazonaws.com/db/web/pictures_in_message/699561/photo_4ebc0aef0d1b0237de94f4e4d5780bfc_e6f3686a822f2e46ce2a1de74a5dc38c.jpg'
                       image_width_orig: 750
                       image_height_orig: 500
                       visible_width: 150
@@ -2269,7 +2269,7 @@ paths:
         - oauth2: []
       operationId: me-conversations-receiverUserId-photos-post
       description: Photos in conversation by receiver UserID.
-  /api/user/v10/me/conversations/{receiverUserId}/is_typing:
+  '/api/user/v10/me/conversations/{receiverUserId}/is_typing':
     put:
       tags:
         - Conversations
@@ -2345,7 +2345,7 @@ paths:
       security:
         - oauth2: []
       operationId: me-counts-get
-      description: Counts messages , winks , favorites etc.
+      description: 'Counts messages , winks , favorites etc.'
   /api/user/v10/me/counts/badge:
     get:
       tags:
@@ -2641,9 +2641,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTIxMDU5MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4MTA3ODc1YTQ4YTI2YWQxY2RjM2M5OTc5OWRmZjI4MiIsInNob3dfcHJvZmlsZV9yZWYiOiJmYXZvcml0ZXNfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTIxMDU5MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhYmFiZmQxMmI0MzE5NGU0NzFkMjgyNjA0NGZjNWY4ZiJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:49:40
+                          short: '28 Mart 2023 17:49:40'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:49:40
+                          long: '28.03.2023 14:49:40'
                           time: '17:49:40'
                         badges:
                           facebook: false
@@ -2660,8 +2660,8 @@ paths:
                           name: Çilek
                           occupation_text: Çocuk Eğitimi
                           zodiac_text: Yengeç
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -2670,7 +2670,7 @@ paths:
                         date_label:
                           mobile: 9 ay önce
                           desktop: 9 ay önce
-                          timestamp_tr: 13.07.2022 00:30:15
+                          timestamp_tr: '13.07.2022 00:30:15'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -2692,9 +2692,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA5NzQ1MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkYzdkMWU4ZDkwYjgyNjRmODAyZjRlZTcyMjlkZTJjZCIsInNob3dfcHJvZmlsZV9yZWYiOiJmYXZvcml0ZXNfcGFnZSIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTA5NzQ1MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJjNGI3OWUwNWVkOGJlYzQ0MDgxNzM5YzdhYjZhNGIyMiJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:49:05
+                          short: '28 Mart 2023 17:49:05'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:49:05
+                          long: '28.03.2023 14:49:05'
                           time: '17:49:05'
                         badges:
                           facebook: false
@@ -2711,17 +2711,17 @@ paths:
                           name: Neriman
                           occupation_text: Diğer Meslek
                           zodiac_text: İkizler
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
-                          aboutyourself: Dindar ahlaklı ve edepli, vicdanlı ve merhametli. Saygın, İnsancıl ve sadık biriyim
+                          aboutyourself: 'Dindar ahlaklı ve edepli, vicdanlı ve merhametli. Saygın, İnsancıl ve sadık biriyim'
                           online_status: offline
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 24.07.2022 21:30:14
+                          timestamp_tr: '24.07.2022 21:30:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -2743,9 +2743,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6Njc4ODMxNCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1Y2U4MThjY2EwMzQ0MTQzNGNhNWJjNTVhN2I2NjViMyIsInNob3dfcHJvZmlsZV9yZWYiOiJmYXZvcml0ZXNfcGFnZSIsInBvc2l0aW9uIjozLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6Njc4ODMxNCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4MmQ0YTM2NThkYjA2MjBjZjUxZmM0YjNhYmMzNTliZiJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:49:04
+                          short: '28 Mart 2023 17:49:04'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:49:04
+                          long: '28.03.2023 14:49:04'
                           time: '17:49:04'
                         badges:
                           facebook: true
@@ -2762,8 +2762,8 @@ paths:
                           name: Betül
                           occupation_text: Diğer Meslek
                           zodiac_text: Kova
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -2772,7 +2772,7 @@ paths:
                         date_label:
                           mobile: 9 ay önce
                           desktop: 9 ay önce
-                          timestamp_tr: 11.07.2022 22:20:14
+                          timestamp_tr: '11.07.2022 22:20:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -2794,9 +2794,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTExNDg4NiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxNmYxZjYzMGI2OTZjNmM5MzczNzBhNDFmMGZmMGY4NiIsInNob3dfcHJvZmlsZV9yZWYiOiJmYXZvcml0ZXNfcGFnZSIsInBvc2l0aW9uIjo0LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTExNDg4NiwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4MGI2YjBlMDkzZWQ1Zjk0OWI5YWEwNmEwNzI1MDI0YyJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:49:02
+                          short: '28 Mart 2023 17:49:02'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:49:02
+                          long: '28.03.2023 14:49:02'
                           time: '17:49:02'
                         badges:
                           facebook: false
@@ -2813,8 +2813,8 @@ paths:
                           name: Esma
                           occupation_text: Diğer Meslek
                           zodiac_text: Yay
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -2823,7 +2823,7 @@ paths:
                         date_label:
                           mobile: 9 ay önce
                           desktop: 9 ay önce
-                          timestamp_tr: 22.06.2022 15:35:15
+                          timestamp_tr: '22.06.2022 15:35:15'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -2845,9 +2845,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTE4ODAxOSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhMzE4MjVlOWI1YjA4MjlkZWYwOTMwMTE4ZGI1OTRlMyIsInNob3dfcHJvZmlsZV9yZWYiOiJmYXZvcml0ZXNfcGFnZSIsInBvc2l0aW9uIjo1LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTE4ODAxOSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJiMGIzODEwNmEyOWJkOTMzMTI5MGZlMjhjYTZlN2U5NCJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:49:00
+                          short: '28 Mart 2023 17:49:00'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:49:00
+                          long: '28.03.2023 14:49:00'
                           time: '17:49:00'
                         badges:
                           facebook: false
@@ -2864,8 +2864,8 @@ paths:
                           name: Sevda
                           occupation_text: Memur
                           zodiac_text: Başak
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -2874,7 +2874,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 09.08.2022 10:50:14
+                          timestamp_tr: '09.08.2022 10:50:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -2980,9 +2980,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6InNob3dmYXZvcmVkYnlfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6ImQ3OWEzMzRiZTIzOGEyYWJhZDM2MWJkYzczM2ViOWVmIn0--
                         formatted_date:
-                          short: 05 Haziran 2015 12:33:55
+                          short: '05 Haziran 2015 12:33:55'
                           mid: 05 Haziran 2015
-                          long: 5.06.2015 09:33:55
+                          long: '5.06.2015 09:33:55'
                           time: '12:33:55'
                         badges:
                           facebook: false
@@ -2999,8 +2999,8 @@ paths:
                           name: Lucid
                           occupation_text: Diğer Meslek
                           zodiac_text: İkizler
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -3031,9 +3031,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjI5NDE2NGIzMGExNTk0MmI5ZTA5MmQxMTc1ZDM4NDUyIiwic2hvd19wcm9maWxlX3JlZiI6InNob3dmYXZvcmVkYnlfcGFnZSIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTM1ODQ5LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6Ijc5ODk5N2Q2YmFiODZiYmQzMjJjMWJjY2EzZGQzMTAwIn0--
                         formatted_date:
-                          short: 21 Haziran 2013 17:13:00
+                          short: '21 Haziran 2013 17:13:00'
                           mid: 21 Haziran 2013
-                          long: 21.06.2013 13:13:00
+                          long: '21.06.2013 13:13:00'
                           time: '17:13:00'
                         badges:
                           facebook: true
@@ -3050,8 +3050,8 @@ paths:
                           name: Merve
                           occupation_text: Ofis Yönetimi
                           zodiac_text: Akrep
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -3060,7 +3060,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 08.08.2022 13:55:13
+                          timestamp_tr: '08.08.2022 13:55:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -3086,7 +3086,7 @@ paths:
         - oauth2: []
       operationId: favorites-by-them-get
       description: kullanıcıyı favorilerine ekleyen kullanıcıları listeleme
-  /api/user/v10/me/favorites/{otherUserId}:
+  '/api/user/v10/me/favorites/{otherUserId}':
     delete:
       tags:
         - Favorites
@@ -3152,7 +3152,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/countries/cities/{cityId}/districts:
+  '/api/user/v10/countries/cities/{cityId}/districts':
     get:
       tags:
         - Location
@@ -3176,7 +3176,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/countries/{countryId}/district_city:
+  '/api/user/v10/countries/{countryId}/district_city':
     get:
       tags:
         - Location
@@ -3640,7 +3640,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/{itemType}/seen:
+  '/api/user/v10/me/{itemType}/seen':
     put:
       tags:
         - MarkSeen
@@ -3663,7 +3663,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/matches/{matchedUserId}:
+  '/api/user/v10/me/matches/{matchedUserId}':
     delete:
       tags:
         - Match
@@ -3799,8 +3799,8 @@ paths:
                           name: Seçil
                           occupation_text: Diğer Meslek
                           zodiac_text: Boğa
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9256/tn_large_9256555_39c7455928baf5b232bf15d5df6a31f8.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9256/tn_large_9256555_39c7455928baf5b232bf15d5df6a31f8.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9256/tn_large_9256555_39c7455928baf5b232bf15d5df6a31f8.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9256/tn_large_9256555_39c7455928baf5b232bf15d5df6a31f8.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -3809,7 +3809,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 10.08.2022 06:10:12
+                          timestamp_tr: '10.08.2022 06:10:12'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -3850,8 +3850,8 @@ paths:
                           name: Dilek
                           occupation_text: Gayrimenkul
                           zodiac_text: Akrep
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/5121/tn_large_5121642_1590ce873987d6cb7c97978589e87614.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/5121/tn_large_5121642_1590ce873987d6cb7c97978589e87614.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/5121/tn_large_5121642_1590ce873987d6cb7c97978589e87614.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/5121/tn_large_5121642_1590ce873987d6cb7c97978589e87614.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -3860,7 +3860,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 10.08.2022 01:55:13
+                          timestamp_tr: '10.08.2022 01:55:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -3901,8 +3901,8 @@ paths:
                           name: Meryem1907
                           occupation_text: Müşteri Hizmetleri
                           zodiac_text: Oğlak
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/8428/tn_large_8428584_6f4870a16890bdf7c3c380682616f5e0.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8428/tn_large_8428584_6f4870a16890bdf7c3c380682616f5e0.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8428/tn_large_8428584_6f4870a16890bdf7c3c380682616f5e0.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8428/tn_large_8428584_6f4870a16890bdf7c3c380682616f5e0.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -3911,7 +3911,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 10.08.2022 01:05:13
+                          timestamp_tr: '10.08.2022 01:05:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -3996,7 +3996,7 @@ paths:
         - oauth2: []
       operationId: me-news-feed-post
       description: New post.
-  /api/user/v10/news_feed/{newsFeedId}:
+  '/api/user/v10/news_feed/{newsFeedId}':
     get:
       tags:
         - NewsFeeds
@@ -4025,7 +4025,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/users/{viewedUserId}/news_feed:
+  '/api/user/v10/users/{viewedUserId}/news_feed':
     get:
       tags:
         - NewsFeeds
@@ -4088,7 +4088,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/news_feed/{newsFeedId}:
+  '/api/user/v10/me/news_feed/{newsFeedId}':
     delete:
       tags:
         - NewsFeeds
@@ -4120,7 +4120,7 @@ paths:
         - oauth2: []
       operationId: Delete-me-news_feed
       description: Delete newsfeeds
-  /api/user/v10/news_feed/{newsFeedId}/likes:
+  '/api/user/v10/news_feed/{newsFeedId}/likes':
     post:
       tags:
         - NewsFeeds
@@ -4189,16 +4189,16 @@ paths:
                         news_feed_id: 13588593
                         like_datetime: 30.08.2018
                         user_name: İsmail
-                        profile_picture_url: https://dev.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://dev.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://dev.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://dev.pembepanjur.com/i/siluet/male_anonymous.png'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NDczNjY1LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6Ijk5NmNiZjIxMGFkMWQ0Mjk0MjcyOTc1NWY3YTdlMGQ2Iiwic2hvd19wcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                         slug: /
                       - user_id: 1321249
                         news_feed_id: 13588593
                         like_datetime: 30.08.2019
                         user_name: Xmen
-                        profile_picture_url: https://dev.pembepanjur.com/i/siluet/male_anonymous.png
-                        profile_picture_url_retina: https://dev.pembepanjur.com/i/siluet/male_anonymous.png
+                        profile_picture_url: 'https://dev.pembepanjur.com/i/siluet/male_anonymous.png'
+                        profile_picture_url_retina: 'https://dev.pembepanjur.com/i/siluet/male_anonymous.png'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6MTMyMTI0OSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxMDEzZGQwZDJjNDhmOTFjYTgxOGU4ZjU1ZmUxZDI4NCIsInNob3dfcHJvZmlsZV9yZWYiOiIiLCJwb3NpdGlvbiI6MCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                         slug: /
                     result_code: 1
@@ -4251,7 +4251,7 @@ paths:
         - oauth2: []
       operationId: news_feed-likes-delete
       description: Getting like back.
-  /api/user/v10/news_feed/{newsFeedId}/complaint:
+  '/api/user/v10/news_feed/{newsFeedId}/complaint':
     post:
       tags:
         - NewsFeeds
@@ -4383,7 +4383,7 @@ paths:
                           about_yourself: ''
                           city_text: Adıyaman
                           age: 39
-                          profile_picture: https://static.pembepanjur.com/user_pictures/tn_large/9919/tn_large_9919357_95fa88632087cbc86ab79d0dca887573.1681053359.jpg
+                          profile_picture: 'https://static.pembepanjur.com/user_pictures/tn_large/9919/tn_large_9919357_95fa88632087cbc86ab79d0dca887573.1681053359.jpg'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiYjY3OWJjNTdhZDUzMTMxNTJlNTc3N2FkNDk2ZGYxYmIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTkzNTcsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                         get_message_pointer: eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTkzNTcsImF1dGhfY29kZSI6ImI2NzliYzU3YWQ1MzEzMTUyZTU3NzdhZDQ5NmRmMWJiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9
                         notification_message_text: Yeni uygun üyeniz.
@@ -4409,7 +4409,7 @@ paths:
                           about_yourself: ''
                           city_text: Gaziantep
                           age: 42
-                          profile_picture: https://www.pembepanjur.com/i/siluet/female_anonymous.png
+                          profile_picture: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiZWM2ZjI3ZmU3NDRiNjY3MTlhYTdlNTJkNWNkOGY3MzQiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTY2MzQsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                         get_message_pointer: eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTY2MzQsImF1dGhfY29kZSI6ImVjNmYyN2ZlNzQ0YjY2NzE5YWE3ZTUyZDVjZDhmNzM0IiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9
                         notification_message_text: Yeni uygun üyeniz.
@@ -4435,7 +4435,7 @@ paths:
                           about_yourself: ''
                           city_text: İzmir
                           age: 43
-                          profile_picture: https://static.pembepanjur.com/user_pictures/tn_large/9913/tn_large_9913319_679fd3f077091f9f0a5f3abc58e7d4f2.1680850014.jpg
+                          profile_picture: 'https://static.pembepanjur.com/user_pictures/tn_large/9913/tn_large_9913319_679fd3f077091f9f0a5f3abc58e7d4f2.1680850014.jpg'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOTY0NzZkZmY4ZjY2NzZlNjlkZDBiNzdjMmU5YWM4ZGIiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTMzMTksInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                         get_message_pointer: eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTMzMTksImF1dGhfY29kZSI6Ijk2NDc2ZGZmOGY2Njc2ZTY5ZGQwYjc3YzJlOWFjOGRiIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9
                         notification_message_text: Yeni uygun üyeniz.
@@ -4461,7 +4461,7 @@ paths:
                           about_yourself: ''
                           city_text: İzmir
                           age: 35
-                          profile_picture: https://www.pembepanjur.com/i/siluet/female_anonymous.png
+                          profile_picture: 'https://www.pembepanjur.com/i/siluet/female_anonymous.png'
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5IiwiYXV0aF9jb2RlIjoiOGQ3YTQ3ZTk4NDRmMzUwZDhiY2ZlNzQyZGYxOTM2NjMiLCJ1c2VyX2lkIjo0NzM2NjUsIm90aGVyX3VzZXJfaWQiOjk5MTExODIsInNob3dwcm9maWxlX3JlZiI6IiIsInBvc2l0aW9uIjowLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                         get_message_pointer: eyJjb252ZXJzYXRpb25faWQiOjAsIm90aGVyX3VzZXJfaWQiOjk5MTExODIsImF1dGhfY29kZSI6IjhkN2E0N2U5ODQ0ZjM1MGQ4YmNmZTc0MmRmMTkzNjYzIiwicGFnZSI6MSwiY291bnRfY2xvc2VfdXNlcnMiOjB9
                         notification_message_text: Yeni uygun üyeniz.
@@ -4518,7 +4518,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/frontend_notifications/{frontendNotificationLogId}/{Event}:
+  '/api/user/v10/frontend_notifications/{frontendNotificationLogId}/{Event}':
     put:
       tags:
         - Notifications
@@ -4547,7 +4547,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/notifications/{Type}/{PushNotificationTrackId}/{Event}:
+  '/api/user/v10/me/notifications/{Type}/{PushNotificationTrackId}/{Event}':
     put:
       tags:
         - Notifications
@@ -4833,7 +4833,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/payments/mobile/orders/{orderObjectId}:
+  '/api/user/v10/payments/mobile/orders/{orderObjectId}':
     get:
       tags:
         - Payments
@@ -5030,7 +5030,7 @@ paths:
                         wire: 2
                       payment_teaser_user:
                         get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODQ3OTIsInVzZXJfaWQiOjQ3MzY2NSwiYXV0aF9jb2RlIjoiZTgyM2Q1Zjc2YzY2N2M5MWU5ZmFmODViMzg1NmUyNGUiLCJzaG93X3Byb2ZpbGVfcmVmIjoiIiwicG9zaXRpb24iOjAsInNoYTFfZnVsbF9xdWVyeSI6IiJ9
-                        profile_picture_url: https://static.pembepanjur.com/user_pictures/tn_large/84/tn_large_84792_ca87c9b13f24035223635f1ac0636776.1388534400.jpg
+                        profile_picture_url: 'https://static.pembepanjur.com/user_pictures/tn_large/84/tn_large_84792_ca87c9b13f24035223635f1ac0636776.1388534400.jpg'
                         isonline: 0
                         city: Diyarbakır
                         age: 32
@@ -5349,7 +5349,7 @@ paths:
         - oauth2: []
       operationId: delete-recurring-subscription
       description: deletes recurring subscription
-  /api/user/v10/payments/3dsecure_forward/{randomGuidForRedirectTo3dSecure}:
+  '/api/user/v10/payments/3dsecure_forward/{randomGuidForRedirectTo3dSecure}':
     get:
       tags:
         - Payments
@@ -5409,7 +5409,7 @@ paths:
         - oauth2: []
       operationId: put-profile_photo
       description: update profile photo
-  /api/user/v10/me/photos/{pictureId}:
+  '/api/user/v10/me/photos/{pictureId}':
     delete:
       tags:
         - Pictures
@@ -5467,7 +5467,7 @@ paths:
         - oauth2: []
       operationId: me-photos-delete
       description: Deleted photos.
-  /api/user/v10/users/{otherUserId}/photos:
+  '/api/user/v10/users/{otherUserId}/photos':
     get:
       tags:
         - Pictures
@@ -5552,8 +5552,8 @@ paths:
                       mainpicture_picture_id: 1
                       image_width_orig: 375
                       image_height_orig: 375
-                      regular: https://naboo.pembepanjur.com/interimpictures/pictures/8399623/interim_picture_8399623_d3da2597ae5a5914308b3986f1364e94.jpg
-                      thumbnail: https://naboo.pembepanjur.com/interimpictures/pictures/8399623/interim_picture_8399623_d3da2597ae5a5914308b3986f1364e94.jpg
+                      regular: 'https://naboo.pembepanjur.com/interimpictures/pictures/8399623/interim_picture_8399623_d3da2597ae5a5914308b3986f1364e94.jpg'
+                      thumbnail: 'https://naboo.pembepanjur.com/interimpictures/pictures/8399623/interim_picture_8399623_d3da2597ae5a5914308b3986f1364e94.jpg'
                       details_fill_profile_array: ''
                     items:
                       - picture_id: 0
@@ -5580,10 +5580,10 @@ paths:
                         last_update_datetime_unixtimestamp: ''
                         last_update_datetime_unixtimestamp_converted: ''
                         upload_datetime_tr: ''
-                        regular: https://naboo.pembepanjur.com/i/siluet/male_anonymous_312px.png
-                        thumbnail: https://naboo.pembepanjur.com/i/siluet/male_anonymous_62px.png
+                        regular: 'https://naboo.pembepanjur.com/i/siluet/male_anonymous_312px.png'
+                        thumbnail: 'https://naboo.pembepanjur.com/i/siluet/male_anonymous_62px.png'
                         tn_x_large: ''
-                        flex_x_large: https://naboo.pembepanjur.com/i/siluet/male_anonymous_312px.png
+                        flex_x_large: 'https://naboo.pembepanjur.com/i/siluet/male_anonymous_312px.png'
         '401':
           description: Unauthorized
         '403':
@@ -5769,7 +5769,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/users/{viewedUserId}:
+  '/api/user/v10/users/{viewedUserId}':
     get:
       tags:
         - Profile
@@ -5798,7 +5798,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/users/{otherUserId}/recommends:
+  '/api/user/v10/users/{otherUserId}/recommends':
     get:
       tags:
         - Profile
@@ -5924,7 +5924,7 @@ paths:
                             image_keyword: null
                       - field_name: t01
                         field_type: radio-full
-                        question_text: Sivri konuşurum, açık sözlüyümdür.
+                        question_text: 'Sivri konuşurum, açık sözlüyümdür.'
                         answer_value: 0
                         answers:
                           - value: 1
@@ -5975,7 +5975,7 @@ paths:
                             image_keyword: null
                       - field_name: p01
                         field_type: radio-full
-                        question_text: Her şeye sinirlenmeyen, sakin biriyim.
+                        question_text: 'Her şeye sinirlenmeyen, sakin biriyim.'
                         answer_value: 0
                         answers:
                           - value: 1
@@ -6213,7 +6213,7 @@ paths:
                             image_keyword: null
                       - field_name: f03
                         field_type: radio-full
-                        question_text: Bir karar verirken, sonucundan başkalarının nasıl etkileneceğini de düşünürüm.
+                        question_text: 'Bir karar verirken, sonucundan başkalarının nasıl etkileneceğini de düşünürüm.'
                         answer_value: 0
                         answers:
                           - value: 1
@@ -6978,8 +6978,8 @@ paths:
                           name: Ayşe bahar
                           occupation_text: Diğer Meslek
                           zodiac_text: Oğlak
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/2350/tn_large_2350455_28dea51ea4b8618c8386d9547ce08271.1604005030.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/2350/tn_large_2350455_28dea51ea4b8618c8386d9547ce08271.1604005030.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/2350/tn_large_2350455_28dea51ea4b8618c8386d9547ce08271.1604005030.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/2350/tn_large_2350455_28dea51ea4b8618c8386d9547ce08271.1604005030.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -7029,8 +7029,8 @@ paths:
                           name: Ayşe sert
                           occupation_text: Çalışmıyor
                           zodiac_text: Kova
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9100/tn_large_9100508_29789340acc56d197a92fbda1af85279.1651915265.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9100/tn_large_9100508_29789340acc56d197a92fbda1af85279.1651915265.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9100/tn_large_9100508_29789340acc56d197a92fbda1af85279.1651915265.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9100/tn_large_9100508_29789340acc56d197a92fbda1af85279.1651915265.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -7080,8 +7080,8 @@ paths:
                           name: Ayşe nur
                           occupation_text: Diğer Meslek
                           zodiac_text: Kova
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9296/tn_large_9296850_c73e034b69ab3a81719a02faea9ef7e0.1658930954.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9296/tn_large_9296850_c73e034b69ab3a81719a02faea9ef7e0.1658930954.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9296/tn_large_9296850_c73e034b69ab3a81719a02faea9ef7e0.1658930954.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9296/tn_large_9296850_c73e034b69ab3a81719a02faea9ef7e0.1658930954.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -7190,8 +7190,8 @@ paths:
                           name: Lorem
                           occupation_text: Diğer Meslek
                           zodiac_text: Oğlak
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -7319,8 +7319,8 @@ paths:
                           name: Lorem
                           occupation_text: Diğer Meslek
                           zodiac_text: Oğlak
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -9068,7 +9068,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/search/records/{SearchRecordId}:
+  '/api/user/v10/search/records/{SearchRecordId}':
     delete:
       tags:
         - Search
@@ -9159,7 +9159,7 @@ paths:
                         search_criteria_string: '[{"field_name":"distance","value":"-1","text":"Farketmez","type":"static"},{"field_name":"height","min_value":"140","max_value":"210","type":"range"},{"field_name":"weight","min_value":"40","max_value":"130","type":"range"},{"field_name":"show_matches","value":"1","text":"Sadece uygun üyeler","type":"static"},{"field_name":"show_users_with_pictures","value":"0","text":"Farketmez","type":"static"},{"field_name":"show_online_users","value":"0","text":"Farketmez","type":"static"},{"field_name":"name","value":"","text":"","type":"static"},{"field_name":"text","value":"","text":"","type":"static"},{"field_name":"search_alcohol","value":"-1","text":"Farketmez","type":"static"},{"field_name":"country_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"city_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"district_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"educationlevel","value":"-1","text":"Farketmez","type":"static"},{"field_name":"eyecolor","value":"-1","text":"Farketmez","type":"static"},{"field_name":"haircolor","value":"-1","text":"Farketmez","type":"static"},{"field_name":"havechildren","value":"-1","text":"Farketmez","type":"static"},{"field_name":"income","value":"-1","text":"Farketmez","type":"static"},{"field_name":"occupation_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"maritalstatus","value":"-1","text":"Farketmez","type":"static"},{"field_name":"search_smoker","value":"-1","text":"Farketmez","type":"static"},{"field_name":"sign","value":"-1","text":"Farketmez","type":"static"},{"field_name":"age","text":"Yaş","min_value":18,"max_value":"19","type":"range"}]'
                         search_record_unix_time: 1611133812
                       - search_record_id: 329679
-                        search_record_name: 5/1/2020 21:49
+                        search_record_name: '5/1/2020 21:49'
                         search_criteria_string: '[{"field_name":"age","text":"Yaş","min_value":50,"max_value":80,"type":"range"},{"field_name":"country_id","text":"Türkiye","value":90,"type":"static"},{"field_name":"city_id","text":"Seçiniz","value":-1,"type":"static"},{"field_name":"district_id","text":"Seçiniz","value":-1,"type":"static"},{"field_name":"distance","text":"Farketmez","value":-1,"type":"static"},{"field_name":"height","text":"Boy","min_value":140,"max_value":210,"type":"range"},{"field_name":"weight","text":"Kilo","min_value":40,"max_value":130,"type":"range"},{"field_name":"eyecolor","text":"Farketmez","value":-1,"type":"static"},{"field_name":"haircolor","text":"Farketmez","value":-1,"type":"static"},{"field_name":"occupation_id","text":"Farketmez","value":-1,"type":"static"},{"field_name":"educationlevel","text":"Farketmez","value":-1,"type":"static"},{"field_name":"income","text":"Farketmez","value":-1,"type":"static"},{"field_name":"maritalstatus","text":"Farketmez","value":-1,"type":"static"},{"field_name":"havechildren","text":"Farketmez","value":-1,"type":"static"},{"field_name":"sign","text":"Farketmez","value":-1,"type":"static"},{"field_name":"alcohol","text":"Farketmez","value":-1,"type":"static"},{"field_name":"smoker","text":"Farketmez","value":-1,"type":"static"},{"field_name":"handicapped","text":"Farketmez","value":-1,"type":"static"},{"field_name":"show_matches","text":"Sadece Uygun Üyeler","value":0,"type":"static"},{"field_name":"show_online_users","text":"Çevrimiçi Üyeler","value":0,"type":"static"},{"field_name":"show_users_with_pictures","text":"Fotoğraflı Üyeler","value":0,"type":"static"},{"field_name":"name","text":"","value":"","type":"static"},{"field_name":"text","text":"","value":"","type":"static"}]'
                         search_record_unix_time: 1578250188
                     result_code: 1
@@ -9190,7 +9190,7 @@ paths:
                     data:
                       session:
                         profile:
-                          profile_picture_url: https://naboo.pembepanjur.com/i/siluet/male_anonymous.png
+                          profile_picture_url: 'https://naboo.pembepanjur.com/i/siluet/male_anonymous.png'
                           name: İsmail
                           gender: '0'
                           age: '42'
@@ -9213,7 +9213,7 @@ paths:
                             - aboutdetail_cooking
                             - aboutdetail_boardgames
                             - aboutdetail_cartoon
-                          profile_picture_url_retina: https://naboo.pembepanjur.com/i/siluet/male_anonymous.png
+                          profile_picture_url_retina: 'https://naboo.pembepanjur.com/i/siluet/male_anonymous.png'
                           selected_search_array_json: '[{"field_name":"age","min_value":"18","max_value":"80","type":"range"},{"field_name":"distance","value":"-1","text":"Farketmez","type":"static"},{"field_name":"height","min_value":"140","max_value":"210","type":"range"},{"field_name":"weight","min_value":"40","max_value":"130","type":"range"},{"field_name":"show_matches","value":"1","text":"Sadece uygun üyeler","type":"static"},{"field_name":"show_users_with_pictures","value":"0","text":"Farketmez","type":"static"},{"field_name":"show_online_users","value":"0","text":"Farketmez","type":"static"},{"field_name":"showmatchespage_hasprofilepicture","value":"0","text":"Farketmez","type":"static"},{"field_name":"showmatchespage_isonline","value":"0","text":"Farketmez","type":"static"},{"field_name":"name","value":"","text":"","type":"static"},{"field_name":"text","value":"","text":"","type":"static"},{"field_name":"alcohol","value":"-1","text":"Farketmez","type":"static"},{"field_name":"country_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"city_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"district_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"educationlevel","value":"-1","text":"Farketmez","type":"static"},{"field_name":"eyecolor","value":"-1","text":"Farketmez","type":"static"},{"field_name":"haircolor","value":"-1","text":"Farketmez","type":"static"},{"field_name":"handicapped","value":"-1","text":"Farketmez","type":"static"},{"field_name":"havechildren","value":"-1","text":"Farketmez","type":"static"},{"field_name":"income","value":"-1","text":"Farketmez","type":"static"},{"field_name":"occupation_id","value":"-1","text":"Farketmez","type":"static"},{"field_name":"maritalstatus","value":"-1","text":"Farketmez","type":"static"},{"field_name":"smoker","value":"-1","text":"Farketmez","type":"static"},{"field_name":"sign","value":"-1","text":"Farketmez","type":"static"},{"field_name":"order_by_string","value":"notmatter","text":"","type":"static"}]'
                         user_state:
                           profile_sound_type: '7'
@@ -9873,7 +9873,13 @@ paths:
       security:
         - oauth2: []
       operationId: me-connects-instagram
-      description: Instagram connection.
+      description: |
+        Instagram'dan client onay aldıktan sonra çağırılır. code ve redirect_url'i client belirler.
+        redirect_url'in instagram'a gönderilen url ile aynı olması önemli (slash dahil).
+        Bu servis başarılı döndüğünde artık backend tarafında instagramdan fotoğraf çekme/listeleme mümkün olacak.
+
+        Dikkat - 1: Bu servis ilk çağırıldığında media olarak video da gelebiliyor. Backend tarafında video'ları pas geçecek şekilde kod yazıldığına dikkat edilmeli.
+        Dikkat - 2: Client'ın isteyeceği instagram izinlerinde profil ve media izni olmalı. Media olmazsa fotoğrafları backend çekemez.
   /api/user/v10/me/connects/phone:
     get:
       tags:
@@ -9891,7 +9897,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-  /api/user/v10/me/connects/{SocialNetwork}:
+  '/api/user/v10/me/connects/{SocialNetwork}':
     delete:
       tags:
         - SocialNetworks
@@ -9928,7 +9934,7 @@ paths:
         - oauth2: []
       description: Disconnect with social network.
       operationId: me-connects
-  /api/user/v10/email_approval/{hashids}:
+  '/api/user/v10/email_approval/{hashids}':
     put:
       tags:
         - UpdateEmailApprovalStatus
@@ -10060,9 +10066,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzkyMzE3NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJmN2JiMjA5OWI1MTUzYTMzNjJmYzQwNzU3MjNmYmIzOCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Byb2ZpbGVfdmlzaXRvcnNfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzkyMzE3NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NzRkNDJkNjI0NjVlZjgwM2QwYmM0YWRiNTAwNzc0OCJ9
                         formatted_date:
-                          short: 25 Temmuz 2022 18:27:00
+                          short: '25 Temmuz 2022 18:27:00'
                           mid: 25 Temmuz 2022
-                          long: 25.07.2022 15:27:00
+                          long: '25.07.2022 15:27:00'
                           time: '18:27:00'
                         badges:
                           facebook: false
@@ -10079,8 +10085,8 @@ paths:
                           name: Huzur
                           occupation_text: Memur
                           zodiac_text: Boğa
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10089,7 +10095,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 10.08.2022 01:25:13
+                          timestamp_tr: '10.08.2022 01:25:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -10111,9 +10117,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI4MzgyNSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1YmM3YzJmMmE0NDMwNzFiYzVmYTM0OGY5NGE0NGRhZSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Byb2ZpbGVfdmlzaXRvcnNfcGFnZSIsInBvc2l0aW9uIjoyLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTI4MzgyNSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1ZThhYTE5YjBmM2E4ZGVhMjhhNzVhZTA3NzlmNzcxOCJ9
                         formatted_date:
-                          short: 22 Temmuz 2022 22:21:19
+                          short: '22 Temmuz 2022 22:21:19'
                           mid: 22 Temmuz 2022
-                          long: 22.07.2022 19:21:19
+                          long: '22.07.2022 19:21:19'
                           time: '22:21:19'
                         badges:
                           facebook: false
@@ -10130,8 +10136,8 @@ paths:
                           name: Yagmur
                           occupation_text: Diğer Meslek
                           zodiac_text: Terazi
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10140,7 +10146,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 09.08.2022 17:20:14
+                          timestamp_tr: '09.08.2022 17:20:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10162,9 +10168,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzMwNzI3MSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI2MzdmYzNkNTIwZWM3ZDc2OThiOTM5NWYyNzNlNmYxMCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Byb2ZpbGVfdmlzaXRvcnNfcGFnZSIsInBvc2l0aW9uIjozLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6NzMwNzI3MSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkZGIxMWI4ZjhkMTBlMGFiN2FiYmYwYjRjNjIwMjVhMCJ9
                         formatted_date:
-                          short: 22 Temmuz 2022 11:23:16
+                          short: '22 Temmuz 2022 11:23:16'
                           mid: 22 Temmuz 2022
-                          long: 22.07.2022 08:23:16
+                          long: '22.07.2022 08:23:16'
                           time: '11:23:16'
                         badges:
                           facebook: true
@@ -10181,8 +10187,8 @@ paths:
                           name: Melek
                           occupation_text: Diğer Meslek
                           zodiac_text: Yengeç
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10191,7 +10197,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 01.08.2022 17:55:13
+                          timestamp_tr: '01.08.2022 17:55:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -10213,9 +10219,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTE4ODAxOSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhMzE4MjVlOWI1YjA4MjlkZWYwOTMwMTE4ZGI1OTRlMyIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Byb2ZpbGVfdmlzaXRvcnNfcGFnZSIsInBvc2l0aW9uIjo0LCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTE4ODAxOSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJiMGIzODEwNmEyOWJkOTMzMTI5MGZlMjhjYTZlN2U5NCJ9
                         formatted_date:
-                          short: 19 Temmuz 2022 13:23:35
+                          short: '19 Temmuz 2022 13:23:35'
                           mid: 19 Temmuz 2022
-                          long: 19.07.2022 10:23:35
+                          long: '19.07.2022 10:23:35'
                           time: '13:23:35'
                         badges:
                           facebook: false
@@ -10232,8 +10238,8 @@ paths:
                           name: Sevda
                           occupation_text: Memur
                           zodiac_text: Başak
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10242,7 +10248,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 09.08.2022 10:50:14
+                          timestamp_tr: '09.08.2022 10:50:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10311,9 +10317,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjoxLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwZGUxYjg4ZDBmMjgzYWVmODA2NDdjZGI5ZGE4NmY5NCJ9
                         formatted_date:
-                          short: 07 Mart 2023 11:50:40
+                          short: '07 Mart 2023 11:50:40'
                           mid: 07 Mart 2023
-                          long: 7.03.2023 08:50:40
+                          long: '7.03.2023 08:50:40'
                           time: '11:50:40'
                         badges:
                           facebook: false
@@ -10330,8 +10336,8 @@ paths:
                           name: Papatya
                           occupation_text: Diğer Meslek
                           zodiac_text: Başak
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -10340,7 +10346,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 09.08.2022 20:50:17
+                          timestamp_tr: '09.08.2022 20:50:17'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10362,9 +10368,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6IjE5OTc1NGYxYTJlNmMyYjY5NTYxODkwMThjNjcwNTk5Iiwic2hvd19wcm9maWxlX3JlZiI6InNob3dfdmlzaXRlZF9wcm9maWxlc19wYWdlIiwicG9zaXRpb24iOjIsInNoYTFfZnVsbF9xdWVyeSI6IiJ9
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTI0LCJ1c2VyX2lkIjo0NzM2NjUsImF1dGhfY29kZSI6ImQ3OWEzMzRiZTIzOGEyYWJhZDM2MWJkYzczM2ViOWVmIn0--
                         formatted_date:
-                          short: 07 Mart 2023 09:36:19
+                          short: '07 Mart 2023 09:36:19'
                           mid: 07 Mart 2023
-                          long: 7.03.2023 06:36:19
+                          long: '7.03.2023 06:36:19'
                           time: '09:36:19'
                         badges:
                           facebook: false
@@ -10381,8 +10387,8 @@ paths:
                           name: Lucid
                           occupation_text: Diğer Meslek
                           zodiac_text: İkizler
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10413,9 +10419,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwY2Q5MjkyZTlmNGEzYjYwYTZiOWJhM2VlZGMyMzgzNSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93X3Zpc2l0ZWRfcHJvZmlsZXNfcGFnZSIsInBvc2l0aW9uIjozLCJzaGExX2Z1bGxfcXVlcnkiOiIifQ----
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhZGYwNDI0MjU2NWI3M2NiNTE5OWIwZmIyMGNhZTUyYSJ9
                         formatted_date:
-                          short: 22 Şubat 2023 17:53:08
+                          short: '22 Şubat 2023 17:53:08'
                           mid: 22 Şubat 2023
-                          long: 22.02.2023 14:53:08
+                          long: '22.02.2023 14:53:08'
                           time: '17:53:08'
                         badges:
                           facebook: false
@@ -10432,8 +10438,8 @@ paths:
                           name: Duygu06
                           occupation_text: Diğer Meslek
                           zodiac_text: Aslan
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -10442,7 +10448,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 07.08.2022 19:10:15
+                          timestamp_tr: '07.08.2022 19:10:15'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10542,9 +10548,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJkNTFlZDUwY2RjZjRiZDlmZDY2NjM0NjVhMTEwMGNkMiIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93c2VudHdpbmtzX3BhZ2UiLCJwb3NpdGlvbiI6MSwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMyMTYwOCwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJiNjNlZjBkYWRhYWQ5N2E1M2M0OGQ0NTk2YjFkOTQzNCJ9
                         formatted_date:
-                          short: 06 Nisan 2023 16:06:42
+                          short: '06 Nisan 2023 16:06:42'
                           mid: 06 Nisan 2023
-                          long: 6.04.2023 13:06:42
+                          long: '6.04.2023 13:06:42'
                           time: '16:06:42'
                         badges:
                           facebook: false
@@ -10561,8 +10567,8 @@ paths:
                           name: Tanem
                           occupation_text: Diğer Meslek
                           zodiac_text: Yengeç
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10571,7 +10577,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 07.08.2022 17:05:14
+                          timestamp_tr: '07.08.2022 17:05:14'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10593,9 +10599,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwY2Q5MjkyZTlmNGEzYjYwYTZiOWJhM2VlZGMyMzgzNSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93c2VudHdpbmtzX3BhZ2UiLCJwb3NpdGlvbiI6Miwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxNzI5NSwidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiJhZGYwNDI0MjU2NWI3M2NiNTE5OWIwZmIyMGNhZTUyYSJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:39:39
+                          short: '28 Mart 2023 17:39:39'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:39:39
+                          long: '28.03.2023 14:39:39'
                           time: '17:39:39'
                         badges:
                           facebook: false
@@ -10612,8 +10618,8 @@ paths:
                           name: Duygu06
                           occupation_text: Diğer Meslek
                           zodiac_text: Aslan
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9317/tn_large_9317295_1b8807d43d099e88f6243d7ca71b5720.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -10622,7 +10628,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 07.08.2022 19:10:15
+                          timestamp_tr: '07.08.2022 19:10:15'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10644,9 +10650,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIxNjY0ZTQwZWVhMGUyZmIxZjcxMzY4N2U3M2UxYTQ3MCIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93c2VudHdpbmtzX3BhZ2UiLCJwb3NpdGlvbiI6Mywic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTAyNzA0MywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI1NTYxNDZjZTk2ZWY5ZjFjMjBjY2RmYmE1NzI2YmI0MiJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:39:37
+                          short: '28 Mart 2023 17:39:37'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:39:37
+                          long: '28.03.2023 14:39:37'
                           time: '17:39:37'
                         badges:
                           facebook: false
@@ -10663,8 +10669,8 @@ paths:
                           name: Eda
                           occupation_text: Diğer Meslek
                           zodiac_text: Başak
-                          thumbnail_url: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
-                          thumbnail_url_retina: https://dev.pembepanjur.com/i/siluet/female_anonymous.png
+                          thumbnail_url: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
+                          thumbnail_url_retina: 'https://dev.pembepanjur.com/i/siluet/female_anonymous.png'
                           hasprofilepicture: 0
                           slug: /
                           get_profile_auth_code: ''
@@ -10695,9 +10701,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI4NDdmMzQwMDFjNWI2Mjk4ODMzZGU3MDc3NTZiZDVlYyIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93c2VudHdpbmtzX3BhZ2UiLCJwb3NpdGlvbiI6NCwic2hhMV9mdWxsX3F1ZXJ5IjoiIn0--
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6OTMxODgzNywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIwZGUxYjg4ZDBmMjgzYWVmODA2NDdjZGI5ZGE4NmY5NCJ9
                         formatted_date:
-                          short: 28 Mart 2023 17:22:22
+                          short: '28 Mart 2023 17:22:22'
                           mid: 28 Mart 2023
-                          long: 28.03.2023 14:22:22
+                          long: '28.03.2023 14:22:22'
                           time: '17:22:22'
                         badges:
                           facebook: false
@@ -10714,8 +10720,8 @@ paths:
                           name: Papatya
                           occupation_text: Diğer Meslek
                           zodiac_text: Başak
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/9318/tn_large_9318837_59d04a16729b1666b17e4dfdbb1c145d.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -10724,7 +10730,7 @@ paths:
                         date_label:
                           mobile: 8 ay önce
                           desktop: 8 ay önce
-                          timestamp_tr: 09.08.2022 20:50:17
+                          timestamp_tr: '09.08.2022 20:50:17'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: true
@@ -10793,9 +10799,9 @@ paths:
                           get_profile_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiIyNTg4NTM3MmE5Y2M3MzU4YzE1NDIzNzBlNjFlNTQyNSIsInNob3dfcHJvZmlsZV9yZWYiOiJzaG93aW5jb21pbmd3aW5rc19wYWdlIiwicG9zaXRpb24iOjEsInNoYTFfZnVsbF9xdWVyeSI6IiJ9
                           remakematch_pointer: eyJhcGlfa2V5IjoiNTQ3NnBwMTIzYXBpMTQ3a2V5Iiwib3RoZXJfdXNlcl9pZCI6ODU2NTg2NywidXNlcl9pZCI6NDczNjY1LCJhdXRoX2NvZGUiOiI2ZWU3MGI4OTc4YTRhZmFjY2ExYjUwNDljNzI3ODM3MCJ9
                         formatted_date:
-                          short: 04 Ocak 2022 13:58:32
+                          short: '04 Ocak 2022 13:58:32'
                           mid: 04 Ocak 2022
-                          long: 4.01.2022 10:58:32
+                          long: '4.01.2022 10:58:32'
                           time: '13:58:32'
                         badges:
                           facebook: true
@@ -10812,8 +10818,8 @@ paths:
                           name: Zehraa123
                           occupation_text: Diğer Meslek
                           zodiac_text: Oğlak
-                          thumbnail_url: https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg
-                          thumbnail_url_retina: https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg
+                          thumbnail_url: 'https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg'
+                          thumbnail_url_retina: 'https://static.pembepanjur.com/user_pictures/tn_large/8565/tn_large_8565867_c596a6a5e4554dd92284de0ebc973e81.1388534400.jpg'
                           hasprofilepicture: 1
                           slug: /
                           get_profile_auth_code: ''
@@ -10822,7 +10828,7 @@ paths:
                         date_label:
                           mobile: 11 ay önce
                           desktop: 11 ay önce
-                          timestamp_tr: 29.04.2022 13:10:13
+                          timestamp_tr: '29.04.2022 13:10:13'
                         interaction:
                           unread_message_this_user: 0
                           is_favored: false
@@ -10848,7 +10854,7 @@ paths:
         - oauth2: []
       operationId: winks-by-them-get
       description: kullanıcıya göz kırpan kullanıcıları listeleme
-  /api/user/v10/me/winks/{winkId}:
+  '/api/user/v10/me/winks/{winkId}':
     delete:
       tags:
         - Winks
@@ -12294,7 +12300,6 @@ components:
         - result_code
         - error_detail_message
         - error_code
-
     Api.AddFavoriteCoreAppService.Dto.AddFavoriteCoreDataOutput:
       required:
         - previously_favored
