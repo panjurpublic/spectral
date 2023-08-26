@@ -16982,22 +16982,18 @@ components:
       x-stoplight:
         id: newu37tuklyxj
     Api.UploadPictureFromUrlCoreAppService.Dto.UploadPictureFromUrlInput:
-      required:
-        - picture_source
-        - picture_url
-        - user_id
       type: object
+      additionalProperties: false
+      x-stoplight:
+        id: frgpwnx23v5cv
       properties:
-        user_id:
-          type: integer
-          format: int32
         picture_url:
           type: string
         picture_source:
           type: string
-      additionalProperties: false
-      x-stoplight:
-        id: frgpwnx23v5cv
+      required:
+        - picture_url
+        - picture_source
     Api.UserLikesOtherUserAppService.Dto.UserLikesOtherUserInput:
       required:
         - auth_code
