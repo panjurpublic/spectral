@@ -10923,7 +10923,8 @@ paths:
   /api/user/v10/email/complaint/unsubscribe:
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - External
       responses: {}
       operationId: get-api-user-v10-email-complaint-unsubscribe
     post:
