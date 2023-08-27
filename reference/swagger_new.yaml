@@ -10921,12 +10921,6 @@ paths:
       security:
         - oauth2: []
   /api/user/v10/email/complaint/unsubscribe:
-    get:
-      summary: Your GET endpoint
-      tags:
-        - External
-      responses: {}
-      operationId: get-api-user-v10-email-complaint-unsubscribe
     post:
       summary: ''
       operationId: post-api-user-v10-email-complaint-unsubscribe
@@ -10955,6 +10949,8 @@ paths:
                   type: integer
                 unsubscribenow:
                   type: integer
+      tags:
+        - External
 components:
   schemas:
     pointers_model:
