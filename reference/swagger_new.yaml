@@ -10920,6 +10920,40 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
+  /api/user/v10/email/complaint/unsubscribe:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-api-user-v10-email-complaint-unsubscribe
+    post:
+      summary: ''
+      operationId: post-api-user-v10-email-complaint-unsubscribe
+      responses:
+        '200':
+          description: OK
+      description: |
+        https://www.pembepanjur.com/sikayet-abonelik-sonlandir?utm_source=email&utm_medium=ntf_new_visit&utm_campaign=ntf_new_visit&track_code=896433555&auth_code=74162aae6fc26fe7b07ea6f1ec15d9fc&unsubscribenow=1&m=10251586&email=haluk@idefine.org
+
+        E-postalardaki "izinsiz gönderim bildir" linkine tıklandığında çalışır.
+        <img src="https://photoprism.coruscant.co/api/v1/t/7362fa4a2b8cfa8a41955e16842c182e7a88a4d8/j72i3wj8/fit_2048" width=500 />
+
+        Kullanıcı önce aşağıdaki url'e uygun bir sayfaya yönlendirilir.
+        Servis bu sayfada çağırılır. Sayfanın kullanıcıya göstermesi beklenen görüntü:
+
+        <img src="https://photoprism.coruscant.co/api/v1/t/7dc3fb3ee79ee08a789c0ec59eb6376f6cbe1b1b/j72i3wj8/fit_2048" width=500 />
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                auth_code:
+                  type: string
+                m:
+                  type: integer
+                unsubscribenow:
+                  type: integer
 components:
   schemas:
     pointers_model:
