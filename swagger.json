@@ -2752,7 +2752,7 @@
             "oauth2": []
           }
         ],
-        "description": "Mobilde bu servis kullanılmamaktadır."
+        "description": "Mobilde bu servis kullanılmamaktadır.."
       }
     },
     "/api/user/v10/email_approval": {
