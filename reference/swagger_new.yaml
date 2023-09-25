@@ -412,7 +412,7 @@ paths:
         '401':
           description: Unauthorized
       operationId: get-users-user_id
-      description: |-
+      description: |
         Gelen {user_id} ye göre ilgili kullanıcıyı döner 
 
         <b>is_locked</b>:  
@@ -421,7 +421,8 @@ paths:
         -bakan kullanıcı gold üye ise is_locked help <b>false</b> dönülür.  
         -bakan kullanıcının profilinde aynı soru zaten cevaplanmışsa (0 karakterden fazla metin varsa) is_locked=<b>false</b> dönülür.  
         -kullanıcı kendi profiline bakıyorsa her zaman <b>false</b> dönülür.   
-        -diğer olasılıklarda <b>true</b> dönülür. 
+        -diğer olasılıklarda <b>true</b> dönülür.   
+        -Ayrıca is_locked'a komşu olarak <b>field_name_for_update</b> şeklinde bir property daha dönülmeli. <b>PUT:me</b>'ye gönderilebilecek field_name ismi oradan gelmeli. Örnek olarak bu servisin <b>"cartoons"</b> olarak döndüğü field'ı <b>"aboutdetail_cartoon"</b> olarak bekler PUT:me servisi.
   '/users/{user_id}/{get_profile_pointer}/harmony':
     parameters:
       - schema:
