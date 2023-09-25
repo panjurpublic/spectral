@@ -3345,6 +3345,23 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
+      description: |-
+        Döndüğü bilgiler:
+
+        -
+        -
+        - sliding cards:
+          Feed alanında yer alacak olan kartlarla kullanıcıların aktivasyonunu artırmayı hedefliyoruz. 
+          - Karakter analizini tamamlamış mı? (bool)
+          - Profil fotoğrafı var mı? (bool)
+          - Profil tamamlamış mı? (15 tane açık uçlu soru about_ ile başlayan bunları doldurmuş mu?) (bool)
+          - Gold üye mi? (bool)
+          - Arkadaşlarını davet etmiş mi? Geçici olarak true dönelim (bool)
+          - Son 1 haftada super boost almış mı? Geçici olarak true dönelim (bool)
+          - Meydan okumayı (challenge) tamamlamış mı? Geçici olarak true dönelim(bool)
+
+          Confluence: https://pembepanjur.atlassian.net/wiki/spaces/~7120209d4858a07a3e4c659ca1303fa6500ace/pages/33238/Pembe+Panjur
+          
   /api/user/v10/logs/track_codes:
     post:
       tags:
