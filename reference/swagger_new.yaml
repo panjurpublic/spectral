@@ -412,7 +412,16 @@ paths:
         '401':
           description: Unauthorized
       operationId: get-users-user_id
-      description: 'Gelen {user_id} ye göre ilgili kullanıcıyı döner '
+      description: |-
+        Gelen {user_id} ye göre ilgili kullanıcıyı döner 
+
+        <b>is_locked</b>:  
+        about_detail altındaki serbest metin sorularında (Eylül 2023'de 17 adet bu şekilde soru var) "is_locked" isimli bir property dönülür. is_locked=<b>true</b> ise bakan kullanıcıya "Kilidi Aç" şeklinde bir görsel gösterir frontend.   
+        is_locked kararı şu koşullara göre verilir:  
+        -bakan kullanıcı gold üye ise is_locked help <b>false</b> dönülür.  
+        -bakan kullanıcının profilinde aynı soru zaten cevaplanmışsa (0 karakterden fazla metin varsa) is_locked=<b>false</b> dönülür.  
+        -kullanıcı kendi profiline bakıyorsa her zaman <b>false</b> dönülür.   
+        -diğer olasılıklarda <b>true</b> dönülür. 
   '/users/{user_id}/{get_profile_pointer}/harmony':
     parameters:
       - schema:
