@@ -8,7 +8,7 @@ info:
     email: api@pembepanjur.com
     name: pp
     url: www.pembepanjur.com
-  description: This describes my API..
+  description: This describes my API...
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
