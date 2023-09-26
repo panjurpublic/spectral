@@ -9961,6 +9961,38 @@ paths:
         - oauth2: []
       description: Disconnect with social network.
       operationId: me-connects
+  /api/user/v10/me/connects/spotify:
+    get:
+      tags:
+        - SocialNetworks
+      parameters:
+        - name: access_token
+          in: query
+          schema:
+            type: string
+        - name: refresh_token
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectSpotifyCore.Dto.ConnectSpotifyCoreDataModel_'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      security:
+        - oauth2: []
+      description: |-
+        inputtan gelen acccess token ve refresh token ile spotifyden kullanıcı bilgilerini çekiyoruz. {user_id} ve {spotify_user_id} ile social network tablosunda kayıt var mı diye kontrol ediyoruz. varsa update yoksa insert yapıyoruz.
+        user tablosunda spotify bağlantısını göstermek için {show_spotify_badge_on_profile} alanını 1 yapıyoruz.
+        data_one tabosunda da {user_id} ye göre update yapıyoruz.
+        spotify tablosunda kayıt var mı diye kontrol ediyoruz. varsa update yoksa insert yapıyoruz.
+        kullanıcının favori sanatçılarını çekiyoruz. çektiğimiz sanatçıları listeye ekleyip en son modelde favori artist listesini döndürüyoruz.
   '/api/user/v10/email_approval/{hashids}':
     put:
       tags:
@@ -12852,6 +12884,46 @@ components:
       additionalProperties: false
       x-stoplight:
         id: ibuhvw6ivu4ks
+    Api.ConnectSpotifyCore.Dto.ArtistImageModel:
+      type: object
+      properties:
+        url:
+          type: string
+          nullable: true
+        height:
+          type: integer
+          format: int32
+        width:
+          type: integer
+          format: int32
+      additionalProperties: false
+    Api.ConnectSpotifyCore.Dto.ConnectSpotifyCoreDataModel:
+      type: object
+      properties:
+        spotify_user_id:
+          type: string
+          nullable: true
+        favorite_artist_list:
+          type: array
+          items:
+            $ref: '#/components/schemas/Api.ConnectSpotifyCore.Dto.SpotifyArtistModel'
+          nullable: true
+      additionalProperties: false
+    Api.ConnectSpotifyCore.Dto.SpotifyArtistModel:
+      type: object
+      properties:
+        name:
+          type: string
+          nullable: true
+        id:
+          type: string
+          nullable: true
+        images:
+          type: array
+          items:
+            $ref: '#/components/schemas/Api.ConnectSpotifyCore.Dto.ArtistImageModel'
+          nullable: true
+      additionalProperties: false
     Api.ConversationAppServices.Dto.ConversationList:
       required:
         - add_favorite_pointer
@@ -19866,6 +19938,27 @@ components:
       additionalProperties: false
       x-stoplight:
         id: tyokg9cwfhzla
+    PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConnectSpotifyCore.Dto.ConnectSpotifyCoreDataModel_:
+      required:
+        - error_code
+        - error_detail_message
+        - result_code
+        - stack_trace
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Api.ConnectSpotifyCore.Dto.ConnectSpotifyCoreDataModel'
+        result_code:
+          type: integer
+          format: int32
+        error_detail_message:
+          type: string
+        stack_trace:
+          type: string
+        error_code:
+          type: integer
+          format: int32
+      additionalProperties: false
     PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.ConversationAppServices.Dto.PostConversationOutput_:
       required:
         - error_detail_message
