@@ -610,7 +610,7 @@ paths:
       security:
         - oauth2: []
       operationId: user-agreements-get
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: 'Bu servis kullanılmamaktadır , kullanılmasında fayda var.'
       parameters: []
   /api/user/v10/agreements/privacy:
     get:
@@ -629,7 +629,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , Desktopta , Applerde ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: 'Bu servis kullanılmamaktadır , kullanılmasında fayda var.'
   '/api/user/v10/app_releases/{type}':
     get:
       tags:
@@ -653,7 +653,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/app_releases:
     get:
       tags:
@@ -672,6 +672,8 @@ paths:
       security:
         - oauth2: []
       description: |-
+        Uygulama açılırken çağrılıyor. Yeni bir güncelleme varsa bildirebilmek için çalışıyor.
+
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
         - Applerde bu servis kullanılmaktadır.
   /api/user/v10/me/itunes_unique_vendor_identifier:
@@ -697,7 +699,7 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Şu anda kullanıldığı. yer bulunamadı ama sadece iOS uygulamalara yönelik.
+        Bu servis kullanılmamaktadır.
 
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
         - Applerde bu servis kullanılmaktadır.
@@ -723,7 +725,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |
+      description: |-
         Uygulama içerisinde " Bizi beğendiniz mi ? "popupı sonrasında verilen cevabın sonunda çağrılıyor.
 
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -777,10 +779,9 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |
-        Servisin başıda login var o mu soralım ?
+      description: |-
+        Access token expire olmuş APP kullanıcısı için refresh token kullanarak yeni access token döner.
 
-        (Eğer login varsa)
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
         - APPlerde kullanılmaktadır.
   /api/user/v10/logout:
@@ -807,7 +808,7 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Uygulamadan çıkış yapıldığında bu servis çağrılmış olur.
+        Hesap sayfasından veya kayıt sırasında sağ üstten çıkış yapıldığı sırada çağrılır.
 
         - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
         - Dış Sayfalarda kullanılmamaktadır.
@@ -2632,7 +2633,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , Applerde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/custom_client_json:
     put:
       tags:
@@ -2672,9 +2673,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Mobilde bu servis kullanılmamaktadır,servis hiç kodlanmayacaktır.
-        - Mobilde , Applerde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/uuid:
     get:
       tags:
@@ -2698,7 +2697,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/health/readiness:
     get:
       tags:
@@ -2710,7 +2709,9 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PanjurUserApi.Web.Api.Models.ApiResult'
-      description: Bu servis kullanılmamaktadır.
+      description: |-
+        Bu servis kullanılmamaktadır.
+        Bu servisi kubernetes kullanmaktadır. Sistemin çalışmaya hazır olup olmadığını belirtir.
   /api/user/v10/log_test:
     post:
       tags:
@@ -2801,8 +2802,8 @@ paths:
       security:
         - oauth2: []
       description: |-
-        - Mobilde , APPlerde ve Desktopta bu servis kullanılmaktadır.
-        - Dış Sayfalarda bu servis kullanılmamaktadır.
+        - Desktopta bu servis kullanılmaktadır.
+        - Mobilde , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.
   /api/user/v10/email_approval:
     post:
       tags:
@@ -2865,8 +2866,10 @@ paths:
       security:
         - oauth2: []
       description: |-
-        - Mobilde , APPlerde ve Desktopta bu servis kullanılmamaktadır.
+        Açılan sayfada değişiklik yapıldığında bu servis çağrılmış olur.
+
         - Dış Sayfalarda bu servis kullanılmaktadır.
+        - Mobilde , APPlerde ve Desktopta bu servis kullanılmamaktadır.
     get:
       tags:
         - EmailSubscription
@@ -2900,7 +2903,14 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobil serviste bu servis kullanılmamaktadır.
+      description: |-
+        Emailden gelen , email içindeki linke tıklandığında bu servis çağrılmış olur.
+        (Mesaj alma sıklığını ayarlamak için buraya tıklayabilirsiniz.)
+
+        - Dış Sayfalarda bu servis kullanılmaktadır.
+        - Mobilde , APPlerde ve Desktopta bu servis kullanılmamaktadır.
+
+        <img src="https://photoprism.coruscant.co/api/v1/t/a417e5e59180a13c088d471e32005cb9b3fe5e53/j72i3wj8/fit_1280"/>
   /api/user/v10/me/favorites:
     get:
       tags:
@@ -3519,7 +3529,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Bu servisin yeri bulunamadı.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/boosts:
     get:
       tags:
@@ -3537,7 +3547,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Bu servisin yeri bulunamadı.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/countries/{post_country_id}/cities':
     get:
       tags:
@@ -3566,7 +3576,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , APPlerde , Desktopta ve Dış Sayfalarda bu servis kullanılmaktadır.'
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/countries/cities/{cityId}/districts':
     get:
       tags:
@@ -3591,7 +3601,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , APPlerde , Desktopta ve Dış Sayfalarda bu servis kullanılmaktadır.'
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/countries/{countryId}/district_city':
     get:
       tags:
@@ -3721,7 +3731,9 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Bu servis mobilde kullanılmamaktadır.
+      description: |-
+        Bu servis kullanılmamaktadır.
+        HeyDate ve Kısmet uygulamalarında lokasyon seçiminde , kayıtta , profil editte ve arama filtresinde kullanılıyor.
   /api/user/v10/location/get_country_codes_with_flags:
     get:
       tags:
@@ -3739,7 +3751,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , APPlerde , Desktopta ve Dış Sayfalarda bu servis kullanılmaktadır.'
+      description: Telefon numarası girilmesi gerektiğinde ülke kodlarını almak için kullanılır.
   /api/user/v10/countries:
     get:
       tags:
@@ -3757,9 +3769,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        - Mobilde , APPlerde ve Desktopta bu servis kullanılmaktadır.
-        - Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Haluk Bey 'e sorulacak.
   /api/user/v10/me/post_login:
     get:
       tags:
@@ -3952,9 +3962,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        - Mobilde , Dış Sayfalarda ve Desktopta bu servis kullanılmamaktadır.
-        - Applerde bu servis kullanılmaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/logs/popups:
     post:
       tags:
@@ -4000,9 +4008,6 @@ paths:
         - Mobilde , APPlerde ve Desktopta bu servis kullanılmaktadır.
         - Dış Sayfalarda bu servis kullanılmamaktadır.
 
-        APP : EKLENECEK
-        *<img src="" width=200 />*
-
         Mobile :
         <img src="https://photoprism.coruscant.co/api/v1/t/393b1cb3d6f730058631be8eb972d6e4c65b1a6a/public/fit_1280" width="200"/>
 
@@ -4025,11 +4030,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servisin kullanıldığı yer bulunamadı.
-
-        - Mobilde , Dış Sayfalarda ve Desktopta bu servis kullanılmamaktadır.
-        - Applerde bu servis kullanılmaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/login:
     post:
       tags:
@@ -4055,10 +4056,10 @@ paths:
         APP :
         <img src="https://photoprism.coruscant.co/api/v1/t/824bd56c941260fe22c3391e699e94aa448888c8/j72i3wj8/fit_2048" width="200"/>
 
-        Mobile :
+        Dış Sayfalar ( Mobil için ) :
         <img src="https://photoprism.coruscant.co/api/v1/t/6a4ca6122d73d72356d01bafa10a0d6ee610bab7/j72i3wj8/fit_1280" width="200"/>
 
-        APP :
+        Dış Sayfalar ( Desktop için ) :
         <img src="https://photoprism.coruscant.co/api/v1/t/f8eacd609d394bb9ee84a5e20aa2a4ebd74c8f22/j72i3wj8/fit_2048"/>
       operationId: ''
   /api/user/v10/login/access_token:
@@ -4097,7 +4098,12 @@ paths:
       security:
         - oauth2: []
       operationId: login-access_token
-      description: Bu servis kullanılmıyor.
+      description: |-
+        Kullanıcının session 'ı sonlandıysa ama otomatik login için access_token'ı hala geçerliyse kapalı uygulama açılırken çağrılır.
+        Yarım kaymış üyelikte kayıt sayfasına yönlendirmesi lazım.
+        Access_token geçerli değilse login sayfasına yönlendirmeli.
+
+        Bu servis APPlerde kullanılmaktadır.
   /api/user/v10/login/notification_access_token:
     post:
       tags:
@@ -4120,7 +4126,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Bu servisin kullanıldığı yer bulunamadı.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/login/facebook:
     post:
       tags:
@@ -4676,10 +4682,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servis şuanda kullanılmamaktadır.
-
-        - Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/users/{viewedUserId}/news_feed':
     get:
       tags:
@@ -4945,7 +4948,8 @@ paths:
         - Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
 
         Mobile :
-        <img src="https://photoprism.coruscant.co/api/v1/t/049d8d17ac2538b538f8f6278ec624377761eda1/j72i3wj8/fit_1280" width="200"/>
+        1) <img src="https://photoprism.coruscant.co/api/v1/t/fddbd89163810e96579bc64c961445ff3f5e479a/j72i3wj8/fit_1280" width="200"/>
+        2) <img src="https://photoprism.coruscant.co/api/v1/t/87b9670c09dad66377dfc3538038170ee74f0600/j72i3wj8/fit_1280"/>
 
         APP :
         <img src="https://photoprism.coruscant.co/api/v1/t/9aa2e44218d0249eb2faef71be6f72505d6e3742/j72i3wj8/fit_2048" width="200"/>
@@ -5287,6 +5291,8 @@ paths:
       security:
         - oauth2: []
       description: |-
+        Uygulamanın bildirim ayarı değiştirildiğinde uygulama tekrar ön plana geldiğinde bu servis çağrılmış olur.
+
         - APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
   /api/user/v10/frontend_notifications:
@@ -5311,11 +5317,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servisi sistemden kaldırdık.
-
-        - APPlerde bu servis kullanılmaktadır.
-        - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/frontend_notifications/{frontendNotificationLogId}/{Event}':
     put:
       tags:
@@ -5345,11 +5347,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Tam olarak bu servis kullanılmıyor , Haluk Beye sorulacak.
-
-        - APPlerde bu servis kullanılmaktadır.
-        - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/me/notifications/{Type}/{PushNotificationTrackId}/{Event}':
     put:
       tags:
@@ -5390,7 +5388,8 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Tam olarak bu servis kullanılmıyor , Haluk Beye sorulacak.
+        Uygulama kapalıyken push notifications geldiğinde arka planda çağrılıyor.
+        Şu an deactive.
 
         - APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -5793,6 +5792,46 @@ paths:
         Desktop :
         1. <img src="https://photoprism.coruscant.co/api/v1/t/610e13859ff6f73e98aa9db14ec9f1d652be2941/j72i3wj8/fit_1280"/>
         2. <img src="https://photoprism.coruscant.co/api/v1/t/a37b7fd7f407489f6b1bc233ad41ae265eed8472/j72i3wj8/fit_1280"/>
+  /api/user/v10/payments/credit_card/orders - copy:
+    post:
+      tags:
+        - Payments
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Api.CreditCardProcessorCoreAppService.Dto.CreditCardProcessorCoreInput'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CreditCardProcessorCoreAppService.Dto.CreditCardProcessorCoreDataOutput_'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+      security:
+        - oauth2: []
+      description: |-
+        Uygulama içerisinde kullanıcı " Kredi Kartı" ile ödeme yapıldığında bu servis çağrılmış olur. Kredi kartı bilgileri girildikten sonra devam edildiğinde otomatik olarak çağrılacaktır.
+
+        Çağrıldığı Yerler :
+        1) Ödeme sayfası - Kredi kartı ile ödeme
+
+        - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
+        - Dış Sayfalarda bu servis kullanılmamaktadır.
+
+        APP :
+        <img src="https://photoprism.coruscant.co/api/v1/t/91302ff6f6033ca465b2037ad1ccdfde0f8faf69/j72i3wj8/fit_1280" width="200"/>
+
+        Mobile :
+        <img src="https://photoprism.coruscant.co/api/v1/t/33650a2b1280593846bb3167b4d3d730e8b439f2/j72i3wj8/fit_1280" width="200"/>
+
+        Desktop :
+        1. <img src="https://photoprism.coruscant.co/api/v1/t/610e13859ff6f73e98aa9db14ec9f1d652be2941/j72i3wj8/fit_1280"/>
+        2. <img src="https://photoprism.coruscant.co/api/v1/t/a37b7fd7f407489f6b1bc233ad41ae265eed8472/j72i3wj8/fit_1280"/>
   /api/user/v10/payments/subscriptions/platforms/android:
     get:
       tags:
@@ -5811,9 +5850,9 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Kullanıcının IP ve lokasyonuna göre her ödeme yöntemini dönmeyebilir. Servise tekrardan bakılacaktır.
+        Kullanıcının IP ve lokasyonuna göre her ödeme yöntemini dönmeyebilir. Servise tekrardan bakılacaktır. 
 
-        - APPlerde bu servis kullanılmaktadır.
+        - Android APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
 
         APP :
@@ -6012,14 +6051,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servis şuanda kullanılmamaktadır.
-
-        - APPlerde bu servis kullanılmaktadır.
-        - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
-
-        APP :
-        <img src="https://photoprism.coruscant.co/api/v1/t/1df086df2d051546b15df03b83f4536a3a398356/j72i3wj8/fit_2048" width="200"/>
+      description: Bu servis şuanda kullanılmamaktadır.
   /api/user/v10/payments/pixels:
     get:
       tags:
@@ -6087,7 +6119,8 @@ paths:
         - oauth2: []
       operationId: put-payments-pixels
       description: |-
-        Şu anda yeri bulunamadı.
+        Eğer GET: payments/pixels servisi çağrıldığında ödeme bilgisi varsa çağrılır.
+        GET servisi developer functions altından trigger edilebilir.
 
         - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
         - Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -6174,11 +6207,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Kullanıldığı yer bulunamadı.
-
-        - APPlerde bu servis kullanılmaktadır.
-        - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/payments/apple/orders:
     post:
       tags:
@@ -6201,7 +6230,14 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Şuanda kullanılmamaktadır.
+      description: |-
+        Kullanıcı IOS uygulama üzerinde satın alma yaptığında ve başarılı olduğunda çağrılıyor.
+
+        Çağrıldığı Yerler :
+        1) ITunes ile ödeme yapmak lazım.
+
+        - APPlerde bu servis kullanılmaktadır.
+        - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
   /api/user/v10/payments/adapty/apple/restore:
     post:
       tags:
@@ -6225,7 +6261,7 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Şuanda kullanılmamaktadır.
+        Adapty kullanan IOS uygulamalarda “ Satın Almaları Geri Yükle ” butonu tıklandığında çağrılıyor.
 
         - APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -6252,7 +6288,8 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Şu anda  bu servis kullanılmamaktadır.
+        Adapty kullanmayan Android uygulamalarda “ Satın Almaları Geri Yükle ” butonu tıklandığında çağrılıyor.
+        Şu anda Kismet Android uygulaması kullanıyor.
 
         - APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -6283,7 +6320,7 @@ paths:
       security:
         - oauth2: []
       description: |-
-        Şu anda kullanılmamaktadır.
+        Adapty kullanmayan IOS uygulamalarda “ Satın Almaları Geri Yükle ” butonu tıklandığında çağrılıyor.
 
         - APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta ve Dış Sayfalarda bu servis kullanılmamaktadır.
@@ -6416,11 +6453,7 @@ paths:
       responses:
         '200':
           description: Success
-      description: |-
-        Kullanıldığı yer bulunamadı.
-
-        - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
-        - Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/report/personality:
     get:
       tags:
@@ -6439,6 +6472,8 @@ paths:
       security:
         - oauth2: []
       description: |-
+        Karakter Analizi rapor sayfasına gidildiğinde bu servis çağrılmış olur.
+
         - Desktopta bu servis kullanılmaktadır.
         - Mobilde , Dış Sayfalarda ve APPlerde bu servis kullanılmamaktadır.
   /api/user/v10/me/profile_photo:
@@ -6558,7 +6593,7 @@ paths:
       security:
         - oauth2: []
       operationId: me-photos-delete
-      description: '- Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/users/{otherUserId}/photos':
     get:
       tags:
@@ -6595,7 +6630,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/photos:
     post:
       tags:
@@ -6831,7 +6866,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me:
     get:
       tags:
@@ -6997,7 +7032,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Bu servisin sonunda news_feed var bakılacak.
+      description: 'Bu servis , eski profil ( 2023 öncesi ) açıldığında çağrılan servis.'
   '/api/user/v10/users/{otherUserId}/recommends':
     get:
       tags:
@@ -7022,7 +7057,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/questions/about_detail:
     get:
       tags:
@@ -7041,6 +7076,9 @@ paths:
       security:
         - oauth2: []
       description: |-
+        Backend kendinizi tanıtın sorularını göstermek istediğinde ( profile test üzerinden trigger edilebilir ) newsfeed üzerinde buton açılır.
+        Bu buton ile soruların olduğu sayfaya gidilince çağrılır
+
         - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
         - Dış Sayfalarda bu servis kullanılmamaktadır.
   /api/user/v10/questions/character_analysis:
@@ -7613,7 +7651,8 @@ paths:
         - oauth2: []
       operationId: questions-character_analysis
       description: |-
-        Anasayfada Profil Düzenle bölümünün altında bulunan " Karakter Analizi " butonuna tıklandığında bu servis çağrılmış olur.
+        Backend karakter analizi sorularını göstermek istediğinde ( profile test üzerinden trigger edilebilir ) newsfeed üzerinde buton açılır.
+        Bu buton ile soruların olduğu sayfaya gidilince çağrılır
 
         Çağrıldığı Yerler :
         1) Karakter Analizi
@@ -8098,7 +8137,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: '- Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.'
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/screen_visible:
     put:
       tags:
@@ -10753,9 +10792,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        - Desktopta bu servis kullanılmaktadır.
-        - Mobilde , Dış Sayfalarda ve APPlerde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/settings:
     get:
       tags:
@@ -11640,9 +11677,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        - Mobilde , Desktopta ve APPlerde bu servis kullanılmaktadır.
-        - Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/me/connects/{SocialNetwork}':
     delete:
       tags:
@@ -11720,11 +11755,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servisin kullanıldığı yer bulunamadı.
-
-        - Mobilde , Desktopta ve APPlerde bu servis kullanılmamaktadır.
-        - Dış Sayfalarda bu servis kullanılmaktadır.
+      description: Bu servis kullanılmaktadır.
   /api/user/v10/user_delete_reasons:
     get:
       tags:
@@ -11782,12 +11813,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: |-
-        Bu servis kullanılmamaktadır.
-
-        KISMET HEYDATE uygulamalarında olabilir.
-
-        - Mobilde , Desktopta , APPlerde ve Dış Sayfalarda bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/like_users:
     post:
       tags:
@@ -11810,7 +11836,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/me/visits/by_them:
     get:
       tags:
