@@ -6476,6 +6476,9 @@ paths:
 
         - Desktopta bu servis kullanılmaktadır.
         - Mobilde , Dış Sayfalarda ve APPlerde bu servis kullanılmamaktadır.
+
+        Desktop :
+        <img src="https://photoprism.coruscant.co/api/v1/t/db56b56058cfc2897ae68b90eea80199abf79ede/j72i3wj8/fit_1280"/>
   /api/user/v10/me/profile_photo:
     put:
       tags:
@@ -7683,6 +7686,9 @@ paths:
       description: |-
         - Dış Sayfalarda ve APPlerde bu servis kullanılmaktadır.
         - Mobilde , Desktopta bu servis kullanılmamaktadır.
+
+        Dış Sayfalar :
+        <img src=""/>
   /api/user/v10/questions/registration/previous:
     get:
       tags:
@@ -10458,7 +10464,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/search/recommended_matches_for_inbox:
     get:
       tags:
@@ -10476,7 +10482,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   /api/user/v10/search/recommended_matches_for_news_feed:
     get:
       tags:
@@ -10494,7 +10500,7 @@ paths:
           description: Forbidden
       security:
         - oauth2: []
-      description: Mobilde bu servis kullanılmamaktadır.
+      description: Bu servis kullanılmamaktadır.
   '/api/user/v10/search/records/{SearchRecordId}':
     delete:
       tags:
@@ -10892,7 +10898,6 @@ paths:
         1. <img src="https://photoprism.coruscant.co/api/v1/t/28b47cc8103d3abb04b70e02d84f76165992d35a/j72i3wj8/fit_1280"/>
         2. <img src="https://photoprism.coruscant.co/api/v1/t/df8bf06cb571cb509259e350c16c430996f7d97c/j72i3wj8/fit_1280"/><img src="https://photoprism.coruscant.co/api/v1/t/0249c071d211b775c78b9a6a28e490d262794f18/j72i3wj8/fit_1280"/>
         3. <img src="https://photoprism.coruscant.co/api/v1/t/d214b10568fddf2541d52422565f1fe547792147/j72i3wj8/fit_1280"/>
-        4. <img src=""/>
   /api/user/v10/me/name:
     put:
       tags:
@@ -11333,7 +11338,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PanjurUserApi.Web.Api.Models.ApiDataResult_1_Api.CreateNewUserAppService.Dto.PostRegisterDataModel_'
-      description: Bu servis mobilde kullanılmamaktadır.
+      description: |-
+        Kayıt ekranında telefon veya mail ile kayıt başlatıldığında bu servis çağrılmaktadır.
+
+        - Dış Sayfalarda ve APPlerde kullanılmaktadır.
   /api/user/v10/register/apple:
     post:
       tags:
